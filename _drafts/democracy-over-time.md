@@ -1,7 +1,7 @@
 ---
 title: Democracy over Time
 date: 2021-07-25
-tags: [Sustainability, Water]
+tags: [Policy]
 description: A visualization of how contries became more (and less) democratic.
 image: ""
 layout: post
