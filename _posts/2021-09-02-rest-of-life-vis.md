@@ -1,9 +1,9 @@
 ---
 title: The Rest of Your Life, Visualized
-date: 2021-07-25
-tags: [Sustainability]
+date: 2021-09-02
+tags: [Data]
 description: 
-image: ""
+image: "./jupyter_notebooks/life_vis/life_vis.svg"
 layout: post
 author: Will Rynearson
 ---
@@ -11,3 +11,5 @@ author: Will Rynearson
 # Idea
 
 Visualize the rest of your life. Allow users to enter their age, gender, and country of origin to estimate the remaining life expectancy. See Jupyter Notebook.
+
+![1](../jupyter_notebooks/life_vis/life_vis.svg)
