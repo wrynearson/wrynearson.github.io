@@ -6,7 +6,6 @@ description:
 image: "../jupyter_notebooks/life_vis/life_vis.png"
 layout: post
 author: Will Rynearson
-published: False
 ---
 
 # Idea

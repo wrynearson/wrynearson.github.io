@@ -8,7 +8,7 @@ layout: post
 author: Will Rynearson
 ---
 
-*inspired by https://www.youtube.com/watch?v=uxykI30fS54*
+*inspired by [this](https://www.youtube.com/watch?v=uxykI30fS54)*
 
 # Summary
 
@@ -51,6 +51,8 @@ It's not about laziness or freedom, it's about boring urban planning policy whic
 - Urban sprawl
 
   - > It is illegal on 75 percent of the residential land in many American cities to build anything other than a detached single-family home. https://www.nytimes.com/interactive/2019/06/18/upshot/cities-across-america-question-single-family-zoning.html?action=click&module=Top%20Stories&pgtype=Homepage
+
+- People think they want it -> More people want bigger and more spread out homes with no walkability than denser living. [Pew Research](https://www.pewresearch.org/fact-tank/2021/08/26/more-americans-now-say-they-prefer-a-community-with-big-houses-even-if-local-amenities-are-farther-away/)
 
 - How to change it
   - Tell your politicians to prioritize public transit, bike infrastructure, sidewalks and other non-car focused infrastructure.
