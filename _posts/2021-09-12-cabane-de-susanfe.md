@@ -14,7 +14,7 @@ With Autumn (and alpine inacessability) quickly approaching, a rugged hike at al
 
 <iframe height='405' width='590' frameborder='0' allowtransparency='true' scrolling='no' src='https://www.strava.com/activities/5949581275/embed/f9e0a447683995d6a47dfa4fed23fec92cb50590'></iframe>
 
-We decided to do the majority of the distance and all of the ascent on the first day by starting from Van d'en Haut. Getting there from Geneva was relatively easy, taking the train from Geneva to Martigny, then getting on the scenic (and touristic) [Mont Blanc Express](https://www.myswitzerland.com/en-ch/experiences/mont-blanc-express/) to Les Marécottes, followed by the bus to `Van-d'en-Haut, camping`. In total, it takes 2:37. While the first two trains run frequently, the bus does not.
+We decided to do the majority of the distance and all of the ascent on the first day by starting from Van d'en Haut. Getting there from Geneva was relatively easy, taking the train from Geneva to Martigny, then getting on the scenic (and touristic) [Mont Blanc Express](https://www.myswitzerland.com/en-ch/experiences/mont-blanc-express/) to _Les Marécottes_, followed by the bus to _Van-d'en-Haut, camping_. In total, it takes 2:37. While the first two trains run frequently, the bus does not.
 
 The hike starts with a low to medium gradient gravel road and path. We had strong autumn vibes due to low clouds and the onset of autumn foliage.
 
@@ -22,7 +22,7 @@ The hike starts with a low to medium gradient gravel road and path. We had stron
 
 ![1](../assets/img/2021-09-13-cabane-de-susanfe/2.jpg)
 
-After 60-90 minutes, the expansive `lac de salanfe` appears behind the dam. While we had low-lying clouds which reminded me of the Pacific Northwest of the United States, the Dents du Midi and other 3000m peaks are visible.
+After 60-90 minutes, the expansive _lac de salanfe_ appears behind the dam. While we had low-lying clouds which reminded me of the Pacific Northwest of the United States, the Dents du Midi and other 3000m peaks are visible.
 
 ![1](../assets/img/2021-09-13-cabane-de-susanfe/3.jpg)
 
@@ -70,7 +70,8 @@ After enjoying the remoteness and the changing weather, we descended onto the ca
 
 ![1](../assets/img/2021-09-13-cabane-de-susanfe/19.jpg)
 
-## Day 2: Cabane de Susanfe – Champéry
+
+## Day 2: Cabane de Susanfe – Champéry
 
 <iframe height='405' width='590' frameborder='0' allowtransparency='true' scrolling='no' src='https://www.strava.com/activities/5949935799/embed/3934ac5b4505878aa15c14a13cf92504c367c7f8'></iframe>
 
@@ -80,13 +81,15 @@ The autumn vibes parted for gorgeous clear skies. With schedules running early i
 
 ![1](../assets/img/2021-09-13-cabane-de-susanfe/21.jpg)
 
-We took the descent slow as the stunning landscapes made me stop for a photo ever few minutes. Towards the exit of the haning `Susanfe` valley, I was truly awestruck by the grand beauty of this place. It really has it all – towering peaks, glaciers, waterfalls, idilic lone trees, and grassy patches. I could have spent all day here.
+We took the descent slow as the stunning landscapes made me stop for a photo ever few minutes. Towards the exit of the haning _Susanfe_ valley, I was truly awestruck by the grand beauty of this place. It really has it all – towering peaks, glaciers, waterfalls, idilic lone trees, and grassy patches. I could have spent all day here.
 
 ![1](../assets/img/2021-09-13-cabane-de-susanfe/22.jpg)
 
 ![1](../assets/img/2021-09-13-cabane-de-susanfe/23.jpg)
 
-![1](../assets/img/2021-09-13-cabane-de-susanfe/24.jpg)![1](../assets/img/2021-09-13-cabane-de-susanfe/25.jpg)
+![1](../assets/img/2021-09-13-cabane-de-susanfe/24.jpg)
+
+![1](../assets/img/2021-09-13-cabane-de-susanfe/25.jpg)
 
 ![1](../assets/img/2021-09-13-cabane-de-susanfe/26.jpg)
 
