@@ -12,7 +12,7 @@ With Autumn (and alpine inacessability) quickly approaching, a rugged hike at al
 
 ## Day 1: Van d'en Haut – Cabane de Susanfe
 
-<iframe height='405' width='90%' frameborder='0' allowtransparency='true' scrolling='no' src='https://www.strava.com/activities/5949581275/embed/f9e0a447683995d6a47dfa4fed23fec92cb50590'></iframe>
+<iframe height='405' width='100%' frameborder='0' allowtransparency='true' scrolling='yes' src='https://www.strava.com/activities/5949581275/embed/f9e0a447683995d6a47dfa4fed23fec92cb50590'></iframe>
 
 We decided to do the majority of the distance and all of the ascent on the first day by starting from Van d'en Haut. Getting there from Geneva was relatively easy, taking the train from Geneva to Martigny, then getting on the scenic (and touristic) [Mont Blanc Express](https://www.myswitzerland.com/en-ch/experiences/mont-blanc-express/) to _Les Marécottes_, followed by the bus to _Van-d'en-Haut, camping_. In total, it takes 2:37. While the first two trains run frequently, the bus does not.
 
@@ -73,7 +73,7 @@ After enjoying the remoteness and the changing weather, we descended onto the ca
 
 ## Day 2: Cabane de Susanfe – Champéry
 
-<iframe height='405' width='590' frameborder='0' allowtransparency='true' scrolling='no' src='https://www.strava.com/activities/5949935799/embed/3934ac5b4505878aa15c14a13cf92504c367c7f8'></iframe>
+<iframe height='405' width='100%' frameborder='0' allowtransparency='true' scrolling='yes' src='https://www.strava.com/activities/5949935799/embed/3934ac5b4505878aa15c14a13cf92504c367c7f8'></iframe>
 
 The autumn vibes parted for gorgeous clear skies. With schedules running early in these mountain huts, we were able to enjoy the prolongued sunrise before and after breakfast, as well as during the first part of our hike.
 
