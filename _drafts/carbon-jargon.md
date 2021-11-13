@@ -11,3 +11,8 @@ author: Will Rynearson
 # Inspiration
 
 From [Grist](https://grist.org/language/study-climate-change-jargon-mitigation-tipping-points/)
+
+### Climate Countdown Clock
+
+<script src="https://climateclock.world/widget-v2.js" async></script> <climate-clock /> 
+
