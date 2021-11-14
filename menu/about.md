@@ -5,9 +5,9 @@ title: About
 
 ## Hi, I'm Will.
 
-> I'm interested in the intersection of policy, science, management and communication, and taking a more holistic approach towards solving problems within the SDG framework, specifically with issues involving water and sanitation.
+I'm interested in the intersection of policy, data, management and communication, and taking a more holistic approach towards solving problems within the SDG framework, specifically with issues involving water and sanitation.
 
-> You'll often find me in, looking at, or dreaming about mountains. Running, hiking, biking, and being in nature are important to me.
+You'll often find me in, looking at, or dreaming about mountains. Running, hiking, biking, and being in nature are important to me.
 
 🎓 I have two masters in public policy and sustainability at University of Geneva (Switzerland) and Tsinghua University (China) and a bachelors in Mechanical Engineering from Montana State University (USA).
 
