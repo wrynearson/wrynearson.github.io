@@ -122,6 +122,8 @@ hr {
   font-size: 1rem;
   float: right;
   color: #999;
+  align-self: auto;
+  text-align: right;
 }
 
 /*
