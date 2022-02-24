@@ -369,6 +369,7 @@ th, td {
 
 .sharing-icons a {
   padding-right: 10px;
+  text-align: left;
 }
 
 .fa-envelope {
