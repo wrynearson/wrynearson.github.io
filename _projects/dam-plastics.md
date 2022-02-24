@@ -1,5 +1,6 @@
 ---
 title: Dam Plastics
+date: 2022-02-24
 description: From one dam in one river to no plastics in all rivers, Dam Plastics empowers stakeholders to systematically monitor and control the flow of plastic.
 layout: project_page
 image: "dam-plastics/1.png"
