@@ -24,4 +24,4 @@ Learn more [here](http://www.damplastics.org).
 
 ---
 
-[^1]: Dufour, F. (2018). A whopping 91% of plastic isn't recycled. Retrieved from [https://www.nationalgeographic.com/news/2017/07/plastic-produced-rec](https://www.nationalgeographic.com/news/2017/07/plastic-produced-recycling-waste-ocean-trash-debris-environment/)[cling-waste-ocean-trash-debris-environment/](https://www.nationalgeographic.com/news/2017/07/plastic-produced-recycling-waste-ocean-trash-debris-environment/).
+[^1]: Dufour, F. (2018). *A whopping 91% of plastic isn't recycled.* Retrieved from [https://www.nationalgeographic.com/news/2017/07/plastic-produced-rec](https://www.nationalgeographic.com/news/2017/07/plastic-produced-recycling-waste-ocean-trash-debris-environment/)[cling-waste-ocean-trash-debris-environment/](https://www.nationalgeographic.com/news/2017/07/plastic-produced-recycling-waste-ocean-trash-debris-environment/).
