@@ -135,7 +135,7 @@ hr {
   overflow: hidden;
   border-radius: 5px;
   margin-bottom: 25px;
-  height: 30vh;
+  max-height: 75vh;
 }
 
 .thumbnail-container img{
