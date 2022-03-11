@@ -3,7 +3,7 @@ layout: page
 title: About
 ---
 
-### Hi, I'm Will.
+# Hi, I'm Will.
 
 💡 I'm interested in the intersection of policy, data, management and communication, and taking a more holistic approach towards solving problems within the SDG framework, specifically with issues involving [water]({{ site.baseurl }}/china-water) and sanitation.
 
