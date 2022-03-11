@@ -13,12 +13,12 @@ menu:
 
 # Available social icons are powered by Font Awesome, so you can use any icon that they offer
 social:
-- {icon: 'camera', link: '{{ site.baseurl }}/portfolio/'}
+- {icon: 'camera', link: 'https://wrynearson.github.io/portfolio/'}
 - {icon: 'instagram', link: 'https://www.instagram.com/willrynearson/'}
 - {icon: 'linkedin', link: 'https://www.linkedin.com/in/willrynearson/'}
 - {icon: 'github', link: 'https://github.com/wrynearson/'}
-- {icon: 'address-card', link: '{{ site.baseurl }}/online-cv/'}
-- {icon: 'book', link: '{{ site.baseurl }}/china-water/'}
+- {icon: 'address-card', link: 'https://wrynearson.github.io/online-cv/'}
+- {icon: 'book', link: 'https://wrynearson.github.io/china-water/'}
 
 
 # Customize site text
