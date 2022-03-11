@@ -1,12 +1,10 @@
 ---
 title: Hidden Sustainability
-date: 2022-03-03
+date: 2022-03-11
 tags: [Sustainability]
-description: It takes just 2% of GDP to solve the climate crisis. We're spending more than that on subsidizing environmental degradation. Let's demand that our money is being used to improve our planet.
-image: ""
+description: "It takes just 2% of GDP to solve the climate crisis. We're spending more than that on subsidizing environmental degradation. Let's demand that our money is being used to improve our planet."
 layout: post
 author: Will Rynearson
-draft: True
 ---
 
 ## In Brief
@@ -17,9 +15,9 @@ draft: True
 
 ## Background
 
-The climate crisis is so difficult to grasp, yet alone solve, be cause it is *everything* and *everywhere*. Yet, it isn't necessarily *obvious*. We know that heatwaves, floods, droughts, and 928872398 terrible things are *made worse* by the climate crisis, but it's difficult to say that one event is *caused* by it.
+The climate crisis is so difficult to grasp, yet alone solve, be cause it is *everything* and *everywhere*. Yet, it doesn't clearly present itself. We know that heatwaves, floods, droughts, and 928872398 terrible things are *made worse* by the climate crisis, but it's difficult to say that one event is *caused* by it.
 
-It's also difficult to get everyone to agree on *anything*, yet alone *everything*. Last I checked, we haven't come to an agreement on which god(s) to pray to.
+It's also difficult to get everyone to agree on *anything*, yet alone *everything*. Last I checked, we haven't come to an agreement on which god(s) to pray to, or none at all.
 
 The [Two Percent More](https://www.sapienship.co/decision-makers/2-percent-more) campaign, recently discussed on the wonderful [Outrage and Optimism](https://www.outrageandoptimism.org/episodes/2-for-1-point-5-yuval-noah-harari?hsLang=en) podcast, states the solution clearly:
 
@@ -37,9 +35,9 @@ Two percent (US\$1.7t) can solve iconic sustainability issues. As the [Two Perce
 
 Instead of actively solving the problem, we are making it much worse – we spend just a bit over 2% of global GDP ([US$1.8b](https://www.theguardian.com/environment/2021/oct/06/fossil-fuel-industry-subsidies-of-11m-dollars-a-minute-imf-finds)) on [subsidies](https://www.businessfornature.org/news/subsidy-reform) that harm the environment. This is almost definitely an understatement, as some of the costs of harm that these subsidies cause to people are not included.
 
-For example, fossil fuel subsidies. While the [report](https://www.earthtrack.net/document/protecting-nature-reforming-environmentally-harmful-subsidies-role-business) notes that US\$640b is spent on fossil fuel subsidies each year, the true cost of this industry is as high as US\$5.9t (nearly 7% of global GDP) when accounting for their full environmental, health and (missing) tax costs, according to the [IMF](https://www.theguardian.com/environment/2021/oct/06/fossil-fuel-industry-subsidies-of-11m-dollars-a-minute-imf-finds). That's US$11m per minute.
+Take for example fossil fuel subsidies. While the [report](https://www.earthtrack.net/document/protecting-nature-reforming-environmentally-harmful-subsidies-role-business) notes that US\$640b is spent on direct fossil fuel subsidies each year, the true cost of this industry is as high as US\$5.9t (nearly 7% of global GDP) when accounting for their full environmental, health and (missing) tax costs, according to the [IMF](https://www.theguardian.com/environment/2021/oct/06/fossil-fuel-industry-subsidies-of-11m-dollars-a-minute-imf-finds). That's US$11m per minute.
 
-Instead of creating a cleaner, greener planet, we're subsidizing the destruction of our planet and the killing of at least [8m people](https://www.sciencedirect.com/science/article/abs/pii/S0013935121000487). [^1]
+Instead of creating a cleaner, greener planet, we're subsidizing the destruction of our planet and the killing at least [8m people](https://www.sciencedirect.com/science/article/abs/pii/S0013935121000487) annually. [^1]
 
 ## The Solution
 
