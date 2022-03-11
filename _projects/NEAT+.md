@@ -22,7 +22,7 @@ The [NEAT+](www.neatplus.org) helps humanitarians to quickly screen for and iden
 
 I work on all aspects of the NEAT+, in collaboration with technical and environmental experts. Currently, it exists in two formats:
 1. The [Rural NEAT+](https://www.eecentre.org/neat) (built in 2018 with *The Joint Initiative* [^2]), using Excel and [KoboToolbox](https://www.kobotoolbox.org/).
-2. The [Urban NEAT+](https://www.neatplus.org), which uses a custom Python/Django web application (not built by me).
+2. The [Urban NEAT+](https://www.neatplus.org), which uses a custom Python/Django web application (not coded by me).
 
 ![Urban NEAT+ Dashboard](/assets/img/neatplus/neat_dashboard.png)
 
