@@ -7,7 +7,11 @@ layout: post
 author: Will Rynearson
 ---
 
+## In Brief
+
 > It takes just 2% of GDP to solve the climate crisis. We're spending more than that on subsidizing environmental degradation. Let's demand that our money is being used to improve our planet.
+
+---
 
 ## Background
 
