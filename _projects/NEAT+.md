@@ -1,9 +1,9 @@
 ---
 title: Nexus Environmental Assessment Tool (NEAT+)
+date: 2022-03-12
 description: Free and open-source, the NEAT+ has been specifically designed for humanitarian actors to quickly identify issues of environmental concern to make emergency and recovery interventions more sustainable.
 layout: project_page
 image: "neatplus/neat_logo.jpg"
-published: true
 ---
 
 Humanitarian projects often prioritizes immediate action over longer term impacts. However, accounting for both is critical. The environment is vital to humanitarian action for several reasons: [^1]
