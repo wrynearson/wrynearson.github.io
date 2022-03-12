@@ -1,5 +1,5 @@
 ---
-title: Two Percent for the Planet
+title: Hidden Sustainability
 date: 2022-03-11
 tags: [Sustainability]
 description: "It takes just 2% of GDP to solve the climate crisis. We're spending more than that on subsidizing environmental degradation. Let's demand that our money is being used to improve our planet."
