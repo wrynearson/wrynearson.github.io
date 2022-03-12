@@ -1,17 +1,13 @@
 ---
-title: Hidden Sustainability
+title: Two Percent for the Planet
 date: 2022-03-11
 tags: [Sustainability]
-description: "It takes just 2% of GDP to solve the climate crisis. We're spending more than that on subsidizing environmental degradation. Let's demand that our money is being used to improve our planet."
+description: It takes just 2% of GDP to solve the climate crisis. We spend more than that on subsidizing environmental degradation. Let's demand that our money is being used to improve our planet.
 layout: post
 author: Will Rynearson
 ---
 
-## In Brief
-
-> It takes just 2% of GDP to solve the climate crisis. We're spending more than that on subsidizing environmental degradation. Let's demand that our money is being used to improve our planet.
-
----
+> It takes just 2% of GDP to solve the climate crisis. We spend more than that on subsidizing environmental degradation. Let's demand that our money is being used to improve our planet.
 
 ## Background
 
@@ -44,5 +40,7 @@ Instead of creating a cleaner, greener planet, we're subsidizing the destruction
 The solution is clear – stop subsidizing the harmful things and use that money to subsidize helpful things. Let's keep it simple and demand that polititians stop these harmful subsidies and instead invest 2% in the planet.
 
 I have used the term "we" because it is our (tax) money, and our planet.
+
+---
 
 [^1]: The number of people who died in 2018 from air pollution from the burning of fossil fuels.
