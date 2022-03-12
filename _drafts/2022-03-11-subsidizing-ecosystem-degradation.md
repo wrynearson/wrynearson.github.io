@@ -5,7 +5,6 @@ tags: [Sustainability]
 description: "It takes just 2% of GDP to solve the climate crisis. We're spending more than that on subsidizing environmental degradation. Let's demand that our money is being used to improve our planet."
 layout: post
 author: Will Rynearson
-draft: True
 ---
 
 > It takes just 2% of GDP to solve the climate crisis. We're spending more than that on subsidizing environmental degradation. Let's demand that our money is being used to improve our planet.
