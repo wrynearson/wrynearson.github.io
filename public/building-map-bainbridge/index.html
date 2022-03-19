@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Buildings</title>
+    <link rel="stylesheet" href="/css/style.css">
+  </head>
+  <body>
+    <div class="site_title">
+      <a href="/">
+        <div class="site_title_name">
+          Will Rynearson 
+        </div>
+      </a>
+    </div>
+    <main>
+      
+<div class = "page_title">
+    Buildings
+</div>
+
+<time>April, 2020</time>
+
+<div class="description">
+    Using Microsoft's Building Dataset to Create an Artistic Map of my Hometown
+</div>
+
+<p><img src="../assets/img/2020-04-28-building-map-bainbridge/bainbridge-1.png" alt="Bainbridge Island Building Map"></p>
+<p>I've always loved maps. The differet ways we represent the physical world on a small screenor piece of paper is fascinating. I could spend hours looking at subway maps, old world maps,or beautiful topo maps. They're such a powerful mix of technical prowess and art (maybe that's why I love photography).</p>
+<p>Maps, and other visualizations, are a great way to turn complicated or abstract information intosomething understandable. Early on my journey to learn how to visualize data, I've been inspired by recent works of data journalism, especially from the New York Times.</p>
+<h2>Inspiration</h2>
+<p>The headline for the 2018 piece <a href="https://www.nytimes.com/interactive/2018/10/12/us/map-of-every-building-in-the-united-states.html"><em>A Map Of Every Building In America</em></a> definitely caught my eye. After reading through, mesmerized by the tiny black dots, I found <a href="https://github.com/Microsoft/USBuildingFootprints/">Microsoft's Github pepository</a> of <strong>125,192,184</strong> &quot;computer generated building footprints in all 50 US states.&quot; What a fascinating way to see our built environment in clarity, without the clutter which comes fromsatelite images or standard online maps.</p>
+<h2>Process</h2>
+<p>I'm from Bainbridge Island (near Seattle), so I thought I'd start there. I found <a href="https://usbuildingdata.blob.core.windows.net/usbuildings-v1-1/Washington.zip"><code>Washington.zip</code></a> file (98 MB zipped, 691 MB unzipped) conveniently listed, downloaded it, and loaded it into QGIS. I turned on a background map (OSM) to help navigate.</p>
+<p><a href="../assets/img/2020-04-28-building-map-bainbridge/zoom-to-wa.gif"><img src="../assets/img/2020-04-28-building-map-bainbridge/zoom-to-wa.gif" alt="Zooming in" title="Zooming in"></a></p>
+<p>There are quite a few features to be rendered (2,993,361 to be exact).</p>
+<p><a href="../assets/img/2020-04-28-building-map-bainbridge/loading.gif"><img src="../assets/img/2020-04-28-building-map-bainbridge/loading.gif" alt="Loading" title="So many little black dots"></a></p>
+<p>Very new to QGIS (I'm sure there's a better way of doing this), I zoomed into Puget Sound and used the <code>Select Features by Freehand</code> tool to select just the polygons (buildings) on Bainbridge Island. Being an island surrounded by water, as all islands tend to be, it was easy to define what was a building on Bainbridge and what wasn't. You can also turn on a background map to help you navigate. Sadly the buildings aren't labeled, unlike how they are in OpenStreetMap.</p>
+<p><a href="../assets/img/2020-04-28-building-map-bainbridge/select.gif"><img src="../assets/img/2020-04-28-building-map-bainbridge/select.gif" alt="Select" title="Selection"></a></p>
+<p>I then copied these polygons into a new virtual layer and went to artistic &quot;work&quot; simply changing the background color, fill color and border color. I used the same emerald green <code>#50C878</code> for both the building fill and border, but put the fill at 75% opacity. Then, in the print layout area, I set the background to transparent and exported it as a <code>.png</code>.</p>
+<p>Et voilà, it turned out pretty well!</p>
+<p><img src="../assets/img/2020-04-28-building-map-bainbridge/bainbridge-2.png" alt="Downtown" title="Downtown"></p>
+<p>It's interesting to see where the island has been developed, versus where it hasn't. The downtown area is just north of Eagle Harbor, while the void in the middle is Gazzam Lake Nature Preserve.</p>
+<p><img src="../assets/img/2020-04-28-building-map-bainbridge/bainbridge-3.png" alt="Nature Reserve" title="Nature Reserve"></p>
+
+
+<footer>
+    <a href="/">
+        <div class="footer_name">
+            — Will
+        </div>
+    </a>
+</footer>
+    </main>
+  </body>
+</html>

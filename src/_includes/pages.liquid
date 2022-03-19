@@ -1,0 +1,23 @@
+---
+layout: base.liquid
+---
+
+<div class = "page_title">
+    {{ title }}
+</div>
+
+<time>{{ date | date: "%Y" }}</time>
+
+<div class="description">
+    {{ description }}
+</div>
+
+{{ content }}
+
+<footer>
+    <a href="{{ '/' | url }}">
+        <div class="footer_name">
+            — Will
+        </div>
+    </a>
+</footer>
