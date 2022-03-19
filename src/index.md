@@ -4,7 +4,7 @@ layout: "base.liquid"
 ---
 
 <div class=about-me>
-  Hi! I'm Will, a sustainability analyst. I'm currently a consultant for the United Nations working on improving the <a href="{{ base.url }}/NEAT+"> environmental sustainability of humanitarian action</a>. I'm learning data analysis, web design, and French. In my free time, you can find me in the mountains or taking photos. Feel free to reach out on <a href="https://www.linkedin.com/in/willrynearson/">LinkedIn</a>.
+  Hi! I'm a sustainability analyst. I'm currently a consultant for the United Nations, working on improving the <a href="{{ base.url }}/NEAT+"> environmental sustainability of humanitarian action</a>. I'm learning <a href="https://grow.google/certificates/data-analytics/#?modal_active=none">data analysis</a>, web design (this site), and French. In my free time, you can find me in the mountains or <a href="{{ base.url }}/portfolio">taking photos</a>. Feel free to reach out on <a href="https://www.linkedin.com/in/willrynearson/">LinkedIn</a>.
 </div>
 
 ## Posts
