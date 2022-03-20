@@ -2,12 +2,12 @@ const Image = require("@11ty/eleventy-img");
 
     async function imageShortcode(src, alt, sizes) {
     let metadata = await Image(src, {
-      widths: [300, 800],
+      widths: [300, 1200],
       formats: ["webp", "jpeg", "svg"],
       outputDir: "./docs/img/",
       /* change the quality of the webp and jpeg images */
       sharpWebpOptions: {
-        quality: 90,
+        quality: 80,
         smartSubsample: true
       },
       sharpJpegOptions: {
