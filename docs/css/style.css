@@ -12,7 +12,7 @@
 :root {
     /* Font family, size, weight, color */
     --font-family: helvetica, sans-serif;
-    --font-size: 21px;
+    --font-size: 20px;
     --title-font-weight: 400;
     --body-font-weight: 300;
     --heading-color: rgb(0, 0, 0);
@@ -31,8 +31,8 @@
     --underline-color: #bebebe;
     --underline-highlight-color: #4400ff;
     --line-type: underline;
-    --line-thickness: 8%;
-    --active-line-thickness: 12%;
+    --line-thickness: 10%;
+    --active-line-thickness: 15%;
     /* Animation (link, background, etc. */
     --animation-duration: .3s;
     --animation-fill-mode: both;
@@ -218,6 +218,6 @@ blockquote {
     }
     * a {
         color: var(--dark-text-color);
-        --underline-color: #666;
+        --underline-color: rgb(141, 141, 141);
     }
 }
