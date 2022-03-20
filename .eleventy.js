@@ -18,7 +18,7 @@ const Image = require("@11ty/eleventy-img");
       sharpOptions: {
         animated: true
       },
-      /* use to rename output files
+      /* use to rename output files 
       filenameFormat: function (id, src, width, format, options) {
         const extension = path.extname(src);
         const name = path.basename(src, extension);
@@ -37,7 +37,8 @@ const Image = require("@11ty/eleventy-img");
     
     // You bet we throw an error on missing alt in `imageAttributes` (alt="" works okay)
     return Image.generateHTML(metadata, imageAttributes, {
-      whitespaceMode: "inline"
+      whitespaceMode: "inline",
+
     });
     
 }
