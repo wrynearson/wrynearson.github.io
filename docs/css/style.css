@@ -201,13 +201,24 @@ img {
     color: var(--heading-color);
 }
 
+/*
 blockquote {
+    display: block;
     font-size: calc(var(--font-size)*.9);
     font-style: italic;
-    font-size: calc(var(--font-size)*.9);
     margin: 0em 1em 0em 1em;
     padding: .5rem 0 .5rem 0;
 }
+*/
+
+blockquote{
+    margin: 2rem 0rem 2rem 0rem;
+    font-style:italic;
+    font-size: calc(var(--font-size)*.9);
+    padding: 0rem 2rem 0rem 2rem;
+    border-left: 8px solid var(--underline-highlight-color);
+    position: relative;
+  }
 
 @media (prefers-color-scheme: dark) {
     * {
