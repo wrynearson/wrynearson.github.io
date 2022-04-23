@@ -1,6 +1,7 @@
 ---
 title: Will Rynearson
 layout: "base.liquid"
+description: Will Rynearson | Sustainability Analyst | Nature Lover | Adventure Enthusiast
 ---
 
 <div class=about-me>
