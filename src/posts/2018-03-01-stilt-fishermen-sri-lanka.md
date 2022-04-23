@@ -6,6 +6,7 @@ tags: [Photography, Travel, Sri Lanka]
 description: Sri Lanka's Historic Tradition of Stilt Fishing
 image: "2018-03-01-stilt-fishermen-sri-lanka/7.jpg"
 ---
+
 {% image "./src/assets/img/2018-03-01-stilt-fishermen-sri-lanka/1.jpg", "1", "(min-width: 30em) 50 vw, 100vw" %}
 
 {% image "./src/assets/img/2018-03-01-stilt-fishermen-sri-lanka/2.jpg", "2", "(min-width: 30em) 50 vw, 100vw" %}
