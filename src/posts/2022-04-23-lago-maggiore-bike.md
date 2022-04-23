@@ -12,7 +12,7 @@ Just across the Swiss border, and less than three hours by train from Geneva, si
 
 We vaguely planned five days in the region, with two campgrounds in mind to base ourselves out of for daily adventures.
 
-<iframe src="https://www.komoot.com/tour/743826504/embed?share_token=aBUtO4bOSbY7THaGXXiTaySjmwsMMlfmMLuEytvtInsNWyA5Tk&profile=1" width="100%" height="680" frameborder="0" scrolling="no"></iframe>
+<iframe title="Komoot Full Bike Tour Path" src="https://www.komoot.com/tour/743826504/embed?share_token=aBUtO4bOSbY7THaGXXiTaySjmwsMMlfmMLuEytvtInsNWyA5Tk&profile=1" width="100%" height="680" frameborder="0" scrolling="no"></iframe>
 
 We took an early train to Domodossola, arriving around 10:30am. We then rode on a dedicated, leasurly bike pack south through the valley. There were great, paved sections, as well as some areas where my road bike felt out of place.
 
