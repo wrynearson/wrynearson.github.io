@@ -5,7 +5,11 @@ description: Will Rynearson | Sustainability Analyst | Nature Lover | Adventure 
 ---
 
 <div class=about-me>
-  Hi! I'm a sustainability analyst. I'm currently a consultant for the United Nations, working on improving the <a href="{{ base.url }}/NEAT+"> environmental sustainability of humanitarian action</a>. I'm learning <a href="https://grow.google/certificates/data-analytics/#?modal_active=none">data analysis</a>, web design (this site), and French. In my free time, you can find me in the mountains or <a href="{{ base.url }}/portfolio">taking photos</a>. Feel free to reach out on <a href="https://www.linkedin.com/in/willrynearson/">LinkedIn</a>.
+  Hi! I'm a <a href="https://www.scrum.org/resources/what-is-a-product-owner"> Product Owner </a> with <a href="https://developmentseed.org"> Development Seed </a>. Previously, I was a consultant for the United Nations, working on improving the <a href="{{ base.url }}/NEAT+"> environmental sustainability of humanitarian action</a>. 
+  
+  I'm learning <a href="https://grow.google/certificates/data-analytics/#?modal_active=none">data analysis</a> and web design (this site). In my free time, you can find me in the mountains or <a href="{{ base.url }}/portfolio">taking photos</a>. 
+  
+  Feel free to reach out on <a href="https://www.linkedin.com/in/willrynearson/">LinkedIn</a>.
 </div>
 
 ## Posts

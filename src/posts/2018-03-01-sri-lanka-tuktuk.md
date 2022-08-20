@@ -1,7 +1,7 @@
 ---
 title: Sri Lanka on Three Wheels
 author: Will Rynearson
-date: 2020-12-08
+date: 2018-02-28
 tags: [Photography, Travel, Sri Lanka]
 description: Traveling around Sri Lanka by tuk-tuk proved to be an unforgettable experience.
 image: "2020-12-08-sri-lanka-tuk-tuk/12.jpg"
@@ -40,4 +40,4 @@ The experiences – unexplored tea fields, an unsolicited and unforgettable conv
 
 {% image "./src/assets/img/2020-12-08-sri-lanka-tuk-tuk/3.jpg", "3", "(min-width: 30em) 50 vw, 100vw" %}
 
-*Written on July 6th, 2018 for Clamp Magazine from a trip in early 2018.*
+*Written on July 6th, 2018 for Clamp Magazine from a trip in early 2018. Published here on December 8th, 2020.*

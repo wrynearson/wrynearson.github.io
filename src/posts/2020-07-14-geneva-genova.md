@@ -1,5 +1,5 @@
 ---
-title: Geneva to Genova
+title: Geneva to Genova, by Bike
 author: Will Rynearson & Francesco Cambi
 date: 2020-07-30
 tags: [Trip, Switzerland, France, Italy, Bike]

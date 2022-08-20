@@ -1,6 +1,6 @@
 ---
 title: Roasted Chestnuts, Chinese Crackers and an Adequate View
-date: 2020-12-08
+date: 2017-11-14
 tags: [Photography, Travel, China]
 description: The abandoned fishing village of Hòutouwān 后头湾 and the surrounding Shèngshān 嵊山岛 and Goǔqǐ 枸杞岛 islands.
 author: Will Rynearson & Hibshy Samsadin
@@ -42,4 +42,4 @@ We met a large group of elderly residents doing just this shortly after we arriv
 
 {% image "./src/assets/img/2020-12-08-houtouwan/10.jpg", "10", "(min-width: 30em) 50 vw, 100vw" %}
 
-*Originally written with Hibshy Samsadin on January 14th, 2018 for Clamp Magazine from a trip in late 2017.*
+*Originally written with Hibshy Samsadin on January 14th, 2018 for Clamp Magazine from a trip in late 2017. Published here on December 8th, 2020.* 

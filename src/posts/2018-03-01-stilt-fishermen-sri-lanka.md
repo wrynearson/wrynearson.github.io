@@ -1,7 +1,7 @@
 ---
 title: The Stilt Fishermen of Sri Lanka
 author: Will Rynearson
-date: 2018-03-02
+date: 2018-12-28
 tags: [Photography, Travel, Sri Lanka]
 description: Sri Lanka's Historic Tradition of Stilt Fishing
 image: "2018-03-01-stilt-fishermen-sri-lanka/7.jpg"
