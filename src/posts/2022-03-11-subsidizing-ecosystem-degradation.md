@@ -8,9 +8,9 @@ author: Will Rynearson
 
 ## Background
 
-The climate crisis is so difficult to grasp, yet alone solve, be cause it is *everything* and *everywhere*. Yet, it doesn't clearly present itself. We know that heatwaves, floods, droughts, and 928872398 terrible things are *made worse* by the climate crisis, but it's difficult to say that one event is *caused* by it.
+The climate crisis is so difficult to grasp, yet alone solve, be cause it is _everything_ and _everywhere_. Yet, it doesn't clearly present itself. We know that heatwaves, floods, droughts, and 928872398 terrible things are _made worse_ by the climate crisis, but it's difficult to say that one event is _caused_ by it.
 
-It's also difficult to get everyone to agree on *anything*, yet alone *everything*. Last I checked, we haven't come to an agreement on which god(s) to pray to, or none at all.
+It's also difficult to get everyone to agree on _anything_, yet alone _everything_. Last I checked, we haven't come to an agreement on which god(s) to pray to, or none at all.
 
 The [Two Percent More](https://www.sapienship.co/decision-makers/2-percent-more) campaign, recently discussed on the wonderful [Outrage and Optimism](https://www.outrageandoptimism.org/episodes/2-for-1-point-5-yuval-noah-harari?hsLang=en) podcast, states the solution clearly:
 
@@ -34,6 +34,6 @@ Instead of creating a cleaner, greener planet, we're subsidizing the destruction
 
 ## The Solution
 
-The solution is clear – stop subsidizing the harmful things and use that money to subsidize helpful things. Let's keep it simple and demand that polititians stop these harmful subsidies and instead invest 2% in the planet. 
+The solution is clear – stop subsidizing the harmful things and use that money to subsidize helpful things. Let's keep it simple and demand that polititians stop these harmful subsidies and instead invest 2% in the planet.
 
 I have used the term "we" because it is our (tax) money, and our planet.
