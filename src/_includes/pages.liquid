@@ -2,23 +2,35 @@
 layout: base.liquid
 ---
 
-<div class = "page_title">
-    {{ title }}
+<div class="page_title">
+  {{ title }}
 </div>
 
 <time>{{ date | date: "%Y" }}</time>
 
+<div class="overview-box">
+<div class="overview-section">
+  <h2 class="overview-title">Problem</h2>
+  <p class="overview-text">{{ problem }} </p>
+</div>
+<div class="overview-section">
+    <h2 class="overview-title">Solution</h2>
+   <p class="overview-text"> {{ solution }} </p>
+</div>
+</div>
+
 <div class="description">
-    {{ description }}
+  {{ description }}
+</div>
 </div>
 
 {{ content }}
 
 <footer>
-    <div class="footer_name">
-        —
-        <a href="{{ '/' | url }}">
-            Will
-        </a>
-    </div>
+  <div class="footer_name">
+    —
+    <a href="{{ '/' | url }}">
+      Will
+    </a>
+  </div>
 </footer>

@@ -1,13 +1,13 @@
 ---
 title: Will Rynearson
 layout: "base.liquid"
-description: Will Rynearson | Product Owner,  Sustainability Advocate, Outdoor Enthusiast
+description: Will Rynearson | Product Manager,  Sustainability Advocate, Outdoor Enthusiast
 ---
 
 <div class=about-me>
   I lead projects that are good for the planet.
   
-  I'm currently a <a href="https://www.scrum.org/resources/what-is-a-product-owner"> Product Owner</a> with <a href="https://developmentseed.org"> Development Seed</a>. Previously, I was a consultant for the United Nations, working on improving the <a href="{{ base.url }}/NEAT+"> environmental sustainability of humanitarian action</a>. 
+  I'm currently a <a href="https://en.wikipedia.org/wiki/Product_manager"> Product Manager</a> with <a href="https://developmentseed.org"> Development Seed</a>. Previously, I was a Project Analyst for the United Nations, working on improving the <a href="{{ base.url }}/NEAT+"> environmental sustainability of humanitarian action</a>. 
   
   In my free time, you can find me in the mountains or <a href="{{ base.url }}/portfolio">taking photos</a>. 
   

@@ -159,6 +159,27 @@ time {
   padding-bottom: 1em;
 }
 
+.overview-box {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.overview-section {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 50%;
+}
+
+.overview-title {
+  color: var(--underline-highlight-color);
+}
+
+.overview-text {
+  text-decoration: double;
+}
+
 .description {
   font-size: calc(var(--font-size) * 0.9);
   margin: 1em 1em 1em 1em;

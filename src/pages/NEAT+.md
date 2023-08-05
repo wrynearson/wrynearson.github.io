@@ -2,6 +2,8 @@
 title: Nexus Environmental Assessment Tool (NEAT+)
 date: 2022-03-12
 description: Free and open-source, the NEAT+ has been specifically designed for humanitarian actors to quickly identify issues of environmental concern to make emergency and recovery interventions more sustainable.
+problem: If humanitarians don't understand how the environment is impacting humanitarian crises, and how their action can impact the environment, they can do more harm than good.
+solution: Solution! Another solution!
 ---
 
 Humanitarian projects often prioritizes immediate action over longer term impacts. However, accounting for both is critical. The environment is vital to humanitarian action for [several reasons](https://www.unep.org/explore-topics/disasters-conflicts/what-we-do/preparedness-and-response/environmental):
@@ -14,11 +16,12 @@ It is difficult for humanitarians and those suffering from crises to fully and r
 
 ![NEAT+ Logo](../assets/img/neatplus/neat_logo_2.png)
 
-The [NEAT+](www.neatplus.org) helps humanitarians to quickly screen for and identifiy issues of environmental concern. Through easy-to-understand questions, and standardized responses, the NEAT+ turns abiguity into clarity by presenting a ranked list of *environmental sensitivities* (risks to look out for) and related *mitigations* (how to minimize the risk) and *opportunities* (long-term net-positive solutions).
+The [NEAT+](www.neatplus.org) helps humanitarians to quickly screen for and identifiy issues of environmental concern. Through easy-to-understand questions, and standardized responses, the NEAT+ turns abiguity into clarity by presenting a ranked list of _environmental sensitivities_ (risks to look out for) and related _mitigations_ (how to minimize the risk) and _opportunities_ (long-term net-positive solutions).
 
 ![Urban NEAT+ Homepage](/assets/img/neatplus/neat_home.png)
 
 I work on all aspects of the NEAT+, in collaboration with technical and environmental experts. Currently, it exists in two formats:
+
 1. The [Rural NEAT+](https://www.eecentre.org/neat) (built in 2018 with [The Joint Initiative](https://eecentre.org/2017/01/01/the-joint-initiative/)), using Excel and [KoboToolbox](https://www.kobotoolbox.org/).
 2. The [Urban NEAT+](https://www.neatplus.org), which uses a custom Python/Django web application (not coded by me).
 
