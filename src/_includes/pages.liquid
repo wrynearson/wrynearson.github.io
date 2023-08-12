@@ -8,19 +8,19 @@ layout: base.liquid
 
 <time>{{ date | date: "%Y" }}</time>
 
-<div class="overview-box">
-<div class="overview-section">
-  <h2 class="overview-title">Problem</h2>
-  <p class="overview-text">{{ problem }} </p>
-</div>
-<div class="overview-section">
-    <h2 class="overview-title">Solution</h2>
-   <p class="overview-text"> {{ solution }} </p>
-</div>
-</div>
-
 <div class="description">
   {{ description }}
+</div>
+
+<div class="overview-box">
+  <div class="overview-section">
+    <h2 class="overview-title">Problem</h2>
+    <p class="overview-text">{{ problem }} </p>
+  </div>
+  <div class="overview-section">
+      <h2 class="overview-title">Outcome</h2>
+    <p class="overview-text"> {{ outcome }} </p>
+  </div>
 </div>
 </div>
 
