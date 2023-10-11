@@ -243,7 +243,7 @@ blockquote {
 
 .page-separator {
   border: 0.5px solid;
-  margin: 2rem;
+  margin: 3rem;
 }
 
 @media (prefers-color-scheme: dark) {
