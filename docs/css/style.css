@@ -6,7 +6,7 @@
   box-sizing: border-box;
 
   /* set for dark theme*/
-  background: rgb(255, 255, 255);
+  background: #fefaef;
 }
 
 :root {
@@ -29,11 +29,11 @@
   --content-title-size: 18px;
   --content-title-padding-top: 0.25em;
   /* Link decoration */
-  --underline-color: #cec4e6;
-  --underline-highlight-color: #4400ff;
+  --underline-color: #fee69f;
+  --underline-highlight-color: #fdd45b;
   --line-type: underline;
-  --line-thickness: 10%;
-  --active-line-thickness: 15%;
+  --line-thickness: 7%;
+  --active-line-thickness: 10%;
   /* Animation (link, background, etc. */
   --animation-duration: 0.3s;
   --animation-fill-mode: both;
@@ -243,13 +243,13 @@ blockquote {
 
 @media (prefers-color-scheme: dark) {
   * {
-    --dark-text-color: #eee;
-    background: #1a1a1a;
+    --dark-text-color: #fdf6e1;
+    background: #040300;
     --heading-color: var(--dark-text-color);
     --body-color: var(--dark-text-color);
   }
   * a {
     color: var(--dark-text-color);
-    --underline-color: rgb(141, 141, 141);
+    --underline-color: #6b5b25;
   }
 }
