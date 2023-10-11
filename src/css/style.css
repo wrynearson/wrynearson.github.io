@@ -241,6 +241,11 @@ blockquote {
   position: relative;
 }
 
+.page-separator {
+  border: 0.5px solid;
+  margin: 2rem;
+}
+
 @media (prefers-color-scheme: dark) {
   * {
     --dark-text-color: #fdf6e1;
