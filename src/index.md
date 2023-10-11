@@ -27,7 +27,7 @@ description: Will Rynearson | Product Manager,  Sustainability Advocate, Outdoor
 
 ## Projects
 
-{% for post in collections.pages reversed %}
+{% for post in collections.pages %}
 <a href="{{ post.url }}">
 
 <div class="project-title">

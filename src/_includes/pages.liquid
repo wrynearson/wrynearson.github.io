@@ -6,7 +6,7 @@ layout: base.liquid
   {{ title }}
 </div>
 
-<time>{{ date | date: "%Y" }}</time>
+<time>{{ start-date | date: "%Y" }} – {{ end-date | date: "%Y" }}</time>
 
 <div class="description">
   {{ description }}
