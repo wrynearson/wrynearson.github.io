@@ -31,4 +31,4 @@ People can be added by clicking on the map or uploading a .csv, and can be group
 
 Hopefully we can improve the tool's accuracy in the future, and incorporate train and bus travel to discourage unnecessary flights.
 
-Learn more from this [blog post](https://developmentseed.org/blog/2023-10-11-co2ordinate).
+Learn more from [this blog post](https://developmentseed.org/blog/2023-10-11-co2ordinate).
