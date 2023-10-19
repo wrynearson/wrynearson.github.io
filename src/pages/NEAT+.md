@@ -1,6 +1,6 @@
 ---
 title: Nexus Environmental Assessment Tool (NEAT+)
-start-date: 2021-04-01
+date: 2021-04-01
 end-date: 2022-03-12
 url: https://www.neatplus.org
 description: Bringing environmental insights to humanitarian action.

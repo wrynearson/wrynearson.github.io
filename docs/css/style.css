@@ -136,6 +136,7 @@ main {
   font-weight: var(--body-font-weight);
   padding-top: var(--content-title-padding-top);
   color: var(--heading-color);
+  list-style: none;
 }
 
 .project-title {
