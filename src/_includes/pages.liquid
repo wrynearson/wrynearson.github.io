@@ -15,24 +15,31 @@ layout: base.liquid
 <div class="overview-box">
   <div class="overview-section">
     <h2 class="overview-title">Problem</h2>
-    <p class="overview-text">{{ problem }} </p>
+    <p class="overview-text">{{ problem }}</p>
   </div>
   <div class="overview-section">
-      <h2 class="overview-title">Outcome</h2>
-    <p class="overview-text"> {{ outcome }} </p>
+    <h2 class="overview-title">Outcome</h2>
+    <p class="overview-text">
+      {{ outcome }}
+    </p>
   </div>
 </div>
+<hr class="page-separator" />
+<div class="content">
+  {{ content }}
 </div>
-
-<hr class="page-separator"/>
-
-{{ content }}
-
-<footer>
-  <div class="footer_name">
+<footer class="footer">
+  <div class="name_link">
     —
     <a href="{{ '/' | url }}">
       Will
     </a>
+  </div>
+  <div class="stats">
+    {% comment %} reference: https://www.npmjs.com/package/@vidhill/fortawesome-free-regular-11ty-shortcode {% endcomment %}
+    <div class="words">
+      {% fortawesomeRegular 'edit' %}
+      {{ words.words }} words
+    </div>
   </div>
 </footer>

@@ -1,3 +1,7 @@
+const {
+  fortawesomeFreeRegularPlugin,
+} = require("@vidhill/fortawesome-free-regular-11ty-shortcode");
+
 const Image = require("@11ty/eleventy-img");
 
 async function imageShortcode(src, alt, sizes) {
@@ -50,6 +54,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addLiquidShortcode("image", imageShortcode);
   // Copy `img/favicon/` to `_site/`
   eleventyConfig.addPassthroughCopy({ "./src/favicon": "/" });
+  eleventyConfig.addPlugin(fortawesomeFreeRegularPlugin);
 
   return {
     dir: {

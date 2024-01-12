@@ -225,14 +225,43 @@ img {
   display: block;
 }
 
-.footer_name {
+.footer {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
   font-family: var(--font-family);
   font-size: var(--font-size);
-  font-weight: var(--title-font-weight);
-  margin: var(--margin);
-  padding-top: 1em;
-  padding-bottom: 1em;
-  color: var(--heading-color);
+  font-weight: var(--body-font-weight);
+  max-height: 2rem;
+}
+
+.name_link {
+  flex-grow: 1;
+}
+
+.stats {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row-reverse;
+  flex: 2;
+  gap: 2rem;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.words {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  flex: 1 1 auto;
+  max-height: 1rem;
+  justify-content: flex-end;
+}
+
+.stats .svg-inline--fa {
+  max-height: 1rem;
+  margin: 0.5rem;
 }
 
 blockquote {

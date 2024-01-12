@@ -2,23 +2,32 @@
 layout: base.liquid
 ---
 
-<div class = "page_title">
-    {{ title }}
+<div class="page_title">
+  {{ title }}
 </div>
 
 <time>{{ date | date: "%B, %Y" }}</time>
 
 <div class="description">
-    {{ description }}
+  {{ description }}
 </div>
 
-{{ content }}
+<div class="content">
+  {{ content }}
+</div>
 
-<footer>
-    <div class="footer_name">
-        —
-        <a href="{{ '/' | url }}">
-            Will
-        </a>
+<footer class="footer">
+  <div class="name_link">
+    —
+    <a href="{{ '/' | url }}">
+      Will
+    </a>
+  </div>
+  <div class="stats">
+    {% comment %} reference: https://www.npmjs.com/package/@vidhill/fortawesome-free-regular-11ty-shortcode {% endcomment %}
+    <div class="words">
+      {% fortawesomeRegular 'edit' %}
+      {{ words.words }} words
     </div>
+  </div>
 </footer>
