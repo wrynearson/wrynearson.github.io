@@ -1,2 +1,0 @@
-name: Fetch Words
-run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
