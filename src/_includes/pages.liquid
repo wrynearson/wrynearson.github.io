@@ -38,8 +38,11 @@ layout: base.liquid
   <div class="stats">
     {% comment %} reference: https://www.npmjs.com/package/@vidhill/fortawesome-free-regular-11ty-shortcode {% endcomment %}
     <div class="words">
-      {% fortawesomeRegular 'edit' %}
-      {{ words.words }} words
+        {% fortawesomeRegular 'edit' %}
+          <p title="I've written {{words.words}} words of notes in {{words.year}} as of {{words.calculated}}">
+            {{ words.words }} words
+          </p>
+      </div>
     </div>
   </div>
 </footer>
