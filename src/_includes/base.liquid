@@ -10,6 +10,8 @@
     <!-- suggest to search engines to "crawl" the site,and the links within (and that I endorse them) However, no "robots" directive = index & endorse -->
     <meta name=”robots” content="index, follow">
     <link rel="stylesheet" href="{{ '/css/style.css' | url }}">
+    {% comment %} <link href="https://raw.githubusercontent.com/PrismJS/prism-themes/master/themes/prism-duotone-earth.css" rel="stylesheet"> {% endcomment %}
+  {% comment %} https://www.11ty.dev/docs/plugins/syntaxhighlight/ {% endcomment %}
   </head>
   <body>
     <div class="site_title">
@@ -19,6 +21,7 @@
         </div>
       </a>
     </div>
+    <script src="prism.js"></script>
     <main>
       {{ content }}
     </main>

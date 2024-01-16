@@ -4,6 +4,8 @@ const {
 
 const Image = require("@11ty/eleventy-img");
 
+const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
+
 async function imageShortcode(src, alt, sizes) {
   let metadata = await Image(src, {
     widths: [1100],
@@ -55,6 +57,7 @@ module.exports = function (eleventyConfig) {
   // Copy `img/favicon/` to `_site/`
   eleventyConfig.addPassthroughCopy({ "./src/favicon": "/" });
   eleventyConfig.addPlugin(fortawesomeFreeRegularPlugin);
+  eleventyConfig.addPlugin(syntaxHighlight);
 
   return {
     dir: {

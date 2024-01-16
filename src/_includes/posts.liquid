@@ -24,12 +24,15 @@ layout: base.liquid
     </a>
   </div>
   <div class="stats">
-    {% comment %} reference: https://www.npmjs.com/package/@vidhill/fortawesome-free-regular-11ty-shortcode {% endcomment %}
-    <div class="words">
-      {% fortawesomeRegular 'edit' %}
-      <p title="I've written {{words.words}} words of notes in {{words.year}} as of {{words.calculated}}">
+  {% comment %} reference: https://www.npmjs.com/package/@vidhill/fortawesome-free-regular-11ty-shortcode {% endcomment %}
+  <div class="words">
+    {% fortawesomeRegular 'edit' %}
+    <a href="{{ '/words' | url }}">
+      <p title="I've written {{words.words}} words worth of notes in {{words.year}}, as of {{words.calculated}}">
         {{ words.words }} words
-      </p>
+        </p>
+        </a>
     </div>
+  </div>
   </div>
 </footer>
