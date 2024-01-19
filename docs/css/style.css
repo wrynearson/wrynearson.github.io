@@ -339,7 +339,7 @@ pre[class*="language-"] ::-moz-selection,
 code[class*="language-"]::-moz-selection,
 code[class*="language-"] ::-moz-selection {
   text-shadow: none;
-  /* background: #6f5849; */
+  background: #6f5849;
 }
 
 pre[class*="language-"]::selection,
@@ -347,7 +347,7 @@ pre[class*="language-"] ::selection,
 code[class*="language-"]::selection,
 code[class*="language-"] ::selection {
   text-shadow: none;
-  /* background: #6f5849; */
+  background: #6f5849;
 }
 
 /* Code blocks */
