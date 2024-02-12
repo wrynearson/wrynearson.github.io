@@ -9,6 +9,13 @@
   background: #fefaef;
 }
 
+.reveal section img {
+  border: none;
+  box-shadow: none;
+  max-height: calc(66vh);
+  max-width: calc(66vw);
+}
+
 :root {
   /* Font family, size, weight, color */
   --font-family: helvetica, sans-serif;
@@ -482,4 +489,13 @@ pre > code.highlight {
     rgba(191, 160, 90, 0.2) 70%,
     rgba(191, 160, 90, 0)
   );
+}
+
+.slides {
+  overflow: scroll !important;
+  pointer-events: auto !important;
+}
+
+#reveal.image present {
+  background: red;
 }

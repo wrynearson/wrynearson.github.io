@@ -1,0 +1,5 @@
+{
+  "layout": "reveal-layout.liquid",
+  "permalink": "{{ page.fileSlug }}/",
+  "tags": "presentation"
+}

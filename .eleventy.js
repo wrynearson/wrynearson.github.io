@@ -8,16 +8,16 @@ const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 
 async function imageShortcode(src, alt, sizes) {
   let metadata = await Image(src, {
-    widths: [1100],
-    formats: ["webp", "jpeg", "svg"],
+    widths: [650, 1100],
+    formats: ["webp", "svg"],
     outputDir: "./docs/img/",
     /* change the quality of the webp and jpeg images */
     sharpWebpOptions: {
-      quality: 80,
+      quality: 85,
       smartSubsample: true,
     },
     sharpJpegOptions: {
-      quality: 80,
+      quality: 85,
       smartSubsample: true,
     },
     /* allows for animated GIFs, from https://www.11ty.dev/docs/plugins/image/#output-animated-gif-or-webp-with-sharp */
@@ -58,11 +58,15 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({ "./src/favicon": "/" });
   eleventyConfig.addPlugin(fortawesomeFreeRegularPlugin);
   eleventyConfig.addPlugin(syntaxHighlight);
+  eleventyConfig.addPassthroughCopy({
+    "node_modules/reveal.js/dist": "reveal.js",
+  });
 
   return {
     dir: {
       input: "src",
       output: "docs",
+      includes: "_includes",
     },
   };
 };
