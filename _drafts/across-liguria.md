@@ -1,9 +1,8 @@
 ---
 title: Across Liguria
-date: 2021-09-XX
+date: 2021-09-01
 tags: [Bike, Trip Report]
-description: 
+description:
 image: ""
 author: Will Rynearson, Francesco Cambi
 ---
-
