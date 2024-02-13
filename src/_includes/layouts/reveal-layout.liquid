@@ -17,9 +17,18 @@
 
     <script src="/reveal.js/reveal.js"></script>
     <script>
-        Reveal.initialize();
-        // Any additional Reveal.js configuration here
-            plugins: [ RevealMarkdown ]
+        Reveal.initialize({
+            slideNumber: true,
+            autoSlide: 15000,
+            height: 900
+        });
     </script>
+    <script src="plugin/markdown/markdown.js"></script>
+    <script>
+      Reveal.initialize({
+        plugins: [ RevealMarkdown ]
+      });
+    </script>
+
   </body>
 </html>

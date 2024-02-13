@@ -8,7 +8,7 @@ const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 
 async function imageShortcode(src, alt, sizes) {
   let metadata = await Image(src, {
-    widths: [650, 1100],
+    widths: [600, 1100],
     formats: ["webp", "svg"],
     outputDir: "./docs/img/",
     /* change the quality of the webp and jpeg images */
