@@ -1,6 +1,6 @@
 ---
 layout: layouts/reveal-layout.liquid
-title: "DS Ignite 2024"
+title: "te DS Ignite 2024"
 ---
 
 <section>
