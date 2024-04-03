@@ -57,8 +57,8 @@ title: "Happy Birthday!"
 <section>
 <p class="r-fit-text"> Here are 30 vouchers that:</p>
 <ol>
-<li class="r-fit-text"> Bring you back to your youth </li>
-<li class="r-fit-text"> Reduce the responsibilities you'll have in your 30s </li>
+<li> Bring you back to your youth </li>
+<li> Reduce the responsibilities you'll have in your 30s </li>
 </ol>
 
 </section>
