@@ -18,10 +18,10 @@
 
 :root {
   /* Font family, size, weight, color */
-  --font-family: helvetica, sans-serif;
+  --font-family: helvetica-light, sans-serif;
   --font-size: 1.25rem;
-  --title-font-weight: 400;
-  --body-font-weight: 300;
+  --title-font-weight: 500;
+  --body-font-weight: 200;
   --heading-color: rgb(0, 0, 0);
   --body-color: rgb(0, 0, 0);
   --line-height: 1.4em;
