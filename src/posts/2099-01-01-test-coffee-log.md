@@ -9,23 +9,23 @@ image:
 
 ## Beans
 
-<table>
-  <thead>
-  <tr>
-    <th scope="col">Bean</th>
-    <th scope="col">Country</th>
-    <th scope="col">Process</th>
-    <th scope="col">Roast Level</th>
+<table class="table">
+  <thead class="table-head">
+  <tr class="table-row-head">
+    <th class="cell">Bean</th>
+    <th class="cell">Country</th>
+    <th class="cell">Process</th>
+    <th class="cell">Roast Level</th>
     </tr>
    </thead>
 
     <tbody>
     {% for meta in beans %}
-        <tr>
-            <td>{{meta.internal_name}}</td>
-            <td>{{meta.producing_country}}</td>
-            <td>{{meta.process}}</td>
-            <td>{{meta.roast_level}}</td>
+        <tr class="table-row">
+            <td class="cell">{{meta.internal_name}}</td>
+            <td class="cell">{{meta.producing_country}}</td>
+            <td class="cell">{{meta.process}}</td>
+            <td class="cell">{{meta.roast_level}}</td>
         </tr>
     {% endfor %}
     </tbody>
