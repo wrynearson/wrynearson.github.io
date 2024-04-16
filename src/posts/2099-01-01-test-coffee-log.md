@@ -12,14 +12,14 @@ image:
 <table class="table">
   <thead class="table-head">
   <tr class="table-row-head">
-    <th class="cell">Bean</th>
+    <th class="cell">Coffee</th>
     <th class="cell">Country</th>
     <th class="cell">Process</th>
     <th class="cell">Roast Level</th>
     </tr>
    </thead>
 
-    <tbody>
+    <tbody class="table-head">
     {% for meta in beans %}
         <tr class="table-row">
             <td class="cell">{{meta.internal_name}}</td>
@@ -34,25 +34,25 @@ image:
 
 ## Brews
 
-<table>
-  <thead>
-  <tr>
-    <th scope="col">Date</th>
-    <th scope="col">Beans</th>
-    <th scope="col">Type</th>
-    <th scope="col">Notes</th>
+<table class="table">
+  <thead class="table-head">
+  <tr class="table-row-head">
+    <th class="cell">Date</th>
+    <th class="cell">Coffee</th>
+    <th class="cell">Preparation</th>
+    <th class="cell">Notes</th>
     </tr>
    </thead>
 
-    <tbody>
+  <tbody class="table-head">
     {% for meta in brews %}
-        <tr>
-            <td>{{meta.date}}</td>
-            <td>{{meta.beans}}</td>
-            <td>{{meta.type}}</td>
-            <td>{{meta.notes}}</td>
+        <tr class="table-row">
+            <td class="cell">{{meta.date}}</td>
+            <td class="cell">{{meta.beans}}</td>
+            <td class="cell">{{meta.type}}</td>
+            <td class="cell">{{meta.notes}}</td>
         </tr>
     {% endfor %}
-    </tbody>
+  </tbody>
 
 </table>
