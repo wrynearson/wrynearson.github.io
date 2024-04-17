@@ -511,13 +511,23 @@ pre > code.highlight {
 }
 
 .table-row-head {
+  display: table-row;
   color: red;
   bottom: 2rem;
   line-height: 3rem;
 }
 
+.table-body {
+  display: table-row-group;
+}
+
 .table-row {
+  display: table-row;
   color: rgb(166, 83, 83);
   bottom: 2rem;
   line-height: 2rem;
+}
+
+.cell {
+  display: table-cell;
 }

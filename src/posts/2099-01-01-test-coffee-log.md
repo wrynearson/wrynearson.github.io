@@ -19,7 +19,7 @@ image:
     </tr>
    </thead>
 
-    <tbody class="table-head">
+    <tbody class="table-body">
     {% for meta in beans %}
         <tr class="table-row">
             <td class="cell">{{meta.internal_name}}</td>
@@ -44,7 +44,7 @@ image:
     </tr>
    </thead>
 
-  <tbody class="table-head">
+  <tbody class="table-body">
     {% for meta in brews %}
         <tr class="table-row">
             <td class="cell">{{meta.date}}</td>
@@ -53,6 +53,33 @@ image:
             <td class="cell">{{meta.notes}}</td>
         </tr>
     {% endfor %}
+  </tbody>
+
+</table>
+
+## Fetched Coffee
+
+<table class="table">
+  <thead class="table-head">
+  <tr class="table-row-head">
+    <th class="cell">Coffee</th>
+    <th class="cell">Preparation</th>
+    <th class="cell">Notes</th>
+    <th class="cell">Comments</th>
+    </tr>
+   </thead>
+
+  <tbody class="table-body">
+  <!-- coffee is the .js file, and brewing is the object it returns -->
+    {% for meta in coffee.brewing %}
+        <tr class="table-row">
+        <td class="cell">{{meta.Coffee}}</td>
+        <td class="cell">{{meta.Type}}</td>
+        <td class="cell">{{meta.Notes}}</td>
+        <td class="cell">{{meta.Comments}}</td>
+        </tr>
+    {% endfor %}
+
   </tbody>
 
 </table>
