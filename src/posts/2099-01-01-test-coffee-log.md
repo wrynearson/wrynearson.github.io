@@ -7,32 +7,7 @@ author: Will Rynearson
 image:
 ---
 
-## Beans
-
-<table class="table">
-  <thead class="table-head">
-  <tr class="table-row-head">
-    <th class="cell">Coffee</th>
-    <th class="cell">Country</th>
-    <th class="cell">Process</th>
-    <th class="cell">Roast Level</th>
-    </tr>
-   </thead>
-
-    <tbody class="table-body">
-    {% for meta in beans %}
-        <tr class="table-row">
-            <td class="cell">{{meta.internal_name}}</td>
-            <td class="cell">{{meta.producing_country}}</td>
-            <td class="cell">{{meta.process}}</td>
-            <td class="cell">{{meta.roast_level}}</td>
-        </tr>
-    {% endfor %}
-    </tbody>
-
-</table>
-
-## Brews
+## Old Brews
 
 <table class="table">
   <thead class="table-head">
@@ -53,33 +28,6 @@ image:
             <td class="cell">{{meta.notes}}</td>
         </tr>
     {% endfor %}
-  </tbody>
-
-</table>
-
-## Fetched Beans
-
-<table class="table">
-  <thead class="table-head">
-  <tr class="table-row-head">
-    <th class="cell">Real Name</th>
-    <th class="cell">Min Altitude</th>
-    <th class="cell">Max Altitude</th>
-    <th class="cell">Roast Level</th>
-    </tr>
-   </thead>
-
-  <tbody class="table-body">
-  <!-- coffee is the .js file, and brewing is the object it returns -->
-    {% for meta in coffee.beans %}
-        <tr class="table-row">
-        <td class="cell">{{meta.real_name}}</td>
-        <td class="cell">{{meta.alt_min}}</td>
-        <td class="cell">{{meta.alt_max}}</td>
-        <td class="cell">{{meta.roast_level}}</td>
-        </tr>
-    {% endfor %}
-
   </tbody>
 
 </table>
@@ -108,3 +56,48 @@ image:
   </tbody>
 
 </table>
+
+## Fetched Beans
+
+<table class="table">
+  <thead class="table-head">
+  <tr class="table-row-head">
+    <th class="cell">Real Name</th>
+    <th class="cell">Min Altitude</th>
+    <th class="cell">Max Altitude</th>
+    <th class="cell">Roast Level</th>
+    <th class="cell">Archived</th>
+    </tr>
+   </thead>
+
+  <tbody class="table-body">
+  <!-- coffee is the .js file, and brewing is the object it returns -->
+    {% for meta in coffee.beans %}
+      {% if meta.archived == true %}
+      
+      <tr class="table-row">
+        <td class="cell"><em>{{meta.real_name}}</em></td>
+        <td class="cell">{{meta.alt_min}}</td>
+        <td class="cell">{{meta.alt_max}}</td>
+        <td class="cell">{{meta.roast_level}}</td>
+        <td class="cell">{{meta.archived}}</td>
+      </tr>
+
+      {% else %}
+
+      <tr class="table-row">
+        <td class="cell">{{meta.real_name}}</td>
+        <td class="cell">{{meta.alt_min}}</td>
+        <td class="cell">{{meta.alt_max}}</td>
+        <td class="cell">{{meta.roast_level}}</td>
+        <td class="cell">{{meta.archived}}</td>
+      </tr>
+
+      {% endif %}
+    {% endfor %}
+
+  </tbody>
+
+</table>
+
+Hi
