@@ -99,8 +99,8 @@ image:
   <tbody class="table-body">
     {% for meta in coffee.brews %}
         <tr class="table-row">
-            <td class="cell">{{meta.Zeitstempel}}</td>
-            <td class="cell">{{meta.Coffee}}</td>
+            <td class="cell">{{ meta.Zeitstempe | readableDate }}</td>
+            <td class="cell">{{meta.bean}}</td>
             <td class="cell">{{meta.Type}}</td>
             <td class="cell">{{meta.Notes}}</td>
         </tr>

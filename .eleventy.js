@@ -47,6 +47,10 @@ async function imageShortcode(src, alt, sizes) {
   });
 }
 
+const moment = require("moment");
+
+const { DateTime } = require("luxon");
+
 module.exports = function (eleventyConfig) {
   eleventyConfig.setTemplateFormats(["md", "img", "png", "jpg", "svg", "gif"]);
 
@@ -58,6 +62,11 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({ "./src/favicon": "/" });
   eleventyConfig.addPlugin(fortawesomeFreeRegularPlugin);
   eleventyConfig.addPlugin(syntaxHighlight);
+
+  eleventyConfig.addFilter("readableDate", (dateObj) => {
+    return DateTime.fromISO(dateObj).year;
+  });
+
   eleventyConfig.addPassthroughCopy({
     "node_modules/reveal.js/dist": "reveal.js",
   });
