@@ -64,7 +64,9 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(syntaxHighlight);
 
   eleventyConfig.addFilter("readableDate", (dateObj) => {
-    return DateTime.fromISO(dateObj).year;
+    return DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat(
+      "dd LLL yyyy"
+    );
   });
 
   eleventyConfig.addPassthroughCopy({
