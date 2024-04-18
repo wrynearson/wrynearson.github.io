@@ -7,15 +7,26 @@ module.exports = async function () {
 
   try {
     let json = await EleventyFetch(
-      "https://script.google.com/macros/s/AKfycbzSsNhjl4VYWe9KLH5lUFNlGOu4yy1yyRire5PF_CUp3fMI8GBYUdqKsedShzGV4pjF/exec",
+      "https://script.google.com/macros/s/AKfycbz6Ts5iMeBOknsiJVS6wb9F03pBqwgkXVgSbzYJioMzomUdLO2_o7RRaeznjsmzYumb/exec",
       {
-        duration: "1d",
+        duration: "0s",
         type: "json",
         // this fetches the text from the AppsScript deployment and caches it for a day. The text is converted to a json.
       }
     );
+    console.log(
+      "The first real name of the fetched beans is: ",
+      json.beans[0].real_name
+    );
+
+    console.log(
+      "The first real brew of the fetched brews was on: ",
+      json.brews[0].Zeitstempel
+    );
+
     return {
-      brewing: json,
+      beans: json.beans,
+      brews: json.brews,
     };
   } catch (e) {
     console.log("Failed to do something:", e);
