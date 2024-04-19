@@ -1,0 +1,15 @@
+---
+pagination:
+  data: coffee.beans
+  size: 1
+  alias: bean
+permalink: '/beans/{{ bean.id }}/index.html'
+layout: base
+---
+<p>
+  Bean: {{ bean.real_name }}
+</p>
+
+<p>
+  ID: {{ bean.id }}
+</p>

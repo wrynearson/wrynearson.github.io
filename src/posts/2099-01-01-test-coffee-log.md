@@ -7,32 +7,9 @@ author: Will Rynearson
 image:
 ---
 
-## Old Brews
-
-<table class="table">
-  <thead class="table-head">
-  <tr class="table-row-head">
-    <th class="cell">Date</th>
-    <th class="cell">Coffee</th>
-    <th class="cell">Preparation</th>
-    <th class="cell">Notes</th>
-    </tr>
-   </thead>
-
-  <tbody class="table-body">
-    {% for meta in brews_old %}
-        <tr class="table-row">
-            <td class="cell">{{meta.date}}</td>
-            <td class="cell">{{meta.beans}}</td>
-            <td class="cell">{{meta.type}}</td>
-            <td class="cell">{{meta.notes}}</td>
-        </tr>
-    {% endfor %}
-  </tbody>
-
-</table>
-
 ## Fetched Brews
+
+### New
 
 <table class="table">
   <thead class="table-head">
@@ -47,10 +24,35 @@ image:
   <tbody class="table-body">
     {% for meta in coffee.brews %}
         <tr class="table-row">
-            <td class="cell"><time>{{ meta.Zeitstempe | readableDate }}</time></td>
+            <td class="cell"><time>{{ meta.date | dateFormat }}</time></td>
             <td class="cell">{{meta.bean}}</td>
-            <td class="cell">{{meta.Type}}</td>
-            <td class="cell">{{meta.Notes}}</td>
+            <td class="cell">{{meta.type}}</td>
+            <td class="cell">{{meta.notes}}</td>
+        </tr>
+    {% endfor %}
+  </tbody>
+
+</table>
+
+### Old
+
+<table class="table">
+  <thead class="table-head">
+  <tr class="table-row-head">
+    <th class="cell">Date</th>
+    <th class="cell">Coffee</th>
+    <th class="cell">Preparation</th>
+    <th class="cell">Notes</th>
+    </tr>
+   </thead>
+
+  <tbody class="table-body">
+    {% for meta in coffee.brews_old %}
+        <tr class="table-row">
+            <td class="cell"><time>{{ meta.date | dateFormat }}</time></td>
+            <td class="cell">{{meta.bean}}</td>
+            <td class="cell">{{meta.type}}</td>
+            <td class="cell">{{meta.notes}}</td>
         </tr>
     {% endfor %}
   </tbody>
@@ -71,12 +73,13 @@ image:
    </thead>
 
   <tbody class="table-body">
+  
   <!-- coffee is the .js file, and brewing is the object it returns -->
     {% for meta in coffee.beans %}
       {% if meta.archived == true %}
       
       <tr class="table-row">
-        <td class="cell"><em>{{meta.real_name}}</em></td>
+        <td class="cell"><{{meta.real_name}}</td>
         <td class="cell">{{meta.alt_min}}</td>
         <td class="cell">{{meta.alt_max}}</td>
         <td class="cell">{{meta.roast_level}}</td>
@@ -87,6 +90,7 @@ image:
 
       <tr class="table-row">
         <td class="cell">{{meta.real_name}}</td>
+        <td class="cell">{{meta.id}}</td>
         <td class="cell">{{meta.alt_min}}</td>
         <td class="cell">{{meta.alt_max}}</td>
         <td class="cell">{{meta.roast_level}}</td>

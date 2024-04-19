@@ -49,10 +49,16 @@ async function imageShortcode(src, alt, sizes) {
 
 const moment = require("moment");
 
-const { DateTime } = require("luxon");
-
 module.exports = function (eleventyConfig) {
-  eleventyConfig.setTemplateFormats(["md", "img", "png", "jpg", "svg", "gif"]);
+  eleventyConfig.setTemplateFormats([
+    "md",
+    "img",
+    "png",
+    "jpg",
+    "svg",
+    "gif",
+    "liquid",
+  ]);
 
   eleventyConfig.addPassthroughCopy("./src/css/");
   eleventyConfig.addWatchTarget("./src/css/");
@@ -63,10 +69,12 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(fortawesomeFreeRegularPlugin);
   eleventyConfig.addPlugin(syntaxHighlight);
 
-  eleventyConfig.addFilter("readableDate", (dateObj) => {
-    return DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat(
-      "dd LLL yyyy"
-    );
+  eleventyConfig.addFilter("dateFormat", async function (date) {
+    return moment(date).format("MMMM Do, YYYY");
+  });
+
+  eleventyConfig.addFilter("jsonify", function (value) {
+    return JSON.stringify(value, null, 2); // Indent with 2 spaces for readability
   });
 
   eleventyConfig.addPassthroughCopy({
@@ -78,6 +86,7 @@ module.exports = function (eleventyConfig) {
       input: "src",
       output: "docs",
       includes: "_includes",
+      data: "_data",
     },
   };
 };
