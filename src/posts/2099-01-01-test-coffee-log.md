@@ -5,6 +5,7 @@ tags: [Coding, Projects]
 description:
 author: Will Rynearson
 image:
+permalink: "/coffee/"
 ---
 
 ## Fetched Brews
@@ -13,7 +14,7 @@ image:
 
 <table class="table">
   <thead class="table-head">
-  <tr class="table-row-head">
+  <tr class="table-head">
     <th class="cell">Date</th>
     <th class="cell">Coffee</th>
     <th class="cell">Preparation</th>
@@ -50,7 +51,7 @@ image:
     {% for meta in coffee.brews_old %}
         <tr class="table-row">
             <td class="cell"><time>{{ meta.date | dateFormat }}</time></td>
-            <td class="cell">{{meta.bean}}</td>
+            <td class="cell"><a href="/beans/{{meta.id}}">{{meta.bean}}</a></td>
             <td class="cell">{{meta.type}}</td>
             <td class="cell">{{meta.notes}}</td>
         </tr>
@@ -59,49 +60,4 @@ image:
 
 </table>
 
-## Fetched Beans
-
-<table class="table">
-  <thead class="table-head">
-  <tr class="table-row-head">
-    <th class="cell">Real Name</th>
-    <th class="cell">Min Altitude</th>
-    <th class="cell">Max Altitude</th>
-    <th class="cell">Roast Level</th>
-    <th class="cell">Archived</th>
-    </tr>
-   </thead>
-
-  <tbody class="table-body">
-  
-  <!-- coffee is the .js file, and brewing is the object it returns -->
-    {% for meta in coffee.beans %}
-      {% if meta.archived == true %}
-      
-      <tr class="table-row">
-        <td class="cell"><{{meta.real_name}}</td>
-        <td class="cell">{{meta.alt_min}}</td>
-        <td class="cell">{{meta.alt_max}}</td>
-        <td class="cell">{{meta.roast_level}}</td>
-        <td class="cell">{{meta.archived}}</td>
-      </tr>
-
-      {% else %}
-
-      <tr class="table-row">
-        <td class="cell">{{meta.real_name}}</td>
-        <td class="cell">{{meta.id}}</td>
-        <td class="cell">{{meta.alt_min}}</td>
-        <td class="cell">{{meta.alt_max}}</td>
-        <td class="cell">{{meta.roast_level}}</td>
-        <td class="cell">{{meta.archived}}</td>
-      </tr>
-
-      {% endif %}
-    {% endfor %}
-
-  </tbody>
-
-</table>
-
-Hi
+<br>

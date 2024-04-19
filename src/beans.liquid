@@ -6,10 +6,89 @@ pagination:
 permalink: '/beans/{{ bean.id }}/index.html'
 layout: base
 ---
-<p>
-  Bean: {{ bean.real_name }}
-</p>
 
-<p>
-  ID: {{ bean.id }}
-</p>
+<table class="table">
+  <tbody class="table-body">
+    <tr class="table-row">
+      <th class="table-head">Real Name</th>
+      <td class="cell"><a href="{{bean.bean_link}}">{{bean.real_name}}</td>
+    </tr>
+    <tr class="table-row">
+      <th class="table-head">Producing Country</th>
+      <td class="cell">{{bean.producing_country}}</td>
+      </tr>
+    <tr class="table-row">
+      <th class="table-head">Location</th>
+      <td class="cell">{{bean.producing_location}}</td>
+    </tr>
+    <tr class="table-row">
+      <th class="table-head">Altitude</th>
+      {% if bean.alt_min == bean.alt_max %}
+      <td class="cell">{{bean.alt_min}}m</td>
+      {% else %}
+      <td class="cell">{{bean.alt_min}}-{{bean.alt_max}}m</td>
+      {% endif %}
+    </tr>
+    <tr class="table-row">
+      <th class="table-head">Process</th>
+      <td class="cell">{{bean.process}}</td>
+    </tr>
+    <tr class="table-row">
+      <th class="table-head">Varietal</th>
+      <td class="cell">{{bean.varietal}}</td>
+    </tr>
+    <tr class="table-row">
+      <th class="table-head">Roast Date</th>
+      <td class="cell">{{bean.roast_date | dateFormat}}</td>
+    </tr>
+    <tr class="table-row">
+      <th class="table-head">Roast Level</th>
+      <td class="cell">{{bean.roast_level}}</td>
+    </tr>
+    <tr class="table-row">
+      <th class="table-head">Notes</th>
+      <td class="cell">{{bean.notes}}</td>
+    </tr>
+    <tr class="table-row">
+      <th class="table-head">Purchase Country</th>
+      <td class="cell">{{bean.shop_country}}</td>
+      </tr>
+      <tr class="table-row">
+        <th class="table-head">Shop</th>
+        <td class="cell">{{bean.shop}}</a></td>
+      </tr>
+      <tr class="table-row">
+        <th class="table-head">Price</th>
+        <td class="cell">US${{bean.price_usd}} for {{bean.mass}}g</a></td>
+      </tr>
+</table>
+
+<h2>Some recent brews with this coffee:</h2>
+
+
+<table class="table">
+  <thead class="table-head">
+    <tr class="table-head">
+      <th class="cell">Date</th>
+      <th class="cell">Preparation</th>
+      <th class="cell">Notes</th>
+      <th class="cell">Comments</th>
+    </tr>
+   </thead>
+
+  
+  <tbody class="table-body">
+    {% for meta in coffee.brews_old %}
+      {% if meta.id == bean.id %}
+        <tr class="table-row">
+            <td class="cell"><time>{{ meta.date | dateFormat }}</time></td>
+            <td class="cell">{{meta.type}}</td>
+            <td class="cell">{{meta.comments}}</td>
+        </tr>
+      {% endif %}
+    {% endfor %}
+  </tbody>
+
+</table>
+
+<p> See more brews in the <a href="/coffee/"">Coffee Log</a>.
