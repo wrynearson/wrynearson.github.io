@@ -21,10 +21,32 @@ module.exports = async function () {
 
     console.log("The first brew was on:", json.brews[0].date);
 
+    const combinedBrews = [...json.brews, ...json.brews_old];
+
+    // Some of the old brews don't have dates, but they were recorded in chronological order and were brewed in 2024. This logic sorts the brews so that they appear first in the brews_combined object. They are then displayed differently using if logic.
+
+    combinedBrews.sort((a, b) => {
+      const dateA = a.date;
+      const dateB = b.date;
+
+      // Both dates missing, maintain original order
+      if (!dateA && !dateB) return 0;
+
+      // A has no date, it should come first
+      if (!dateA) return -1;
+
+      // B has no date, it should come first
+      if (!dateB) return 1;
+
+      // If both have dates, sort them chronologically
+      return new Date(dateA) - new Date(dateB);
+    });
+
     return {
       beans: json.beans,
       brews: json.brews,
       brews_old: json.brews_old,
+      brews_combined: combinedBrews,
     };
   } catch (e) {
     console.log("Failed to do something:", e);

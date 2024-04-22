@@ -7,6 +7,12 @@ permalink: '/beans/{{ bean.id }}/index.html'
 layout: base
 ---
 
+
+{% if bean.archived == true %}
+  <em>This coffee has been all used up.</em>
+  <br><br>
+{% endif %}
+
 <table class="table">
   <tbody class="table-body">
     <tr class="table-row">
@@ -59,18 +65,18 @@ layout: base
       </tr>
       <tr class="table-row">
         <th class="table-head">Price</th>
-        <td class="cell">US${{bean.price_usd}} for {{bean.mass}}g</a></td>
+        <td class="cell">US${{bean.price_usd | round: 2}} for {{bean.mass}}g</a></td>
       </tr>
 </table>
 
-<h2>Some recent brews with this coffee:</h2>
-
+<h2>Brews using this coffee:</h2>
 
 <table class="table">
   <thead class="table-head">
     <tr class="table-head">
       <th class="cell">Date</th>
       <th class="cell">Preparation</th>
+      <th class="cell">Cost</th>
       <th class="cell">Notes</th>
       <th class="cell">Comments</th>
     </tr>
@@ -78,11 +84,29 @@ layout: base
 
   
   <tbody class="table-body">
-    {% for meta in coffee.brews_old %}
+    {% for meta in coffee.brews_combined reversed %}
       {% if meta.id == bean.id %}
         <tr class="table-row">
-            <td class="cell"><time>{{ meta.date | dateFormat }}</time></td>
+          <td class="cell"><time>
+            {% if meta.date == blank %}
+            <em>
+              Early {{ meta.date | default: "2024" }}
+              </em>
+            {% else %}
+            {{ meta.date | dateFormat }}
+          {% endif %}
+            </time></td>
             <td class="cell">{{meta.type}}</td>
+            <td class="cell">${{meta.input | times: bean.usd_per_g | round: 2}}</td>
+            <td class="cell">
+              {% if meta.starred == true %}
+              <em>
+                {{meta.notes}}
+              </em>
+              {% else %}
+              {{meta.notes}}
+              {% endif %}
+              </td>
             <td class="cell">{{meta.comments}}</td>
         </tr>
       {% endif %}

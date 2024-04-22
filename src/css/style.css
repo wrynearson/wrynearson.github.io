@@ -498,6 +498,7 @@ pre > code.highlight {
 
 #reveal.image present {
   background: red;
+  background-color: rgba(4, 3, 0, 0.019);
 }
 
 .table {
@@ -511,9 +512,10 @@ pre > code.highlight {
 
 .table-head {
   /* display: table-row; */
-  color: red;
-  bottom: 2rem;
+  bottom: 0rem;
   line-height: 3rem;
+  background-color: #0000000b;
+  margin: 1rem;
 }
 
 /* .table-body {
@@ -525,8 +527,5 @@ pre > code.highlight {
   color: rgb(166, 83, 83);
   bottom: 2rem;
   line-height: 2rem;
+  max-width: 100%;
 }
-
-/* .cell {
-  display: table-cell;
-} */

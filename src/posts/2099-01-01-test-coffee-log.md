@@ -8,6 +8,20 @@ image:
 permalink: "/coffee/"
 ---
 
+## Test Combined brews
+
+<em>I've prepared {{coffee.brews_combined.length}} coffees from {{coffee.beans.length}} bags of beans.</em>
+
+{% for meta in coffee.brews_combined %}
+{% if meta.date == blank %}
+
+<li>{{meta.date | default: "2024"}}, {{meta.bean}}, {{meta.notes}}, {{meta.starred}}</li>
+{% else %}
+<li>{{meta.date | dateFormat }}, {{meta.bean}}, {{meta.notes}}, {{meta.starred}}</li>
+
+{% endif %}
+{% endfor %}
+
 ## Fetched Brews
 
 ### New
@@ -26,7 +40,7 @@ permalink: "/coffee/"
     {% for meta in coffee.brews %}
         <tr class="table-row">
             <td class="cell"><time>{{ meta.date | dateFormat }}</time></td>
-            <td class="cell">{{meta.bean}}</td>
+            <td class="cell"><a href="/beans/{{meta.id}}">{{meta.bean}}</a></td>
             <td class="cell">{{meta.type}}</td>
             <td class="cell">{{meta.notes}}</td>
         </tr>
