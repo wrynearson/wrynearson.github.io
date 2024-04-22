@@ -503,7 +503,7 @@ pre > code.highlight {
 
 .table {
   display: table;
-  width: 100%;
+  max-width: 100%;
   border-collapse: collapse;
   white-space: wrap;
   text-align: left;
@@ -512,10 +512,9 @@ pre > code.highlight {
 
 .table-head {
   /* display: table-row; */
-  bottom: 0rem;
-  line-height: 3rem;
   background-color: #0000000b;
-  margin: 1rem;
+  padding: 0.5rem 1rem;
+  /* max-width: 33%; */
 }
 
 /* .table-body {
@@ -523,9 +522,15 @@ pre > code.highlight {
 } */
 
 .table-row {
-  /* display: table-row; */
-  color: rgb(166, 83, 83);
-  bottom: 2rem;
-  line-height: 2rem;
-  max-width: 100%;
+  display: table-row;
+  bottom: 0rem;
+  line-height: 1.5rem;
+  /* max-width: 100%; */
+}
+
+.cell {
+  padding: 0 1rem;
+  overflow: clip;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }

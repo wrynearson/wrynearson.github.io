@@ -2,26 +2,27 @@
 title: Coffee Log
 date: 2099-01-01
 tags: [Coding, Projects]
-description:
 author: Will Rynearson
 image:
 permalink: "/coffee/"
 ---
+
+<p class="description">I've prepared {{coffee.brews_combined.length}} coffees using {{coffee.beans.length}} types of coffee since I started tracking in early 2024.</p>
 
 ## Brews
 
 <table class="table">
   <thead class="table-head">
   <tr class="table-head">
-    <th class="cell">Date</th>
-    <th class="cell">Coffee</th>
-    <th class="cell">Preparation</th>
-    <th class="cell">Notes</th>
+    <th class="table-head">Date</th>
+    <th class="table-head">Coffee</th>
+    <th class="table-head">Preparation</th>
+    <th class="table-head">Notes</th>
     </tr>
    </thead>
 
   <tbody class="table-body">
-    {% for meta in coffee.brews_combined %}
+    {% for meta in coffee.brews_combined reversed %}
         <tr class="table-row">
             <td class="cell"><time>
           {% if meta.date == blank %}
