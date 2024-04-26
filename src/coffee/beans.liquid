@@ -79,6 +79,8 @@ layout: base
       </tr>
 </table>
 
+<h2>See the other coffee beans I've brewed <a href="/coffee/beans/">here</a>.</h2>
+
 <h2>Brews using this coffee:</h2>
 
 <table class="table">
@@ -95,28 +97,49 @@ layout: base
   <tbody class="table-body">
     {% for meta in coffee.brews_combined reversed %}
       {% if meta.id == bean.id %}
-        <tr class="table-row">
-          <td class="cell">
-            {% if meta.date == blank %}
-            <a href="/coffee/brews/{{meta.brew_id}}">
-              <em>
-                Early {{ meta.date | default: "2024" }}
-              </em>
-            </a>
-          {% else %}
-            <a href="/coffee/brews/{{meta.brew_id}}">          
-            {{ meta.date | dateFormat }}
-            </a>
-          {% endif %}
+        {% if meta.starred == true %}
+          <tr class="table-row">
+            <td class="cell starred">
+              {% if meta.date == blank %}
+              <a href="/coffee/brews/{{meta.brew_id}}">
+                <em>
+                  Early {{ meta.date | default: "2024" }}
+                </em>
+              </a>
+            {% else %}
+              <a href="/coffee/brews/{{meta.brew_id}}">          
+              {{ meta.date | dateFormat }}
+              </a>
+            {% endif %}
+            </td>
+            <td class="cell starred">{{meta.type}}</a></td>
+            <td class="cell starred">${{meta.input | times: bean.usd_per_g | round: 2}}</td>
+            <td class="cell starred">
+              {{meta.notes}}
+            </td>
+          </tr>
+        {% else %}
+          <tr class="table-row">
+            <td class="cell">
+              {% if meta.date == blank %}
+              <a href="/coffee/brews/{{meta.brew_id}}">
+                <em>
+                  Early {{ meta.date | default: "2024" }}
+                </em>
+              </a>
+            {% else %}
+              <a href="/coffee/brews/{{meta.brew_id}}">          
+              {{ meta.date | dateFormat }}
+              </a>
+            {% endif %}
             </td>
             <td class="cell">{{meta.type}}</a></td>
             <td class="cell">${{meta.input | times: bean.usd_per_g | round: 2}}</td>
-
-              <td class="cell">
-                {{meta.notes}}
-              </td>
-
-        </tr>
+            <td class="cell">
+              {{meta.notes}}
+            </td>
+          </tr>
+        {% endif %}
       {% endif %}
     {% endfor %}
   </tbody>

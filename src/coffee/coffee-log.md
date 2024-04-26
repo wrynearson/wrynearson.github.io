@@ -8,7 +8,7 @@ layout: base
 
 # Coffee Log
 
-<p class="description">I've prepared {{coffee.brews_combined.length}} coffees using <a href="/coffee/beans/">{{coffee.beans.length}} bags of coffee </a> since I started tracking in early 2024.</p>
+<p class="description">I've prepared {{coffee.brews_combined.length}} coffees using <a href="/coffee/beans/">{{coffee.beans.length}} bags of coffee</a> since I started tracking in early 2024.</p>
 
 <br>
 
