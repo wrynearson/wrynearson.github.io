@@ -9,7 +9,7 @@ module.exports = async function () {
     let json = await EleventyFetch(
       "https://script.google.com/macros/s/AKfycbz6Ts5iMeBOknsiJVS6wb9F03pBqwgkXVgSbzYJioMzomUdLO2_o7RRaeznjsmzYumb/exec",
       {
-        duration: "1h",
+        duration: "15m",
         type: "json",
         // this fetches the text from the AppsScript deployment and caches it for a day. The text is converted to a json.
       }
@@ -40,6 +40,10 @@ module.exports = async function () {
 
       // If both have dates, sort them chronologically
       return new Date(dateA) - new Date(dateB);
+    });
+
+    combinedBrews.forEach((brew, index) => {
+      brew.brew_id = index + 1; // Assigning a new ID from 1
     });
 
     return {

@@ -73,6 +73,10 @@ module.exports = function (eleventyConfig) {
     return moment(date).format("MMMM Do, YYYY");
   });
 
+  eleventyConfig.addFilter("secondFormat", async function (seconds) {
+    return moment.utc(parseInt(seconds) * 1000).format("m:ss");
+  });
+
   eleventyConfig.addFilter("jsonify", function (value) {
     return JSON.stringify(value, null, 2); // Indent with 2 spaces for readability
   });
