@@ -1,0 +1,171 @@
+---
+pagination:
+  data: coffee.beans
+  size: 1
+  alias: bean
+permalink: 'coffee/beans/{{ bean.id }}/index.html'
+layout: base
+---
+
+<h1>
+  Coffee {{bean.id}} Overview
+</h1>
+
+{% if bean.archived == true %}
+  <em>This coffee has been all used up.</em>
+  <br><br>
+{% endif %}
+
+<table class="table overview">
+  <tbody class="table-body">
+    <tr class="table-row">
+      <th class="table-head labels">Name</th>
+      <td class="cell"><a href="{{bean.bean_link}}">{{bean.real_name}}</td>
+    </tr>
+    <tr class="table-row">
+      <th class="table-head labels">Producing Country</th>
+      <td class="cell">{{bean.producing_country}}</td>
+      </tr>
+    <tr class="table-row">
+      <th class="table-head labels">Location</th>
+      <td class="cell">{{bean.producing_location}}</td>
+    </tr>
+    <tr class="table-row">
+      <th class="table-head labels">Altitude</th>
+      {% if bean.alt_min < bean.alt_max%}
+        <td class="cell">{{bean.alt_min}}-{{bean.alt_max}}m</td>
+      {% elsif bean.alt_min == ""%}
+        <td class="cell"></td>
+      {% else %}
+        <td class="cell">{{bean.alt_min}}m</td>
+      {% endif %}
+    </tr>
+    <tr class="table-row">
+      <th class="table-head labels">Process</th>
+      <td class="cell">{{bean.process}}</td>
+    </tr>
+    <tr class="table-row">
+      <th class="table-head labels">Varietal</th>
+      <td class="cell">{{bean.varietal}}</td>
+    </tr>
+    <tr class="table-row">
+      <th class="table-head labels">Roast Date</th>
+      <td class="cell">
+        {% if bean.roast_date == blank %}
+        {% else %}
+          {{bean.roast_date | dateFormat }}
+        {% endif %}
+      </td>
+    </tr>
+    <tr class="table-row">
+      <th class="table-head labels">Roast Level</th>
+      <td class="cell">{{bean.roast_level}}</td>
+    </tr>
+    <tr class="table-row">
+      <th class="table-head labels">Notes</th>
+      <td class="cell">{{bean.notes}}</td>
+    </tr>
+    <tr class="table-row">
+      <th class="table-head labels">Purchase Country</th>
+      <td class="cell">{{bean.shop_country}}</td>
+      </tr>
+      <tr class="table-row">
+        <th class="table-head labels">Shop</th>
+        <td class="cell">{{bean.shop}}</a></td>
+      </tr>
+      <tr class="table-row">
+        <th class="table-head labels">Price</th>
+        <td class="cell">US${{bean.price_usd | round: 2}} for {{bean.mass}}g</a></td>
+      </tr>
+</table>
+
+<h2>See the other coffee beans I've brewed <a href="/coffee/beans/">here</a>.</h2>
+
+<h2>Brews using this coffee:</h2>
+
+<table class="table">
+  <thead class="table-head">
+    <tr class="table-head">
+      <th class="table-head narrow">Date</th>
+      <th class="table-head narrow">Style</th>
+      <th class="table-head narrow">Cost</th>
+      <th class="table-head wide">Notes</th>
+    </tr>
+   </thead>
+
+  
+  <tbody class="table-body">
+    {% for meta in coffee.brews_combined reversed %}
+      {% if meta.id == bean.id %}
+        {% if meta.starred == true %}
+          <tr class="table-row">
+            <td class="cell starred">
+              {% if meta.date == blank %}
+              <a href="/coffee/brews/{{meta.brew_id}}">
+                <em>
+                  Early {{ meta.date | default: "2024" }}
+                </em>
+              </a>
+            {% else %}
+              <a href="/coffee/brews/{{meta.brew_id}}">          
+              {{ meta.date | dateFormat }}
+              </a>
+            {% endif %}
+            </td>
+            <td class="cell starred">{{meta.type}}</a></td>
+            <td class="cell starred">${{meta.input | times: bean.usd_per_g | round: 2}}</td>
+            <td class="cell starred">
+              {{meta.notes}}
+            </td>
+          </tr>
+        {% else %}
+          <tr class="table-row">
+            <td class="cell">
+              {% if meta.date == blank %}
+              <a href="/coffee/brews/{{meta.brew_id}}">
+                <em>
+                  Early {{ meta.date | default: "2024" }}
+                </em>
+              </a>
+            {% else %}
+              <a href="/coffee/brews/{{meta.brew_id}}">          
+              {{ meta.date | dateFormat }}
+              </a>
+            {% endif %}
+            </td>
+            <td class="cell">{{meta.type}}</a></td>
+            <td class="cell">${{meta.input | times: bean.usd_per_g | round: 2}}</td>
+            <td class="cell">
+              {{meta.notes}}
+            </td>
+          </tr>
+        {% endif %}
+      {% endif %}
+    {% endfor %}
+  </tbody>
+
+</table>
+
+<br>
+
+<footer class="footer">
+    <div class="name_link">
+        —
+        <a href="{{ '/' | url }}">
+            Will
+        </a>
+    </div>
+    <div class="stats">
+        <div class="words">
+            {% fortawesomeRegular 'edit' %}
+            <a href="{{ '/words' | url }}">
+                <p title="I've written {{words.words}} words worth of notes in {{words.year}}, as of {{words.calculated}}">
+                    {{ words.words }} words
+                </p>
+            </a>
+        </div>
+        <div class="coffee">
+            <a href="{{ '/coffee'}}">☕️ {{ coffee.brews_combined.length }}</a>
+        </div>
+    </div>
+</footer>

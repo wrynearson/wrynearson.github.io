@@ -6,7 +6,7 @@
   box-sizing: border-box;
 
   /* set for dark theme*/
-  background: #fefaef;
+  background-color: #fefaef;
 }
 
 .reveal section img {
@@ -38,12 +38,16 @@
   /* Link decoration */
   --underline-color: #fee69f;
   --underline-highlight-color: #fdd45b;
+  --highlight-color: rgba(254, 230, 159, 0.5);
   --line-type: underline;
   --line-thickness: 7%;
   --active-line-thickness: 10%;
   /* Animation (link, background, etc. */
   --animation-duration: 0.3s;
   --animation-fill-mode: both;
+  --border-thin: thin solid #0000002a;
+  --border-thick: thin solid #000000;
+  --table-font-size: 1rem;
 }
 
 /* Animation keyframes */
@@ -74,6 +78,7 @@ a:link {
   text-decoration-color: var(--underline-color);
   text-decoration-line: var(--line-type);
   text-decoration-thickness: var(--line-thickness);
+  background: none;
 }
 
 /* visited link */
@@ -82,6 +87,7 @@ a:visited {
   text-decoration-color: var(--underline-color);
   text-decoration-line: var(--line-type);
   text-decoration-thickness: var(--line-thickness);
+  background: none;
 }
 
 /* mouse over link */
@@ -89,12 +95,14 @@ a:hover {
   animation-name: link;
   animation-duration: var(--animation-duration);
   animation-fill-mode: var(--animation-fill-mode);
+  background: none;
 }
 
 /* link clicking */
 a:active {
   color: var(--body-color);
   text-decoration-color: var(--underline-color);
+  background: none;
 }
 
 /* Site title (the banner across the top) */
@@ -158,6 +166,7 @@ time {
   color: var(--heading-color);
   font-size: calc(var(--font-size) * 0.8);
   font-weight: var(--body-font-weight);
+  background: none;
 }
 
 .about-me {
@@ -213,6 +222,10 @@ h6 {
   padding-top: var(--section-padding-top);
 }
 
+p {
+  background: none;
+}
+
 /* This keeps the image in its own line (block), sets the full body width (100% of 95%), and sets the max height to 85% of the height of the viewport (vh). 
 Width and height of auto keep the aspect ratio constant. Now, portrait orientation photos aren't too tall on computers and aren't too short on phones (in portrait mode) */
 img {
@@ -251,12 +264,15 @@ img {
   display: flex;
   flex-wrap: nowrap;
   flex-direction: row-reverse;
-  flex: 2;
   gap: 2rem;
   justify-content: flex-start;
   align-items: center;
 }
 
+.stats .svg-inline--fa {
+  height: 1rem;
+  margin: 0.5rem;
+}
 .words {
   display: flex;
   flex-wrap: nowrap;
@@ -266,9 +282,13 @@ img {
   justify-content: flex-end;
 }
 
-.stats .svg-inline--fa {
-  height: 1rem;
-  margin: 0.5rem;
+.coffee {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  flex: 1 1 auto;
+  max-height: 1rem;
+  justify-content: flex-end;
 }
 
 blockquote {
@@ -498,4 +518,82 @@ pre > code.highlight {
 
 #reveal.image present {
   background: red;
+  background-color: rgba(4, 3, 0, 0.019);
+}
+
+.table {
+  display: table;
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+  text-align: left;
+  vertical-align: center;
+  border-top: var(--border-thin);
+}
+
+.overview {
+  border-top: var(--border-thin);
+}
+
+.table-head {
+  /* display: table-row; */
+  font-size: var(--table-font-size);
+  background-color: #0000000a;
+  padding: 0.5rem;
+  border-bottom: var(--border-thin);
+  font-weight: var(--body-font-weight);
+  overflow: clip;
+  white-space: wrap;
+  text-overflow: clip;
+}
+
+/* .table-body {
+  display: table-row-group;
+} */
+
+.table-row {
+  display: table-row;
+  bottom: 1rem;
+  line-height: var(--line-height);
+}
+
+.cell {
+  padding: 0.33rem;
+  text-align: left;
+  vertical-align: middle;
+  border-bottom: var(--border-thin);
+  font-size: var(--table-font-size);
+  overflow: clip;
+  white-space: wrap;
+  text-overflow: clip;
+}
+
+.cell time {
+  font-size: var(--table-font-size);
+  background: none;
+}
+
+.wide {
+  width: 45%;
+}
+
+.narrow {
+  max-width: 15%;
+}
+
+.labels {
+  width: 33%;
+  overflow: clip;
+  white-space: wrap;
+  text-overflow: ellipsis;
+  font-size: var(--table-font-size);
+}
+
+.starred {
+  background-color: var(--highlight-color);
+}
+
+.archived {
+  background-color: #0000000a;
+  font-style: italic;
 }

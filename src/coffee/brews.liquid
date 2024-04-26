@@ -1,0 +1,80 @@
+---
+pagination:
+  data: coffee.brews_combined
+  size: 1
+  alias: item
+permalink: 'coffee/brews/{{ item.brew_id }}/index.html'
+layout: base
+---
+
+<h1>
+  Coffee Brew {{item.brew_id}}
+</h1>
+
+<table class="table overview">
+  <tbody class="table-body">
+    <tr class="table-row">
+      <th class="table-head labels">Date</th>
+      <td class="cell">{{item.date | dateFormat }}</td>
+    </tr>
+    <tr class="table-row">
+      <th class="table-head labels">Name</th>
+      <td class="cell"><a href="/coffee/beans/{{item.id}}">{{item.bean}}</a></td>
+    </tr>
+    <tr class="table-row">
+      <th class="table-head labels">Preparation</th>
+      <td class="cell">{{item.type}}</td>
+      </tr>
+    <tr class="table-row">
+      <th class="table-head labels">Machine</th>
+      <td class="cell">{{item.machine}}</td>
+    </tr>
+    <tr class="table-row">
+      <th class="table-head labels">Grind Setting</th>
+      <td class="cell">{{item.grind}}</td>
+    </tr>
+    <tr class="table-row">
+      <th class="table-head labels">Input</th>
+        <td class="cell">{{item.input}}g</td>
+    </tr>
+    <tr class="table-row">
+      <th class="table-head labels">Output</th>
+      <td class="cell">{{item.output}}g</td>
+    </tr>
+    <tr class="table-row">
+      <th class="table-head labels">Time</th>
+      <td class="cell">{{item.time | secondFormat }}</td>
+    </tr>
+    <tr class="table-row">
+      <th class="table-head labels">Notes</th>
+      <td class="cell">{{item.notes}}</td>
+    </tr>
+    <tr class="table-row">
+      <th class="table-head labels">Comments</th>
+      <td class="cell">{{item.comments}}</td>
+    </tr>
+</table>
+
+<br>
+
+<footer class="footer">
+    <div class="name_link">
+        —
+        <a href="{{ '/' | url }}">
+            Will
+        </a>
+    </div>
+    <div class="stats">
+        <div class="words">
+            {% fortawesomeRegular 'edit' %}
+            <a href="{{ '/words' | url }}">
+                <p title="I've written {{words.words}} words worth of notes in {{words.year}}, as of {{words.calculated}}">
+                    {{ words.words }} words
+                </p>
+            </a>
+        </div>
+        <div class="coffee">
+            <a href="{{ '/coffee'}}">☕️ {{ coffee.brews_combined.length }}</a>
+        </div>
+    </div>
+</footer>

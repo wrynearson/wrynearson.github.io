@@ -47,8 +47,18 @@ async function imageShortcode(src, alt, sizes) {
   });
 }
 
+const moment = require("moment");
+
 module.exports = function (eleventyConfig) {
-  eleventyConfig.setTemplateFormats(["md", "img", "png", "jpg", "svg", "gif"]);
+  eleventyConfig.setTemplateFormats([
+    "md",
+    "img",
+    "png",
+    "jpg",
+    "svg",
+    "gif",
+    "liquid",
+  ]);
 
   eleventyConfig.addPassthroughCopy("./src/css/");
   eleventyConfig.addWatchTarget("./src/css/");
@@ -58,6 +68,19 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({ "./src/favicon": "/" });
   eleventyConfig.addPlugin(fortawesomeFreeRegularPlugin);
   eleventyConfig.addPlugin(syntaxHighlight);
+
+  eleventyConfig.addFilter("dateFormat", async function (date) {
+    return moment(date).format("MMMM Do, YYYY");
+  });
+
+  eleventyConfig.addFilter("secondFormat", async function (seconds) {
+    return moment.utc(parseInt(seconds) * 1000).format("m:ss");
+  });
+
+  eleventyConfig.addFilter("jsonify", function (value) {
+    return JSON.stringify(value, null, 2); // Indent with 2 spaces for readability
+  });
+
   eleventyConfig.addPassthroughCopy({
     "node_modules/reveal.js/dist": "reveal.js",
   });
@@ -67,6 +90,7 @@ module.exports = function (eleventyConfig) {
       input: "src",
       output: "docs",
       includes: "_includes",
+      data: "_data",
     },
   };
 };
