@@ -18,9 +18,9 @@
 
 :root {
   /* Font family, size, weight, color */
-  --font-family: helvetica-light, sans-serif;
+  --font-family: Veranda, sans-serif;
   --font-size: 1.25rem;
-  --title-font-weight: 500;
+  --title-font-weight: 400;
   --body-font-weight: 200;
   --heading-color: rgb(0, 0, 0);
   --body-color: rgb(0, 0, 0);
@@ -211,14 +211,20 @@ time {
 }
 
 h1,
-h2,
+h2 {
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+  font-weight: var(--title-font-weight);
+  padding-top: var(--section-padding-top);
+}
+
 h3,
 h4,
 h5,
 h6 {
   font-family: var(--font-family);
   font-size: var(--font-size);
-  font-weight: var(--title-font-weight);
+  font-weight: var(--font-weight);
   padding-top: var(--section-padding-top);
 }
 
