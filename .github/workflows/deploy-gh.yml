@@ -36,7 +36,7 @@ jobs:
             ${{ runner.os }}-node-
 
       - name: Build
-        run: npx @11ty/eleventy --debug
+        run: DEBUG=Eleventy* npx @11ty/eleventy
 
       - name: Upload Build (artifact)
         uses: actions/upload-artifact@v4
