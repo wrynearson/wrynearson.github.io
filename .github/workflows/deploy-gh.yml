@@ -6,7 +6,7 @@ on:
       - "11ty"
   schedule:
     # Runs at 4:27am every day of the month (1st *), in every month (2nd *) on Monday (1) to Friday (5)). https://pubs.opengroup.org/onlinepubs/9699919799/utilities/crontab.html#tag_20_25_07
-    - cron: "18 14 * * *"
+    - cron: "15 9 * * *"
 
 permissions:
   contents: write
