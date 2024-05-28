@@ -7,7 +7,7 @@ description: Will Rynearson | Product Manager, Sustainability Advocate, Outdoor 
 <div class=about-me>
   <p>I lead projects that are good for the planet.</p>
   
-  <p>I'm currently a <a href="https://en.wikipedia.org/wiki/Product_manager"> Product Manager</a> with <a href="https://developmentseed.org"> Development Seed</a>, where I lead a variety of projects primarily related to environmental and social sustainability.</p>
+  <p>I'm currently a <a href="https://en.wikipedia.org/wiki/Product_manager"> Product Manager</a> with <a href="https://developmentseed.org"> Development Seed</a>, where I lead a variety of web development projects primarily related to environmental and social sustainability.</p>
   
   <p>Previously, I was a Project Analyst for the United Nations, working on improving the <a href="{{ base.url }}/NEAT+"> environmental sustainability of humanitarian action</a>.</p>
 
