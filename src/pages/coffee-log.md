@@ -3,7 +3,7 @@ title: Coffee Log
 date: 2024-04-01
 end-date:
 url: /coffee
-description: Programatically tracking the brews of coffee I prepare.
+description: Programmatically tracking the brews of coffee I prepare.
 problem: The world of coffee has so much depth. How do I document my learning journey?
 outcome: A list of beans and brews I prepare, and a greater appreciation for coffee, its producers and roasters.
 client: Personal
