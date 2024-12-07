@@ -4,7 +4,8 @@ layout: "base.liquid"
 description: Will Rynearson | Product Manager, Sustainability Advocate, Outdoor Enthusiast
 ---
 
-<div class=about-me>
+<section class=about-me>
+
   <p>I lead projects that are good for the planet.</p>
   
   <p>I'm currently a <a href="https://en.wikipedia.org/wiki/Product_manager"> Product Manager</a> with <a href="https://developmentseed.org"> Development Seed</a>, where I lead a variety of web development projects primarily related to environmental and social sustainability.</p>
@@ -17,7 +18,9 @@ description: Will Rynearson | Product Manager, Sustainability Advocate, Outdoor 
 
   </p>Feel free to reach out on <a href="https://www.linkedin.com/in/willrynearson/">LinkedIn</a>.</p>
 
-</div>
+</section>
+
+<section id="projects">
 
 ## Projects
 
@@ -30,6 +33,10 @@ description: Will Rynearson | Product Manager, Sustainability Advocate, Outdoor 
 </a>
 {% endfor %}
 
+</section>
+
+<section id="posts">
+
 ## Posts
 
 {% for post in collections.posts reversed %}
@@ -40,3 +47,23 @@ description: Will Rynearson | Product Manager, Sustainability Advocate, Outdoor 
 </div>
 </a>
 {% endfor %}
+
+</section>
+
+<section id="recently">
+
+## Recently
+
+{% assign recentFile = collections.recently[0] %}
+{% if recentFile %}
+
+{{ recentFile.data.date | date: "%B, %Y" }}
+
+{{ recentFile.content }}
+
+</details>
+{% else %}
+  <p>No recent files found.</p>
+{% endif %}
+
+</section>
