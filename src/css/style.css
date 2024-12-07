@@ -18,7 +18,7 @@
 
 :root {
   /* Font family, size, weight, color */
-  --font-family: Veranda, sans-serif;
+  --font-family: Helvetica, Veranda, sans-serif;
   --font-size: 1.25rem;
   --title-font-weight: 400;
   --body-font-weight: 200;
