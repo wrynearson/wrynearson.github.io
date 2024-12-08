@@ -4,7 +4,7 @@ layout: "base.liquid"
 description: Will Rynearson | Product Manager, Sustainability Advocate, Outdoor Enthusiast
 ---
 
-<section class=about-me>
+<section id=about-me>
 
   <p>I lead projects that are good for the planet.</p>
   
@@ -17,6 +17,26 @@ description: Will Rynearson | Product Manager, Sustainability Advocate, Outdoor 
   </p>In my free time, you can find me in the mountains or <a href="{{ base.url }}/portfolio">taking photos</a>.</p>
 
   </p>Feel free to reach out on <a href="https://www.linkedin.com/in/willrynearson/">LinkedIn</a>.</p>
+
+</section>
+
+<section id="recently">
+
+## Recently
+
+{% assign recentFile = collections.recently[0] %}
+{% if recentFile %}
+
+<details>
+
+<summary>{{ recentFile.data.date | date: "%B, %Y" }}</summary>
+
+{{ recentFile.content }}
+
+</details>
+{% else %}
+  <p>No recent files found.</p>
+{% endif %}
 
 </section>
 
@@ -47,23 +67,5 @@ description: Will Rynearson | Product Manager, Sustainability Advocate, Outdoor 
 </div>
 </a>
 {% endfor %}
-
-</section>
-
-<section id="recently">
-
-## Recently
-
-{% assign recentFile = collections.recently[0] %}
-{% if recentFile %}
-
-{{ recentFile.data.date | date: "%B, %Y" }}
-
-{{ recentFile.content }}
-
-</details>
-{% else %}
-  <p>No recent files found.</p>
-{% endif %}
 
 </section>
