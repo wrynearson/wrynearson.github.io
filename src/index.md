@@ -4,7 +4,8 @@ layout: "base.liquid"
 description: Will Rynearson | Product Manager, Sustainability Advocate, Outdoor Enthusiast
 ---
 
-<div class=about-me>
+<section id=about-me>
+
   <p>I lead projects that are good for the planet.</p>
   
   <p>I'm currently a <a href="https://en.wikipedia.org/wiki/Product_manager"> Product Manager</a> with <a href="https://developmentseed.org"> Development Seed</a>, where I lead a variety of web development projects primarily related to environmental and social sustainability.</p>
@@ -17,7 +18,45 @@ description: Will Rynearson | Product Manager, Sustainability Advocate, Outdoor 
 
   </p>Feel free to reach out on <a href="https://www.linkedin.com/in/willrynearson/">LinkedIn</a>.</p>
 
+</section>
+
+<section id="recently">
+
+## Recently
+
+{% assign mostRecent = collections.mostRecent %}
+{% if mostRecent %}
+
+<details>
+
+<summary>{{ mostRecent.data.date | date: "%B, %Y" }}</summary>
+
+{{ mostRecent.content }}
+
+<div>
+  <h3>Previously</h3>
+  {% assign previousPosts = collections.recently | reverse | slice: 1, collections.recently.size %}
+  
+  {% for recently in previousPosts %}
+  <a href="{{ recently.url }}">
+    <div class="recently">
+    {{ recently.data.date | date: "%B, %Y" }}
+    </div>
+  </a>
+  {% else %}
+  <em> No previous posts.</em>
+{% endfor %}
+
 </div>
+
+</details>
+{% else %}
+  <p>No recent files found.</p>
+{% endif %}
+
+</section>
+
+<section id="projects">
 
 ## Projects
 
@@ -30,6 +69,10 @@ description: Will Rynearson | Product Manager, Sustainability Advocate, Outdoor 
 </a>
 {% endfor %}
 
+</section>
+
+<section id="posts">
+
 ## Posts
 
 {% for post in collections.posts reversed %}
@@ -40,3 +83,5 @@ description: Will Rynearson | Product Manager, Sustainability Advocate, Outdoor 
 </div>
 </a>
 {% endfor %}
+
+</section>

@@ -38,6 +38,7 @@
   /* Link decoration */
   --underline-color: #fee69f;
   --underline-highlight-color: #fdd45b;
+  --details-disclose-color: #fff6dd;
   --highlight-color: rgba(254, 230, 159, 0.5);
   --line-type: underline;
   --line-thickness: 7%;
@@ -211,14 +212,14 @@ time {
 }
 
 h1,
-h2 {
+h2,
+h3 {
   font-family: var(--font-family);
   font-size: var(--font-size);
   font-weight: var(--title-font-weight);
   padding-top: var(--section-padding-top);
 }
 
-h3,
 h4,
 h5,
 h6 {
@@ -241,7 +242,6 @@ img {
   width: auto;
   height: auto;
   margin: auto;
-  padding: 1rem 0 1rem 0;
 }
 
 .strava {
@@ -311,16 +311,47 @@ blockquote {
   margin: 2.5rem;
 }
 
+/* summary and details below are for the details disclosure element, currently for the recently section. */
+
+summary {
+  display: flex;
+  cursor: pointer;
+}
+
+summary::after {
+  content: "⇢";
+  padding-left: 0.5rem;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+details[open] {
+  padding: 1rem;
+  background-color: var(--details-disclose-color);
+  border-radius: 0.5rem;
+}
+
+details[open] summary {
+  background-color: var(--details-disclose-color);
+  font-weight: var(--title-font-weight);
+}
+
+details div,
+details h3,
+details em {
+  background-color: var(--details-disclose-color);
+}
+
 @media (prefers-color-scheme: dark) {
   * {
     --dark-text-color: #fdf6e1;
     background: #040300;
     --heading-color: var(--dark-text-color);
     --body-color: var(--dark-text-color);
-  }
-  * a {
-    color: var(--dark-text-color);
     --underline-color: #6b5b25;
+    --details-disclose-color: #2f2810;
   }
 }
 

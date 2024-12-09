@@ -85,6 +85,23 @@ module.exports = function (eleventyConfig) {
     "node_modules/reveal.js/dist": "reveal.js",
   });
 
+  // This gets the most recent "recently" post.
+  eleventyConfig.addCollection("mostRecent", function (collectionApi) {
+    // Filter .md files in the "recently" folder
+    const recentlyFiles = collectionApi.getFilteredByGlob(
+      "./src/recently/*.md"
+    );
+
+    // Find the most recent file
+    const mostRecent = recentlyFiles.reduce((latest, current) => {
+      const currentDate = new Date(current.data.date); // Parse date from front matter
+      const latestDate = latest ? new Date(latest.data.date) : new Date(0); // Default to epoch
+      return currentDate > latestDate ? current : latest;
+    }, null);
+
+    return mostRecent; // Return the most recent item
+  });
+
   return {
     dir: {
       input: "src",
