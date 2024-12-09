@@ -37,13 +37,14 @@ description: Will Rynearson | Product Manager, Sustainability Advocate, Outdoor 
   <h3>Previously</h3>
   {% assign previousPosts = collections.recently | reverse | slice: 1, collections.recently.size %}
   
-{% for recently in previousPosts %}
+  {% for recently in previousPosts %}
   <a href="{{ recently.url }}">
-
-<div class="recently">
-{{ recently.data.date | date: "%B, %Y" }}
-</div>
-</a>
+    <div class="recently">
+    {{ recently.data.date | date: "%B, %Y" }}
+    </div>
+  </a>
+  {% else %}
+  <em> No previous posts.</em>
 {% endfor %}
 
 </div>

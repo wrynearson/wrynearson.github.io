@@ -339,7 +339,8 @@ details[open] summary {
 }
 
 details div,
-details h3 {
+details h3,
+details em {
   background-color: var(--details-disclose-color);
 }
 
