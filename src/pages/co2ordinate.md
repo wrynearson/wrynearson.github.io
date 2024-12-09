@@ -2,12 +2,13 @@
 title: Co₂ordinate
 date: 2023-02-01
 end-date: 2023-10-11
-url: https://devseed.com/co2ordinate/
 description: Co₂ordinate helps distributed teams and conference organizers find the most CO₂ efficient place to meet.
 problem: We will lose our ability to inhabit this planet soon if we don't drastically change our habits. Optimizing our travel patterns is necessary to reduce our CO₂ footprint.
 outcome: A user friendly and well-designed tool that helps find the least impactful location to meet as a distributed group of people.
+type: professional
 client: none
 role: Project Manager
+url: https://developmentseed.org/co2ordinate/
 ---
 
 ![](../assets/img/co2ordinate/co2ordinate-overview.png)

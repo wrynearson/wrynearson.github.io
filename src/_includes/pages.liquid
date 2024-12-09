@@ -3,7 +3,13 @@ layout: base.liquid
 ---
 
 <div class="page_title">
-  {{ title }}
+  {% if url %}
+    <a href={{ url }} target="_blank">
+      {{ title }}
+    </a>
+  {% else %}
+    {{ title }}
+  {% endif %}
 </div>
 
 <time>{{ date | date: "%Y" }} – {{ end-date | date: "%Y" }}</time>
