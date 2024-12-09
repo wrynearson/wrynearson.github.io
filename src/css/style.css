@@ -160,7 +160,7 @@ main {
 
 time {
   color: var(--heading-color);
-  font-size: calc(var(--font-size) * 0.8);
+  font-size: calc(var(--font-size) * 0.75);
   font-weight: var(--body-font-weight);
   background: none;
 }

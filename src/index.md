@@ -29,7 +29,7 @@ description: Will Rynearson | Product Manager, Sustainability Advocate, Outdoor 
 
 <details>
 
-<summary>{{ mostRecent.data.date | date: "%B, %Y" }}</summary>
+<summary>{{ mostRecent.data.date | date: "%B %Y" }}</summary>
 
 {{ mostRecent.content }}
 
@@ -40,7 +40,7 @@ description: Will Rynearson | Product Manager, Sustainability Advocate, Outdoor 
   {% for recently in previousPosts %}
   <a href="{{ recently.url }}">
     <div class="recently">
-    {{ recently.data.date | date: "%B, %Y" }}
+    {{ recently.data.date | date: "%B %Y" }}
     </div>
   </a>
   {% else %}
