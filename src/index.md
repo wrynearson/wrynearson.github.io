@@ -24,14 +24,29 @@ description: Will Rynearson | Product Manager, Sustainability Advocate, Outdoor 
 
 ## Recently
 
-{% assign recentFile = collections.recently[0] %}
-{% if recentFile %}
+{% assign mostRecent = collections.mostRecent %}
+{% if mostRecent %}
 
 <details>
 
-<summary>{{ recentFile.data.date | date: "%B, %Y" }}</summary>
+<summary>{{ mostRecent.data.date | date: "%B, %Y" }}</summary>
 
-{{ recentFile.content }}
+{{ mostRecent.content }}
+
+<div>
+  <h3>Previously</h3>
+  {% assign previousPosts = collections.recently | reverse | slice: 1, collections.recently.size %}
+  
+{% for recently in previousPosts %}
+  <a href="{{ recently.url }}">
+
+<div class="recently">
+{{ recently.data.date | date: "%B, %Y" }}
+</div>
+</a>
+{% endfor %}
+
+</div>
 
 </details>
 {% else %}
