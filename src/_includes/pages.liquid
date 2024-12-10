@@ -12,13 +12,28 @@ layout: base.liquid
   {% endif %}
 </div>
 
-<time>
-  {{ date | date: "%Y" }} –
-  {% if end-date %}
-    {{ end-date | date: "%Y" }}
-  {% else %}
-  {% endif %}
-</time>
+<div class="page_metadata">
+  <time>
+    {{ date | date: "%Y" }} –
+    {% if end-date %}
+      {{ end-date | date: "%Y" }}
+    {% else %}
+    {% endif %}
+  </time>
+  <span class="repo">
+    {% if repo %}
+      GitHub
+    {% else %}
+    {% endif %}
+  </span>
+  <span class="project_type">
+    {% if type %}
+      {{ type }}
+    {% else %}
+    {% endif %}
+  </span>
+</div>
+
 
 <div class="description">
   {{ description }}
