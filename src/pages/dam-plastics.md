@@ -5,6 +5,7 @@ end-date: 2021-06-01
 description: From one dam in one river to no plastics in all rivers, Dam Plastics empowers stakeholders to systematically monitor and control the flow of plastic.
 problem: Plastic arrives in our oceans through rivers, but we don't have a good understanding of plastic flow patterns.
 outcome: A local-lead approach, collaboration with a local dam operator, and a great learning opportunity to turn sustainability ideas into action.
+type: academic
 ---
 
 ![1](../assets/img/dam-plastics/1.png)

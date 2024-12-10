@@ -8,6 +8,7 @@ problem: Shocks (COVID-19, Russian invasion of Ukraine) cascade through food sys
 outcome: An elegant, interactive tool that shows calorie flows between US counties, and visualizes how the climate crisis could disrupt these flows.
 client: Earth Genome
 role: Project Manager
+type: professional
 ---
 
 Recent events such as the COVID-19 pandemic and Russia’s invasion of Ukraine have revealed inherent gaps in the way food systems are modeled. Digital twins of food systems hold massive potential to fill the decision making under food crises, including those caused or exacerbated by climate change.

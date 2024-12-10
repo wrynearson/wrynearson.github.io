@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- make the title of each page's front matter the site title, and the description as the description for search results -->
+    <title>willwill.run</title>
+    <meta name="description" content="Process and visualize my runs on a 3D map."/>
+    <!-- suggest to search engines to "crawl" the site,and the links within (and that I endorse them) However, no "robots" directive = index & endorse -->
+    <meta name=”robots” content="index, follow">
+    <link rel="stylesheet" href="/css/style.css">
+    
+  
+  </head>
+  <body>
+    <div class="site_title">
+      <a href="/">
+        <div class="site_title_name">
+          Will Rynearson 
+        </div>
+      </a>
+    </div>
+    <script src="prism.js"></script>
+    <main>
+      
+<div class="page_title">
+  
+    <a href=https://willwill.run/ target="_blank">
+      willwill.run
+    </a>
+  
+</div>
+
+<time>2023 – </time>
+
+<div class="description">
+  Process and visualize my runs on a 3D map.
+</div>
+
+<div class="overview-box">
+  <div class="overview-section">
+    <h2 class="overview-title">Problem</h2>
+    <p class="overview-text">I wanted to learn Javascript, React, and how to build web maps.</p>
+  </div>
+  <div class="overview-section">
+    <h2 class="overview-title">Outcome</h2>
+    <p class="overview-text">
+      A website that fetches my runs from Strava every 24h and displays them on an interactive map.
+    </p>
+  </div>
+</div>
+<hr class="page-separator" />
+<div class="content">
+  <p><em>A massive thank you goes out to my colleague who spent so many hours patiently mentoring me, using this site as a way to teach Javascript, React, CSS, and other aspects of web development.</em></p>
+<p><picture><source type="image/webp" srcset="/img/SuLazFe9iI-600.webp 600w, /img/SuLazFe9iI-1100.webp 1100w" sizes="(min-width: 30em) 50 vw, 100vw"><img alt="Will Will Run" loading="lazy" decoding="async" src="/img/SuLazFe9iI-600.webp" width="1100" height="923"></picture></p>
+<p>This is a React application that fetches and visualizes runs from Strava.</p>
+<p>Runs are fetched daily from Strava. When a listed run is selected, it is displayed on the 3D map, along with basic information including:</p>
+<ul>
+<li>Run name</li>
+<li>Distance</li>
+<li>Pace</li>
+<li>Run type (normal or trail)</li>
+<li>Elevation gain</li>
+</ul>
+<h2>How it works</h2>
+<p>There are several steps needed to get this working.</p>
+<h3>Getting the runs</h3>
+<p>Strava <a href="https://developers.strava.com/docs/reference/">offers an API</a> to access data stored with them. Their <a href="https://developers.strava.com/docs/getting-started/">getting started guide</a> walks you through the steps required of requesting a developer account (by creating an API application), requesting data, authenticating, etc. These applications are often for users to authenticate with their account to access their data, and not to store and view other peoples' data (mine, in this case).</p>
+<p>First, a list of runs is fetched. Pagination was needed because I have more than 200 activities (the limit per page). I have over 1,200 at the moment! The list of activities is saved as a json file, with some metadata about the activity.</p>
+<p>Then, each activity ID in the activities list is used to fetch the run data. Only activities of type <code>run</code> (which include normal runs and trail runs) which have public visibility are requested. API requests are limited to 200 per 15 minutes, so the total requests need to be staggered. The streamed activities are transformed and saved as .geojson files, and the list of .geojson files are saved as a list.</p>
+<h3>Displaying and deploying the site</h3>
+<p>The website is a single page React application, built with <a href="https://create-react-app.dev/">Create React App</a>. The body of the site is split into a runs section and map section. The list of runs is generated from the list of .geojson files. These can be sorted by name and date.</p>
+<p>The map section is built using <a href="https://maplibre.org/">MapLibre</a>, with map tiles from <a href="https://openfreemap.org/">OpenFreeMap</a> and hillshade/terrain data from <a href="https://github.com/tilezen/joerd/blob/master/docs/attribution.md">Tilezen and sources</a>. It's incredible that a 3D map can be built entirely with free and open source libraries.</p>
+<h2>Next Steps</h2>
+<p>There are some feature enhancements I'd like to work on, which are listed in the <a href="https://github.com/wrynearson/willwill.run/issues">Issues section of the GitHub repo</a>.</p>
+<p>I'd also like to add documentation so that other people can fork the repo and set up the site with their own activities.</p>
+<p>Overall, I'm very happy how this has turned out. I've learned so much about Javascript, React, CSS and GitHub Actions. It was great to learn these concepts through a project, and a topic that I'm passionate about (running).</p>
+
+</div>
+
+<footer class="footer">
+  <div class="name_link">
+    —
+    <a href="/">
+      Will
+    </a>
+  </div>
+  <div class="stats">
+    <div class="words">
+      <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="edit" class="svg-inline--fa fa-edit " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M402.3 344.9l32-32c5-5 13.7-1.5 13.7 5.7V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V112c0-26.5 21.5-48 48-48h273.5c7.1 0 10.7 8.6 5.7 13.7l-32 32c-1.5 1.5-3.5 2.3-5.7 2.3H48v352h352V350.5c0-2.1.8-4.1 2.3-5.6zm156.6-201.8L296.3 405.7l-90.4 10c-26.2 2.9-48.5-19.2-45.6-45.6l10-90.4L432.9 17.1c22.9-22.9 59.9-22.9 82.7 0l43.2 43.2c22.9 22.9 22.9 60 .1 82.8zM460.1 174L402 115.9 216.2 301.8l-7.3 65.3 65.3-7.3L460.1 174zm64.8-79.7l-43.2-43.2c-4.1-4.1-10.8-4.1-14.8 0L436 82l58.1 58.1 30.9-30.9c4-4.2 4-10.8-.1-14.9z"></path></svg>
+      <a href="/words">
+        <p title="I've written 62194 words worth of notes in 2024, as of 2024/12/09">
+          62194 words
+        </p>
+      </a>
+    </div>
+    <div class="coffee">
+      <a href="/coffee">☕️ 297</a>
+    </div>
+  </div>
+</footer>
+    </main>
+  </body>
+</html>

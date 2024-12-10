@@ -5,6 +5,8 @@ end-date: 2021-03-01
 description: ODIR is a database-driven roadmap, showcase and guide that features over 25 examples of cities and projects from around the world that are innovating with open data to manage their disaster risk and build their resilience.
 problem: Local stakeholders lack access to local data, which they could use to solve a multitude of societal problems.
 outcome: A roadmap, showcase and guide for local leaders to make their data open and actionable.
+type: professional
+url: https://www.resurgence.io/uccri-odir-digitisation/
 ---
 
 Data is infrastructure. It underpins transparency, accountability, public services, business innovation and civil society.

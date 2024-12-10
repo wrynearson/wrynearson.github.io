@@ -8,6 +8,7 @@ problem: If humanitarians don't understand how the environment is impacting huma
 outcome: Free and open-source, the NEAT+ has been specifically designed for humanitarian actors to quickly identify issues of environmental concern to make emergency and recovery interventions more sustainable.
 client: United Nations
 role: Project Manager
+type: professional
 ---
 
 Humanitarian projects often prioritizes immediate action over longer term impacts. However, accounting for both is critical. The environment is vital to humanitarian action for [several reasons](https://www.unep.org/explore-topics/disasters-conflicts/what-we-do/preparedness-and-response/environmental):

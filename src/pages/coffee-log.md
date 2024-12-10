@@ -1,13 +1,14 @@
 ---
 title: Coffee Log
 date: 2024-04-01
-end-date:
-url: /coffee
+end-date: ""
 description: Programmatically tracking the brews of coffee I prepare.
 problem: The world of coffee has so much depth. How do I document my learning journey?
 outcome: A list of beans and brews I prepare, and a greater appreciation for coffee, its producers and roasters.
-client: Personal
+client: none
+type: professional
 role: none
+url: "https://wrynearson.github.io/coffee/"
 ---
 
 Coffee is more than just ...coffee. You probably know it can be prepared in different ways. You might also know that it can be roasted in different ways.

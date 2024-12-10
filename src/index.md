@@ -29,7 +29,7 @@ description: Will Rynearson | Product Manager, Sustainability Advocate, Outdoor 
 
 <details>
 
-<summary>{{ mostRecent.data.date | date: "%B, %Y" }}</summary>
+<summary>{{ mostRecent.data.date | date: "%B %Y" }}</summary>
 
 {{ mostRecent.content }}
 
@@ -40,7 +40,7 @@ description: Will Rynearson | Product Manager, Sustainability Advocate, Outdoor 
   {% for recently in previousPosts %}
   <a href="{{ recently.url }}">
     <div class="recently">
-    {{ recently.data.date | date: "%B, %Y" }}
+    {{ recently.data.date | date: "%B %Y" }}
     </div>
   </a>
   {% else %}
@@ -61,12 +61,13 @@ description: Will Rynearson | Product Manager, Sustainability Advocate, Outdoor 
 ## Projects
 
 {% for post in collections.pages reversed %}
-<a href="{{ post.url }}">
 
-<div class="project-title">
-{{ post.data.title }}
+<div class="post-title">
+<a href="{{ post.url }}">{{ post.data.title }}</a>
+<!-- <div class="project-type">{{ post.data.type }}</div> -->
+<time>{{ post.data.date | date: "%B %Y" }}</time> 
 </div>
-</a>
+
 {% endfor %}
 
 </section>
@@ -76,12 +77,12 @@ description: Will Rynearson | Product Manager, Sustainability Advocate, Outdoor 
 ## Posts
 
 {% for post in collections.posts reversed %}
-<a href="{{ post.url }}">
 
 <div class="post-title">
-{{ post.data.title }}
+<a href="{{ post.url }}">{{ post.data.title }}</a>
+<time>{{ post.data.date | date: "%B %Y" }}</time> 
 </div>
-</a>
+
 {% endfor %}
 
 </section>

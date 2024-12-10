@@ -6,8 +6,8 @@ description: Helping the US provide the Earth Observation (EO) data that US gove
 problem: Various US government agencies need EO data to meet their needs, but matching needs with solutions across agencies is a difficult task.
 outcome: An open-source software suite to help manage the collection of agency needs, match them to existing and future satellites, and make standardized recommendations to the US government.
 client: NASA
-url:
 role: Project Manager
+type: professional
 ---
 
 NASA coordinates with other U.S. Government satellite data providers to identify, communicate, and address Earth observation needs of Federal agencies. The SNWG tooling consists of project project management software (Asana) linked to a custom report writing tool, called the Report Generation Tool (RGT). These reports are sent to the White House for budgetary review.
