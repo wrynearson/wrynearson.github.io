@@ -12,7 +12,13 @@ layout: base.liquid
   {% endif %}
 </div>
 
-<time>{{ date | date: "%Y" }} – {{ end-date | date: "%Y" }}</time>
+<time>
+  {{ date | date: "%Y" }} –
+  {% if end-date %}
+    {{ end-date | date: "%Y" }}
+  {% else %}
+  {% endif %}
+</time>
 
 <div class="description">
   {{ description }}

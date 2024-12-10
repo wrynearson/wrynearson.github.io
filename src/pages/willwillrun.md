@@ -1,7 +1,7 @@
 ---
 title: willwill.run
 date: 2023-02-01
-end-date: ""
+end-date:
 url: https://willwill.run/
 description: Process and visualize my runs on a 3D map.
 problem: I wanted to learn Javascript, React, and how to build web maps.
