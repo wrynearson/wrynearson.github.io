@@ -102,6 +102,14 @@ module.exports = function (eleventyConfig) {
     return mostRecent; // Return the most recent item
   });
 
+  eleventyConfig.setServerOptions({
+    // Show local network IP addresses for device testing
+    showAllHosts: true,
+
+    // Show the dev server version number on the command line
+    showVersion: true,
+  });
+
   return {
     dir: {
       input: "src",

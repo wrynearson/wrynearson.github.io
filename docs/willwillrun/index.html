@@ -52,9 +52,10 @@
 </div>
 <hr class="page-separator" />
 <div class="content">
-  <p><picture><source type="image/webp" srcset="/img/SuLazFe9iI-600.webp 600w, /img/SuLazFe9iI-1100.webp 1100w" sizes="(min-width: 30em) 50 vw, 100vw"><img alt="Will Will Run" loading="lazy" decoding="async" src="/img/SuLazFe9iI-600.webp" width="1100" height="923"></picture></p>
+  <p><em>A massive thank you goes out to my colleague who spent so many hours patiently mentoring me, using this site as a way to teach Javascript, React, CSS, and other aspects of web development.</em></p>
+<p><picture><source type="image/webp" srcset="/img/SuLazFe9iI-600.webp 600w, /img/SuLazFe9iI-1100.webp 1100w" sizes="(min-width: 30em) 50 vw, 100vw"><img alt="Will Will Run" loading="lazy" decoding="async" src="/img/SuLazFe9iI-600.webp" width="1100" height="923"></picture></p>
 <p>This is a React application that fetches and visualizes runs from Strava.</p>
-<p>Activities of type Run (which include normal runs and trail runs) are fetched daily from Strava. When a listed run is selected, it is displayed on the map, along with basic information including:</p>
+<p>Runs are fetched daily from Strava. When a listed run is selected, it is displayed on the 3D map, along with basic information including:</p>
 <ul>
 <li>Run name</li>
 <li>Distance</li>
@@ -62,6 +63,19 @@
 <li>Run type (normal or trail)</li>
 <li>Elevation gain</li>
 </ul>
+<h2>How it works</h2>
+<p>There are several steps needed to get this working.</p>
+<h3>Getting the runs</h3>
+<p>Strava <a href="https://developers.strava.com/docs/reference/">offers an API</a> to access data stored with them. Their <a href="https://developers.strava.com/docs/getting-started/">getting started guide</a> walks you through the steps required of requesting a developer account (by creating an API application), requesting data, authenticating, etc. These applications are often for users to authenticate with their account to access their data, and not to store and view other peoples' data (mine, in this case).</p>
+<p>First, a list of runs is fetched. Pagination was needed because I have more than 200 activities (the limit per page). I have over 1,200 at the moment! The list of activities is saved as a json file, with some metadata about the activity.</p>
+<p>Then, each activity ID in the activities list is used to fetch the run data. Only activities of type <code>run</code> (which include normal runs and trail runs) which have public visibility are requested. API requests are limited to 200 per 15 minutes, so the total requests need to be staggered. The streamed activities are transformed and saved as .geojson files, and the list of .geojson files are saved as a list.</p>
+<h3>Displaying and deploying the site</h3>
+<p>The website is a single page React application, built with <a href="https://create-react-app.dev/">Create React App</a>. The body of the site is split into a runs section and map section. The list of runs is generated from the list of .geojson files. These can be sorted by name and date.</p>
+<p>The map section is built using <a href="https://maplibre.org/">MapLibre</a>, with map tiles from <a href="https://openfreemap.org/">OpenFreeMap</a> and hillshade/terrain data from <a href="https://github.com/tilezen/joerd/blob/master/docs/attribution.md">Tilezen and sources</a>. It's incredible that a 3D map can be built entirely with free and open source libraries.</p>
+<h2>Next Steps</h2>
+<p>There are some feature enhancements I'd like to work on, which are listed in the <a href="https://github.com/wrynearson/willwill.run/issues">Issues section of the GitHub repo</a>.</p>
+<p>I'd also like to add documentation so that other people can fork the repo and set up the site with their own activities.</p>
+<p>Overall, I'm very happy how this has turned out. I've learned so much about Javascript, React, CSS and GitHub Actions. It was great to learn these concepts through a project, and a topic that I'm passionate about (running).</p>
 
 </div>
 
@@ -82,7 +96,7 @@
       </a>
     </div>
     <div class="coffee">
-      <a href="/coffee">☕️ 296</a>
+      <a href="/coffee">☕️ 297</a>
     </div>
   </div>
 </footer>
