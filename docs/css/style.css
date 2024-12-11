@@ -158,6 +158,19 @@ main {
   color: var(--heading-color);
 }
 
+.page_metadata {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.gh-logo {
+  width: 50px; /* Adjust size as needed */
+  height: auto;
+  margin-right: 10px; /* Add space around the logo */
+  vertical-align: middle; /* Align with text if inline */
+}
+
 time {
   color: var(--heading-color);
   font-size: calc(var(--font-size) * 0.75);
