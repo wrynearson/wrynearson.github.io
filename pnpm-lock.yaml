@@ -11,9 +11,6 @@ importers:
       '@11ty/eleventy-img':
         specifier: ^2.0.1
         version: 2.0.1
-      '@11ty/eleventy-upgrade-help':
-        specifier: '3'
-        version: 3.0.1(posthtml@0.16.6)
       '@vidhill/fortawesome-free-regular-11ty-shortcode':
         specifier: ^1.0.3
         version: 1.0.3
@@ -75,10 +72,6 @@ packages:
 
   '@11ty/eleventy-plugin-syntaxhighlight@5.0.0':
     resolution: {integrity: sha512-y9BUmP1GofmbJgxM1+ky/UpFCpD8JSOeLeKItUs0WApgnrHk9haHziW7lS86lbArX5SiCVo4zTTw9x53gvRCaA==}
-
-  '@11ty/eleventy-upgrade-help@3.0.1':
-    resolution: {integrity: sha512-69CttBBfplByurn5vW7eRiLPywZZZHCH6B68Ib3t3348PaHHG9RysVPRqPQzMrGIEEbXg+0+ICm+R8sAkgjfPQ==}
-    engines: {node: '>=18'}
 
   '@11ty/eleventy-utils@1.0.3':
     resolution: {integrity: sha512-nULO91om7vQw4Y/UBjM8i7nJ1xl+/nyK4rImZ41lFxiY2d+XUz7ChAj1CDYFjrLZeu0utAYJTZ45LlcHTkUG4g==}
@@ -1226,16 +1219,6 @@ snapshots:
   '@11ty/eleventy-plugin-syntaxhighlight@5.0.0':
     dependencies:
       prismjs: 1.29.0
-
-  '@11ty/eleventy-upgrade-help@3.0.1(posthtml@0.16.6)':
-    dependencies:
-      fast-glob: 3.3.2
-      kleur: 4.1.5
-      minimist: 1.2.8
-      posthtml-match-helper: 2.0.2(posthtml@0.16.6)
-      semver: 7.6.3
-    transitivePeerDependencies:
-      - posthtml
 
   '@11ty/eleventy-utils@1.0.3':
     dependencies:
