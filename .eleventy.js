@@ -6,6 +6,8 @@ const Image = require("@11ty/eleventy-img");
 
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 
+const UpgradeHelper = require("@11ty/eleventy-upgrade-help");
+
 async function imageShortcode(src, alt, sizes) {
   let metadata = await Image(src, {
     widths: [600, 1100],
@@ -109,6 +111,8 @@ module.exports = function (eleventyConfig) {
     // Show the dev server version number on the command line
     showVersion: true,
   });
+
+  eleventyConfig.addPlugin(UpgradeHelper);
 
   return {
     dir: {
