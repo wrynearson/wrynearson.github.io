@@ -363,6 +363,11 @@ details em {
   }
 }
 
+#chart svg {
+  margin: 20px auto;
+  display: block;
+}
+
 /* ---  */
 
 /*
