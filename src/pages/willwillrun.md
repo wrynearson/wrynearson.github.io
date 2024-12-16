@@ -14,8 +14,6 @@ repo: https://github.com/wrynearson/willwill.run/
 
 _A massive thank you goes out to my colleague who spent so many hours patiently mentoring me, using this site as a way to teach Javascript, React, CSS, and other aspects of web development._
 
-![test]("/src/assets/img/willwillrun/willwillrun.png")
-
 {% image "./src/assets/img/willwillrun/willwillrun.png", "Will Will Run", "(min-width: 30em) 50 vw, 100vw" %}
 
 This is a React application that fetches and visualizes runs from Strava.
