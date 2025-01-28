@@ -36,7 +36,7 @@
   --content-title-size: 18px;
   --content-title-padding-top: 0.25em;
   /* Link decoration */
-  --underline-color: #fee69f;
+  --underline-color: #ecbc2a;
   --underline-highlight-color: #fdd45b;
   --details-disclose-color: #fff6dd;
   --highlight-color: rgba(254, 230, 159, 0.5);
@@ -315,11 +315,20 @@ blockquote {
 summary {
   display: flex;
   cursor: pointer;
+  text-decoration: underline;
+  text-decoration-color: var(--underline-color);
 }
 
 summary::after {
-  content: "⇢";
+  /* content: "⇢"; */
   padding-left: 0.5rem;
+}
+
+summary:hover {
+  animation-name: link;
+  animation-duration: var(--animation-duration);
+  animation-fill-mode: var(--animation-fill-mode);
+  background: none;
 }
 
 summary::-webkit-details-marker {
@@ -335,6 +344,7 @@ details[open] {
 details[open] summary {
   background-color: var(--details-disclose-color);
   font-weight: var(--title-font-weight);
+  text-decoration: none;
 }
 
 details div,
@@ -346,10 +356,10 @@ details em {
 @media (prefers-color-scheme: dark) {
   * {
     --dark-text-color: #fdf6e1;
-    background: #040300;
+    background: #110d00;
     --heading-color: var(--dark-text-color);
     --body-color: var(--dark-text-color);
-    --underline-color: #6b5b25;
+    --underline-color: #8f7930;
     --details-disclose-color: #2f2810;
   }
 }

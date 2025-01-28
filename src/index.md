@@ -34,6 +34,8 @@ description: Will Rynearson | Product Manager, Sustainability Advocate, Outdoor 
 {{ mostRecent.content }}
 
 <div>
+  <br/>
+  <hr/>
   <h3>Previously</h3>
   {% assign previousPosts = collections.recently | reverse | slice: 1, collections.recently.size %}
   
