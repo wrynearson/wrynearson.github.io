@@ -1,28 +1,11 @@
-import { eleventyImagePlugin } from "@11ty/eleventy-img";
+import { eleventyImageTransformPlugin } from "@11ty/eleventy-img";
 import { fortawesomeFreeRegularPlugin } from "@vidhill/fortawesome-free-regular-11ty-shortcode";
 import moment from "moment";
 
 export default function (eleventyConfig) {
-  eleventyConfig.setTemplateFormats([
-    "md",
-    "png",
-    "jpg",
-    "svg",
-    "gif",
-    "liquid",
-  ]);
+  eleventyConfig.setTemplateFormats(["md", "liquid"]);
 
-  eleventyConfig.addPlugin(eleventyImagePlugin, {
-    formats: ["jpeg", "webp"],
-    widths: [400, 800, null],
-    urlPath: "/img/",
-    outputDir: "./docs/img/",
-    defaultAttributes: {
-      loading: "lazy",
-      sizes: "100vw",
-      decoding: "async",
-    },
-  });
+  eleventyConfig.addPlugin(eleventyImageTransformPlugin);
 
   eleventyConfig.addPassthroughCopy("./src/css/");
   eleventyConfig.addWatchTarget("./src/css/");

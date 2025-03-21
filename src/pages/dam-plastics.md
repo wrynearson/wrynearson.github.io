@@ -8,7 +8,7 @@ outcome: A local-lead approach, collaboration with a local dam operator, and a g
 type: academic
 ---
 
-{% image "./src/assets/img/dam-plastics/1.png", "Dam Plastics", "(min-width: 30em) 50 vw, 100vw" %}
+![Dam Plastics](../assets/img/dam-plastics/1.png)
 
 Plastic is arguably the material that has affected human society in the most dramatic way. When plastic was first created over one hundred years ago, it had everything required to be the production material of the future - strength, durability, moldability, and most importantly, incredibly low cost.
 

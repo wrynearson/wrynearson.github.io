@@ -12,7 +12,7 @@ role: Builder
 repo: https://github.com/wrynearson/watermap
 ---
 
-{% image "./src/assets/img/watermap/watermap.png", "Watermap", "(min-width: 30em) 50 vw, 100vw" %}
+![Watermap](../assets/img/watermap/watermap.png)
 
 Switzerland and many European countries are blessed with public drinking water sources. I usually have a reusable bottle with me when out and about, but sometimes it takes some searching to find a nearby fountain to fill up.
 
@@ -124,7 +124,7 @@ Thinking of goal 1 again, the map is build with Javascript (no frameworks) using
 
 When the page loads, the map loads, with viewport defaulting to a view of Europe.
 
-{% image "./src/assets/img/watermap/watermap_mobile.png", "Watermap_mobile", "(min-width: 30em) 50 vw, 100vw" %}
+![Watermap_mobile](../assets/img/watermap/watermap_mobile.png)
 
 All three sources (drinking water tiles, toilet tiles and bench tiles) are added as individual sources in MapLibre. Then, each layer from each source (`points`, `lines`, `multilinestrings` and `multipolygons`) are added as layers in MapLibre. Each source type shares a color, but the layers have different styling (shared across source type).
 

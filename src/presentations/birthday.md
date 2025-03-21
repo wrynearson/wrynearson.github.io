@@ -9,7 +9,7 @@ title: "Happy Birthday!"
     Hey, it's your birthday!
     </span>
 
-    {% image "./src/assets/img/ds-ignite-2024/1.webp", "1", "(min-width: 30em) 50 vw, 100vw" %}
+    ![1](../assets/img/ds-ignite-2024/1.webp)
 
 </section>
 
@@ -66,7 +66,7 @@ title: "Happy Birthday!"
 <section>
 <section>
 
-    {% image "./src/assets/img/ds-ignite-2024/2.webp", "2", "(min-width: 30em) 50 vw, 100vw" %}
+    ![2](../assets/img/ds-ignite-2024/2.webp)
 
 </section>
 
