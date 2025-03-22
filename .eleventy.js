@@ -5,12 +5,27 @@ import moment from "moment";
 export default function (eleventyConfig) {
   eleventyConfig.setTemplateFormats(["md", "liquid"]);
 
-  eleventyConfig.addPlugin(eleventyImageTransformPlugin);
+  eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
+    // optional, output image formats
+    formats: ["avif", "webp", "jpeg"],
+    // optional, output image widths
+    widths: [600, 1100],
+    // optional, attributes assigned on <img> override these values.
+    defaultAttributes: {
+      loading: "lazy",
+      sizes: "100vw",
+      decoding: "async",
+      sharpOptions: {
+        animated: true,
+      },
+    },
+  });
 
-  eleventyConfig.addPassthroughCopy("./src/css/");
   eleventyConfig.addWatchTarget("./src/css/");
 
+  eleventyConfig.addPassthroughCopy("./src/css/");
   eleventyConfig.addPassthroughCopy({ "./src/favicon": "/" });
+
   eleventyConfig.addPlugin(fortawesomeFreeRegularPlugin);
 
   eleventyConfig.addFilter("dateFormat", async function (date) {
@@ -31,7 +46,7 @@ export default function (eleventyConfig) {
 
   eleventyConfig.addCollection("mostRecent", function (collectionApi) {
     const recentlyFiles = collectionApi.getFilteredByGlob(
-      "./src/recently/*.md"
+      "./src/recently/*.md",
     );
 
     const mostRecent = recentlyFiles.reduce((latest, current) => {
