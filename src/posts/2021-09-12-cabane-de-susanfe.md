@@ -7,7 +7,7 @@ description: A weekend hike in SW Switzerland
 image: "2021-09-12-cabane-de-susanfe/12.jpg"
 ---
 
-{% image "./src/assets/img/2021-09-12-cabane-de-susanfe/12.jpg", "12", "(min-width: 30em) 50 vw, 100vw" %}
+![12](../assets/img/2021-09-12-cabane-de-susanfe/12.jpg)
 
 With Autumn (and alpine inacessability) quickly approaching, a rugged hike at altitue was needed. Somehow after more than two years in Switzerland, I hadn't stayed in a Swiss Alpine Club (SAC) hut, so we looked for a weekend excursion which could combine these two. The SAC was founded in 1863, and operates a network of over 150 cabins, huts and refuges across Switzerland. More information can be found [here](https://www.sac-cas.ch/en/the-sac/about-us/).
 
@@ -19,58 +19,57 @@ We decided to do the majority of the distance and all of the ascent on the first
 
 The hike starts with a low to medium gradient gravel road and path. We had strong autumn vibes due to low clouds and the onset of autumn foliage.
 
-{% image "./src/assets/img/2021-09-12-cabane-de-susanfe/1.jpg", "1", "(min-width: 30em) 50 vw, 100vw" %}
+![1](../assets/img/2021-09-12-cabane-de-susanfe/1.jpg)
 
-{% image "./src/assets/img/2021-09-12-cabane-de-susanfe/2.jpg", "2", "(min-width: 30em) 50 vw, 100vw" %}
+![2](../assets/img/2021-09-12-cabane-de-susanfe/2.jpg)
 
 After 60-90 minutes, the expansive _lac de salanfe_ appears behind the dam. While we had low-lying clouds which reminded me of the Pacific Northwest of the United States, the Dents du Midi and other 3000m peaks are visible.
 
-{% image "./src/assets/img/2021-09-12-cabane-de-susanfe/3.jpg", "3", "(min-width: 30em) 50 vw, 100vw" %}
+![3](../assets/img/2021-09-12-cabane-de-susanfe/3.jpg)
 
-{% image "./src/assets/img/2021-09-12-cabane-de-susanfe/4.jpg", "4", "(min-width: 30em) 50 vw, 100vw" %}
-
+![4](../assets/img/2021-09-12-cabane-de-susanfe/4.jpg)
 
 The trail is fairly flat for the next hour with panoramic views.
 
-{% image "./src/assets/img/2021-09-12-cabane-de-susanfe/5.jpg", "5", "(min-width: 30em) 50 vw, 100vw" %}
+![5](../assets/img/2021-09-12-cabane-de-susanfe/5.jpg)
 
-{% image "./src/assets/img/2021-09-12-cabane-de-susanfe/6.jpg", "6", "(min-width: 30em) 50 vw, 100vw" %}
+![6](../assets/img/2021-09-12-cabane-de-susanfe/6.jpg)
 
-{% image "./src/assets/img/2021-09-12-cabane-de-susanfe/7.jpg", "7", "(min-width: 30em) 50 vw, 100vw" %}
+![7](../assets/img/2021-09-12-cabane-de-susanfe/7.jpg)
 
 From here, the path gets narrower and steeper, but stays accessible. There are impressive glaciers on the left, and the Dents du Midi towering on the right. This continues for almost an hour.
 
-{% image "./src/assets/img/2021-09-12-cabane-de-susanfe/8.jpg", "8", "(min-width: 30em) 50 vw, 100vw" %}
+![8](../assets/img/2021-09-12-cabane-de-susanfe/8.jpg)
 
-{% image "./src/assets/img/2021-09-12-cabane-de-susanfe/9.jpg", "9", "(min-width: 30em) 50 vw, 100vw" %}
+![9](../assets/img/2021-09-12-cabane-de-susanfe/9.jpg)
 
-{% image "./src/assets/img/2021-09-12-cabane-de-susanfe/10.jpg", "10", "(min-width: 30em) 50 vw, 100vw" %}
+![10](../assets/img/2021-09-12-cabane-de-susanfe/10.jpg)
 
-{% image "./src/assets/img/2021-09-12-cabane-de-susanfe/11.jpg", "11", "(min-width: 30em) 50 vw, 100vw" %}
+![11](../assets/img/2021-09-12-cabane-de-susanfe/11.jpg)
 
 For the final 10-15 minutes before the summit, the terrain changes to dramatic black shale rock. It was my first time to see such desolate, almost extraterrestrial landscapes in Switzerland. The low clouds probably added to this feeling, but I imagine it would be the same even on a sunny day.
 
-{% image "./src/assets/img/2021-09-12-cabane-de-susanfe/12.jpg", "12", "(min-width: 30em) 50 vw, 100vw" %}
+![12](../assets/img/2021-09-12-cabane-de-susanfe/12.jpg)
 
 A pleasant sign stated that it was only another 30 minutes to the Cabane de Susanfe. The slow decent into this very remote valley was peaceful and beautiful. Recently fixating some of my frustration on noise pollution from engines in Geneva, we relished in the calm that only a valley with no roads can provide.
 
-{% image "./src/assets/img/2021-09-12-cabane-de-susanfe/13.jpg", "13", "(min-width: 30em) 50 vw, 100vw" %}
+![13](../assets/img/2021-09-12-cabane-de-susanfe/13.jpg)
 
-{% image "./src/assets/img/2021-09-12-cabane-de-susanfe/14.jpg", "14", "(min-width: 30em) 50 vw, 100vw" %}
+![14](../assets/img/2021-09-12-cabane-de-susanfe/14.jpg)
 
-{% image "./src/assets/img/2021-09-12-cabane-de-susanfe/15.jpg", "15", "(min-width: 30em) 50 vw, 100vw" %}
+![15](../assets/img/2021-09-12-cabane-de-susanfe/15.jpg)
 
 However, calm doesn't mean quite, as the sheep soon made us realize.
 
-{% image "./src/assets/img/2021-09-12-cabane-de-susanfe/16.jpg", "16", "(min-width: 30em) 50 vw, 100vw" %}
+![16](../assets/img/2021-09-12-cabane-de-susanfe/16.jpg)
 
-{% image "./src/assets/img/2021-09-12-cabane-de-susanfe/17.jpg", "17", "(min-width: 30em) 50 vw, 100vw" %}
+![17](../assets/img/2021-09-12-cabane-de-susanfe/17.jpg)
 
 After enjoying the remoteness and the changing weather, we descended onto the cabin. I was especially excited since it was the first time I had stayed in an SAC cabin. The experience was great – a vast improvement in comfort over the wild camping that I am used to. Coming from North America, where publicly-accessible mountain cabins are exceedingly rare and barebones, this was a treat, and is something that should be maintained.
 
-{% image "./src/assets/img/2021-09-12-cabane-de-susanfe/18.jpg", "18", "(min-width: 30em) 50 vw, 100vw" %}
+![18](../assets/img/2021-09-12-cabane-de-susanfe/18.jpg)
 
-{% image "./src/assets/img/2021-09-12-cabane-de-susanfe/19.jpg", "19", "(min-width: 30em) 50 vw, 100vw" %}
+![19](../assets/img/2021-09-12-cabane-de-susanfe/19.jpg)
 
 ## Day 2: Cabane de Susanfe – Champéry
 
@@ -78,27 +77,27 @@ After enjoying the remoteness and the changing weather, we descended onto the ca
 
 The autumn vibes parted for gorgeous clear skies. With schedules running early in these mountain huts, we were able to enjoy the prolongued sunrise before and after breakfast, as well as during the first part of our hike.
 
-{% image "./src/assets/img/2021-09-12-cabane-de-susanfe/20.jpg", "20", "(min-width: 30em) 50 vw, 100vw" %}
+![20](../assets/img/2021-09-12-cabane-de-susanfe/20.jpg)
 
-{% image "./src/assets/img/2021-09-12-cabane-de-susanfe/21.jpg", "21", "(min-width: 30em) 50 vw, 100vw" %}
+![21](../assets/img/2021-09-12-cabane-de-susanfe/21.jpg)
 
 We took the descent slow as the stunning landscapes made me stop for a photo ever few minutes. Towards the exit of the haning _Susanfe_ valley, I was truly awestruck by the grand beauty of this place. It really has it all – towering peaks, glaciers, waterfalls, idilic lone trees, and grassy patches. I could have spent all day here.
 
-{% image "./src/assets/img/2021-09-12-cabane-de-susanfe/22.jpg", "22", "(min-width: 30em) 50 vw, 100vw" %}
+![22](../assets/img/2021-09-12-cabane-de-susanfe/22.jpg)
 
-{% image "./src/assets/img/2021-09-12-cabane-de-susanfe/23.jpg", "23", "(min-width: 30em) 50 vw, 100vw" %}
+![23](../assets/img/2021-09-12-cabane-de-susanfe/23.jpg)
 
-{% image "./src/assets/img/2021-09-12-cabane-de-susanfe/24.jpg", "24", "(min-width: 30em) 50 vw, 100vw" %}
+![24](../assets/img/2021-09-12-cabane-de-susanfe/24.jpg)
 
-{% image "./src/assets/img/2021-09-12-cabane-de-susanfe/25.jpg", "25", "(min-width: 30em) 50 vw, 100vw" %}
+![25](../assets/img/2021-09-12-cabane-de-susanfe/25.jpg)
 
-{% image "./src/assets/img/2021-09-12-cabane-de-susanfe/26.jpg", "26", "(min-width: 30em) 50 vw, 100vw" %}
+![26](../assets/img/2021-09-12-cabane-de-susanfe/26.jpg)
 
 Finally prying ourselves from the high valley, we were pleased with the descent. The path follows a river-turned-waterfall, but wasn't too difficult to traverse. Chains were mounted near especially steep sections.
 
-{% image "./src/assets/img/2021-09-12-cabane-de-susanfe/27.jpg", "27", "(min-width: 30em) 50 vw, 100vw" %}
+![27](../assets/img/2021-09-12-cabane-de-susanfe/27.jpg)
 
-{% image "./src/assets/img/2021-09-12-cabane-de-susanfe/28.jpg", "28", "(min-width: 30em) 50 vw, 100vw" %}
+![28](../assets/img/2021-09-12-cabane-de-susanfe/28.jpg)
 
 The descent was longer than we anticipated – roughly 5 hours with all of our stops, but only about 3 hours of moving time. The trail stayed beautiful all the way into Champéry, where we easily caught a train back to Geneva via Aigle (these connections run at least hourly, so it's more flexible than departing from Van d'en Haut.
 

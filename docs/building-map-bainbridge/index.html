@@ -6,13 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- make the title of each page's front matter the site title, and the description as the description for search results -->
     <title>Buildings</title>
-    <meta name="description" content="Using Microsoft's Building Dataset to Create an Artistic Map of my Hometown"/>
+    <meta name="description" content="Using Microsoft's Building Dataset to Create an Artistic Map of my Hometown">
     <!-- suggest to search engines to "crawl" the site,and the links within (and that I endorse them) However, no "robots" directive = index & endorse -->
-    <meta name=”robots” content="index, follow">
+    <meta name="”robots”" content="index, follow">
     <link rel="stylesheet" href="/css/style.css">
     
     
-    <script defer src="https://cloud.umami.is/script.js" data-website-id="488dc28f-af33-498d-a654-950b4c406204"></script>
+    <script defer="" src="https://cloud.umami.is/script.js" data-website-id="488dc28f-af33-498d-a654-950b4c406204"></script>
     
   </head>
   <body>
@@ -36,7 +36,7 @@
 </div>
 
 <div class="content">
-  <p><picture><img alt="Bainbridge Island Building Map" loading="lazy" decoding="async" src="/img/JZ0CdQ7DVK-600.webp" width="1100" height="1555" srcset="/img/JZ0CdQ7DVK-600.webp 600w, /img/JZ0CdQ7DVK-1100.webp 1100w" sizes="(min-width: 30em) 50 vw, 100vw"></picture></p>
+  <p><picture><source type="image/avif" srcset="/.11ty/image/?src=src%2Fassets%2Fimg%2F2020-04-28-building-map-bainbridge%2Fbainbridge-1.png&width=500&format=avif&via=transform 500w, /.11ty/image/?src=src%2Fassets%2Fimg%2F2020-04-28-building-map-bainbridge%2Fbainbridge-1.png&width=1300&format=avif&via=transform 1300w" sizes="100vw"><source type="image/webp" srcset="/.11ty/image/?src=src%2Fassets%2Fimg%2F2020-04-28-building-map-bainbridge%2Fbainbridge-1.png&width=500&format=webp&via=transform 500w, /.11ty/image/?src=src%2Fassets%2Fimg%2F2020-04-28-building-map-bainbridge%2Fbainbridge-1.png&width=1300&format=webp&via=transform 1300w" sizes="100vw"><img loading="lazy" decoding="async" src="/.11ty/image/?src=src%2Fassets%2Fimg%2F2020-04-28-building-map-bainbridge%2Fbainbridge-1.png&width=500&format=jpeg&via=transform" alt="Bainbridge Island Building Map" width="1300" height="1838" srcset="/.11ty/image/?src=src%2Fassets%2Fimg%2F2020-04-28-building-map-bainbridge%2Fbainbridge-1.png&width=500&format=jpeg&via=transform 500w, /.11ty/image/?src=src%2Fassets%2Fimg%2F2020-04-28-building-map-bainbridge%2Fbainbridge-1.png&width=1300&format=jpeg&via=transform 1300w" sizes="100vw"></picture></p>
 <p>I've always loved maps. The differet ways we represent the physical world on a small screenor piece of paper is fascinating. I could spend hours looking at subway maps, old world maps,or beautiful topo maps. They're such a powerful mix of technical prowess and art (maybe that's why I love photography).</p>
 <p>Maps, and other visualizations, are a great way to turn complicated or abstract information intosomething understandable. Early on my journey to learn how to visualize data, I've been inspired by recent works of data journalism, especially from the New York Times.</p>
 <h2>Inspiration</h2>
@@ -44,14 +44,14 @@
 <h2>Process</h2>
 <p>I'm from Bainbridge Island (near Seattle), so I thought I'd start there. I found <a href="https://usbuildingdata.blob.core.windows.net/usbuildings-v1-1/Washington.zip"><code>Washington.zip</code></a> file (98 MB zipped, 691 MB unzipped) conveniently listed, downloaded it, and loaded it into QGIS. I turned on a background map (OSM) to help navigate.</p>
 <p>There are quite a few features to be rendered (2,993,361 to be exact).</p>
-<p><picture><img alt="Loading" loading="lazy" decoding="async" src="/img/aJq9mlfsXr-600.webp" width="1100" height="581" srcset="/img/aJq9mlfsXr-600.webp 600w, /img/aJq9mlfsXr-1100.webp 1100w" sizes="(min-width: 30em) 50 vw, 100vw"></picture></p>
+<p><picture><source type="image/avif" srcset="/.11ty/image/?src=src%2Fassets%2Fimg%2F2020-04-28-building-map-bainbridge%2Floading.gif&width=500&format=avif&via=transform 500w, /.11ty/image/?src=src%2Fassets%2Fimg%2F2020-04-28-building-map-bainbridge%2Floading.gif&width=1300&format=avif&via=transform 1300w" sizes="100vw"><source type="image/webp" srcset="/.11ty/image/?src=src%2Fassets%2Fimg%2F2020-04-28-building-map-bainbridge%2Floading.gif&width=500&format=webp&via=transform 500w, /.11ty/image/?src=src%2Fassets%2Fimg%2F2020-04-28-building-map-bainbridge%2Floading.gif&width=1300&format=webp&via=transform 1300w" sizes="100vw"><img loading="lazy" decoding="async" src="/.11ty/image/?src=src%2Fassets%2Fimg%2F2020-04-28-building-map-bainbridge%2Floading.gif&width=500&format=jpeg&via=transform" alt="Loading" width="1300" height="687" srcset="/.11ty/image/?src=src%2Fassets%2Fimg%2F2020-04-28-building-map-bainbridge%2Floading.gif&width=500&format=jpeg&via=transform 500w, /.11ty/image/?src=src%2Fassets%2Fimg%2F2020-04-28-building-map-bainbridge%2Floading.gif&width=1300&format=jpeg&via=transform 1300w" sizes="100vw"></picture></p>
 <p>Very new to QGIS (I'm sure there's a better way of doing this), I zoomed into Puget Sound and used the <code>Select Features by Freehand</code> tool to select just the polygons (buildings) on Bainbridge Island. Being an island surrounded by water, as all islands tend to be, it was easy to define what was a building on Bainbridge and what wasn't. You can also turn on a background map to help you navigate. Sadly the buildings aren't labeled, unlike how they are in OpenStreetMap.</p>
-<p><picture><img alt="Select" loading="lazy" decoding="async" src="/img/B5yahsSwNE-600.webp" width="1100" height="581" srcset="/img/B5yahsSwNE-600.webp 600w, /img/B5yahsSwNE-1100.webp 1100w" sizes="(min-width: 30em) 50 vw, 100vw"></picture></p>
+<p><picture><source type="image/avif" srcset="/.11ty/image/?src=src%2Fassets%2Fimg%2F2020-04-28-building-map-bainbridge%2Fselect.gif&width=500&format=avif&via=transform 500w, /.11ty/image/?src=src%2Fassets%2Fimg%2F2020-04-28-building-map-bainbridge%2Fselect.gif&width=1300&format=avif&via=transform 1300w" sizes="100vw"><source type="image/webp" srcset="/.11ty/image/?src=src%2Fassets%2Fimg%2F2020-04-28-building-map-bainbridge%2Fselect.gif&width=500&format=webp&via=transform 500w, /.11ty/image/?src=src%2Fassets%2Fimg%2F2020-04-28-building-map-bainbridge%2Fselect.gif&width=1300&format=webp&via=transform 1300w" sizes="100vw"><img loading="lazy" decoding="async" src="/.11ty/image/?src=src%2Fassets%2Fimg%2F2020-04-28-building-map-bainbridge%2Fselect.gif&width=500&format=jpeg&via=transform" alt="Select" width="1300" height="687" srcset="/.11ty/image/?src=src%2Fassets%2Fimg%2F2020-04-28-building-map-bainbridge%2Fselect.gif&width=500&format=jpeg&via=transform 500w, /.11ty/image/?src=src%2Fassets%2Fimg%2F2020-04-28-building-map-bainbridge%2Fselect.gif&width=1300&format=jpeg&via=transform 1300w" sizes="100vw"></picture></p>
 <p>I then copied these polygons into a new virtual layer and went to artistic &quot;work&quot; simply changing the background color, fill color and border color. I used the same emerald green <code>#50C878</code> for both the building fill and border, but put the fill at 75% opacity. Then, in the print layout area, I set the background to transparent and exported it as a <code>.png</code>.</p>
 <p>Et voilà, it turned out pretty well!</p>
-<p><picture><img alt="Downtown" loading="lazy" decoding="async" src="/img/pek1RlaecN-600.webp" width="1100" height="1555" srcset="/img/pek1RlaecN-600.webp 600w, /img/pek1RlaecN-1100.webp 1100w" sizes="(min-width: 30em) 50 vw, 100vw"></picture></p>
+<p><picture><source type="image/avif" srcset="/.11ty/image/?src=src%2Fassets%2Fimg%2F2020-04-28-building-map-bainbridge%2Fbainbridge-2.png&width=500&format=avif&via=transform 500w, /.11ty/image/?src=src%2Fassets%2Fimg%2F2020-04-28-building-map-bainbridge%2Fbainbridge-2.png&width=1300&format=avif&via=transform 1300w" sizes="100vw"><source type="image/webp" srcset="/.11ty/image/?src=src%2Fassets%2Fimg%2F2020-04-28-building-map-bainbridge%2Fbainbridge-2.png&width=500&format=webp&via=transform 500w, /.11ty/image/?src=src%2Fassets%2Fimg%2F2020-04-28-building-map-bainbridge%2Fbainbridge-2.png&width=1300&format=webp&via=transform 1300w" sizes="100vw"><img loading="lazy" decoding="async" src="/.11ty/image/?src=src%2Fassets%2Fimg%2F2020-04-28-building-map-bainbridge%2Fbainbridge-2.png&width=500&format=jpeg&via=transform" alt="Downtown" width="1300" height="1838" srcset="/.11ty/image/?src=src%2Fassets%2Fimg%2F2020-04-28-building-map-bainbridge%2Fbainbridge-2.png&width=500&format=jpeg&via=transform 500w, /.11ty/image/?src=src%2Fassets%2Fimg%2F2020-04-28-building-map-bainbridge%2Fbainbridge-2.png&width=1300&format=jpeg&via=transform 1300w" sizes="100vw"></picture></p>
 <p>It's interesting to see where the island has been developed, versus where it hasn't. The downtown area is just north of Eagle Harbor, while the void in the middle is Gazzam Lake Nature Preserve.</p>
-<p><picture><img alt="Nature Reserve" loading="lazy" decoding="async" src="/img/tU6IvlGSO0-600.webp" width="1100" height="1555" srcset="/img/tU6IvlGSO0-600.webp 600w, /img/tU6IvlGSO0-1100.webp 1100w" sizes="(min-width: 30em) 50 vw, 100vw"></picture></p>
+<p><picture><source type="image/avif" srcset="/.11ty/image/?src=src%2Fassets%2Fimg%2F2020-04-28-building-map-bainbridge%2Fbainbridge-3.png&width=500&format=avif&via=transform 500w, /.11ty/image/?src=src%2Fassets%2Fimg%2F2020-04-28-building-map-bainbridge%2Fbainbridge-3.png&width=1300&format=avif&via=transform 1300w" sizes="100vw"><source type="image/webp" srcset="/.11ty/image/?src=src%2Fassets%2Fimg%2F2020-04-28-building-map-bainbridge%2Fbainbridge-3.png&width=500&format=webp&via=transform 500w, /.11ty/image/?src=src%2Fassets%2Fimg%2F2020-04-28-building-map-bainbridge%2Fbainbridge-3.png&width=1300&format=webp&via=transform 1300w" sizes="100vw"><img loading="lazy" decoding="async" src="/.11ty/image/?src=src%2Fassets%2Fimg%2F2020-04-28-building-map-bainbridge%2Fbainbridge-3.png&width=500&format=jpeg&via=transform" alt="Nature Reserve" width="1300" height="1838" srcset="/.11ty/image/?src=src%2Fassets%2Fimg%2F2020-04-28-building-map-bainbridge%2Fbainbridge-3.png&width=500&format=jpeg&via=transform 500w, /.11ty/image/?src=src%2Fassets%2Fimg%2F2020-04-28-building-map-bainbridge%2Fbainbridge-3.png&width=1300&format=jpeg&via=transform 1300w" sizes="100vw"></picture></p>
 
 </div>
 
@@ -73,9 +73,9 @@
     </a>
   </div>
   <div class="coffee">
-    <a href="/coffee">☕️ 346</a>
+    <a href="/coffee">☕️ 349</a>
   </div>
-</div></div>
+</div>
 </footer>
     </main>
   </body>

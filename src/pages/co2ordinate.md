@@ -11,11 +11,11 @@ role: Project Manager
 url: https://developmentseed.org/co2ordinate/
 ---
 
-{% image "./src/assets/img/co2ordinate/co2ordinate-overview.png", "Co2ordinate", "(min-width: 30em) 50 vw, 100vw" %}
+![Co2ordinate](../assets/img/co2ordinate/co2ordinate-overview.png)
 
 [Co₂ordinate](https://devseed.com/co2ordinate/) was created as an internal tool to organize our first annual company Team Week meeting. It allows you to select which team members need to meet, and Co₂ordinate will rank the most efficient places to gather. This ranking is based on locations with fewer flight-related GHG emissions for a group of team members. The selection is geared towards places close to at least one team member.
 
-{% image "./src/assets/img/co2ordinate/co2ordinate-click-add.gif", "add users by clicking on the map", "(min-width: 30em) 50 vw, 100vw" %}
+![add users by clicking on the map](../assets/img/co2ordinate/co2ordinate-click-add.gif)
 
 This was a fun but challenging project. We had to balance:
 
@@ -28,7 +28,7 @@ Overall, we built a beautiful _low-resolution_ tool to get users away from the m
 
 People can be added by clicking on the map or uploading a .csv, and can be grouped by teams. Data is stored locally in the browser.
 
-{% image "./src/assets/img/co2ordinate/co2ordinate-add-remove-group.gif", "deselect groups", "(min-width: 30em) 50 vw, 100vw" %}
+![deselect groups](../assets/img/co2ordinate/co2ordinate-add-remove-group.gif)
 
 Hopefully we can improve the tool's accuracy in the future, and incorporate train and bus travel to discourage unnecessary flights.
 

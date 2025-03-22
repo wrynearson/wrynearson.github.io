@@ -7,15 +7,15 @@ description: Sri Lanka's Historic Tradition of Stilt Fishing
 image: "2018-03-01-stilt-fishermen-sri-lanka/7.jpg"
 ---
 
-{% image "./src/assets/img/2018-03-01-stilt-fishermen-sri-lanka/1.jpg", "1", "(min-width: 30em) 50 vw, 100vw" %}
+![1](../assets/img/2018-03-01-stilt-fishermen-sri-lanka/1.jpg)
 
-{% image "./src/assets/img/2018-03-01-stilt-fishermen-sri-lanka/2.jpg", "2", "(min-width: 30em) 50 vw, 100vw" %}
+![2](../assets/img/2018-03-01-stilt-fishermen-sri-lanka/2.jpg)
 
 ## The Back Story
 
-*More about traveling Sri Lanka by tuktuk [here]({{ base.url }}/sri-lanka-tuktuk/).*
+_More about traveling Sri Lanka by tuktuk [here]({{ base.url }}/sri-lanka-tuktuk/)._
 
-A friend and I had traveled in Vietnam in 2017 by motorbike and loved the exposure and 
+A friend and I had traveled in Vietnam in 2017 by motorbike and loved the exposure and
 flexibility it provided. We joked that our next trip should be via a vehicle with one more
 wheel than a motorbike. That left us with several options:
 
@@ -26,10 +26,10 @@ wheel than a motorbike. That left us with several options:
 
 After reading a bit about traveling by tuktuk in Sri Lanka, we knew it was the way to go.
 
-{% image "./src/assets/img/2018-03-01-stilt-fishermen-sri-lanka/3.jpg", "3", "(min-width: 30em) 50 vw, 100vw" %}
+![3](../assets/img/2018-03-01-stilt-fishermen-sri-lanka/3.jpg)
 
-We spent several days in the area, hoping to find the now-elusive *authentic* stilt fishermen.
-After the world saw Steve McCurry's iconic shots of the wonderful traditional practice, 
+We spent several days in the area, hoping to find the now-elusive _authentic_ stilt fishermen.
+After the world saw Steve McCurry's iconic shots of the wonderful traditional practice,
 and several other reasons, locals posing as fisherman who charge tourists to capture their
 smiles make much more than the ones who still practice the craft.
 
@@ -37,14 +37,14 @@ We kept hearing rumors that a group was working their way down the coast. On our
 in the area, about two hours before sunset, we finally saw them. As enthusiastic photographers,
 and culturally-insensitive tourists, we snapped away until it got dark.
 
-{% image "./src/assets/img/2018-03-01-stilt-fishermen-sri-lanka/4.jpg", "1", "(min-width: 30em) 50 vw, 100vw" %}
+![1](../assets/img/2018-03-01-stilt-fishermen-sri-lanka/4.jpg)
 
-*Some seemed to be experts, while others were just getting started.*
+_Some seemed to be experts, while others were just getting started._
 
-{% image "./src/assets/img/2018-03-01-stilt-fishermen-sri-lanka/5.jpg", "5", "(min-width: 30em) 50 vw, 100vw" %}
+![5](../assets/img/2018-03-01-stilt-fishermen-sri-lanka/5.jpg)
 
-{% image "./src/assets/img/2018-03-01-stilt-fishermen-sri-lanka/6.jpg", "6", "(min-width: 30em) 50 vw, 100vw" %}
+![6](../assets/img/2018-03-01-stilt-fishermen-sri-lanka/6.jpg)
 
-{% image "./src/assets/img/2018-03-01-stilt-fishermen-sri-lanka/7.jpg", "7", "(min-width: 30em) 50 vw, 100vw" %}
+![7](../assets/img/2018-03-01-stilt-fishermen-sri-lanka/7.jpg)
 
-*Written on April 27th, 2020*
+_Written on April 27th, 2020_
