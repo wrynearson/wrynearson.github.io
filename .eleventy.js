@@ -9,7 +9,7 @@ export default function (eleventyConfig) {
     // optional, output image formats
     formats: ["avif", "webp", "jpeg"],
     // optional, output image widths
-    widths: [600, 1100],
+    widths: [500, 1300],
     // optional, attributes assigned on <img> override these values.
     defaultAttributes: {
       loading: "lazy",
