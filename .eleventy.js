@@ -7,13 +7,12 @@ export default function (eleventyConfig) {
 
   eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
     // optional, output image formats
-    formats: ["avif", "webp", "jpeg"],
+    formats: ["avif", "jpg"],
     // optional, output image widths
-    widths: [500, 1300],
+    widths: [1200],
     // optional, attributes assigned on <img> override these values.
     defaultAttributes: {
       loading: "lazy",
-      sizes: "100vw",
       decoding: "async",
       sharpOptions: {
         animated: true,
