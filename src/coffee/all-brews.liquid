@@ -1,0 +1,86 @@
+---
+permalink: 'coffee/index.html'
+layout: base
+---
+
+
+<h1>Coffee Log</h1>
+<p class="description">
+  I've prepared {{ coffee.brews_combined.length }} coffees using
+  <a href="/coffee/beans/">26 bags of coffee</a>
+  since I started tracking in early 2024.
+</p>
+
+<br>
+
+<table class="table">
+  <thead class="table-head">
+    <tr class="table-head">
+      <th class="table-head narrow">Date</th>
+      <th class="table-head">Coffee</th>
+      <th class="table-head narrow">Style</th>
+      <th class="table-head wide">Notes</th>
+    </tr>
+  </thead>
+  <tbody class="table-body">
+    {% for meta in coffee.brews_combined reversed %}
+      <tr class="table-row">
+        {% if meta.starred == true %}
+          <td class="cell starred">
+            {% if meta.date == blank %}
+              <a href="/coffee/brews/{{meta.brew_id}}" class="starred">
+                <em>Early {{ meta.date | default: "2024" }}</em>
+              </a>
+            {% else %}
+              <a href="/coffee/brews/{{meta.brew_id}}">
+                <time>{{ meta.date | dateFormat }}</time>
+              </a>
+            {% endif %}
+          </td>
+          <td class="cell starred">
+            <a href="/coffee/beans/{{meta.id}}">{{ meta.bean }}</a>
+          </td>
+          <td class="cell starred">{{ meta.type }}</td>
+          <td class="cell starred">{{ meta.notes }}</td>
+        {% else %}
+          <td class="cell">
+            {% if meta.date == blank %}
+              <a href="/coffee/brews/{{meta.brew_id}}" class="starred">
+                <em>Early {{ meta.date | default: "2024" }}</em>
+              </a>
+            {% else %}
+              <a href="/coffee/brews/{{meta.brew_id}}">
+                <time>{{ meta.date | dateFormat }}</time>
+              </a>
+            {% endif %}
+          </td>
+          <td class="cell">
+            <a href="/coffee/beans/{{meta.id}}">{{ meta.bean }}</a>
+          </td>
+          <td class="cell">{{ meta.type }}</td>
+          <td class="cell">{{ meta.notes }}</td>
+        {% endif %}
+      </tr>
+    {% endfor %}
+  </tbody>
+</table>
+
+<br>
+
+<footer class="footer">
+  <div class="name_link">—
+    <a href="/">Will</a>
+  </div>
+  <div class="stats">
+    <div class="words">
+      <a href="/words/">
+        <p title="I've written 11369 words worth of notes in 2025, as of 2025/03/28">
+          11369 words
+        </p>
+      </a>
+    </div>
+    <div class="coffee">
+      <a href="/coffee/">☕️ {{ coffee.brews_combined.length }}</a>
+    </div>
+  </div>
+</footer>

@@ -45,7 +45,7 @@ export default function (eleventyConfig) {
 
   eleventyConfig.addCollection("mostRecent", function (collectionApi) {
     const recentlyFiles = collectionApi.getFilteredByGlob(
-      "./src/recently/*.md",
+      "./src/recently/*.md"
     );
 
     const mostRecent = recentlyFiles.reduce((latest, current) => {
