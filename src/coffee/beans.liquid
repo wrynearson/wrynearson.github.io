@@ -8,7 +8,7 @@ layout: base
 ---
 
 <h1>
-  Coffee {{bean.id}} Overview
+  {{bean.real_name}} Overview
 </h1>
 
 {% if bean.archived == true %}
@@ -79,8 +79,6 @@ layout: base
       </tr>
 </table>
 
-<h2>See the other coffee beans I've brewed <a href="/coffee/beans/">here</a>.</h2>
-
 <h2>Brews using this coffee:</h2>
 
 <table class="table">
@@ -143,8 +141,9 @@ layout: base
       {% endif %}
     {% endfor %}
   </tbody>
-
 </table>
+
+<h2>See the other coffee beans I've brewed <a href="/coffee/beans/">here</a>.</h2>
 
 <br>
 
