@@ -378,6 +378,13 @@ details em {
   display: block;
 }
 
+/* Style for inline <code> elements */
+code {
+  color: #8f7930;
+  padding: 0.2rem 0.2rem;
+  font-size: 1rem;
+}
+
 /* ---  */
 
 /*

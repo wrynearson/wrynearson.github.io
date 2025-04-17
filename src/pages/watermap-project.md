@@ -46,7 +46,7 @@ Luckily, GeoFabrik offers [regional extracts](https://download.geofabrik.de/) of
 
 Once I had a nice `switzerland.osm.pbf`, I then tried to figure out how to extract only the data I needed (drinking water, and later toilets and benches). [Osmium](https://osmcode.org/osmium-tool/) is a powerful CLI tool to process .pbf files and extract data based on tags.
 
-```shell
+```none
 osmium tags-filter switzerland.osm.pbf drinking_water=yes, amenity=drinking_water -o drinking_water.pbf
 ```
 
