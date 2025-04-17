@@ -24,11 +24,11 @@ importers:
         specifier: ^3.3.2
         version: 3.3.2
       npm:
-        specifier: ^10.9.2
-        version: 10.9.2
+        specifier: ^11.3.0
+        version: 11.3.0
       pnpm:
-        specifier: ^9.15.9
-        version: 9.15.9
+        specifier: ^10.8.1
+        version: 10.8.1
       reveal.js:
         specifier: ^5.2.1
         version: 5.2.1
@@ -768,9 +768,9 @@ packages:
     resolution: {integrity: sha512-6eZs5Ls3WtCisHWp9S2GUy8dqkpGi4BVSz3GaqiE6ezub0512ESztXUwUB6C6IKbQkY2Pnb/mD4WYojCRwcwLA==}
     engines: {node: '>=0.10.0'}
 
-  npm@10.9.2:
-    resolution: {integrity: sha512-iriPEPIkoMYUy3F6f3wwSZAU93E0Eg6cHwIR6jzzOXWSy+SD/rOODEs74cVONHKSx2obXtuUoyidVEhISrisgQ==}
-    engines: {node: ^18.17.0 || >=20.5.0}
+  npm@11.3.0:
+    resolution: {integrity: sha512-luthFIP0nFX3+nTfYbWI3p4hP4CiVnKOZ5jdxnF2x7B+Shz8feiSJCLLzgJUNxQ2cDdTaVUiH6RRsMT++vIMZg==}
+    engines: {node: ^20.17.0 || >=22.9.0}
     hasBin: true
     bundledDependencies:
       - '@isaacs/string-locale-compare'
@@ -802,7 +802,6 @@ packages:
       - libnpmdiff
       - libnpmexec
       - libnpmfund
-      - libnpmhook
       - libnpmorg
       - libnpmpack
       - libnpmpublish
@@ -840,7 +839,6 @@ packages:
       - treeverse
       - validate-npm-package-name
       - which
-      - write-file-atomic
 
   nunjucks@3.2.4:
     resolution: {integrity: sha512-26XRV6BhkgK0VOxfbU5cQI+ICFUtMLixv1noZn1tGU38kQH5A5nmmbk/O45xdyBhD1esk47nKrY0mvQpZIhRjQ==}
@@ -897,8 +895,8 @@ packages:
   please-upgrade-node@3.2.0:
     resolution: {integrity: sha512-gQR3WpIgNIKwBMVLkpMUeR3e1/E1y42bqDQZfql+kDeXd8COYfM8PQA4X6y7a8u9Ua9FHmsrrmirW2vHs45hWg==}
 
-  pnpm@9.15.9:
-    resolution: {integrity: sha512-aARhQYk8ZvrQHAeSMRKOmvuJ74fiaR1p5NQO7iKJiClf1GghgbrlW1hBjDolO95lpQXsfF+UA+zlzDzTfc8lMQ==}
+  pnpm@10.8.1:
+    resolution: {integrity: sha512-xQCIupmMZ7jKjJnfil4C/Sri4rKaryOP6qnhJCSNP0j5+22yQklJ/5Ac/7teDwzBrWrttgLNKUUHUdEcNQI2dw==}
     engines: {node: '>=18.12'}
     hasBin: true
 
@@ -1831,7 +1829,7 @@ snapshots:
 
   normalize-path@3.0.0: {}
 
-  npm@10.9.2: {}
+  npm@11.3.0: {}
 
   nunjucks@3.2.4(chokidar@3.6.0):
     dependencies:
@@ -1877,7 +1875,7 @@ snapshots:
     dependencies:
       semver-compare: 1.0.0
 
-  pnpm@9.15.9: {}
+  pnpm@10.8.1: {}
 
   posthtml-match-helper@2.0.3(posthtml@0.16.6):
     dependencies:
