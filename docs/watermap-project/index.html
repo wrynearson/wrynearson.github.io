@@ -59,7 +59,7 @@
 </div>
 <hr class="page-separator">
 <div class="content">
-  <p><picture><source type="image/avif" srcset="/watermap-project/z5FcG7LDCq-1200.avif 1200w"><img loading="lazy" decoding="async" src="/watermap-project/z5FcG7LDCq-1200.jpeg" alt="Watermap" width="1200" height="1007"></picture></p>
+  <p><picture><source type="image/avif" srcset="/.11ty/image/?src=src%2Fassets%2Fimg%2Fwatermap%2Fwatermap.png&width=1200&format=avif&via=transform 1200w"><img loading="lazy" decoding="async" src="/.11ty/image/?src=src%2Fassets%2Fimg%2Fwatermap%2Fwatermap.png&width=1200&format=jpeg&via=transform" alt="Watermap" width="1200" height="1007"></picture></p>
 <p>Switzerland and many European countries are blessed with public drinking water sources. I usually have a reusable bottle with me when out and about, but sometimes it takes some searching to find a nearby fountain to fill up.</p>
 <p>Continuing with my frontend <a href="/willwillrun">mentorship</a> streak, I decided to build a map myself.</p>
 <p>I had a few goals in mind:</p>
@@ -145,7 +145,7 @@ for layer in layers:
 <h3>4. Show the data on a map</h3>
 <p>Thinking of goal 1 again, the map is build with Javascript (no frameworks) using MapLibre. Even more simply, the JS code is written directly in the <code>index.html</code> file.</p>
 <p>When the page loads, the map loads, with viewport defaulting to a view of Europe.</p>
-<p><picture><source type="image/avif" srcset="/watermap-project/PnmnMBTbI1-750.avif 750w"><img loading="lazy" decoding="async" src="/watermap-project/PnmnMBTbI1-750.jpeg" alt="Watermap_mobile" width="750" height="1334"></picture></p>
+<p><picture><source type="image/avif" srcset="/.11ty/image/?src=src%2Fassets%2Fimg%2Fwatermap%2Fwatermap_mobile.png&width=750&format=avif&via=transform 750w"><img loading="lazy" decoding="async" src="/.11ty/image/?src=src%2Fassets%2Fimg%2Fwatermap%2Fwatermap_mobile.png&width=750&format=jpeg&via=transform" alt="Watermap_mobile" width="750" height="1334"></picture></p>
 <p>All three sources (drinking water tiles, toilet tiles and bench tiles) are added as individual sources in MapLibre. Then, each layer from each source (<code>points</code>, <code>lines</code>, <code>multilinestrings</code> and <code>multipolygons</code>) are added as layers in MapLibre. Each source type shares a color, but the layers have different styling (shared across source type).</p>
 <p>Attentive readers might have noticed that the osm_id was kept in the data optimization step – if a point is clicked, its OSM_ID is shown in a tooltip. It would be better to link to the OSM feature through the tooltip.</p>
 <p>The basemap is from <a href="https://openfreemap.org/">OpenFreeMap</a>.</p>

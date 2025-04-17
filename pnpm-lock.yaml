@@ -17,9 +17,6 @@ importers:
       async:
         specifier: ^3.2.6
         version: 3.2.6
-      eleventy-plugin-footnotes:
-        specifier: ^0.10.0
-        version: 0.10.0
       luxon:
         specifier: ^3.5.0
         version: 3.5.0
@@ -381,10 +378,6 @@ packages:
     resolution: {integrity: sha512-7VT13fmjotKpGipCW9JEQAusEPE+Ei8nl6/g4FBAmIm0GOOLMua9NDDo/DWp0ZAxCr3cPq5ZpBqmPAQgDda2Pw==}
     engines: {node: '>= 8.10.0'}
 
-  clsx@1.2.1:
-    resolution: {integrity: sha512-EcR6r5a8bj6pu3ycsa/E/cKVGuTgZJZdsyUYHOksG/UHIiKfjxzRxYJpyVBwYaQeOvghal9fcc4PidlgzugAQg==}
-    engines: {node: '>=6'}
-
   color-convert@2.0.1:
     resolution: {integrity: sha512-RRECPsj7iu/xb5oKYcsFHSppFNnsj/52OVTRKb4zP5onXwVF3zVmmToNcOfGC+CRDpfK/U584fMg38ZHCaElKQ==}
     engines: {node: '>=7.0.0'}
@@ -489,9 +482,6 @@ packages:
 
   ee-first@1.1.1:
     resolution: {integrity: sha512-WMwm9LhRUo+WUaRN+vRuETqG89IgZphVSNkdFgeb6sS/E4OrDIN7t48CAewSHXc6C8lefD8KKfr5vY61brQlow==}
-
-  eleventy-plugin-footnotes@0.10.0:
-    resolution: {integrity: sha512-7VTsWc86FaNPc1dKejXvrLzuCk5xJYtZSDg5AphokgMyhQw0pRsrpd77XrOjS1CVtSOLYZKN0/gebUr8CTKR0w==}
 
   emoji-regex@8.0.0:
     resolution: {integrity: sha512-MSjYzcWNOA0ewAHpz0MxpYFvwg6yjy1NG3xteoqz644VCo/RPgnr1/GGt+ic3iJTzQ8Eu3TdM14SawnVUmGE6A==}
@@ -1577,8 +1567,6 @@ snapshots:
     optionalDependencies:
       fsevents: 2.3.3
 
-  clsx@1.2.1: {}
-
   color-convert@2.0.1:
     dependencies:
       color-name: 1.1.4
@@ -1668,10 +1656,6 @@ snapshots:
   eastasianwidth@0.2.0: {}
 
   ee-first@1.1.1: {}
-
-  eleventy-plugin-footnotes@0.10.0:
-    dependencies:
-      clsx: 1.2.1
 
   emoji-regex@8.0.0: {}
 

@@ -12,7 +12,7 @@ type: academic
 
 Plastic is arguably the material that has affected human society in the most dramatic way. When plastic was first created over one hundred years ago, it had everything required to be the production material of the future - strength, durability, moldability, and most importantly, incredibly low cost.
 
-However, almost all of the plastic ever created still exists in many forms and in many locations. Since plastics were first introduced, over 8.1 billion tonnes have been created; 6.3 billion tonnes have become plastic waste; and only nine percent of that waste has been recycled.[^1]
+However, almost all of the plastic ever created still exists in many forms and in many locations. Since plastics were first introduced, over 8.1 billion tonnes have been created; 6.3 billion tonnes have become plastic waste; and only nine percent of that waste has been recycled.[1]
 
 Plastic pollution in oceans is an important and well-documented sustainability issue, yet how this plastic gets there is not well understood.
 
@@ -26,4 +26,4 @@ Learn more [here](http://www.damplastics.org).
 
 ---
 
-[^1]: Dufour, F. (2018). _A whopping 91% of plastic isn't recycled._ Retrieved from [https://www.nationalgeographic.com/news/2017/07/plastic-produced-rec](https://www.nationalgeographic.com/news/2017/07/plastic-produced-recycling-waste-ocean-trash-debris-environment/)[cling-waste-ocean-trash-debris-environment/](https://www.nationalgeographic.com/news/2017/07/plastic-produced-recycling-waste-ocean-trash-debris-environment/).
+[1]: Dufour, F. (2018). _A whopping 91% of plastic isn't recycled._ Retrieved from [https://www.nationalgeographic.com/news/2017/07/plastic-produced-rec](https://www.nationalgeographic.com/news/2017/07/plastic-produced-recycling-waste-ocean-trash-debris-environment/)[cling-waste-ocean-trash-debris-environment/](https://www.nationalgeographic.com/news/2017/07/plastic-produced-recycling-waste-ocean-trash-debris-environment/).
