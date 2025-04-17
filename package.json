@@ -14,14 +14,14 @@
     "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.0"
   },
   "dependencies": {
-    "@11ty/eleventy-img": "^6.0.0",
+    "@11ty/eleventy-img": "^6.0.2",
     "@vidhill/fortawesome-free-regular-11ty-shortcode": "^1.0.3",
     "async": "^3.2.6",
     "moment": "^2.30.1",
-    "node-fetch": "^3.3.0",
+    "node-fetch": "^3.3.2",
     "npm": "^10.9.2",
-    "pnpm": "^9.15.0",
-    "reveal.js": "^5.1.0"
+    "pnpm": "^9.15.9",
+    "reveal.js": "^5.2.1"
   },
   "directories": {
     "doc": "docs"
