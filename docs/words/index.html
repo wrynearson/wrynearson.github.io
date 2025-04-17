@@ -10,7 +10,7 @@
     <!-- suggest to search engines to "crawl" the site,and the links within (and that I endorse them) However, no "robots" directive = index & endorse -->
     <meta name="”robots”" content="index, follow">
     <link rel="stylesheet" href="/css/style.css">
-    
+    <link href="https://raw.githubusercontent.com/PrismJS/prism-themes/master/themes/prism-duotone-earth.css" rel="stylesheet">
     
     <script defer="" src="https://cloud.umami.is/script.js" data-website-id="488dc28f-af33-498d-a654-950b4c406204"></script>
     <script defer="" data-domain="wrynearson.github.io" src="https://plausible.ds.io/js/script.js"></script>
@@ -44,24 +44,22 @@
 <h2>Calculating my word count</h2>
 <p>Logseq is structured around a daily journal, and most files are stored as <code>yyyy_mm_dd.md</code> inside of a <code>journals</code> folder. Knowing this, I wrote a Python script to calculate the number of words written in each of these files. The number of words can be aggregate based on the month or year that I'd like.</p>
 <p>We first define a pattern:</p>
-<pre><code class="language-python">pattern = &quot;journals/&quot; + str(year) + &quot;_&quot; + str(month) + &quot;*&quot;
-</code></pre>
+<pre class="language-python"><code class="language-python">pattern <span class="token operator">=</span> <span class="token string">"journals/"</span> <span class="token operator">+</span> <span class="token builtin">str</span><span class="token punctuation">(</span>year<span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token string">"_"</span> <span class="token operator">+</span> <span class="token builtin">str</span><span class="token punctuation">(</span>month<span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token string">"*"</span></code></pre>
 <p>Replacing <code>year</code> or <code>month</code> with the <code>*</code> wildcard identifies filenames with any year or any month, respectively.</p>
 <p>We then loop through all files in the <code>journals</code> folder that meet the <code>pattern</code> definition. Each file's contents are then <code>split</code> into a list, on spaces. The length of the string is then calculated and added to a <code>number_of_words</code> variable.</p>
-<pre><code class="language-python">for f in glob.iglob(pattern):
+<pre class="language-python"><code class="language-python"><span class="token keyword">for</span> f <span class="token keyword">in</span> glob<span class="token punctuation">.</span>iglob<span class="token punctuation">(</span>pattern<span class="token punctuation">)</span><span class="token punctuation">:</span>
 
-    # Opening our daily journal file in read only mode using the open() function
-    with open(f,'r') as file:
+    <span class="token comment"># Opening our daily journal file in read only mode using the open() function</span>
+    <span class="token keyword">with</span> <span class="token builtin">open</span><span class="token punctuation">(</span>f<span class="token punctuation">,</span><span class="token string">'r'</span><span class="token punctuation">)</span> <span class="token keyword">as</span> <span class="token builtin">file</span><span class="token punctuation">:</span>
 
-        # Read the content of the file using the read() function and store them in a new variable
-        data = file.read()
+        <span class="token comment"># Read the content of the file using the read() function and store them in a new variable</span>
+        data <span class="token operator">=</span> <span class="token builtin">file</span><span class="token punctuation">.</span>read<span class="token punctuation">(</span><span class="token punctuation">)</span>
 
-        # Split the string into a list using the split() function
-        lines = data.split()
+        <span class="token comment"># Split the string into a list using the split() function</span>
+        lines <span class="token operator">=</span> data<span class="token punctuation">.</span>split<span class="token punctuation">(</span><span class="token punctuation">)</span>
 
-        # Calculate and adding the length of the lines in our number_of_words variable
-        number_of_words += len(lines)
-</code></pre>
+        <span class="token comment"># Calculate and adding the length of the lines in our number_of_words variable</span>
+        number_of_words <span class="token operator">+=</span> <span class="token builtin">len</span><span class="token punctuation">(</span>lines<span class="token punctuation">)</span></code></pre>
 <p>In roughly 5 months in 2023 (from August 11th), I wrote 33,881 words. That's roughly 6,700 words per month, or roughly 80,000 words per year – almost the length of an average book!</p>
 <blockquote>
 <p>I've written 11369 words worth of notes in 2025, as of 2025/03/28.</p>

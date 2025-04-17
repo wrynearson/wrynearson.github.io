@@ -10,7 +10,7 @@
     <!-- suggest to search engines to "crawl" the site,and the links within (and that I endorse them) However, no "robots" directive = index & endorse -->
     <meta name="”robots”" content="index, follow">
     <link rel="stylesheet" href="/css/style.css">
-    
+    <link href="https://raw.githubusercontent.com/PrismJS/prism-themes/master/themes/prism-duotone-earth.css" rel="stylesheet">
     
     <script defer="" src="https://cloud.umami.is/script.js" data-website-id="488dc28f-af33-498d-a654-950b4c406204"></script>
     <script defer="" data-domain="wrynearson.github.io" src="https://plausible.ds.io/js/script.js"></script>
@@ -83,8 +83,7 @@
 <p>Luckily, GeoFabrik offers <a href="https://download.geofabrik.de/">regional extracts</a> of OSM Planet data. The data for <a href="https://download.geofabrik.de/europe/switzerland.html">Switzerland</a>, where I live, is less than 500MB. This seemed like a good place to start.</p>
 <h3>2. Process the data</h3>
 <p>Once I had a nice <code>switzerland.osm.pbf</code>, I then tried to figure out how to extract only the data I needed (drinking water, and later toilets and benches). <a href="https://osmcode.org/osmium-tool/">Osmium</a> is a powerful CLI tool to process .pbf files and extract data based on tags.</p>
-<pre><code class="language-shell">osmium tags-filter switzerland.osm.pbf drinking_water=yes, amenity=drinking_water -o drinking_water.pbf
-</code></pre>
+<pre class="language-shell"><code class="language-shell">osmium tags-filter switzerland.osm.pbf <span class="token assign-left variable">drinking_water</span><span class="token operator">=</span>yes, <span class="token assign-left variable">amenity</span><span class="token operator">=</span>drinking_water <span class="token parameter variable">-o</span> drinking_water.pbf</code></pre>
 <p>The <code>tags-filter</code> lets you pass one or more tags to extract. Here, Osmium checks for any <code>drinking_water</code> key with the value of <code>yes</code>, or any <code>amenity</code> key with the value of <code>drinking_water</code>. OSM tags are <a href="https://wiki.openstreetmap.org/wiki/Any_tags_you_like">user-defined</a>, but <a href="https://wiki.openstreetmap.org/wiki/Tag:amenity%3Ddrinking_water"><code>amenity=drinking_water</code></a> and <a href="https://wiki.openstreetmap.org/wiki/Key:drinking_water"><code>drinking_water=yes</code></a> seem to be the two used in practice. I repeated the process with <a href="https://wiki.openstreetmap.org/wiki/Tag:amenity%3Dtoilets"><code>amenity=toilets</code></a> and <a href="https://wiki.openstreetmap.org/wiki/Tag:building%3Dtoilets"><code>building=toilets</code></a> for public restrooms, and <a href="https://wiki.openstreetmap.org/wiki/Tag:amenity%3Dbench"><code>amenity=bench</code></a> and <a href="https://wiki.openstreetmap.org/wiki/Tag:leisure%3Dpicnic_table"><code>leisure=picnic_table</code></a> for places to sit.</p>
 <p>Now our output pbf files (<code>drinking_water.pbf</code>, <code>toilets.pbf</code> and <code>benches.pbf</code>) are each around 1MB, a 99%+ reduction.</p>
 <h3>3. Optimize the data</h3>
@@ -101,39 +100,37 @@
 <li>Loop through &quot;layers&quot; in the PBF (element types, which include <code>points</code>, <code>lines</code>, <code>multilinestrings</code> (not commonly used AFAIK), and <code>multipolygons</code>)</li>
 <li>Export layers as individual GeoJSON files (as <code>{layer}.geojson</code>)</li>
 </ol>
-<pre><code class="language-python">layers = ['points', 'lines', 'multilinestrings', 'multipolygons']
+<pre class="language-python"><code class="language-python">layers <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'points'</span><span class="token punctuation">,</span> <span class="token string">'lines'</span><span class="token punctuation">,</span> <span class="token string">'multilinestrings'</span><span class="token punctuation">,</span> <span class="token string">'multipolygons'</span><span class="token punctuation">]</span>
 
-gdf_list = []
+gdf_list <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
 
-# Iterate through the layers and read each one
-for layer in layers:
-    try:
-        # Read the layer from the PBF file
-        gdf = gpd.read_file(&quot;../data/raw/output/europe_toilets.pbf&quot;, engine=&quot;pyogrio&quot;, layer=layer)
+<span class="token comment"># Iterate through the layers and read each one</span>
+<span class="token keyword">for</span> layer <span class="token keyword">in</span> layers<span class="token punctuation">:</span>
+    <span class="token keyword">try</span><span class="token punctuation">:</span>
+        <span class="token comment"># Read the layer from the PBF file</span>
+        gdf <span class="token operator">=</span> gpd<span class="token punctuation">.</span>read_file<span class="token punctuation">(</span><span class="token string">"../data/raw/output/europe_toilets.pbf"</span><span class="token punctuation">,</span> engine<span class="token operator">=</span><span class="token string">"pyogrio"</span><span class="token punctuation">,</span> layer<span class="token operator">=</span>layer<span class="token punctuation">)</span>
 
-        # Add a new column to indicate the layer
-        gdf['layer'] = layer
+        <span class="token comment"># Add a new column to indicate the layer</span>
+        gdf<span class="token punctuation">[</span><span class="token string">'layer'</span><span class="token punctuation">]</span> <span class="token operator">=</span> layer
 
-        # Append the GeoDataFrame to the list
-        gdf_list.append(gdf)
+        <span class="token comment"># Append the GeoDataFrame to the list</span>
+        gdf_list<span class="token punctuation">.</span>append<span class="token punctuation">(</span>gdf<span class="token punctuation">)</span>
 
-        # Optionally print the first few rows of the GeoDataFrame
-        print(f&quot;Layer: {layer}, Number of features: {len(gdf)}&quot;)
+        <span class="token comment"># Optionally print the first few rows of the GeoDataFrame</span>
+        <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string-interpolation"><span class="token string">f"Layer: </span><span class="token interpolation"><span class="token punctuation">{</span>layer<span class="token punctuation">}</span></span><span class="token string">, Number of features: </span><span class="token interpolation"><span class="token punctuation">{</span><span class="token builtin">len</span><span class="token punctuation">(</span>gdf<span class="token punctuation">)</span><span class="token punctuation">}</span></span><span class="token string">"</span></span><span class="token punctuation">)</span>
 
-        # Export the layer as a separate .geojson, to later add as tile layers in tippecanoe
+        <span class="token comment"># Export the layer as a separate .geojson, to later add as tile layers in tippecanoe</span>
 
-        if len(gdf) &gt; 0:
-            export = gdf[[&quot;osm_id&quot;, &quot;geometry&quot;]]
-            export.to_file(f&quot;../data/raw/geojsons/{layer}.geojson&quot;, driver=&quot;GeoJSON&quot;)
-        else:
-            print(f&quot;Nothing to write to {layer}.geojson. Skipping...&quot;)
-    except Exception as e:
-        print(f&quot;Failed to read layer {layer}: {e}&quot;)
-</code></pre>
+        <span class="token keyword">if</span> <span class="token builtin">len</span><span class="token punctuation">(</span>gdf<span class="token punctuation">)</span> <span class="token operator">></span> <span class="token number">0</span><span class="token punctuation">:</span>
+            export <span class="token operator">=</span> gdf<span class="token punctuation">[</span><span class="token punctuation">[</span><span class="token string">"osm_id"</span><span class="token punctuation">,</span> <span class="token string">"geometry"</span><span class="token punctuation">]</span><span class="token punctuation">]</span>
+            export<span class="token punctuation">.</span>to_file<span class="token punctuation">(</span><span class="token string-interpolation"><span class="token string">f"../data/raw/geojsons/</span><span class="token interpolation"><span class="token punctuation">{</span>layer<span class="token punctuation">}</span></span><span class="token string">.geojson"</span></span><span class="token punctuation">,</span> driver<span class="token operator">=</span><span class="token string">"GeoJSON"</span><span class="token punctuation">)</span>
+        <span class="token keyword">else</span><span class="token punctuation">:</span>
+            <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string-interpolation"><span class="token string">f"Nothing to write to </span><span class="token interpolation"><span class="token punctuation">{</span>layer<span class="token punctuation">}</span></span><span class="token string">.geojson. Skipping..."</span></span><span class="token punctuation">)</span>
+    <span class="token keyword">except</span> Exception <span class="token keyword">as</span> e<span class="token punctuation">:</span>
+        <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string-interpolation"><span class="token string">f"Failed to read layer </span><span class="token interpolation"><span class="token punctuation">{</span>layer<span class="token punctuation">}</span></span><span class="token string">: </span><span class="token interpolation"><span class="token punctuation">{</span>e<span class="token punctuation">}</span></span><span class="token string">"</span></span><span class="token punctuation">)</span></code></pre>
 <p>The full process is written in this <a href="https://github.com/wrynearson/watermap/blob/main/data_exploration/osm.ipynb">Jupyter Notebook</a>, and is repeated for each of the three categories (drinking water, toilets, and benches).</p>
 <p>Then, Tippecanoe is used to load the GeoJSON files. One tile set is created for each data type. This could probably be one tile set for <em>all</em> categories. I played around with some of the various flags and settings to try to get the appearance of the tiles to balance data accuracy while not overwhelming users.</p>
-<pre><code class="language-sh">tippecanoe -z14 --drop-densest-as-needed --extend-zooms-if-still-dropping --no-tile-compression --output-to-directory=drinking_water/ raw/geojsons/lines.geojson raw/geojsons/multipolygons.geojson raw/geojsons/points.geojson -B 12
-</code></pre>
+<pre class="language-sh"><code class="language-sh">tippecanoe <span class="token parameter variable">-z14</span> --drop-densest-as-needed --extend-zooms-if-still-dropping --no-tile-compression --output-to-directory<span class="token operator">=</span>drinking_water/ raw/geojsons/lines.geojson raw/geojsons/multipolygons.geojson raw/geojsons/points.geojson <span class="token parameter variable">-B</span> <span class="token number">12</span></code></pre>
 <p>Let's break this down:</p>
 <ul>
 <li><code>z14</code> creates tiles up to zoom level 14. Creating higher zoom level tiles exponentially increases the file size or number of tile files. <code>z14</code> adequately showed all data without missing detail in this use case.</li>
