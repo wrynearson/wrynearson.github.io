@@ -7,9 +7,14 @@ on:
 
 jobs:
   build-and-deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     permissions:
       contents: write # Needed for pushing to the repository
+      pages: write
+      id-token: write
 
     steps:
       - name: Checkout repository
@@ -17,16 +22,16 @@ jobs:
         with:
           ref: 11ty
 
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v2
+        with:
+          version: 8
+
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: "20"
           cache: "pnpm" # Enable pnpm caching
-
-      - name: Setup pnpm
-        uses: pnpm/action-setup@v2
-        with:
-          version: 8
 
       - name: Install dependencies
         run: pnpm install
@@ -41,3 +46,15 @@ jobs:
           git add docs/
           git commit -m "Auto-build: Daily site update" || exit 0
           git push origin 11ty
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: "./docs"
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
