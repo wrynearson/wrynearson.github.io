@@ -1,8 +1,7 @@
-const fetch = require("node-fetch");
+import fetch from "node-fetch";
+import EleventyFetch from "@11ty/eleventy-fetch/eleventy-fetch.js";
 
-const EleventyFetch = require("@11ty/eleventy-fetch");
-
-module.exports = async function () {
+export default async function () {
   console.log("Fetching coffee brews from Apps Script");
 
   try {
@@ -55,4 +54,4 @@ module.exports = async function () {
   } catch (e) {
     console.log("Failed to do something:", e);
   }
-};
+}
