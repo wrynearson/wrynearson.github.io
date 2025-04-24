@@ -2,7 +2,7 @@ name: Daily Build and Deploy
 
 on:
   schedule:
-    - cron: "0 09 * * *" # Runs at 09:00 UTC every day
+    - cron: "15 10 * * *" # Runs at 10:15 UTC every day
   workflow_dispatch: # Allows manual trigger
 
 jobs:
