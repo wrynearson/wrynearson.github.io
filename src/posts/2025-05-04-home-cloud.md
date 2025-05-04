@@ -87,7 +87,7 @@ Technically free because I had everything already, if I needed to buy the parts:
 
 ### Software
 
-Free (thanks, open source!)
+Free (thanks, open source)!
 
 ### Electricity
 
@@ -109,19 +109,71 @@ The next version would need to be snappier and have a solid backup plan.
 
 Most NAS devices use spinning HDDs for storage. While they excel in low cost per TB of storage (sometimes as little as $15/TB), they're somewhat energy intensive, slow (especially and fetching lots of files, like what I'd be doing with the RAW photos), and sometimes noisy.
 
-I wasn't quite ready to build the PC from scratch, so I stumbled upon
+Solid-state storage (SSDs) were the clear answer. They're silent, durable (no moving parts), and much faster (in read/write speeds, and the number of operations they can do per second), but do cost more per TB.
+
+I wasn't quite ready to build the PC from scratch, so I stumbled upon a company called CWWK that builds what looks like the perfect pre-built product — the Pocket NAS. It's absolutely tiny, fairly quiet, and has four m.2 SSD slots (the same type of SSD that's probably in your laptop), and fast ethernet ports, all at an affordable price. I could get started by just plugging in my storage, without having to build the thing from scratch.
+
+While the product was built quite well, my unit unfortunately didn't deliver on its core promise of being a pocket NAS. Only one of the four m.2 SSD slots was being registered by the computer. Software and hardware checks weren't yielding results. Support instructions weren't so clear, so I think I flashed the wrong version of the updated BIOS on the device, rendering it unusable. Luckily, I was able to get a refund (return in progress and I write).
+
+## Cost
+
+### Hardware
+
+- CHF (US$375) for the Pocket NAS (with an upgraded CPU, 16GB RAM, and a 256GB m.2 SSD boot drive)
+- CHF 200 for two 2TB m.2 SDDs
+
+### Software
+
+Free (thanks, open source)!
+
+### Electricity
+
+If it were running 24/7, it was about 10W.
+
+## Summary
+
+While the potential was there, issues with the product led to a frustrating experience. I went back to the drawing board (Reddit forums). Building my own PC still felt like too deep of a rabbit hole, but the new pre-built solution didn't work out.
+
+The next option was to look at the used PC market. Small business PCs from HP, Lenovo or Dell were promising.
+
+1. They're well specked.
+2. They use relatively little electricity depending on the model
+3. They're quite affordable due to large businesses dumping them when they reach the end of their lifecycle.
+4. They sometimes come with support and have readily-available parts.
+
+After some research, I settled on the HP EliteDesk 800 G3, specifically the Small Form Factor (SFF) version. They're relatively small, very quiet, low powered, and have plenty of external and internal ports for upgradeability.
+
+# Round 2.5
+
+This round is short. I ordered the SFF version, but the mini (much smaller) was delivered. The mini variant didn't have the internal ports (PCIe) that I needed (details below), so I returned it.
 
 # Round 3
 
 ## Hardware
 
-The first iteration...
+- HP EliteDesk 800 G3 SFF.
+- Two 2TB M.2 NVMe SSDs (purchased for round two).
+- Two PCIe to m.2 NVMe SSD adapters (so I could plug the m.2 SSDs into the computer).
+- (Later) 2x16GB RAM
 
 ## Software
+
+- Proxmox
+- TrueNAS Scale in the 1st VM to manage the two 2TB SSDs, using something fancy called ZFS (which lets you take and restore snapshots for part of a backup strategy). The data is "mirrored" across the two SSDs, so if one dies, the data survives.
+- NextCloud in the 2nd VM to manage storing and serving data.
+  - It's overkill, but I thought it'd be be nicer than just a network storage device to accessing photos.
+  - It has a client app that lets you sync files by keeping files on the server, but letting you access them (online or offline) on your computer.
+- PiHole, to block ads, in a small virtual container.
+- Home Assistant (just starting on this...)
+- Tailscale running in each VM, so I can access them in a safe way while away from home.
 
 ## Price
 
 ### Hardware
+
+- CHF 117 for the HP computer (CHF 99 for the computer and CHF 18 for shipping) (refurbished).
+- CHF 200 for two 2TB M.2 NVMe SSDs (new)
+- CHF 36 for the 2x16GB RAM (used).
 
 ### Energy
 
