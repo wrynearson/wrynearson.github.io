@@ -4,7 +4,9 @@
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeSpeed;
   box-sizing: border-box;
+}
 
+body {
   /* set for dark theme*/
   background-color: #fefaef;
 }
@@ -588,7 +590,8 @@ pre > code.highlight {
   background-color: rgba(4, 3, 0, 0.019);
 }
 
-.table {
+.table,
+table {
   display: table;
   width: 100%;
   border-collapse: collapse;
@@ -596,36 +599,38 @@ pre > code.highlight {
   text-align: left;
   vertical-align: center;
   border-top: var(--border-thin);
+  background-color: none;
+  margin-bottom: 1rem;
 }
 
 .overview {
   border-top: var(--border-thin);
 }
 
-.table-head {
-  /* display: table-row; */
+.table-head,
+thead,
+th {
   font-size: var(--table-font-size);
   background-color: #0000000a;
-  padding: 0.5rem;
+  padding: 0.5rem 0.25rem;
   border-bottom: var(--border-thin);
   font-weight: var(--body-font-weight);
   overflow: clip;
   white-space: wrap;
   text-overflow: clip;
+  text-emphasis: none;
 }
 
-/* .table-body {
-  display: table-row-group;
-} */
-
-.table-row {
+.table-row,
+tr {
   display: table-row;
   bottom: 1rem;
   line-height: var(--line-height);
 }
 
-.cell {
-  padding: 0.33rem;
+.cell,
+td {
+  padding: 0.25rem;
   text-align: left;
   vertical-align: middle;
   border-bottom: var(--border-thin);
@@ -635,7 +640,8 @@ pre > code.highlight {
   text-overflow: clip;
 }
 
-.cell time {
+.cell time,
+td time {
   font-size: var(--table-font-size);
   background: none;
 }

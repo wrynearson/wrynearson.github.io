@@ -1,6 +1,6 @@
 ---
 title: Home Cloud
-date: 2025-05-04
+date: 2025-05-20
 tags: [Coding, Projects]
 description: Building a home server.
 ---
@@ -19,13 +19,13 @@ Despite being a rather cheap person (which is something I'm working on...), I ha
 
 OneDrive is more difficult. From what I can tell, they don't offer storage tiers above 1TB. Google does, but it costs CHF 120 / year. I bought a 4TB hard drive for less, but that comes at the risk of failure, or needing to plug it in every time I want to view photos.
 
-Instead, I went down the rabbit hole of building my own.
+Instead, I went down the rabbit hole of building my own cloud.
 
 # Requirements
 
 1. I want to store my photos without monthly subscriptions.
 
-That's it if we're being honest, but there's a much longer list of things that would be great.
+That's it, if we're being honest, but there's a much longer list of things that would be great.
 
 1. View photos without having to plug in a hard drive.
 2. Be able to edit those photos (which requires a fast-enough connection and storage medium to browse through large photo files).
@@ -39,7 +39,7 @@ That's it if we're being honest, but there's a much longer list of things that w
 
 # Options
 
-An external hard drive would meet my actual requirement, but none of the other nice-to-haves. A network attached storage device, or NAS, is a small computer with storage and it accessible any time over the local network. That would fit the requirements, but those aren't necessarily cheap.
+An external hard drive would meet my actual requirement, but none of the other nice-to-haves. A network attached storage device, or NAS, is a small computer with storage and it accessible any time over the local network. That would fit the requirements, but pre-built ones aren't necessarily cheap.
 
 In looking into NAS devices, I came across the wonderful world (and rabbit hole) that is the `homelab` and the community around it. The basic is to have a computer running 24/7 that can run one or more service. One of those "services" is storing and serving files. The sky is then the limit (or, better said, the rabbit hole has no bottom) for which services you want to run.
 
@@ -47,19 +47,20 @@ Suddenly my requirement list turned into a long wish list.
 
 1. Block advertisement on the whole network (with a real benefit of decreasing loading times for web pages).
 2. Have a shared network-accessible storage option for files besides photos.
-3. Be able to run services separately (in virtual machines or Docker containers).
+3. Be able to run services separately (in virtual machines or Docker containers) for better isolation and backups.
 4. Access files and services securely while not at home.
 5. Start monitoring electricity use of devices.
 6. Run a virtual Windows machine for cross-device testing of projects at work.
-7. Run monthly processing of large OSM dataset files (for https://willwill.run/watermap) without relying on me remembering to do so.
+7. Run monthly processing of large OSM dataset files (for my [watermap](https://willwill.run/watermap) project) without relying on me remembering to do so.
 8. Make a custom endpoint of public transportation departures near my apartment to create a "leave by" notice and send to an LED Matrix device, or serve it as a simple web page.
-9. ...
+9. Host a file conversion service like [ConvertX](https://github.com/C4illin/ConvertX).
+10. ...
 
 OK, before we fall too deep into this rabbit hole, I wanted to test the basics. Luckily, I had everything I already needed.
 
-# Round 1
+# Round 1 (January 2025)
 
-## Hardware
+## Hardware
 
 - A laptop from 2015 that has a broken keyboard.
 - A 4TB external hard drive.
@@ -81,9 +82,9 @@ OK, before we fall too deep into this rabbit hole, I wanted to test the basics. 
 
 Technically free because I had everything already, if I needed to buy the parts:
 
-- CHF 50 (estimate) for an old laptop with a broken keyboard.
+- CHF 75 (estimate) for an old laptop with a broken keyboard.
 - CHF 114 for [this](https://www.galaxus.ch/en/s1/product/seagate-expansion-portable-4-tb-external-hard-drives-16217707) 4TB external hard drive.
-- CHF 10 for a USB to ethernet adapter
+- CHF 10 for a USB to ethernet adapter.
 
 ### Software
 
@@ -91,29 +92,29 @@ Free (thanks, open source)!
 
 ### Electricity
 
-Roughly 10Wh _ 24 _ 365 = \_\_\_
+Roughly 10W per hour x 24h x 365 = 87.6 kWh per year.
 
-## Summary
+## Summary
 
 This was a great, low-stakes entry into the world of building a homelab. I could manage all of the VMs and services by going to my "homepage" and then clicking on the service to open it.
 
 It was super easy to "mount" the network storage to my Mac, and be able to interact with photos from my dSLR. I could also store some large files on the same share to free up laptop storage space (however, I kept backups of all data elsewhere during this phase). Immich makes viewing and backing up photos from your phone trivially easy and snappy.
 
-What wasn't snappy was trying to skim through RAW photos, or try to edit them in any way. If I loaded all of the photos into Photomator, the editor I've been trying out recently over Lightroom, it would never load. If I selectively added individual folders to Photomator, it'd load after ~30s, but each photo would take upwards of 5s to load.
+What wasn't snappy was trying to skim through RAW photos, or try to edit them in any way. If I loaded all of the photos into [Photomator](https://www.pixelmator.com/photomator/), the editor I've been trying out recently over Lightroom, it would never load. If I selectively added individual folders to Photomator, it'd load after ~30s, but each photo would take upwards of 5s to load.
 
 Even more critically, this iteration felt fragile, being a laptop with a single external hard drive.
 
 The next version would need to be snappier and have a solid backup plan.
 
-# Round 2
+# Round 2 (March 2025)
 
 Most NAS devices use spinning HDDs for storage. While they excel in low cost per TB of storage (sometimes as little as $15/TB), they're somewhat energy intensive, slow (especially and fetching lots of files, like what I'd be doing with the RAW photos), and sometimes noisy.
 
 Solid-state storage (SSDs) were the clear answer. They're silent, durable (no moving parts), and much faster (in read/write speeds, and the number of operations they can do per second), but do cost more per TB.
 
-I wasn't quite ready to build the PC from scratch, so I stumbled upon a company called CWWK that builds what looks like the perfect pre-built product — the Pocket NAS. It's absolutely tiny, fairly quiet, and has four m.2 SSD slots (the same type of SSD that's probably in your laptop), and fast ethernet ports, all at an affordable price. I could get started by just plugging in my storage, without having to build the thing from scratch.
+I wasn't quite ready to build the PC from scratch, so I stumbled upon a company called CWWK that builds what looks like the perfect pre-built product — the [Pocket NAS](https://cwwk.net/products/cwwk-x86-p6-pocket-nas-board-pc-intel-i3-n55-n150-2xi226-v-2-5g-ddr5-4800mhz-4xm-2-nvme-firewall-router-mini-pc-case-2xusb3-2-2xhd). It's absolutely tiny, fairly quiet, and has four m.2 SSD slots (the same type of SSD that's probably in your laptop), and fast 2.5Gbit ethernet ports, all at an affordable price. I could get started by just plugging in my storage, without having to build the thing from scratch.
 
-While the product was built quite well, my unit unfortunately didn't deliver on its core promise of being a pocket NAS. Only one of the four m.2 SSD slots was being registered by the computer. Software and hardware checks weren't yielding results. Support instructions weren't so clear, so I think I flashed the wrong version of the updated BIOS on the device, rendering it unusable. Luckily, I was able to get a refund (return in progress and I write).
+While the product was built quite well, my unit unfortunately didn't deliver on its core promise of being a pocket NAS. Only one of the four m.2 SSD slots was being registered by the computer. Software and hardware checks weren't yielding results. Support instructions weren't so clear, so I think I flashed the wrong version of the updated BIOS on the device, rendering it unusable. Luckily, I was able to get a refund.
 
 ## Cost
 
@@ -128,11 +129,11 @@ Free (thanks, open source)!
 
 ### Electricity
 
-If it were running 24/7, it was about 10W.
+If it were running 24/7, it was about 10W, which would put it at a similar usage as the laptop in round 1: 87.6 kWh per year.
 
-## Summary
+## Summary
 
-While the potential was there, issues with the product led to a frustrating experience. I went back to the drawing board (Reddit forums). Building my own PC still felt like too deep of a rabbit hole, but the new pre-built solution didn't work out.
+While the potential was there, issues with the product led to a frustrating experience. I went back to the drawing board (Reddit forums). Building my own PC still felt like too deep of a rabbit hole, but the new pre-built solution didn't work out. I knew that I wanted to have some closure and get _something_ to work.
 
 The next option was to look at the used PC market. Small business PCs from HP, Lenovo or Dell were promising.
 
@@ -154,7 +155,7 @@ This round is short. I ordered the SFF version, but the mini (much smaller) was 
 - HP EliteDesk 800 G3 SFF.
 - Two 2TB M.2 NVMe SSDs (purchased for round two).
 - Two PCIe to m.2 NVMe SSD adapters (so I could plug the m.2 SSDs into the computer).
-- (Later) 2x16GB RAM
+- (Later) 2x16GB RAM.
 
 ## Software
 
@@ -164,17 +165,27 @@ This round is short. I ordered the SFF version, but the mini (much smaller) was 
   - It's overkill, but I thought it'd be be nicer than just a network storage device to accessing photos.
   - It has a client app that lets you sync files by keeping files on the server, but letting you access them (online or offline) on your computer.
 - PiHole, to block ads, in a small virtual container.
-- Home Assistant (just starting on this...)
 - Tailscale running in each VM, so I can access them in a safe way while away from home.
+- Home Assistant to monitor energy usage, using three smart plugs (just starting on this...)
 
 ## Price
 
 ### Hardware
 
 - CHF 117 for the HP computer (CHF 99 for the computer and CHF 18 for shipping) (refurbished).
-- CHF 200 for two 2TB M.2 NVMe SSDs (new)
+- CHF 200 for two 2TB M.2 NVMe SSDs (new).
 - CHF 36 for the 2x16GB RAM (used).
 
 ### Energy
 
+Roughly 15W x 24h x 365d = 131.4kWh per year.
+
 ### Conclusions
+
+Great so far!
+
+| Header | Header | Header |
+| ------ | ------ | ------ |
+| Cell   | Cell   | Cell   |
+| Cell   | Cell   | Cell   |
+| Cell   | Cell   | Cell   |
