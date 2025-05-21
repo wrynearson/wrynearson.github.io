@@ -120,7 +120,7 @@ While the product was built quite well, my unit unfortunately didn't deliver on 
 
 ### Hardware
 
-- CHF (US$375) for the Pocket NAS (with an upgraded CPU, 16GB RAM, and a 256GB m.2 SSD boot drive)
+- CHF 311 (US$375) for the Pocket NAS (with an upgraded CPU, 16GB RAM, and a 256GB m.2 SSD boot drive)
 - CHF 200 for two 2TB m.2 SDDs
 
 ### Software
@@ -180,12 +180,28 @@ This round is short. I ordered the SFF version, but the mini (much smaller) was 
 
 Roughly 15W x 24h x 365d = 131.4kWh per year.
 
-### Conclusions
+# Summary
 
-Great so far!
+## Costs
 
-| Header | Header | Header |
-| ------ | ------ | ------ |
-| Cell   | Cell   | Cell   |
-| Cell   | Cell   | Cell   |
-| Cell   | Cell   | Cell   |
+Using a rough average of CHF 0.4 per kWh, we get the following cost breakdown of hardware and operational costs for one year.
+
+| Round | Hardware | Operational | Total   |
+| ----- | -------- | ----------- | ------- |
+| 1     | CHF 199  | CHF 35      | CHF 234 |
+| 2     | CHF 511  | CHF 35      | CHF 546 |
+| 3     | CHF 353  | CHF 53      | CHF 406 |
+
+Round 3's operational costs are less than half of a one year 1TB subscription to Google One at CHF 120 (billed monthly), and way less than their 2TB plan (with AI features) at CHF 204.
+
+## Conclusion
+
+This was, and continues to be, a worthwhile project. Round one was exciting because everything was new, but the results weren't optimal. Rounds 2 and 2.5 were frustrating, because hardware that should have worked ended up being the limiting factor. Round 3 was satisfying once I had the computer running with Proxmox, and had the storage and upgraded RAM installed.
+
+This met my goal of hosting photos without paying for monthly subscriptions, with the caveat that I will likely keep the family OneDrive plan since others on the plan get value out of it. I still think it met the goal because I no longer _need_ to subscribe to access photos that aren't directly stored where I try to see them. If my family members' needs change, then I would transfer my data (above the maximum free tier) out of that service.
+
+## Next Steps
+
+I still need to set up a backup service that feels more long term. ZFS snapshots help if I mess something up, but they're not a backup solution. I think I'll set up the old laptop (round 1) to be a [Proxmox Backup Server](https://www.proxmox.com/en/products/proxmox-backup-server/overview) and send a copy of the full ZFS pool there weekly. Until then, I'll keep all data backed up on OneDrive and other external HDDs, and will continue to back up critical data to the cloud even after setting up PBS.
+
+At a slower pace, I'll continue to set up VMs to run services and processes that seem useful and interesting, and will continue to learn throughout the process (and hopefully document my process and decisions so I can remember how everything is set up in the future).
