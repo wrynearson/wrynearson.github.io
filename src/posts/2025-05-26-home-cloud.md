@@ -146,7 +146,7 @@ After some research, I settled on the HP EliteDesk 800 G3, specifically the Smal
 
 # Round 2.5
 
-This round is short. I ordered the SFF version, but the mini (much smaller) was delivered. The mini variant didn't have the internal ports (PCIe) that I needed (details below), so I returned it.
+This round was short. I ordered the SFF version, but the mini (much smaller) was delivered. The mini variant didn't have the internal ports (PCIe) that I needed (details below), so I returned it.
 
 # Round 3
 
@@ -166,7 +166,7 @@ This round is short. I ordered the SFF version, but the mini (much smaller) was 
   - It has a client app that lets you sync files by keeping files on the server, but letting you access them (online or offline) on your computer.
 - PiHole, to block ads, in a small virtual container.
 - Tailscale running in each VM, so I can access them in a safe way while away from home.
-- Home Assistant to monitor energy usage, using three smart plugs (just starting on this...)
+- Home Assistant to monitor energy usage, using three smart plugs, which I'm in the very early stages of setting up.
 
 ## Price
 

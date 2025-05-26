@@ -355,14 +355,111 @@ details em {
   background-color: var(--details-disclose-color);
 }
 
+.slides {
+  overflow: scroll !important;
+  pointer-events: auto !important;
+}
+
+#reveal.image present {
+  background: red;
+  background-color: rgba(4, 3, 0, 0.019);
+}
+
+.table,
+table {
+  display: table;
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+  text-align: left;
+  vertical-align: center;
+  border-top: var(--border-thin);
+  background-color: none;
+  margin-bottom: 1rem;
+}
+
+.overview {
+  border-top: var(--border-thin);
+}
+
+.table-head,
+thead,
+th {
+  font-size: var(--table-font-size);
+  background-color: #0000000a;
+  padding: 0.5rem 0.25rem;
+  border-bottom: var(--border-thin);
+  font-weight: var(--body-font-weight);
+  overflow: clip;
+  white-space: wrap;
+  text-overflow: clip;
+  text-emphasis: none;
+}
+
+.table-row,
+tr {
+  display: table-row;
+  bottom: 1rem;
+  line-height: var(--line-height);
+}
+
+.cell,
+td {
+  padding: 0.25rem;
+  text-align: left;
+  vertical-align: middle;
+  border-bottom: var(--border-thin);
+  font-size: var(--table-font-size);
+  overflow: clip;
+  white-space: wrap;
+  text-overflow: clip;
+}
+
+.cell time,
+td time {
+  font-size: var(--table-font-size);
+  background: none;
+}
+
+.wide {
+  width: 45%;
+}
+
+.narrow {
+  max-width: 15%;
+}
+
+.labels {
+  width: 33%;
+  overflow: clip;
+  white-space: wrap;
+  text-overflow: ellipsis;
+  font-size: var(--table-font-size);
+}
+
+.starred {
+  background-color: var(--highlight-color);
+}
+
+.archived {
+  background-color: #0000000a;
+  font-style: italic;
+}
+
 @media (prefers-color-scheme: dark) {
-  * {
+  html,
+  body {
     --dark-text-color: #fdf6e1;
     background: #110d00;
     --heading-color: var(--dark-text-color);
     --body-color: var(--dark-text-color);
     --underline-color: #8f7930;
     --details-disclose-color: #2f2810;
+  }
+  .table-head,
+  thead,
+  th {
+    background-color: #222221;
   }
 }
 
@@ -578,95 +675,4 @@ pre > code.highlight {
     rgba(191, 160, 90, 0.2) 70%,
     rgba(191, 160, 90, 0)
   );
-}
-
-.slides {
-  overflow: scroll !important;
-  pointer-events: auto !important;
-}
-
-#reveal.image present {
-  background: red;
-  background-color: rgba(4, 3, 0, 0.019);
-}
-
-.table,
-table {
-  display: table;
-  width: 100%;
-  border-collapse: collapse;
-  table-layout: fixed;
-  text-align: left;
-  vertical-align: center;
-  border-top: var(--border-thin);
-  background-color: none;
-  margin-bottom: 1rem;
-}
-
-.overview {
-  border-top: var(--border-thin);
-}
-
-.table-head,
-thead,
-th {
-  font-size: var(--table-font-size);
-  background-color: #0000000a;
-  padding: 0.5rem 0.25rem;
-  border-bottom: var(--border-thin);
-  font-weight: var(--body-font-weight);
-  overflow: clip;
-  white-space: wrap;
-  text-overflow: clip;
-  text-emphasis: none;
-}
-
-.table-row,
-tr {
-  display: table-row;
-  bottom: 1rem;
-  line-height: var(--line-height);
-}
-
-.cell,
-td {
-  padding: 0.25rem;
-  text-align: left;
-  vertical-align: middle;
-  border-bottom: var(--border-thin);
-  font-size: var(--table-font-size);
-  overflow: clip;
-  white-space: wrap;
-  text-overflow: clip;
-}
-
-.cell time,
-td time {
-  font-size: var(--table-font-size);
-  background: none;
-}
-
-.wide {
-  width: 45%;
-}
-
-.narrow {
-  max-width: 15%;
-}
-
-.labels {
-  width: 33%;
-  overflow: clip;
-  white-space: wrap;
-  text-overflow: ellipsis;
-  font-size: var(--table-font-size);
-}
-
-.starred {
-  background-color: var(--highlight-color);
-}
-
-.archived {
-  background-color: #0000000a;
-  font-style: italic;
 }
