@@ -1,6 +1,6 @@
 ---
 title: Home Cloud
-date: 2025-05-20
+date: 2025-05-26
 tags: [Coding, Projects]
 description: Building a home server.
 ---
@@ -11,11 +11,11 @@ They also come with costs, whether that's data ownership and privacy concerns, o
 
 I have a collection of RAW photos from my dSLR camera that is approaching 1TB, that I have on a shared family OneDrive plan. Photography is something I care about, as are holding on to those (raw...) memories. I also have a normal Gmail that over the years has maxed out the 15GB free tier.
 
-Late last year, these services started complaining that I was approaching their limits, and that I should pay monthly to have more available storage space. You've probably received these messages as well — something along the lines of:
+Late last year, these services started complaining in unison that I was approaching their free limits, and that I should pay monthly to have more available storage space. You've probably received these messages as well — something along the lines of:
 
 > You're running out of space (which this email we're sending you to inform you of in fact contributes very slightly to your space issue). Pay us monthly, or you'll lose access to your data and our other services.
 
-Despite being a rather cheap person (which is something I'm working on...), I have no issue paying for a service that brings value. For many, cloud storage is a great purchase. For the record, I did fork up a cheap monthly payment for the base paid tier of Google One, because I do get value out of Gmail and Drive, and will do so until I find a way to reduce my storage needs there.
+Despite being a rather frugal person (which is something I'm working on...), I have no issue paying for a service that brings value. For many, cloud storage is a great purchase. For the record, I did fork up a cheap monthly payment for the base paid tier of Google One, because I do get value out of Gmail and Drive, and will do so until I find a way to reduce my storage needs there.
 
 OneDrive is more difficult. From what I can tell, they don't offer storage tiers above 1TB. Google does, but it costs CHF 120 / year. I bought a 4TB hard drive for less, but that comes at the risk of failure, or needing to plug it in every time I want to view photos.
 
