@@ -6,6 +6,8 @@ content:
     label: Posts
     path: src/posts
     type: collection
+    view:
+      fields: [ title, date, description ]
     fields:
       - { name: title, label: Title, type: string }
       - { name: date, label: Date, type: date }
@@ -16,6 +18,8 @@ content:
     label: Project Pages
     path: src/pages
     type: collection
+    view:
+      fields: [ title, date, end-date, description, type, client, role ]
     fields:
       - { name: title, label: Title, type: string }
       - { name: date, label: Start Date, type: date }
@@ -24,6 +28,6 @@ content:
       - { name: problem, label: Problem, type: string }
       - { name: outcome, label: Outcome, type: string }
       - { name: type, label: Project Type, type: string }
-      - { name: type, label: Project Client, type: string }
-      - { name: type, label: My Role, type: string }
+      - { name: client, label: Project Client, type: string }
+      - { name: role, label: My Role, type: string }
       - { name: body, label: Body, type: rich-text }
