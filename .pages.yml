@@ -11,3 +11,4 @@ content:
       - { name: date, label: Date, type: date }
       - { name: description, label: Description, type: 
       - { name: author, label: Author, hidden: true, default: Will Rynearson, type: string }
+      - { name: body, label: Body, type: rich-text }
