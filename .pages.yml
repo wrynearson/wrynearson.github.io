@@ -26,4 +26,4 @@ content:
       - { name: type, label: Project Type, type: string }
       - { name: type, label: Project Client, type: string }
       - { name: type, label: My Role, type: string }
-      - { name: body, label: Body, type: rich-text }
+      - { name: body, label: Body, hidden: true, type: rich-text }
