@@ -12,7 +12,7 @@ content:
       - { name: description, label: Description, type: string }
       - { name: author, label: Author, hidden: true, default: Will Rynearson, type: string }
       - { name: body, label: Body, type: rich-text }
-  - name: posts
+  - name: pages
     label: Project Pages
     path: src/pages
     type: collection
