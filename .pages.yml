@@ -52,4 +52,4 @@ content:
       - { name: title, label: Title, type: string }
       - { name: date, label: Start Date, type: date }
       - { name: description, label: Description, type: string }
-      - { name: body, label: Body, type: code }
+      - { name: body, label: Body, type: block }
