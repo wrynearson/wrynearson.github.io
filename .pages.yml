@@ -31,3 +31,14 @@ content:
       - { name: client, label: Project Client, type: string }
       - { name: role, label: My Role, type: string }
       - { name: body, label: Body, type: rich-text }
+  - name: recently
+    label: Recently posts
+    path: src/recently
+    type: collection
+    view:
+      fields: [ date ]
+    fields:
+      - { name: title, label: Title, type: string }
+      - { name: date, label: Start Date, type: date }
+      - { name: description, label: Description, type: string, default: Recently }
+      - { name: body, label: Body, type: rich-text }
