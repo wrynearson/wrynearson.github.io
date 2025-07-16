@@ -42,3 +42,14 @@ content:
       - { name: date, label: Start Date, type: date }
       - { name: description, label: Description, type: string, default: Recently }
       - { name: body, label: Body, type: rich-text }
+  - name: presentations
+    label: Presentations
+    path: src/presentations
+    type: collection
+    view:
+      fields: [ title, date ]
+    fields:
+      - { name: title, label: Title, type: string }
+      - { name: date, label: Start Date, type: date }
+      - { name: description, label: Description, type: string }
+      - { name: body, label: Body, type: rich-text }
