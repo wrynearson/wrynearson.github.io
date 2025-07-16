@@ -3,7 +3,7 @@ media:
   output: docs
 content:
   - name: posts
-    label: Posts
+    label: Blog Posts
     path: src/posts
     type: collection
     view:
@@ -32,7 +32,7 @@ content:
       - { name: role, label: My Role, type: string }
       - { name: body, label: Body, type: rich-text }
   - name: recently
-    label: Recently posts
+    label: Recently Posts
     path: src/recently
     type: collection
     view:
