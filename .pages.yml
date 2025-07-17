@@ -1,5 +1,5 @@
 media:
-  input: src/assets
+  input: src/assets/img
   output: docs
 content:
   - name: posts
