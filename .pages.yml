@@ -50,7 +50,7 @@ content:
       fields: [ title, date ]
     fields:
       - { name: title, label: Title, type: string }
-      - { name: layout, label: Layout, type: string, default: "layouts/reveal-layout.liquid", hidden: true }
+      - { name: layout, label: Layout, type: string, default: "layouts/reveal-layout.liquid" }
       - { name: date, label: Start Date, type: date }
       - { name: description, label: Description, type: string }
       - { name: body, label: Body, type: text }
