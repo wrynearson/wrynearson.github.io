@@ -8,7 +8,7 @@ export default async function () {
     let json = await EleventyFetch(
       "https://script.google.com/macros/s/AKfycbz6Ts5iMeBOknsiJVS6wb9F03pBqwgkXVgSbzYJioMzomUdLO2_o7RRaeznjsmzYumb/exec",
       {
-        duration: "1m",
+        duration: "*",
         type: "json",
         // this fetches the text from the AppsScript deployment and caches it for 30 min. The text is converted to a json.
       }
