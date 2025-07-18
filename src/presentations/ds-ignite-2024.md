@@ -1,82 +1,124 @@
 ---
 title: DS Ignite 2024
+layout: layouts/reveal-layout.liquid
 ---
-```
-![1](../assets/img/ds-ignite-2024/1.webp)
-```
 
-```
-![2](../assets/img/ds-ignite-2024/2.webp)
-```
+<section>
 
-```
-![3](../assets/img/ds-ignite-2024/3.webp)
-```
+    ![1](../assets/img/ds-ignite-2024/1.webp)
 
-```
-![4](../assets/img/ds-ignite-2024/4.webp)
-```
+</section>
 
-```
-![5](../assets/img/ds-ignite-2024/5.webp)
-```
+<section>
 
-```
-![6](../assets/img/ds-ignite-2024/6.webp)
-```
+    ![2](../assets/img/ds-ignite-2024/2.webp)
 
-```
-![7](../assets/img/ds-ignite-2024/7.webp)
-```
+</section>
 
-```
-![8](../assets/img/ds-ignite-2024/8.webp)
-```
+<section>
 
-```
-![9](../assets/img/ds-ignite-2024/9.webp)
-```
+    ![3](../assets/img/ds-ignite-2024/3.webp)
 
-```
-![10](../assets/img/ds-ignite-2024/10.webp)
-```
+</section>
 
-```
-![11](../assets/img/ds-ignite-2024/11.webp)
-```
+<section>
 
-```
-![12](../assets/img/ds-ignite-2024/12.webp)
-```
+    ![4](../assets/img/ds-ignite-2024/4.webp)
 
-```
-![13](../assets/img/ds-ignite-2024/13.webp)
-```
+</section>
 
-```
-![14](../assets/img/ds-ignite-2024/14.webp)
-```
+<section>
 
-```
-![15](../assets/img/ds-ignite-2024/15.webp)
-```
+    ![5](../assets/img/ds-ignite-2024/5.webp)
 
-```
-![16](../assets/img/ds-ignite-2024/16.webp)
-```
+</section>
 
-```
-![17](../assets/img/ds-ignite-2024/17.webp)
-```
+<section>
 
-```
-![18](../assets/img/ds-ignite-2024/18.webp)
-```
+    ![6](../assets/img/ds-ignite-2024/6.webp)
 
-```
-![19](../assets/img/ds-ignite-2024/19.webp)
-```
+</section>
 
-```
-![20](../assets/img/ds-ignite-2024/20.webp)
-```
+<section>
+
+    ![7](../assets/img/ds-ignite-2024/7.webp)
+
+</section>
+
+<section>
+
+    ![8](../assets/img/ds-ignite-2024/8.webp)
+
+</section>
+
+<section>
+
+    ![9](../assets/img/ds-ignite-2024/9.webp)
+
+</section>
+
+<section>
+
+    ![10](../assets/img/ds-ignite-2024/10.webp)
+
+</section>
+
+<section>
+
+    ![11](../assets/img/ds-ignite-2024/11.webp)
+
+</section>
+
+<section>
+
+    ![12](../assets/img/ds-ignite-2024/12.webp)
+
+</section>
+
+<section>
+
+    ![13](../assets/img/ds-ignite-2024/13.webp)
+
+</section>
+
+<section>
+
+    ![14](../assets/img/ds-ignite-2024/14.webp)
+
+</section>
+
+<section>
+
+    ![15](../assets/img/ds-ignite-2024/15.webp)
+
+</section>
+
+<section>
+
+    ![16](../assets/img/ds-ignite-2024/16.webp)
+
+</section>
+
+<section>
+
+    ![17](../assets/img/ds-ignite-2024/17.webp)
+
+</section>
+
+<section>
+
+    ![18](../assets/img/ds-ignite-2024/18.webp)
+
+</section>
+
+<section>
+
+    ![19](../assets/img/ds-ignite-2024/19.webp)
+
+</section>
+
+<section>
+
+    ![20](../assets/img/ds-ignite-2024/20.webp)
+
+</section>
