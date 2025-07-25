@@ -7,10 +7,11 @@ content:
     path: src/posts
     type: collection
     view:
-      fields: [ title, date, description ]
+      fields: [ title, date, description, draft ]
     fields:
       - { name: title, label: Title, type: string }
       - { name: date, label: Date, type: date }
+      - { name: draft, label: Draft, type: boolean }
       - { name: description, label: Description, type: string }
       - { name: author, label: Author, default: Will Rynearson, type: string }
       - { name: body, label: Body, type: rich-text }
