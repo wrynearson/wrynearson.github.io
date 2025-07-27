@@ -3,7 +3,9 @@ title: Financial Foundation
 date: 2025-06-03
 description: Coinbase enters the S&P 500.
 author: Will Rynearson
+draft: false
 ---
+
 The [S&P 500](https://www.spglobal.com/spdji/en/indices/equity/sp-500/) is a core index to gauge the financial health of the US, and covers almost US$50T in value. If you would have invested $1000 in 1957, it'd be worth over [$80k today](https://www.officialdata.org/us/stocks/s-p-500/1957?amount=1000&endYear=2025), adjusted for inflation. Most investment performance is benchmarked to the S&P 500.
 
 Many people have a stake in the S&P 500. You might invest in it directly through an [ETF](https://en.wikipedia.org/wiki/Exchange-traded_fund), or as part of an investment portfolio. If you have a [pension fund from work](https://www.spglobal.com/market-intelligence/en/news-insights/articles/2025/4/pension-funds-record-overallocation-to-private-equity-in-q1-2025-88390539), whether private or public, such as some US State or Canadian pension funds, you're likely impacted by the price of the S&P 500. It's an easy, safe way to invest in the growth of the US.
