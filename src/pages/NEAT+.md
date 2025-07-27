@@ -1,5 +1,6 @@
 ---
 title: Nexus Environmental Assessment Tool (NEAT+)
+draft: false
 date: 2021-04-01
 end-date: 2022-03-12
 url: https://www.neatplus.org

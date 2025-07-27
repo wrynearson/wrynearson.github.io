@@ -1,5 +1,6 @@
 ---
 title: Dam Plastics
+draft: false
 date: 2020-06-01
 end-date: 2021-06-01
 description: From one dam in one river to no plastics in all rivers, Dam Plastics empowers stakeholders to systematically monitor and control the flow of plastic.

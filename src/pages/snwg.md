@@ -1,5 +1,6 @@
 ---
 title: Satellite Needs Working Group (SNWG)
+draft: false
 date: 2022-06-13
 end-date: 2023-10-11
 description: Helping the US provide the Earth Observation (EO) data that US government agencies need in the most efficient way.

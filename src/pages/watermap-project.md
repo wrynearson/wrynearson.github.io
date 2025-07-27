@@ -1,5 +1,6 @@
 ---
 title: Watermap
+draft: false
 date: 2024-10-30
 end-date:
 url: https://wrynearson.github.io/watermap/

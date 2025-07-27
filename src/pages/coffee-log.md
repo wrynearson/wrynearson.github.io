@@ -1,5 +1,6 @@
 ---
 title: Coffee Log
+draft: false
 date: 2024-04-01
 end-date: ""
 description: Programmatically tracking the brews of coffee I prepare.

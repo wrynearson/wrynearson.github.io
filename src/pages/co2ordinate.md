@@ -1,5 +1,6 @@
 ---
 title: Co₂ordinate
+draft: false
 date: 2023-02-01
 end-date: 2023-10-11
 description: Co₂ordinate helps distributed teams and conference organizers find the most CO₂ efficient place to meet.

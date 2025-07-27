@@ -1,6 +1,7 @@
 ---
+title: Happy Birthday!
+draft: false
 layout: layouts/reveal-layout.liquid
-title: "Happy Birthday!"
 ---
 
 <section>

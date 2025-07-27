@@ -1,5 +1,6 @@
 ---
 title: Open Data Infrastructure for City Resilience (ODIR)
+draft: false
 date: 2020-11-01
 end-date: 2021-03-01
 description: ODIR is a database-driven roadmap, showcase and guide that features over 25 examples of cities and projects from around the world that are innovating with open data to manage their disaster risk and build their resilience.

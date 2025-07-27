@@ -1,5 +1,6 @@
 ---
 title: willwill.run
+draft: false
 date: 2023-02-01
 end-date:
 url: https://willwill.run/
