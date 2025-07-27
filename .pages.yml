@@ -55,5 +55,6 @@ content:
       - { name: title, label: Title, type: string }
       - { name: layout, label: Layout, type: string, default: "layouts/reveal-layout.liquid" }
       - { name: date, label: Start Date, type: date }
+      - { name: draft, label: Draft, default: true, type: boolean }
       - { name: description, label: Description, type: string }
       - { name: body, label: Body, type: text }
