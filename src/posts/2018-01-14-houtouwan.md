@@ -4,6 +4,7 @@ date: 2017-11-14
 tags: [Photography, Travel, China]
 description: The abandoned fishing village of Hòutouwān 后头湾 and the surrounding Shèngshān 嵊山岛 and Goǔqǐ 枸杞岛 islands.
 author: Will Rynearson & Hibshy Samsadin
+draft: false
 ---
 
 ![9](../assets/img/2020-12-08-houtouwan/9.jpg)

@@ -4,7 +4,7 @@ author: Will Rynearson
 date: 2021-09-12
 tags: [Trip, Switzerland, Hike]
 description: A weekend hike in SW Switzerland
-image: "2021-09-12-cabane-de-susanfe/12.jpg"
+draft: false
 ---
 
 ![12](../assets/img/2021-09-12-cabane-de-susanfe/12.jpg)

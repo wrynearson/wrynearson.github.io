@@ -4,7 +4,7 @@ author: Will Rynearson
 date: 2018-02-28
 tags: [Photography, Travel, Sri Lanka]
 description: Traveling around Sri Lanka by tuk-tuk proved to be an unforgettable experience.
-image: "2020-12-08-sri-lanka-tuk-tuk/12.jpg"
+draft: false
 ---
 
 ![12](../assets/img/2020-12-08-sri-lanka-tuk-tuk/12.jpg)

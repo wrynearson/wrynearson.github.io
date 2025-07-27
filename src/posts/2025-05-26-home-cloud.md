@@ -3,6 +3,7 @@ title: Home Cloud
 date: 2025-05-26
 tags: [Coding, Projects]
 description: Building a home server.
+draft: false
 ---
 
 Computers are great. We rely on the ones in our pockets and on our desks, but we also interact with so many every time we visit a website or refresh an app. Those cloud computers (servers) help us collaborate and keep data up-to-date and safe.

@@ -4,6 +4,7 @@ date: 2020-07-30
 tags: [Trip, Italy, Bike]
 description: Five days of adventure and exhaustion.
 author: Will Rynearson
+draft: false
 ---
 
 _This is the 2nd half of a bike trip in Summer 2020 with a friend. Read about our trip from [Geneva to Genova]({{base.url}}/geneva-genova)._

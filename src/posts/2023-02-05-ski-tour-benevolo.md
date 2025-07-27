@@ -4,7 +4,7 @@ date: 2023-03-10
 tags: [Photography, Travel, Ski, Nature, Italy]
 description: A three-day adventure to a remote refuge in Aosta Valley.
 author: Will Rynearson
-image: "2023-03-10-benevolo/3.jpg"
+draft: false
 ---
 
 ![25](../assets/img/2023-03-10-benevolo/3.jpg)

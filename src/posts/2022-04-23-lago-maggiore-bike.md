@@ -4,6 +4,7 @@ date: 2022-04-23
 tags: [Trip, Italy, Bike]
 description: A relaxed biking holiday in Northern Italy over the long Easter Weekend full of food, landscapes and culture.
 author: Will Rynearson
+draft: false
 ---
 
 ![4](../assets/img/2022-04-23-lago-maggiore-bike/4.jpg)
