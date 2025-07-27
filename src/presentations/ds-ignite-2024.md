@@ -1,5 +1,6 @@
 ---
 title: DS Ignite 2024
+draft: false
 layout: layouts/reveal-layout.liquid
 ---
 
