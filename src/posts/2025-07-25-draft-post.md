@@ -1,9 +1,12 @@
 ---
 title: Draft Post
 date: 2025-07-25
+draft: true
 description: This shouldn't be visible
 author: Will Rynearson
-draft: true
 ---
+If this is visible, it's wrong.
 
-Hello
+Trying some media
+
+![](docs/Profile%20Pic.png)
