@@ -9,4 +9,6 @@ If this is visible, it's wrong.
 
 Trying some media
 
+![](/assets/img/Profile%20Pic.png)
+
 ![](docs/Profile%20Pic.png)
