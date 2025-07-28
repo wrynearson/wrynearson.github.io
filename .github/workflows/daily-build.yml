@@ -21,6 +21,13 @@ jobs:
         uses: actions/checkout@v4
         with:
           ref: 11ty
+          fetch-depth: 0 # Fetch all history for all branches
+
+      - name: Merge pages-cms branch
+        run: |
+          git config --global user.name 'GitHub Actions Bot'
+          git config --global user.email 'actions@github.com'
+          git merge origin/pages-cms --no-edit || (echo "Merge failed" && exit 1)
 
       - name: Setup pnpm
         uses: pnpm/action-setup@v2
