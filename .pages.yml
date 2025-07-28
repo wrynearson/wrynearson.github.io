@@ -1,4 +1,6 @@
-media: "src/assets/img"
+media: 
+  input: src/assets/img
+  output: ../assets/img
 content:
   - name: posts
     label: Blog Posts
