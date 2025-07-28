@@ -8,3 +8,5 @@ author: Will Rynearson
 If this is visible, it's wrong.
 
 Trying some media
+
+![](../assets/img/Profile%20Pic.png)
