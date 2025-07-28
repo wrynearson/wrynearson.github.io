@@ -1,7 +1,7 @@
 ---
 title: Draft Post
 date: 2025-07-25
-draft: false
+draft: true
 description: This shouldn't be visible
 author: Will Rynearson
 ---
