@@ -12,7 +12,7 @@ outcome: A website that displays drinking water sources and toilets across
   optionally) see what's nearby.
 type: personal
 client: none
-role: Builder
+role: builder
 ---
 ![Watermap](../assets/img/watermap/watermap.png)
 
