@@ -37,8 +37,20 @@ content:
           multiple: false
           creatable: true
           values: [personal, professional, academic]
-      - { name: client, label: Project Client, type: string }
-      - { name: role, label: My Role, type: string }
+      - name: client
+        label: Client
+        type: select
+        options:
+          multiple: false
+          creatable: true
+          values: [none, development seed, earth genome, united nations]
+      - name: role
+        label: Role
+        type: select
+        options:
+          multiple: false
+          creatable: true
+          values: [builder, product manager]
       - { name: body, label: Body, type: rich-text }
   - name: recently
     label: Recently Posts
