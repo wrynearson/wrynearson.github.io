@@ -30,7 +30,19 @@ content:
       - { name: description, label: Description, type: string }
       - { name: problem, label: Problem, type: string }
       - { name: outcome, label: Outcome, type: string }
-      - { name: type, label: Project Type, type: string }
+      - name: type 
+        label: Project Type
+        type: select
+        options:
+          multiple: true
+          creatable: true
+          values:
+          - value: personal
+            label: Personal
+          - value: professional
+            label: Professional
+          - value: academic
+            label: Academic
       - { name: client, label: Project Client, type: string }
       - { name: role, label: My Role, type: string }
       - { name: body, label: Body, type: rich-text }
