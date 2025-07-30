@@ -36,13 +36,7 @@ content:
         options:
           multiple: false
           creatable: true
-          values:
-          - value: personal
-            label: Personal
-          - value: professional
-            label: Professional
-          - value: academic
-            label: Academic
+          values: [personal, professional, academic]
       - { name: client, label: Project Client, type: string }
       - { name: role, label: My Role, type: string }
       - { name: body, label: Body, type: rich-text }
