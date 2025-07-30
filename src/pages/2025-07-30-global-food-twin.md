@@ -1,7 +1,8 @@
 ---
 title: Global Food Twin
-date: 2024-06-01
 draft: true
+date: 2024-06-01
+url: https://foodtwin.theplotline.org/
 description: Visualizes global food production, transportation, and consumption
 problem: The global food system is difficult to wrap your head around
 outcome: A visualization of food production, transportation, and consumption
@@ -9,8 +10,8 @@ type: Client
 client: Earth Genome
 role: Product Manager
 ---
-Imagine if a drought took out a quarter of wheat production in the US midwest. Who would go hungry? What if port workers in Rotterdam went on strike, or the Suez Canal was blocked?  
-  
+Imagine if a drought took out a quarter of wheat production in the US midwest. Who would go hungry? What if port workers in Rotterdam went on strike, or the Suez Canal was blocked?
+
 For that matter, where did the food on your plate come from, and how did it get there?
 
 We built the [Global Food Twin](https://foodtwin.theplotline.org/) to highlight our incredible global food system, and to expose its fragility to the climate crisis and conflicts.
