@@ -1,17 +1,19 @@
 ---
-title: Food Twin
-draft: false
+title: US Food Twin
 date: 2023-05-01
+draft: false
 end-date: 2023-09-01
-url: https://food.theplotline.org/
-description: A proof of concept digital twin of the United States food system, that predicts where food is grown and connecting that food to where it is consumed.
-problem: Shocks (COVID-19, Russian invasion of Ukraine) cascade through food systems and impact food security at an individual and community level.
-outcome: An elegant, interactive tool that shows calorie flows between US counties, and visualizes how the climate crisis could disrupt these flows.
+description: A proof of concept digital twin of the United States food system,
+  that predicts where food is grown and connecting that food to where it is
+  consumed.
+problem: Shocks (COVID-19, Russian invasion of Ukraine) cascade through food
+  systems and impact food security at an individual and community level.
+outcome: An elegant, interactive tool that shows calorie flows between US
+  counties, and visualizes how the climate crisis could disrupt these flows.
+type: professional
 client: Earth Genome
 role: Project Manager
-type: professional
 ---
-
 Recent events such as the COVID-19 pandemic and Russia’s invasion of Ukraine have revealed inherent gaps in the way food systems are modeled. Digital twins of food systems hold massive potential to fill the decision making under food crises, including those caused or exacerbated by climate change.
 
 [Food Twin](https://food.theplotline.org/) is built on an innovative model built by [The Plotline](https://theplotline.org/) team. The model uses the USDA’s Cropland Data Layer to generate an estimate of the types of crops that are grown in different regions across the United States along with data on imported foods. Food Availability surveys and census data were used to model consumption.
