@@ -7,8 +7,8 @@ description: Visualizes global food production, transportation, and consumption
 problem: The global food system is difficult to wrap your head around
 outcome: A visualization of food production, transportation, and consumption
 type: professional
-client: Earth Genome
-role: Product Manager
+client: earth genome
+role: product manager
 ---
 Imagine if a drought took out a quarter of wheat production in the US midwest. Who would go hungry? What if port workers in Rotterdam went on strike, or the Suez Canal was blocked?
 
