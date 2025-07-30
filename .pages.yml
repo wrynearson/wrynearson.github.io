@@ -20,7 +20,7 @@ content:
     path: src/pages
     type: collection
     view:
-      fields: [ title, date, draft, end-date, description, type, client, role ]
+      fields: [ title, draft, date, end-date, description, type, client, role ]
     fields:
       - { name: title, label: Title, type: string }
       - { name: draft, label: Draft, default: true, type: boolean }
