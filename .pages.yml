@@ -23,9 +23,10 @@ content:
       fields: [ title, date, draft, end-date, description, type, client, role ]
     fields:
       - { name: title, label: Title, type: string }
-      - { name: date, label: Start Date, type: date }
       - { name: draft, label: Draft, default: true, type: boolean }
+      - { name: date, label: Start Date, type: date }
       - { name: end-date, label: End Date, type: date }
+      - { name: url, label: URL, type: string }
       - { name: description, label: Description, type: string }
       - { name: problem, label: Problem, type: string }
       - { name: outcome, label: Outcome, type: string }
