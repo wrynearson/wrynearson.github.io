@@ -1,8 +1,9 @@
 ---
 title: US Food Twin
-date: 2023-05-01
 draft: false
+date: 2023-05-01
 end-date: 2023-09-01
+url: https://food.theplotline.org/
 description: A proof of concept digital twin of the United States food system,
   that predicts where food is grown and connecting that food to where it is
   consumed.
