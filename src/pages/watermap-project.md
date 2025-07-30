@@ -10,8 +10,7 @@ problem: When traveling or hiking, I often look for fountains to refill my water
 outcome: A website that displays drinking water sources and toilets across
   Europe. Mobile-optimized to load quickly and allow users to quickly (and
   optionally) see what's nearby.
-type:
-  - personal
+type: personal
 client: none
 role: Builder
 ---
