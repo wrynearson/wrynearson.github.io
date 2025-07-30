@@ -2,6 +2,7 @@
 title: Global Food Twin
 draft: false
 date: 2024-06-01
+end-date: 2025-07-01
 url: https://foodtwin.theplotline.org/
 description: Visualizes global food production, transportation, and consumption
 problem: The global food system is difficult to wrap your head around
