@@ -1,6 +1,6 @@
 ---
 title: Global Food Twin
-draft: true
+draft: false
 date: 2024-06-01
 url: https://foodtwin.theplotline.org/
 description: Visualizes global food production, transportation, and consumption
