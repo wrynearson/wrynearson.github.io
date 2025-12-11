@@ -1,5 +1,5 @@
 ---
-title: Monthly Project Challenge
+title: Monthly Web Project Challenge
 draft: true
 date: 2026-01-01
 end-date: 2026-12-31
