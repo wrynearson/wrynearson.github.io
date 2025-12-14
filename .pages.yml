@@ -58,11 +58,12 @@ content:
     type: collection
     view:
       fields: [ date, draft ]
+      primary: date
     fields:
-      - { name: title, label: Title, type: string, default: Recently }
-      - { name: date, label: Start Date, type: date }
+      - { name: title, label: Title, type: string, default: Recently, hidden: true}
+      - { name: date, label: Date, type: date }
       - { name: draft, label: Draft, default: true, type: boolean }
-      - { name: description, label: Description, type: string, default: Recently }
+      - { name: description, label: Description, type: string, default: Recently, hidden: true }
       - { name: body, label: Body, type: rich-text }
   - name: presentations
     label: Presentations
