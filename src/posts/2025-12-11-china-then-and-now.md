@@ -18,3 +18,8 @@ I lived in China from 2016-2019, and visited in late 2025. Some thoughts.
 *   Smoking is still everywhere, including inside
     
 *   Easier to travel without speaking Chinese, equally rewarding if you do
+    
+
+_testing the image below, uploaded from pagescms on mobile_
+
+![](/assets/img/IMG_2061.jpeg)
