@@ -7,3 +7,6 @@ date: 2025-09-01
 end-date: 2025-12-13
 rating: 5
 ---
+What a life!
+
+…
