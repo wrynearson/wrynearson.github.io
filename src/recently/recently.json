@@ -1,5 +1,5 @@
 {
   "layout": "recently.liquid",
-  "permalink": "recently/{{ page.fileSlug }}/",
+  "permalink": "recently/{{ page.date | date: '%Y-%m-%d' }}/",
   "tags": "recently"
 }

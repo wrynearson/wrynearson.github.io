@@ -1,6 +1,6 @@
 media: 
   input: src/assets/img
-  output: ../assets/img
+  output: /assets/img
 content:
   - name: posts
     label: Blog Posts
@@ -58,11 +58,12 @@ content:
     type: collection
     view:
       fields: [ date, draft ]
+      primary: date
     fields:
-      - { name: title, label: Title, type: string, default: Recently }
-      - { name: date, label: Start Date, type: date }
+      - { name: title, label: Title, type: string, default: Recently, hidden: true}
+      - { name: date, label: Date, type: date }
       - { name: draft, label: Draft, default: true, type: boolean }
-      - { name: description, label: Description, type: string, default: Recently }
+      - { name: description, label: Description, type: string, default: Recently, hidden: true }
       - { name: body, label: Body, type: rich-text }
   - name: presentations
     label: Presentations
@@ -77,3 +78,39 @@ content:
       - { name: draft, label: Draft, default: true, type: boolean }
       - { name: description, label: Description, type: string }
       - { name: body, label: Body, type: text }
+  - name: books
+    label: Books
+    path: src/books
+    type: collection
+    view:
+      fields: [ date, end-date, rating, status, title, author, isbn ]
+    fields:
+    - name: isbn
+      label: ISBN
+      type: string
+      required: true
+    - name: title
+      label: Title (internal)
+      type: string
+    - name: author
+      label: Author (internal)
+      type: string
+    - name: status
+      label: Status
+      type: select
+      options:
+        multiple: false
+        values: [to-read, reading, read, abandoned]
+      default: read
+    - name: date
+      label: Start date
+      type: date
+    - name: end-date
+      label: Date Finished
+      type: date
+    - name: rating
+      label: Rating
+      type: number
+    - name: body
+      label: Review
+      type: rich-text
