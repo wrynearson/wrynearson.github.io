@@ -21,3 +21,13 @@ So, with resolutions usually starting in January, I plan on setting a project (o
 If I had to guess, I'll likely bite off more than I can chew for the first few, and then get better at goal setting later on. Some will likely be self-serving with limited value to others, but I hope that at least some will provide value to others.
 
 Starting off in January, I'll explore a dataset that's been on my mind for a while, and related to our recent three-month trip: what might the weather be like in a few months, based on historical averages? More details to come.
+
+Project list:
+
+1.  Travel planner with historical weather averages
+    
+2.  Scrollytelling for GPX "flyover"
+    
+3.  Personal blog books page with ISBN lookup
+    
+4.  Personal blog photo portfolio page

@@ -5,7 +5,7 @@ author: Sidney Rittenberg
 status: read
 date: 2025-09-01
 end-date: 2025-12-13
-rating: 5
+rating: 9
 ---
 What a life!
 
