@@ -22,7 +22,7 @@ If I had to guess, I'll likely bite off more than I can chew for the first few, 
 
 Starting off in January, I'll explore a dataset that's been on my mind for a while, and related to our recent three-month trip: what might the weather be like in a few months, based on historical averages? More details to come.
 
-Project list:
+Project list (not in order, TBD):
 
 1.  Travel planner with historical weather averages
     
@@ -31,3 +31,13 @@ Project list:
 3.  Personal blog books page with ISBN lookup
     
 4.  Personal blog photo portfolio page
+    
+5.  Some map of global property/rent prices? Might be too ambitious
+    
+6.  Historical weather average -> "perfect weather" locations (e.g., sunny > 200 days, max t < 30C, ...)
+    
+7.  Something about visa free access or digital nomad visa map?
+    
+8.  Income tax map? (Continue Swiss tax map?)
+    
+9.  Some Swiss transit explorer (departures per hour, etc)
