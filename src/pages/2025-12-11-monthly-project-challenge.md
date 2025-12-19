@@ -41,3 +41,5 @@ Project list (not in order, TBD):
 8.  Income tax map? (Continue Swiss tax map?)
     
 9.  Some Swiss transit explorer (departures per hour, etc)
+    
+10.  Global food seasonality map
