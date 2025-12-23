@@ -43,3 +43,5 @@ Project list (not in order, TBD):
 9.  Some Swiss transit explorer (departures per hour, etc)
     
 10.  Global food seasonality map
+    
+11.  "Life stats" (simple display of aggregated data from Strava + other sources). Or maybe a life "chart" (one row per year)?

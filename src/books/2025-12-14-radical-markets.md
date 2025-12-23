@@ -12,6 +12,10 @@ rating: 8
     
 *   Proposed solutions:
     
-*   COST - self assessed tax, must sell at listed price
+*   Property: COST - self assessed tax, must sell at listed price
     
-*   Quadratic voting
+*   Representation: Quadratic voting
+    
+*   Migration: auction + sponsorship
+    
+*   Institutional investors: regulation
