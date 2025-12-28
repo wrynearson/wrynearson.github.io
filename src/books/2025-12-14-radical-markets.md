@@ -4,7 +4,7 @@ title: Radical Markets
 author: E. Glen Weyl
 status: reading
 date: 2025-12-14
-rating: 8
+rating: 7
 ---
 *   problem: current markets are either not fair/open (landlords, wealthy hoarding) or lacking entirely (some government services).
     
@@ -19,3 +19,5 @@ rating: 8
 *   Migration: auction + sponsorship
     
 *   Institutional investors: regulation
+    
+*   Data: get paid for contributions, increasingly important in the AI age. Pay for shopping recommendations
