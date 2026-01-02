@@ -21,3 +21,7 @@ rating: 7
 *   Institutional investors: regulation
     
 *   Data: get paid for contributions, increasingly important in the AI age. Pay for shopping recommendations
+    
+*   Radical markets would improve wellbeing for all, reduce inequality and discrimination, and build trust within and across borders
+    
+*   Capitalism liberated many from feudalism, radical markets would further liberate from wealth privilege
