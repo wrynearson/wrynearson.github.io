@@ -1,5 +1,5 @@
 ---
-isbn: X
+isbn: 978-1250266774
 title: Recoding America
 status: read
 rating: 8
