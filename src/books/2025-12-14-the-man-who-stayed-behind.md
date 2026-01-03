@@ -1,5 +1,5 @@
 ---
-isbn: "9780822326670"
+isbn: 978-0822326670
 title: The Man Who Stayed Behind
 author: Sidney Rittenberg
 status: read
