@@ -1,5 +1,5 @@
 ---
-isbn: "9780691196978"
+isbn: 978-0691196978
 title: Radical Markets
 author: E. Glen Weyl
 status: read
