@@ -2,8 +2,9 @@
 isbn: "9780691196978"
 title: Radical Markets
 author: E. Glen Weyl
-status: reading
+status: read
 date: 2025-12-14
+end-date: 2026-01-02
 rating: 7
 ---
 *   problem: current markets are either not fair/open (landlords, wealthy hoarding) or lacking entirely (some government services).
