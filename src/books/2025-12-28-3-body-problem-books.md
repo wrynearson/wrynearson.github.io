@@ -1,5 +1,5 @@
 ---
-isbn: X
-title: 3 body problem books
+isbn: 978-0765382030
+title: The Three Body Problem
 status: read
 ---
