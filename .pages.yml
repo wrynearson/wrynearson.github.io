@@ -85,32 +85,32 @@ content:
     view:
       fields: [ date, end-date, rating, status, title, author, isbn ]
     fields:
-    - name: isbn
-      label: ISBN
-      type: string
-      required: true
-    - name: title
-      label: Title (internal)
-      type: string
-    - name: author
-      label: Author (internal)
-      type: string
-    - name: status
-      label: Status
-      type: select
-      options:
-        multiple: false
-        values: [to-read, reading, read, abandoned]
-      default: read
-    - name: date
-      label: Start date
-      type: date
-    - name: end-date
-      label: Date Finished
-      type: date
-    - name: rating
-      label: Rating
-      type: number
-    - name: body
-      label: Review
-      type: rich-text
+      - name: isbn
+        label: ISBN
+        type: string
+        required: true
+      - name: title
+        label: Title (internal)
+        type: string
+      - name: author
+        label: Author (internal)
+        type: string
+      - name: status
+        label: Status
+        type: select
+        options:
+          multiple: false
+          values: [to-read, reading, read, abandoned]
+        default: read
+      - name: date
+        label: Start date
+        type: date
+      - name: end-date
+        label: Date Finished
+        type: date
+      - name: rating
+        label: Rating
+        type: number
+      - name: body
+        label: Review
+        type: rich-text
