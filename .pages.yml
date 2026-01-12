@@ -92,7 +92,12 @@ content:
     path: src/books
     type: collection
     view:
-      fields: [date, end-date, rating, status, title, author, isbn]
+      fields: [end-date, date, rating, status, title, author, isbn]
+      primary: title
+      sort: [end-date, title]
+      default:
+        sort: title
+        order: asc
     fields:
       - name: isbn
         label: ISBN
@@ -114,6 +119,8 @@ content:
       - name: date
         label: Start date
         type: date
+        default: null
+        description: Optional: When you started reading this book
       - name: end-date
         label: Date Finished
         type: date
