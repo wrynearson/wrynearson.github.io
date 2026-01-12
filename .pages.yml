@@ -1,121 +1,121 @@
-  media:
-    input: src/assets/img
-    output: /assets/img
+media:
+  input: src/assets/img
+  output: /assets/img
 
-  content:
-    - name: posts
-      label: Blog Posts
-      path: src/posts
-      type: collection
-      view:
-        fields: [title, draft, date, description]
-      fields:
-        - { name: title, label: Title, type: string }
-        - { name: date, label: Date, type: date }
-        - { name: draft, label: Draft, default: true, type: boolean }
-        - { name: description, label: Description, type: string }
-        - { name: author, label: Author, default: Will Rynearson, type: string }
-        - { name: body, label: Body, type: rich-text }
+content:
+  - name: posts
+    label: Blog Posts
+    path: src/posts
+    type: collection
+    view:
+      fields: [title, draft, date, description]
+    fields:
+      - { name: title, label: Title, type: string }
+      - { name: date, label: Date, type: date }
+      - { name: draft, label: Draft, default: true, type: boolean }
+      - { name: description, label: Description, type: string }
+      - { name: author, label: Author, default: Will Rynearson, type: string }
+      - { name: body, label: Body, type: rich-text }
 
-    - name: pages
-      label: Project Pages
-      path: src/pages
-      type: collection
-      view:
-        fields: [title, draft, date, end-date, url, description, type, client, role]
-      fields:
-        - { name: title, label: Title, type: string }
-        - { name: draft, label: Draft, default: true, type: boolean }
-        - { name: date, label: Start Date, type: date }
-        - { name: end-date, label: End Date, type: date }
-        - { name: url, label: URL, type: string }
-        - { name: description, label: Description, type: string }
-        - { name: problem, label: Problem, type: string }
-        - { name: outcome, label: Outcome, type: string }
-        - name: type
-          label: Project Type
-          type: select
-          options:
-            multiple: false
-            creatable: true
-            values: [personal, professional, academic]
-        - name: client
-          label: Client
-          type: select
-          options:
-            multiple: false
-            creatable: true
-            values: [none, development seed, earth genome, united nations]
-        - name: role
-          label: Role
-          type: select
-          options:
-            multiple: false
-            creatable: true
-            values: [builder, product manager]
-        - { name: body, label: Body, type: rich-text }
+  - name: pages
+    label: Project Pages
+    path: src/pages
+    type: collection
+    view:
+      fields: [title, draft, date, end-date, url, description, type, client, role]
+    fields:
+      - { name: title, label: Title, type: string }
+      - { name: draft, label: Draft, default: true, type: boolean }
+      - { name: date, label: Start Date, type: date }
+      - { name: end-date, label: End Date, type: date }
+      - { name: url, label: URL, type: string }
+      - { name: description, label: Description, type: string }
+      - { name: problem, label: Problem, type: string }
+      - { name: outcome, label: Outcome, type: string }
+      - name: type
+        label: Project Type
+        type: select
+        options:
+          multiple: false
+          creatable: true
+          values: [personal, professional, academic]
+      - name: client
+        label: Client
+        type: select
+        options:
+          multiple: false
+          creatable: true
+          values: [none, development seed, earth genome, united nations]
+      - name: role
+        label: Role
+        type: select
+        options:
+          multiple: false
+          creatable: true
+          values: [builder, product manager]
+      - { name: body, label: Body, type: rich-text }
 
-    - name: recently
-      label: Recently Posts
-      path: src/recently
-      type: collection
-      view:
-        fields: [date, draft]
-        primary: date
-      fields:
-        - { name: title, label: Title, type: string, default: Recently, hidden: true }
-        - { name: date, label: Date, type: date }
-        - { name: draft, label: Draft, default: true, type: boolean }
-        - { name: description, label: Description, type: string, default: Recently, hidden: true }
-        - { name: body, label: Body, type: rich-text }
+  - name: recently
+    label: Recently Posts
+    path: src/recently
+    type: collection
+    view:
+      fields: [date, draft]
+      primary: date
+    fields:
+      - { name: title, label: Title, type: string, default: Recently, hidden: true }
+      - { name: date, label: Date, type: date }
+      - { name: draft, label: Draft, default: true, type: boolean }
+      - { name: description, label: Description, type: string, default: Recently, hidden: true }
+      - { name: body, label: Body, type: rich-text }
 
-    - name: presentations
-      label: Presentations
-      path: src/presentations
-      type: collection
-      view:
-        fields: [title, date, draft]
-      fields:
-        - { name: title, label: Title, type: string }
-        - { name: layout, label: Layout, type: string, default: "layouts/reveal-layout.liquid" }
-        - { name: date, label: Start Date, type: date }
-        - { name: draft, label: Draft, default: true, type: boolean }
-        - { name: description, label: Description, type: string }
-        - { name: body, label: Body, type: text }
+  - name: presentations
+    label: Presentations
+    path: src/presentations
+    type: collection
+    view:
+      fields: [title, date, draft]
+    fields:
+      - { name: title, label: Title, type: string }
+      - { name: layout, label: Layout, type: string, default: "layouts/reveal-layout.liquid" }
+      - { name: date, label: Start Date, type: date }
+      - { name: draft, label: Draft, default: true, type: boolean }
+      - { name: description, label: Description, type: string }
+      - { name: body, label: Body, type: text }
 
-    - name: books
-      label: Books
-      path: src/books
-      type: collection
-      view:
-        fields: [date, end-date, rating, status, title, author, isbn]
-      fields:
-        - name: isbn
-          label: ISBN
-          type: string
-          required: true
-        - name: title
-          label: Title (internal)
-          type: string
-        - name: author
-          label: Author (internal)
-          type: string
-        - name: status
-          label: Status
-          type: select
-          options:
-            multiple: false
-            values: [to-read, reading, read, abandoned]
-          default: read
-        - name: date
-          label: Start date
-          type: date
-        - name: end-date
-          label: Date Finished
-          type: date
-        - name: rating
-          label: Rating
-          type: number
-        - name: body
-          label: Review
-          type: rich-text
+  - name: books
+    label: Books
+    path: src/books
+    type: collection
+    view:
+      fields: [date, end-date, rating, status, title, author, isbn]
+    fields:
+      - name: isbn
+        label: ISBN
+        type: string
+        required: true
+      - name: title
+        label: Title (internal)
+        type: string
+      - name: author
+        label: Author (internal)
+        type: string
+      - name: status
+        label: Status
+        type: select
+        options:
+          multiple: false
+          values: [to-read, reading, read, abandoned]
+        default: read
+      - name: date
+        label: Start date
+        type: date
+      - name: end-date
+        label: Date Finished
+        type: date
+      - name: rating
+        label: Rating
+        type: number
+      - name: body
+        label: Review
+        type: rich-text
