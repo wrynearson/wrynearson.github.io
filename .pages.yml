@@ -92,7 +92,7 @@ content:
     path: src/books
     type: collection
     view:
-      fields: [end-date, date, rating, status, title, author, isbn]
+      fields: [date, end-date, rating, status, title, author, isbn]
       primary: title
       sort: [status, end-date, title]
       default:
