@@ -96,7 +96,7 @@ content:
       primary: title
       sort: [status, end-date, title]
       default:
-        sort: status
+        sort: end-date
         order: desc
     fields:
       - name: isbn
