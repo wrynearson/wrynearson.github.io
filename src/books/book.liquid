@@ -41,7 +41,7 @@ layout: base
 
     {% if book.publication_year %}
     <tr class="table-row">
-      <th class="table-head labels">Publication Year</th>
+      <th class="table-head labels">Publication Date</th>
       <td class="cell">{{ book.publication_year }}</td>
     </tr>
     {% endif %}
@@ -88,30 +88,41 @@ layout: base
     </tr>
     {% endif %}
 
-    {% if book.end_date %}
+    {% if book.status != "reading" %}
     <tr class="table-row">
       <th class="table-head labels">Finished</th>
-      <td class="cell">{{ book.end_date | dateFormat }}</td>
+      <td class="cell">
+        {% if book.end_date %}
+          {{ book.end_date | dateFormat }}
+        {% else %}
+          —
+        {% endif %}
+      </td>
     </tr>
     {% endif %}
 
     {% if book.rating %}
     <tr class="table-row">
       <th class="table-head labels">Rating</th>
-      <td class="cell">{{ book.rating }}/10</td>
+      <td class="cell">
+        {% assign stars_out_of_5 = book.rating | times: 0.5 %}
+        {% assign full_stars = stars_out_of_5 | floor %}
+        {% assign has_half_star = stars_out_of_5 | minus: full_stars | at_least: 0.25 %}
+        {% for i in (1..full_stars) %}★{% endfor %}{% if has_half_star >= 0.25 %}½{% endif %}{% assign empty_stars = 5 | minus: full_stars %}{% if has_half_star >= 0.25 %}{% assign empty_stars = empty_stars | minus: 1 %}{% endif %}{% for i in (1..empty_stars) %}☆{% endfor %}
+      </td>
     </tr>
     {% endif %}
   </tbody>
 </table>
 
 {% if book.description %}
-<details style="margin: 30px 0;">
-  <summary style="cursor: pointer; font-weight: bold; font-size: 1.2em; margin-bottom: 10px;">Description</summary>
-  <p style="margin-top: 10px;">{{ book.description }}</p>
+<details>
+  <summary>Description</summary>
+  <div>{{ book.description }}</div>
 </details>
 {% endif %}
 
-{% if book.notes %}
+{% if book.notes and book.notes != "" %}
 <div class="book-notes" style="margin: 30px 0;">
   <h2>My Notes</h2>
   <div style="white-space: pre-wrap;">{{ book.notes }}</div>

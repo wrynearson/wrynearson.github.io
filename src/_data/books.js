@@ -135,15 +135,20 @@ async function fetchBookFromOpenLibrary(isbn) {
 
     // Handle description (can be string or object)
     if (bookData.description) {
-      result.description =
+      let desc =
         typeof bookData.description === "string"
           ? bookData.description
           : bookData.description.value;
+      // Remove surrounding quotes and quote marks before attribution
+      desc = desc.replace(/^["']|["']--/g, "").replace(/["']$/g, "");
+      result.description = desc;
     }
 
     // Fetch author names (requires separate API calls)
     if (bookData.authors && bookData.authors.length > 0) {
-      result.authors = await fetchAuthorNames(bookData.authors);
+      const authorNames = await fetchAuthorNames(bookData.authors);
+      // Remove duplicates
+      result.authors = [...new Set(authorNames)];
     }
 
     // Extract all genres/subjects (no filtering)
