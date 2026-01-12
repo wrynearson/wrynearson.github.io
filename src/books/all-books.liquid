@@ -42,13 +42,17 @@ layout: base
         </td>
         <td class="cell">
           {% if book.rating %}
-            {{ book.rating }}/10
+            {% assign capped_rating = book.rating | at_most: 5 %}
+            {% assign empty_stars = 5 | minus: capped_rating %}
+            {% for i in (1..capped_rating) %}★{% endfor %}{% for i in (1..empty_stars) %}☆{% endfor %}
           {% else %}
             —
           {% endif %}
         </td>
         <td class="cell">
-          {% if book.end_date %}
+          {% if book.status == "reading" %}
+            —
+          {% elsif book.end_date %}
             <time>{{ book.end_date | dateFormat }}</time>
           {% elsif book.date %}
             <time>{{ book.date | dateFormat }}</time>

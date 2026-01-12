@@ -198,13 +198,13 @@ async function fetchAuthorNames(authorKeys) {
  * Sort books by date and assign sequential IDs
  */
 function sortAndIndexBooks(books) {
-  // Sort by end_date (most recent first)
+  // Sort by date (start date, most recent first)
   // Books without dates sort to the end
   const sorted = books.sort((a, b) => {
-    const dateA = a.end_date;
-    const dateB = b.end_date;
+    const dateA = a.date;
+    const dateB = b.date;
 
-    // Both have dates, sort chronologically
+    // Both have dates, sort chronologically (most recent first)
     if (dateA && dateB) {
       return new Date(dateB) - new Date(dateA);
     }

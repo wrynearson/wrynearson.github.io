@@ -105,10 +105,9 @@ layout: base
     <tr class="table-row">
       <th class="table-head labels">Rating</th>
       <td class="cell">
-        {% assign stars_out_of_5 = book.rating | times: 0.5 %}
-        {% assign full_stars = stars_out_of_5 | floor %}
-        {% assign has_half_star = stars_out_of_5 | minus: full_stars | at_least: 0.25 %}
-        {% for i in (1..full_stars) %}★{% endfor %}{% if has_half_star >= 0.25 %}½{% endif %}{% assign empty_stars = 5 | minus: full_stars %}{% if has_half_star >= 0.25 %}{% assign empty_stars = empty_stars | minus: 1 %}{% endif %}{% for i in (1..empty_stars) %}☆{% endfor %}
+        {% assign capped_rating = book.rating | at_most: 5 %}
+        {% assign empty_stars = 5 | minus: capped_rating %}
+        {% for i in (1..capped_rating) %}★{% endfor %}{% for i in (1..empty_stars) %}☆{% endfor %}
       </td>
     </tr>
     {% endif %}
