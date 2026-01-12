@@ -101,7 +101,7 @@ content:
         options:
           multiple: false
           values: [to-read, reading, read, abandoned]
-        default: read
+          default: read
       - name: date
         label: Start date
         type: date
