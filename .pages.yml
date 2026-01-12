@@ -2,6 +2,10 @@ media:
   input: src/assets/img
   output: /assets/img
 
+settings:
+  content:
+    merge: true
+
 content:
   - name: posts
     label: Blog Posts
