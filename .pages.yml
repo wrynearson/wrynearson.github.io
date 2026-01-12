@@ -120,13 +120,15 @@ content:
         label: Start date
         type: date
         default: null
-        description: Optional: When you started reading this book
+        description: "Optional: When you started reading this book"
       - name: end-date
         label: Date Finished
         type: date
+        default: null
       - name: rating
         label: Rating
         type: number
+        description: "Optional: Integers between 1 and 5"
       - name: body
         label: Review
         type: rich-text
