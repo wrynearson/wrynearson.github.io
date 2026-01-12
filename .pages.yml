@@ -97,7 +97,7 @@ content:
       sort: [end-date, title]
       default:
         sort: title
-        order: asc
+        order: desc
     fields:
       - name: isbn
         label: ISBN
