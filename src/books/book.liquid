@@ -9,12 +9,6 @@ layout: base
 
 <h1>{{ book.title }}</h1>
 
-{% if book.cover_url %}
-<div class="book-cover">
-  <img src="{{ book.cover_url }}" alt="Cover of {{ book.title }}" style="max-width: 300px; margin: 20px 0;">
-</div>
-{% endif %}
-
 {% if book.api_error %}
 <div class="error-message" style="background: #fff3cd; padding: 10px; border-radius: 5px; margin: 20px 0;">
   <strong>Note:</strong> {{ book.api_error_message }}
@@ -23,6 +17,14 @@ layout: base
 
 <table class="table overview">
   <tbody class="table-body">
+    {% if book.cover_url %}
+    <tr class="table-row">
+      <th class="table-head labels">Cover</th>
+      <td class="cell">
+        <img src="{{ book.cover_url }}" alt="Cover of {{ book.title }}" style="max-width: 200px;">
+      </td>
+    </tr>
+    {% endif %}
     {% if book.authors and book.authors.size > 0 %}
     <tr class="table-row">
       <th class="table-head labels">
@@ -62,9 +64,8 @@ layout: base
     <tr class="table-row">
       <th class="table-head labels">Genres</th>
       <td class="cell">
-        {% for genre in book.genres limit:5 %}
-          <span style="background: #e9ecef; padding: 3px 8px; border-radius: 3px; margin-right: 5px; display: inline-block; margin-bottom: 5px;">{{ genre }}</span>
-        {% endfor %}
+        {% assign limited_genres = book.genres | slice: 0, 5 %}
+        {{ limited_genres | join: ", " }}
       </td>
     </tr>
     {% endif %}
@@ -73,7 +74,7 @@ layout: base
       <th class="table-head labels">Status</th>
       <td class="cell">
         {% if book.status == "reading" %}
-          <strong>Currently Reading</strong>
+          Currently Reading
         {% else %}
           Read
         {% endif %}
@@ -104,10 +105,10 @@ layout: base
 </table>
 
 {% if book.description %}
-<div class="book-description" style="margin: 30px 0;">
-  <h2>Description</h2>
-  <p>{{ book.description }}</p>
-</div>
+<details style="margin: 30px 0;">
+  <summary style="cursor: pointer; font-weight: bold; font-size: 1.2em; margin-bottom: 10px;">Description</summary>
+  <p style="margin-top: 10px;">{{ book.description }}</p>
+</details>
 {% endif %}
 
 {% if book.notes %}
