@@ -1,0 +1,83 @@
+---
+permalink: 'books/index.html'
+layout: base
+---
+
+<h1>Books</h1>
+<p class="description">
+  I've read {{ books.books_read.length }} books.
+</p>
+
+<br>
+
+<table class="table">
+  <thead class="table-head">
+    <tr class="table-head">
+      <th class="table-head">Title</th>
+      <th class="table-head">Author</th>
+      <th class="table-head narrow">Status</th>
+      <th class="table-head narrow">Rating</th>
+      <th class="table-head narrow">Date Finished</th>
+    </tr>
+  </thead>
+  <tbody class="table-body">
+    {% for book in books.books_all %}
+      <tr class="table-row">
+        <td class="cell">
+          <a href="/books/{{book.book_id}}">{{ book.title }}</a>
+        </td>
+        <td class="cell">
+          {% if book.authors and book.authors.size > 0 %}
+            {{ book.authors | join: ", " }}
+          {% else %}
+            —
+          {% endif %}
+        </td>
+        <td class="cell">
+          {% if book.status == "reading" %}
+            📖 Reading
+          {% else %}
+            ✓ Read
+          {% endif %}
+        </td>
+        <td class="cell">
+          {% if book.rating %}
+            {{ book.rating }}/10
+          {% else %}
+            —
+          {% endif %}
+        </td>
+        <td class="cell">
+          {% if book.end_date %}
+            <time>{{ book.end_date | dateFormat }}</time>
+          {% elsif book.date %}
+            <time>{{ book.date | dateFormat }}</time>
+          {% else %}
+            <em>Date unknown</em>
+          {% endif %}
+        </td>
+      </tr>
+    {% endfor %}
+  </tbody>
+</table>
+
+<br>
+
+<footer class="footer">
+  <div class="name_link">—
+    <a href="/">Will</a>
+  </div>
+  <div class="stats">
+    <div class="words">
+      {% fortawesomeRegular 'edit' %}
+      <a href="/words/">
+        <p title="I've written {{words.words}} words worth of notes in {{words.year}}, as of {{words.calculated}}">
+          {{ words.words }} words
+        </p>
+      </a>
+    </div>
+    <div class="coffee">
+      <a href="/coffee/">☕️ {{ coffee.brews_combined.length }}</a>
+    </div>
+  </div>
+</footer>
