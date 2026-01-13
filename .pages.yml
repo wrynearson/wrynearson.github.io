@@ -125,6 +125,7 @@ content:
         label: Date Finished
         type: date
         default: null
+        required: false
       - name: rating
         label: Rating
         type: number
