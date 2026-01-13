@@ -5,7 +5,7 @@ draft: true
 description: Reflections from a recent trip to China
 author: Will Rynearson
 ---
-_anecdotal_
+_anecdotal..._
 
 I lived in China from 2016-2019, and visited in late 2025. Some thoughts.
 

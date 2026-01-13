@@ -1,13 +1,18 @@
-media: 
+media:
   input: src/assets/img
   output: /assets/img
+
+settings:
+  content:
+    merge: true
+
 content:
   - name: posts
     label: Blog Posts
     path: src/posts
     type: collection
     view:
-      fields: [ title, draft, date, description ]
+      fields: [title, draft, date, description]
     fields:
       - { name: title, label: Title, type: string }
       - { name: date, label: Date, type: date }
@@ -15,12 +20,13 @@ content:
       - { name: description, label: Description, type: string }
       - { name: author, label: Author, default: Will Rynearson, type: string }
       - { name: body, label: Body, type: rich-text }
+
   - name: pages
     label: Project Pages
     path: src/pages
     type: collection
     view:
-      fields: [ title, draft, date, end-date, url, description, type, client, role ]
+      fields: [title, draft, date, end-date, url, description, type, client, role]
     fields:
       - { name: title, label: Title, type: string }
       - { name: draft, label: Draft, default: true, type: boolean }
@@ -30,7 +36,7 @@ content:
       - { name: description, label: Description, type: string }
       - { name: problem, label: Problem, type: string }
       - { name: outcome, label: Outcome, type: string }
-      - name: type 
+      - name: type
         label: Project Type
         type: select
         options:
@@ -52,25 +58,27 @@ content:
           creatable: true
           values: [builder, product manager]
       - { name: body, label: Body, type: rich-text }
+
   - name: recently
     label: Recently Posts
     path: src/recently
     type: collection
     view:
-      fields: [ date, draft ]
+      fields: [date, draft]
       primary: date
     fields:
-      - { name: title, label: Title, type: string, default: Recently, hidden: true}
+      - { name: title, label: Title, type: string, default: Recently, hidden: true }
       - { name: date, label: Date, type: date }
       - { name: draft, label: Draft, default: true, type: boolean }
       - { name: description, label: Description, type: string, default: Recently, hidden: true }
       - { name: body, label: Body, type: rich-text }
+
   - name: presentations
     label: Presentations
     path: src/presentations
     type: collection
     view:
-      fields: [ title, date, draft ]
+      fields: [title, date, draft]
     fields:
       - { name: title, label: Title, type: string }
       - { name: layout, label: Layout, type: string, default: "layouts/reveal-layout.liquid" }
@@ -78,39 +86,49 @@ content:
       - { name: draft, label: Draft, default: true, type: boolean }
       - { name: description, label: Description, type: string }
       - { name: body, label: Body, type: text }
+
   - name: books
     label: Books
     path: src/books
     type: collection
     view:
-      fields: [ date, end-date, rating, status, title, author, isbn ]
+      fields: [date, end-date, rating, status, title, author, isbn]
+      primary: title
+      sort: [status, end-date, title]
+      default:
+        sort: status
+        order: desc
     fields:
-    - name: isbn
-      label: ISBN
-      type: string
-      required: true
-    - name: title
-      label: Title (internal)
-      type: string
-    - name: author
-      label: Author (internal)
-      type: string
-    - name: status
-      label: Status
-      type: select
-      options:
-        multiple: false
-        values: [to-read, reading, read, abandoned]
-      default: read
-    - name: date
-      label: Start date
-      type: date
-    - name: end-date
-      label: Date Finished
-      type: date
-    - name: rating
-      label: Rating
-      type: number
-    - name: body
-      label: Review
-      type: rich-text
+      - name: isbn
+        label: ISBN
+        type: string
+        required: true
+      - name: title
+        label: Title (internal)
+        type: string
+      - name: author
+        label: Author (internal)
+        type: string
+      - name: status
+        label: Status
+        type: select
+        options:
+          multiple: false
+          values: [to-read, reading, read, abandoned]
+        default: read
+      - name: date
+        label: Start date
+        type: date
+        default: null
+        description: "Optional: When you started reading this book"
+      - name: end-date
+        label: Date Finished
+        type: date
+        default: null
+      - name: rating
+        label: Rating
+        type: number
+        description: "Optional: Integers between 1 and 5"
+      - name: body
+        label: Review
+        type: rich-text
