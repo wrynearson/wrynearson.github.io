@@ -124,7 +124,8 @@ content:
       - name: end-date
         label: Date Finished
         type: date
-        default: null
+        default: 
+        required: false
       - name: rating
         label: Rating
         type: number
