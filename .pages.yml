@@ -119,7 +119,8 @@ content:
       - name: date
         label: Start date
         type: date
-        default: null
+        default: 
+        required: false
         description: "Optional: When you started reading this book"
       - name: end-date
         label: Date Finished
