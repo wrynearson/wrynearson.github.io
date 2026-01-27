@@ -13,7 +13,7 @@ layout: base
 
 <br>
 
-<table class="table">
+<table class="table table-stack">
   <thead class="table-head">
     <tr class="table-head">
       <th class="table-head narrow">Date</th>
@@ -24,9 +24,9 @@ layout: base
   </thead>
   <tbody class="table-body">
     {% for meta in coffee.brews_combined reversed %}
-      <tr class="table-row">
-        {% if meta.starred == true %}
-          <td class="cell starred">
+      {% if meta.starred == true %}
+        <tr class="table-row starred-row">
+          <td class="cell starred" data-label="Date">
             {% if meta.date == blank %}
               <a href="/coffee/brews/{{meta.brew_id}}" class="starred">
                 <em>Early {{ meta.date | default: "2024" }}</em>
@@ -37,13 +37,15 @@ layout: base
               </a>
             {% endif %}
           </td>
-          <td class="cell starred">
+          <td class="cell starred" data-label="Coffee">
             <a href="/coffee/beans/{{meta.id}}">{{ meta.bean }}</a>
           </td>
-          <td class="cell starred">{{ meta.type }}</td>
-          <td class="cell starred">{{ meta.notes }}</td>
-        {% else %}
-          <td class="cell">
+          <td class="cell starred" data-label="Style">{{ meta.type }}</td>
+          <td class="cell starred" data-label="Notes">{{ meta.notes }}</td>
+        </tr>
+      {% else %}
+        <tr class="table-row">
+          <td class="cell" data-label="Date">
             {% if meta.date == blank %}
               <a href="/coffee/brews/{{meta.brew_id}}" class="starred">
                 <em>Early {{ meta.date | default: "2024" }}</em>
@@ -54,13 +56,13 @@ layout: base
               </a>
             {% endif %}
           </td>
-          <td class="cell">
+          <td class="cell" data-label="Coffee">
             <a href="/coffee/beans/{{meta.id}}">{{ meta.bean }}</a>
           </td>
-          <td class="cell">{{ meta.type }}</td>
-          <td class="cell">{{ meta.notes }}</td>
-        {% endif %}
-      </tr>
+          <td class="cell" data-label="Style">{{ meta.type }}</td>
+          <td class="cell" data-label="Notes">{{ meta.notes }}</td>
+        </tr>
+      {% endif %}
     {% endfor %}
   </tbody>
 </table>
