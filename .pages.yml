@@ -25,6 +25,7 @@ content:
     label: Project Pages
     path: src/pages
     type: collection
+    filename: "{fields.title}.md"
     view:
       fields: [title, draft, date, end-date, url, description, type, client, role]
     fields:
@@ -91,6 +92,7 @@ content:
     label: Books
     path: src/books
     type: collection
+    filename: "{fields.title}.md"
     view:
       fields: [date, end-date, rating, status, title, author, isbn]
       primary: title
