@@ -4,14 +4,17 @@
   "main": "index.js",
   "scripts": {
     "start": "eleventy --serve",
-    "build": "eleventy"
+    "build": "eleventy",
+    "test": "node --test tests/frontmatter.test.js"
   },
   "keywords": [],
   "author": "Will Rynearson",
   "license": "MIT",
   "devDependencies": {
     "@11ty/eleventy": "^3.1.2",
-    "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.2"
+    "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.2",
+    "arktype": "^2.1.29",
+    "gray-matter": "^4.0.3"
   },
   "dependencies": {
     "@11ty/eleventy-fetch": "^5.1.1",
