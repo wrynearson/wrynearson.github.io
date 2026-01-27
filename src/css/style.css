@@ -56,12 +56,14 @@ body {
   --underline-color: #ad8301;
   --underline-highlight-color: #d0a215;
   --details-disclose-color: var(--color-bg-2);
-  --highlight-color: #f6e2a0;
+  --highlight-color: #ad8301;
+  --archived-bg: var(--color-bg-2);
 
   /* Borders and tables */
   --border-thin: 1px solid var(--color-ui-2);
   --border-thick: 1px solid var(--color-text);
   --table-font-size: 1rem;
+  --table-border-color: var(--color-ui-2);
 
   /* Code styling */
   --code-bg: var(--color-bg-2);
@@ -97,7 +99,7 @@ body {
   }
   to {
     text-decoration-color: var(--underline-highlight-color);
-    text-decoration-thickness: calc(var(--active-line-thickness) * 1.5);
+    text-decoration-thickness: calc(var(--active-line-thickness) * 1.15);
   }
 }
 
@@ -150,6 +152,7 @@ a:active {
   margin: var(--margin);
   padding-top: 2em;
   padding-bottom: 1em;
+  color: var(--heading-color);
 }
 
 main {
@@ -229,6 +232,7 @@ h3 {
   font-family: var(--font-family);
   font-size: var(--font-size);
   font-weight: var(--title-font-weight);
+  color: var(--heading-color);
   padding-top: var(--section-padding-top);
 }
 
@@ -238,6 +242,7 @@ h6 {
   font-family: var(--font-family);
   font-size: var(--font-size);
   font-weight: var(--body-font-weight);
+  color: var(--heading-color);
   padding-top: var(--section-padding-top);
 }
 
@@ -315,7 +320,7 @@ blockquote {
 }
 
 .page-separator {
-  border: 0.5px solid;
+  border: 0.5px solid var(--color-ui-2);
   margin: 2.5rem;
 }
 
@@ -368,19 +373,19 @@ details em {
 }
 
 #reveal.image present {
-  background: red;
-  background-color: rgba(4, 3, 0, 0.019);
+  background-color: var(--color-bg-2);
 }
 
 .table,
 table {
   display: table;
   width: 100%;
-  border-collapse: collapse;
+  border-collapse: separate;
+  border-spacing: 0;
   table-layout: fixed;
   text-align: left;
   vertical-align: center;
-  border-top: var(--border-thin);
+  border-top: 1px solid var(--table-border-color);
   color: var(--body-color);
   margin-bottom: 1rem;
 }
@@ -393,10 +398,11 @@ table {
 thead,
 th {
   font-size: var(--table-font-size);
-  background-color: #0000000a;
-  padding: 0.5rem 0.25rem;
-  border-bottom: var(--border-thin);
-  font-weight: var(--body-font-weight);
+  background-color: var(--color-bg);
+  color: var(--heading-color);
+  padding: 0.6rem 0.5rem;
+  border-bottom: 1px solid var(--table-border-color);
+  font-weight: var(--title-font-weight);
   overflow: clip;
   white-space: wrap;
   text-overflow: clip;
@@ -412,10 +418,10 @@ tr {
 
 .cell,
 td {
-  padding: 0.25rem;
+  padding: 0.55rem 0.5rem;
   text-align: left;
   vertical-align: middle;
-  border-bottom: var(--border-thin);
+  border-bottom: 1px solid var(--table-border-color);
   font-size: var(--table-font-size);
   overflow: clip;
   white-space: wrap;
@@ -444,12 +450,30 @@ td time {
   font-size: var(--table-font-size);
 }
 
-.starred {
-  background-color: var(--highlight-color);
+td.starred {
+  background-color: transparent;
+}
+
+th:first-child,
+td:first-child {
+  padding-left: 0.75rem;
+}
+
+td.starred:first-child {
+  background-image: linear-gradient(
+    to right,
+    var(--underline-highlight-color) 0,
+    var(--underline-highlight-color) 4px,
+    transparent 4px,
+    transparent 100%
+  );
+  background-repeat: no-repeat;
+  background-size: 4px 100%;
+  background-position: left center;
 }
 
 .archived {
-  background-color: #0000000a;
+  background-color: var(--archived-bg);
   font-style: italic;
 }
 
@@ -462,14 +486,17 @@ td time {
     --color-ui-2: #343331;
     --color-ui-3: #403e3c;
     --color-text: #cecdc3;
-    --color-text-muted: #6f6e69;
-    --color-text-faint: #575653;
+    --color-text-muted: #878580;
+    --color-text-faint: #6f6e69;
     --body-color: var(--color-text);
     --heading-color: var(--color-text);
     --underline-color: #d0a215;
     --underline-highlight-color: #eccb60;
     --details-disclose-color: #1c1b1a;
-    --highlight-color: #503d02;
+    --highlight-color: #d0a215;
+    --archived-bg: var(--color-ui);
+    --border-thin: 1px solid var(--color-ui-3);
+    --table-border-color: var(--color-ui);
     --code-bg: #1c1b1a;
     --code-border: #343331;
     --code-inline-bg: #282726;
@@ -486,7 +513,7 @@ td time {
   .table-head,
   thead,
   th {
-    background-color: var(--color-ui);
+    background-color: var(--color-bg);
   }
 }
 
@@ -512,8 +539,9 @@ code {
 
 code[class*="language-"],
 pre[class*="language-"] {
-  font-family: "SFMono-Regular", Menlo, Monaco, Consolas, "Liberation Mono",
-    "Courier New", monospace;
+  font-family:
+    "SFMono-Regular", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New",
+    monospace;
   font-size: 0.95rem;
   line-height: 1.5;
   color: var(--body-color);
@@ -532,6 +560,7 @@ pre[class*="language-"] {
   background: var(--code-bg);
   border: 1px solid var(--code-border);
   border-radius: 0.5rem;
+  box-shadow: 0 0 0 1px var(--color-ui);
 }
 
 :not(pre) > code[class*="language-"] {
