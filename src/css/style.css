@@ -1,4 +1,4 @@
-/* copied from here: https://github.com/JonUK/eleventy-blog/blob/master/css/site.css */
+/* Base styles adapted from: https://github.com/JonUK/eleventy-blog/blob/master/css/site.css */
 * {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -25,7 +25,7 @@ body {
 :root {
   /* Typography */
   --font-family: Helvetica, Verdana, sans-serif;
-  --font-size: 1.25rem;
+  --font-size: 1.2rem;
   --title-font-weight: 400;
   --body-font-weight: 200;
   --line-height: 1.5;
@@ -48,15 +48,39 @@ body {
   --color-text-muted: #878580;
   --color-text-faint: #b7b5ac;
 
+  /* Flexoki accents (main palette, 400 + 600 only) */
+  --flexoki-re-400: #d14d41;
+  --flexoki-re-600: #af3029;
+  --flexoki-or-400: #da702c;
+  --flexoki-or-600: #bc5215;
+  --flexoki-ye-400: #d0a215;
+  --flexoki-ye-600: #ad8301;
+  --flexoki-gr-400: #879a39;
+  --flexoki-gr-600: #66800b;
+  --flexoki-cy-400: #3aa99f;
+  --flexoki-cy-600: #24837b;
+  --flexoki-bl-400: #4385be;
+  --flexoki-bl-600: #205ea6;
+  --flexoki-pu-400: #8b7ec8;
+  --flexoki-pu-600: #5e409d;
+  --flexoki-ma-400: #ce5d97;
+  --flexoki-ma-600: #a02f6f;
+
+  /* Change color code to update accent throughout site */
+  /* Accent family switch (change these two to swap palette) */
+  --accent-family-400: var(--flexoki-ye-400);
+  --accent-family-600: var(--flexoki-ye-600);
+  --accent: var(--accent-family-600);
+
   /* Color aliases used throughout */
   --heading-color: var(--color-text);
   --body-color: var(--color-text);
 
-  /* Yellow-focused accents (Flexoki) */
-  --underline-color: #ad8301;
-  --underline-highlight-color: #d0a215;
+  /* Accent aliases (global family) */
+  --underline-color: var(--accent);
+  --underline-highlight-color: var(--accent);
   --details-disclose-color: var(--color-bg-2);
-  --highlight-color: #ad8301;
+  --highlight-color: var(--accent);
   --archived-bg: var(--color-bg-2);
 
   /* Borders and tables */
@@ -69,16 +93,16 @@ body {
   --code-bg: var(--color-bg-2);
   --code-border: var(--color-ui-2);
   --code-inline-bg: var(--color-ui);
-  --code-inline-text: #ad8301;
+  --code-inline-text: var(--accent);
 
-  /* Syntax accents (Flexoki) */
+  /* Syntax accents (Flexoki mappings) */
   --syntax-comment: var(--color-text-muted);
-  --syntax-string: #24837b;
-  --syntax-keyword: #66800b;
-  --syntax-function: #bc5215;
-  --syntax-number: #5e409d;
-  --syntax-variable: #205ea6;
-  --syntax-error: #af3029;
+  --syntax-string: var(--flexoki-cy-600);
+  --syntax-keyword: var(--flexoki-gr-600);
+  --syntax-function: var(--flexoki-or-600);
+  --syntax-number: var(--flexoki-pu-600);
+  --syntax-variable: var(--flexoki-bl-600);
+  --syntax-error: var(--flexoki-re-600);
 
   /* Link decoration */
   --line-type: underline;
@@ -490,24 +514,25 @@ td.starred:first-child {
     --color-text-faint: #6f6e69;
     --body-color: var(--color-text);
     --heading-color: var(--color-text);
-    --underline-color: #d0a215;
-    --underline-highlight-color: #eccb60;
+    --accent: var(--accent-family-400);
+    --underline-color: var(--accent);
+    --underline-highlight-color: var(--accent);
     --details-disclose-color: #1c1b1a;
-    --highlight-color: #d0a215;
+    --highlight-color: var(--accent);
     --archived-bg: var(--color-ui);
     --border-thin: 1px solid var(--color-ui-3);
     --table-border-color: var(--color-ui);
     --code-bg: #1c1b1a;
     --code-border: #343331;
     --code-inline-bg: #282726;
-    --code-inline-text: #d0a215;
+    --code-inline-text: var(--accent);
     --syntax-comment: var(--color-text-muted);
-    --syntax-string: #3aa99f;
-    --syntax-keyword: #879a39;
-    --syntax-function: #da702c;
-    --syntax-number: #8b7ec8;
-    --syntax-variable: #4385be;
-    --syntax-error: #d14d41;
+    --syntax-string: var(--flexoki-cy-400);
+    --syntax-keyword: var(--flexoki-gr-400);
+    --syntax-function: var(--flexoki-or-400);
+    --syntax-number: var(--flexoki-pu-400);
+    --syntax-variable: var(--flexoki-bl-400);
+    --syntax-error: var(--flexoki-re-400);
     color: var(--body-color);
   }
   .table-head,
