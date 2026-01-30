@@ -15,7 +15,7 @@ outcome: A better overview of upcoming relevant EO data for disaster responders.
 
 Working with satellite data is difficult. A variety of providers, platforms and licensing restrictions make finding useful, timely Earth observation hard. Humanitarians and disaster responders have enough to worry about.
 
-With the help of some colleagues (and chatbots...), I made [EO Predictor](https://developmentseed.org/eo-predictor/), a simple mobile-friendly website that shows upcoming predicted observations worldwide in the next 48h.
+With the help of some colleagues (and LLMs...), I made [EO Predictor](https://developmentseed.org/eo-predictor/), a simple mobile-friendly website that shows upcoming predicted observations worldwide in the next 48h.
 
 ![](/assets/img/eo-predictor/eo-predictor-overview.webp)
 
