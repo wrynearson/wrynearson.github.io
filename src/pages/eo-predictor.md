@@ -62,6 +62,8 @@ The current user workflow is as follows.
 
 Incorporating predicted cloud cover is on the top of the backlog. Working with users to hear more about their pain points in finding timely Earth observation is also high on the priority list, so that future work could be planned.
 
+![](/assets/img/eo-predictor/eo-predictor-3.webp)
+
 ## What I learned
 
 This has been a very fun project! I've learned a lot about satellites, such as:
