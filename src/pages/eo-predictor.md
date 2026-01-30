@@ -32,7 +32,7 @@ I had two main goals for this project, in addition to improving my web dev skill
 
 More details can be found in the [Github repo](https://github.com/developmentseed/eo-predictor), but in summary, there are two main pieces of data that power EO Predictor.
 
-1.  Orbital predictions of satellites (fetched from [CelesTrak](https://celestrak.org/))
+1.  Orbital predictions of satellites (fetched from [CelesTrak](https://celestrak.org/)).
     
 2.  Properties about the satellite and its sensor (compiled from various sources and stored as constellation-level json files).
     
@@ -47,7 +47,7 @@ Using a Python library called [skyfield](https://rhodesmill.org/skyfield/), the 
 
 The current user workflow is as follows.
 
-1.  Pan/zoom to their area of interest
+1.  Pan/zoom to their area of interest.
     
 2.  Filter based on observation parameters — time, sensor type, spatial resolution, data access , taskability, daylighting, constellation and/or operator.
     
@@ -61,3 +61,13 @@ The current user workflow is as follows.
 ## What can be done
 
 Incorporating predicted cloud cover is on the top of the backlog. Working with users to hear more about their pain points in finding timely Earth observation is also high on the priority list, so that future work could be planned.
+
+## What I learned
+
+This has been a very fun project! I've learned a lot about satellites, such as:
+
+1.  Orbital physics (which is quite advanced 🤯).
+    
+2.  The sensor properties (optical/SAR, resolution, swath width, etc.).
+    
+3.  Data repositories and their discoverability and timeliness (the sector is very siloed).
