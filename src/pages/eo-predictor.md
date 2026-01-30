@@ -17,7 +17,7 @@ Working with satellite data is difficult. A variety of providers, platforms and 
 
 With the help of some colleagues (and chatbots...), I made [EO Predictor](https://developmentseed.org/eo-predictor/), a simple mobile-friendly website that shows upcoming predicted observations worldwide in the next 48h.
 
-![](/assets/img/eo-predictor/eo-predictor-2.webp)
+![](/assets/img/eo-predictor/eo-predictor-overview.webp)
 
 ## Goals
 
@@ -41,7 +41,7 @@ Each constellation has a json file, which requires a satellite ID number (or arr
 
 Using a Python library called [skyfield](https://rhodesmill.org/skyfield/), the position of each satellite is calculated in steps of time — currently every 5 minutes for a forward-looking 48 hour period. The positions are then connected to create linestrings representing their orbital paths. Relying mainly on the `swath width` value (the physical width of data the sensor collects), the path is then extruded into a polygon representing the observation area.
 
-![](/assets/img/eo-predictor/eo-predictor-1.webp)
+![](/assets/img/eo-predictor/eo-predictor-filtered.webp)
 
 ## What users can do
 
@@ -62,7 +62,7 @@ The current user workflow is as follows.
 
 Incorporating predicted cloud cover is on the top of the backlog. Working with users to hear more about their pain points in finding timely Earth observation is also high on the priority list, so that future work could be planned.
 
-![](/assets/img/eo-predictor/eo-predictor-3.webp)
+![](/assets/img/eo-predictor/eo-predictor-mobile.webp)
 
 ## What I learned
 
