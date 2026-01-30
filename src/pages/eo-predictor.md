@@ -49,4 +49,8 @@ The current user workflow is as follows.
     
 2.  Filter based on observation parameters (time, sensor type, spatial resolution, data access , taskability, daylighting, constellation and/or operator.
     
-3.  See
+3.  See a list of predicted passes, in chronological order, that meet their filter criteria.
+    
+4.  See the same passes on the map.
+    
+5.  Click on an observation (list or map) and be directed to the official data repository of that provider.
