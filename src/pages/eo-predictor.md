@@ -17,4 +17,4 @@ Working with satellite data is difficult. A variety of providers, platforms and 
 
 With the help of some colleagues (and chatbots...), I made [EO Predictor](https://developmentseed.org/eo-predictor/), a simple mobile-friendly website that shows upcoming predicted observations worldwide in the next 48h.
 
-/
+![](/assets/img/eo-predictor/eo-predictor-1.webp)
