@@ -76,3 +76,5 @@ This has been a very fun project! I've learned a lot about satellites, such as:
     
 
 I've also learned a lot about building what's essentially a data dashboard without any databases or cloud storage, which in my mind would mean complexity. The satellite properties are stored as json files, the script to predict their observations is a single Python file which runs every 24h in a Github action, and the site is served as a static Github Page. This means no deployment, hosting or data access costs.
+
+Hopefully this tool is useful for those who need an estimation of where upcoming Earth observations may take place.
