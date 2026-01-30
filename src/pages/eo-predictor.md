@@ -39,4 +39,4 @@ More details can be found in the [Github repo](https://github.com/developmentsee
 
 Each constellation has a json file, which requires a satellite ID number (or array of numbers for constellations), thus linking orbits with properties.
 
-Using a Python library called [skyfield](https://rhodesmill.org/skyfield/), the position of each satellite is calculated in steps of time — currently every 5 minutes for a forward-looking 48 hour period. We then "connect the dots" to create linestrings representing their orbital paths. Relying mainly on the `swath width` value (the physical width of data the sensor collects), the path is then extruded into a polygon representing the observation area.
+Using a Python library called [skyfield](https://rhodesmill.org/skyfield/), the position of each satellite is calculated in steps of time — currently every 5 minutes for a forward-looking 48 hour period. The positions are then connected to create linestrings representing their orbital paths. Relying mainly on the `swath width` value (the physical width of data the sensor collects), the path is then extruded into a polygon representing the observation area.
