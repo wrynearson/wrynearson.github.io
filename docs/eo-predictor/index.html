@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- make the title of each page's front matter the site title, and the description as the description for search results -->
+    <title>EO Predictor</title>
+    <meta name="description" content="EO Predictor estimates when and where upcoming observations are likely to occur, helping people find relevant EO data faster.">
+    <!-- suggest to search engines to "crawl" the site,and the links within (and that I endorse them) However, no "robots" directive = index & endorse -->
+    <meta name="”robots”" content="index, follow">
+    <link rel="stylesheet" href="/css/style.css">
+    <link href="https://raw.githubusercontent.com/PrismJS/prism-themes/master/themes/prism-duotone-earth.css" rel="stylesheet">
+    
+    <script defer="" src="https://cloud.umami.is/script.js" data-website-id="488dc28f-af33-498d-a654-950b4c406204"></script>
+    <script defer="" data-domain="wrynearson.github.io" src="https://plausible.ds.io/js/script.js"></script>
+    
+  </head>
+  <body>
+    <div class="site_title">
+      <a href="/">
+        <div class="site_title_name">
+          Will Rynearson 
+        </div>
+      </a>
+    </div>
+    <script src="prism.js"></script>
+    <main>
+      
+<div class="page_title">
+  
+    <a href="https://developmentseed.org/eo-predictor/" target="_blank">
+      EO Predictor
+    </a>
+  
+</div>
+
+<time>
+  2025 –
+  
+  
+</time>
+
+<div class="description">
+  EO Predictor estimates when and where upcoming observations are likely to occur, helping people find relevant EO data faster.
+</div>
+
+<div class="overview-box">
+  <div class="overview-section">
+    <h2 class="overview-title">Problem</h2>
+    <p class="overview-text">Getting timely Earth observation (EO) data is hard, even for experts.</p>
+  </div>
+  <div class="overview-section">
+    <h2 class="overview-title">Outcome</h2>
+    <p class="overview-text">
+      A better overview of upcoming relevant EO data for disaster responders.
+    </p>
+  </div>
+</div>
+<hr class="page-separator">
+<div class="content">
+  <p><a href="https://developmentseed.org/blog/2026-01-21-eo-predictor/"><em>See this blog post for more details.</em></a></p>
+<p>Working with satellite data is difficult. A variety of providers, platforms and licensing restrictions make finding useful, timely Earth observation hard. Humanitarians and disaster responders have enough to worry about.</p>
+<p>With the help of some colleagues (and LLMs...), I made <a href="https://developmentseed.org/eo-predictor/">EO Predictor</a>, a simple mobile-friendly website that shows upcoming predicted observations worldwide in the next 48h.</p>
+<p><picture><source type="image/avif" srcset="/img/lW2HfKLUIW-1200.avif 1200w"><img loading="lazy" decoding="async" src="/img/lW2HfKLUIW-1200.jpeg" alt="" width="1200" height="793"></picture></p>
+<h2>Goals</h2>
+<p>I had two main goals for this project, in addition to improving my web dev skills:</p>
+<ol>
+<li>
+<p>Not letting perfect get in the way of good. <em>Predictions that are close enough are all that's needed.</em></p>
+</li>
+<li>
+<p>Keep this as simple as possible without compromising on required features. <em>No servers, minimal external dependencies, etc.</em></p>
+</li>
+</ol>
+<h2>How it works</h2>
+<p>More details can be found in the <a href="https://github.com/developmentseed/eo-predictor">Github repo</a>, but in summary, there are two main pieces of data that power EO Predictor.</p>
+<ol>
+<li>
+<p>Orbital predictions of satellites (fetched from <a href="https://celestrak.org/">CelesTrak</a>).</p>
+</li>
+<li>
+<p>Properties about the satellite and its sensor (compiled from various sources and stored as constellation-level json files).</p>
+</li>
+</ol>
+<p>Each constellation has a json file, which requires a satellite ID number (or array of numbers for constellations), thus linking orbits with properties.</p>
+<p>Using a Python library called <a href="https://rhodesmill.org/skyfield/">skyfield</a>, the position of each satellite is calculated in steps of time — currently every 5 minutes for a forward-looking 48 hour period. The positions are then connected to create linestrings representing their orbital paths. Relying mainly on the <code>swath width</code> value (the physical width of data the sensor collects), the path is then extruded into a polygon representing the observation area.</p>
+<p><picture><source type="image/avif" srcset="/img/i3hrzs_li5-1200.avif 1200w"><img loading="lazy" decoding="async" src="/img/i3hrzs_li5-1200.jpeg" alt="" width="1200" height="783"></picture></p>
+<h2>What users can do</h2>
+<p>The current user workflow is as follows.</p>
+<ol>
+<li>
+<p>Pan/zoom to their area of interest.</p>
+</li>
+<li>
+<p>Filter based on observation parameters — time, sensor type, spatial resolution, data access , taskability, daylighting, constellation and/or operator.</p>
+</li>
+<li>
+<p>See a list of predicted passes, in chronological order, that meet their filter criteria.</p>
+</li>
+<li>
+<p>See the same passes on the map.</p>
+</li>
+<li>
+<p>Click on an observation (list or map) and be directed to the official data repository of that provider.</p>
+</li>
+</ol>
+<h2>What can be done</h2>
+<p>Incorporating predicted cloud cover is on the top of the backlog. Working with users to hear more about their pain points in finding timely Earth observation is also high on the priority list, so that future work could be planned.</p>
+<p><picture><source type="image/avif" srcset="/img/HYO0tJ85zN-1030.avif 1030w"><img loading="lazy" decoding="async" src="/img/HYO0tJ85zN-1030.jpeg" alt="" width="1030" height="1606"></picture></p>
+<h2>What I learned</h2>
+<p>This has been a very fun project! I've learned a lot about satellites, such as:</p>
+<ol>
+<li>
+<p>Orbital physics (which is quite advanced 🤯).</p>
+</li>
+<li>
+<p>The sensor properties (optical/SAR, resolution, swath width, etc.).</p>
+</li>
+<li>
+<p>Data repositories and their discoverability and timeliness (the sector is very siloed).</p>
+</li>
+</ol>
+<p>I've also learned a lot about building what's essentially a data dashboard without any databases or cloud storage, which in my mind would mean complexity. The satellite properties are stored as json files, the script to predict their observations is a single Python file which runs every 24h in a Github action, and the site is served as a static Github Page. This means no deployment, hosting or data access costs.</p>
+<p>Hopefully this tool is useful for those who need an estimation of where upcoming Earth observations may take place.</p>
+
+</div>
+
+<footer class="footer">
+  <div class="name_link">
+    —
+    <a href="/">
+      Will
+    </a>
+  </div>
+  <div class="stats">
+    <div class="words">
+      <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="edit" class="svg-inline--fa fa-edit " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M402.3 344.9l32-32c5-5 13.7-1.5 13.7 5.7V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V112c0-26.5 21.5-48 48-48h273.5c7.1 0 10.7 8.6 5.7 13.7l-32 32c-1.5 1.5-3.5 2.3-5.7 2.3H48v352h352V350.5c0-2.1.8-4.1 2.3-5.6zm156.6-201.8L296.3 405.7l-90.4 10c-26.2 2.9-48.5-19.2-45.6-45.6l10-90.4L432.9 17.1c22.9-22.9 59.9-22.9 82.7 0l43.2 43.2c22.9 22.9 22.9 60 .1 82.8zM460.1 174L402 115.9 216.2 301.8l-7.3 65.3 65.3-7.3L460.1 174zm64.8-79.7l-43.2-43.2c-4.1-4.1-10.8-4.1-14.8 0L436 82l58.1 58.1 30.9-30.9c4-4.2 4-10.8-.1-14.9z"></path></svg>
+      <a href="/words">
+        <p title="I've written 11369 words worth of notes in 2025, as of 2025/03/28">
+          11369 words
+        </p>
+      </a>
+    </div>
+    <div class="coffee">
+      <a href="/coffee">☕️ 530</a>
+    </div>
+  </div>
+</footer>
+    </main>
+  </body>
+</html>
