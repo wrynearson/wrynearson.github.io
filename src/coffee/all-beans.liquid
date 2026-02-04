@@ -81,24 +81,4 @@ layout: base
 
 <p> See all brews in the <a href="/coffee/"">Coffee Log</a>.
 
-<footer class="footer">
-    <div class="name_link">
-        —
-        <a href="{{ '/' | url }}">
-            Will
-        </a>
-    </div>
-    <div class="stats">
-        <div class="words">
-            {% fortawesomeRegular 'edit' %}
-            <a href="{{ '/words' | url }}">
-                <p title="I've written {{words.words}} words worth of notes in {{words.year}}, as of {{words.calculated}}">
-                    {{ words.words }} words
-                </p>
-            </a>
-        </div>
-        <div class="coffee">
-            <a href="{{ '/coffee'}}">☕️ {{ coffee.brews_combined.length }}</a>
-        </div>
-    </div>
-</footer>
+{% include 'footer.liquid' %}

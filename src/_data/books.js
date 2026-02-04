@@ -79,17 +79,25 @@ export default async function () {
     const books_read = books.filter((b) => b.status === "read");
     const books_reading = books.filter((b) => b.status === "reading");
 
+    // Count books read this year
+    const currentYear = new Date().getFullYear();
+    const books_read_this_year = books_read.filter((b) => {
+      if (!b.end_date) return false;
+      return new Date(b.end_date).getFullYear() === currentYear;
+    }).length;
+
     // Sort and index all books
     const books_all = sortAndIndexBooks(books);
 
     console.log(
-      `Processed ${books_all.length} books (${books_read.length} read, ${books_reading.length} reading)`
+      `Processed ${books_all.length} books (${books_read.length} read, ${books_reading.length} reading, ${books_read_this_year} this year)`
     );
 
     return {
       books_read,
       books_reading,
       books_all,
+      books_read_this_year,
     };
   } catch (e) {
     console.log("Failed to process books:", e);
@@ -97,6 +105,7 @@ export default async function () {
       books_read: [],
       books_reading: [],
       books_all: [],
+      books_read_this_year: 0,
     };
   }
 }
@@ -195,25 +204,37 @@ async function fetchAuthorNames(authorKeys) {
 }
 
 /**
- * Sort books by date and assign sequential IDs
+ * Sort books by status and metadata:
+ * 1. Currently reading (sorted by start date)
+ * 2. Read with end_date (sorted by end date, most recent first)
+ * 3. Undated but rated
+ * 4. Undated and unrated (oldest/least tracked)
  */
 function sortAndIndexBooks(books) {
-  // Sort by date (start date, most recent first)
-  // Books without dates sort to the end
   const sorted = books.sort((a, b) => {
-    const dateA = a.date;
-    const dateB = b.date;
+    // Priority: reading > has end_date > undated+rated > undated+unrated
+    const getPriority = (book) => {
+      if (book.status === "reading") return 0;
+      if (book.end_date) return 1;
+      if (book.rating) return 2;
+      return 3;
+    };
 
-    // Both have dates, sort chronologically (most recent first)
-    if (dateA && dateB) {
-      return new Date(dateB) - new Date(dateA);
+    const priorityA = getPriority(a);
+    const priorityB = getPriority(b);
+
+    // Different priority groups
+    if (priorityA !== priorityB) return priorityA - priorityB;
+
+    // Same group: sort by relevant date (most recent first)
+    if (priorityA === 0) {
+      // Reading: sort by start date
+      if (a.date && b.date) return new Date(b.date) - new Date(a.date);
+    } else if (priorityA === 1) {
+      // Read with end_date: sort by end date
+      return new Date(b.end_date) - new Date(a.end_date);
     }
-
-    // A has no date, it should come last
-    if (!dateA) return 1;
-
-    // B has no date, it should come last
-    if (!dateB) return -1;
+    // Undated groups: no particular order within
 
     return 0;
   });
