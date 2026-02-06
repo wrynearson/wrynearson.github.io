@@ -15,16 +15,12 @@ layout: base
 </div>
 {% endif %}
 
+{% if book.cover_url %}
+<img src="{{ book.cover_url }}" alt="Cover of {{ book.title }}" style="max-width: 200px; display: block; margin: 20px auto;">
+{% endif %}
+
 <table class="table overview">
   <tbody class="table-body">
-    {% if book.cover_url %}
-    <tr class="table-row">
-      <th class="table-head labels">Cover</th>
-      <td class="cell">
-        <img src="{{ book.cover_url }}" alt="Cover of {{ book.title }}" style="max-width: 200px;">
-      </td>
-    </tr>
-    {% endif %}
     {% if book.authors and book.authors.size > 0 %}
     <tr class="table-row">
       <th class="table-head labels">
@@ -46,13 +42,6 @@ layout: base
     </tr>
     {% endif %}
 
-    {% if book.publisher %}
-    <tr class="table-row">
-      <th class="table-head labels">Publisher</th>
-      <td class="cell">{{ book.publisher }}</td>
-    </tr>
-    {% endif %}
-
     {% if book.pages %}
     <tr class="table-row">
       <th class="table-head labels">Pages</th>
@@ -70,17 +59,6 @@ layout: base
     </tr>
     {% endif %}
 
-    <tr class="table-row">
-      <th class="table-head labels">Status</th>
-      <td class="cell">
-        {% if book.status == "reading" %}
-          Currently Reading
-        {% else %}
-          Read
-        {% endif %}
-      </td>
-    </tr>
-
     {% if book.date %}
     <tr class="table-row">
       <th class="table-head labels">Started</th>
@@ -88,16 +66,10 @@ layout: base
     </tr>
     {% endif %}
 
-    {% if book.status != "reading" %}
+    {% if book.end_date %}
     <tr class="table-row">
       <th class="table-head labels">Finished</th>
-      <td class="cell">
-        {% if book.end_date %}
-          {{ book.end_date | dateFormat }}
-        {% else %}
-          —
-        {% endif %}
-      </td>
+      <td class="cell">{{ book.end_date | dateFormat }}</td>
     </tr>
     {% endif %}
 

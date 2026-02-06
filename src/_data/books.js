@@ -31,6 +31,12 @@ export default async function () {
 
       console.log(`Processing: ${frontmatter.title || filename}`);
 
+      // Skip draft books during production builds
+      if (frontmatter.draft && process.env.ELEVENTY_RUN_MODE === "build") {
+        console.log(`Skipping draft: ${frontmatter.title || filename}`);
+        continue;
+      }
+
       // Extract user data from frontmatter
       const bookData = {
         isbn: frontmatter.isbn,
@@ -38,6 +44,7 @@ export default async function () {
         date: frontmatter.date,
         end_date: frontmatter["end-date"] || frontmatter.end_date,
         rating: frontmatter.rating,
+        draft: frontmatter.draft || false,
         notes: content.trim(),
         filename: filename,
         // Store frontmatter metadata as fallback
@@ -75,9 +82,8 @@ export default async function () {
       books.push(bookData);
     }
 
-    // Separate by status
+    // Only include read books
     const books_read = books.filter((b) => b.status === "read");
-    const books_reading = books.filter((b) => b.status === "reading");
 
     // Count books read this year
     const currentYear = new Date().getFullYear();
@@ -86,16 +92,15 @@ export default async function () {
       return new Date(b.end_date).getFullYear() === currentYear;
     }).length;
 
-    // Sort and index all books
-    const books_all = sortAndIndexBooks(books);
+    // Sort and index read books
+    const books_all = sortAndIndexBooks(books_read);
 
     console.log(
-      `Processed ${books_all.length} books (${books_read.length} read, ${books_reading.length} reading, ${books_read_this_year} this year)`
+      `Processed ${books_all.length} books (${books_read_this_year} this year)`
     );
 
     return {
       books_read,
-      books_reading,
       books_all,
       books_read_this_year,
     };
@@ -103,7 +108,6 @@ export default async function () {
     console.log("Failed to process books:", e);
     return {
       books_read: [],
-      books_reading: [],
       books_all: [],
       books_read_this_year: 0,
     };
@@ -204,37 +208,28 @@ async function fetchAuthorNames(authorKeys) {
 }
 
 /**
- * Sort books by status and metadata:
- * 1. Currently reading (sorted by start date)
- * 2. Read with end_date (sorted by end date, most recent first)
- * 3. Undated but rated
- * 4. Undated and unrated (oldest/least tracked)
+ * Sort books by metadata:
+ * 1. Read with end_date (sorted by end date, most recent first)
+ * 2. Undated but rated
+ * 3. Undated and unrated (oldest/least tracked)
  */
 function sortAndIndexBooks(books) {
   const sorted = books.sort((a, b) => {
-    // Priority: reading > has end_date > undated+rated > undated+unrated
     const getPriority = (book) => {
-      if (book.status === "reading") return 0;
-      if (book.end_date) return 1;
-      if (book.rating) return 2;
-      return 3;
+      if (book.end_date) return 0;
+      if (book.rating) return 1;
+      return 2;
     };
 
     const priorityA = getPriority(a);
     const priorityB = getPriority(b);
 
-    // Different priority groups
     if (priorityA !== priorityB) return priorityA - priorityB;
 
-    // Same group: sort by relevant date (most recent first)
+    // Same group: sort by end date (most recent first)
     if (priorityA === 0) {
-      // Reading: sort by start date
-      if (a.date && b.date) return new Date(b.date) - new Date(a.date);
-    } else if (priorityA === 1) {
-      // Read with end_date: sort by end date
       return new Date(b.end_date) - new Date(a.end_date);
     }
-    // Undated groups: no particular order within
 
     return 0;
   });
