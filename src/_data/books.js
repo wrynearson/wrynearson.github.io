@@ -40,6 +40,9 @@ export default async function () {
       // Extract user data from frontmatter
       const bookData = {
         isbn: frontmatter.isbn,
+        isbn_clean: frontmatter.isbn
+          ? String(frontmatter.isbn).replace(/-/g, "")
+          : null,
         status: frontmatter.status,
         date: frontmatter.date,
         end_date: frontmatter["end-date"] || frontmatter.end_date,
@@ -232,11 +235,6 @@ function sortAndIndexBooks(books) {
     }
 
     return 0;
-  });
-
-  // Assign sequential IDs
-  sorted.forEach((book, index) => {
-    book.book_id = index + 1;
   });
 
   return sorted;
