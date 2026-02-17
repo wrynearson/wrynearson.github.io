@@ -64,6 +64,7 @@ content:
     label: Recently Posts
     path: src/recently
     type: collection
+    filename: "{fields.date}.md"
     view:
       fields: [date, draft]
       primary: date
