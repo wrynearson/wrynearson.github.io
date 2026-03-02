@@ -1,0 +1,23 @@
+---
+permalink: /feed.xml
+eleventyExcludeFromCollections: true
+---
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+  <channel>
+    <title>Will Rynearson</title>
+    <link>{{ "/" | absoluteUrl: "https://willwill.blog" }}</link>
+    <description>New posts, projects, and recently updates from Will Rynearson</description>
+    <language>en</language>
+    <lastBuildDate>{{ collections.rss | getNewestCollectionItemDate | dateToRfc822 }}</lastBuildDate>
+    {% for item in collections.rss %}
+      <item>
+        <title>{{ item.data.title | escape }}</title>
+        <link>{{ item.url | absoluteUrl: "https://willwill.blog" }}</link>
+        <pubDate>{{ item.date | dateToRfc822 }}</pubDate>
+        <guid>{{ item.url | absoluteUrl: "https://willwill.blog" }}</guid>
+        <description>{{ item.data.description | default: item.data.title | escape }}</description>
+      </item>
+    {% endfor %}
+  </channel>
+</rss>

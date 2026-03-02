@@ -20,6 +20,7 @@
   "dependencies": {
     "@11ty/eleventy-fetch": "^5.1.1",
     "@11ty/eleventy-img": "^6.0.4",
+    "@11ty/eleventy-plugin-rss": "^2.0.4",
     "@vidhill/fortawesome-free-regular-11ty-shortcode": "^1.0.3",
     "async": "^3.2.6",
     "moment": "^2.30.1",
