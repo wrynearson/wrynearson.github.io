@@ -5,6 +5,7 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 import matter from "gray-matter";
 import { type } from "arktype";
+import eleventyConfig from "../.eleventy.js";
 
 // __dirname equivalent for ESM
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
@@ -159,4 +160,49 @@ describe("Presentations frontmatter", () => {
       validateFile(file, PresentationSchema);
     });
   }
+});
+
+describe("RSS collection", () => {
+  it("includes posts/pages/recently, excludes drafts on build, and sorts by date desc", () => {
+    const previousRunMode = process.env.ELEVENTY_RUN_MODE;
+    process.env.ELEVENTY_RUN_MODE = "build";
+
+    const collectionCallbacks = {};
+    eleventyConfig({
+      setTemplateFormats() {},
+      addPlugin() {},
+      addWatchTarget() {},
+      addPassthroughCopy() {},
+      addFilter() {},
+      addCollection(name, callback) {
+        collectionCallbacks[name] = callback;
+      },
+      setServerOptions() {},
+      addPreprocessor() {},
+    });
+
+    const rssItems = collectionCallbacks.rss({
+      getFilteredByGlob(globPattern) {
+        if (globPattern === "./src/posts/*.md") {
+          return [{ date: new Date("2026-01-01"), data: { draft: false } }];
+        }
+        if (globPattern === "./src/pages/*.md") {
+          return [{ date: new Date("2025-01-01"), data: { draft: false } }];
+        }
+        if (globPattern === "./src/recently/*.md") {
+          return [{ date: new Date("2026-02-01"), data: { draft: true } }];
+        }
+        return [];
+      },
+    });
+
+    try {
+      assert.deepEqual(
+        rssItems.map((item) => item.date.toISOString().slice(0, 10)),
+        ["2026-01-01", "2025-01-01"]
+      );
+    } finally {
+      process.env.ELEVENTY_RUN_MODE = previousRunMode;
+    }
+  });
 });
