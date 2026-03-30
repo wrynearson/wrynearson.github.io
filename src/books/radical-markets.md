@@ -12,7 +12,7 @@ This book, in great detail, convincingly shows that markets are the most effecti
 It then proposed five radical solutions to the symptoms of the problems, opening each section with an example of their solution in action (which I won't detail):
 
 1. For property (and assets): a self-imposed valuation that's taxable, paired with the requirement to sell if someone offers to buy at the set price.
-  1. It ensures that property (and assets) are valued and taxed appropriately, and the market is the best mechanism to set that price.
+  1. It ensures that property (and assets) are valued and taxed appropriately, and the market is the best mechanism to set that price. Titled the Common Ownership Self-Assessed Tax (COST).
 2. For asymmetrical political representation: Quadratic voting
   1. Elected politicians, and the general public, can express *how much* they care about an issue, not just yes/no.
 3. A migration system that is overly restrictive: auction + sponsorship
@@ -29,4 +29,10 @@ Treating property as a speculative investment has blocked most of my generation 
 
 > Capitalism liberated many from feudalism, radical markets would further liberate from wealth privilege.
 
-&nbsp;
+The second solution, quadratic voting, might be the best known of their proposed solutions. Especially in polarized, duopoly political systems like in the US, everything is black-and-white, yes-or-no. Of course people will *say* that many things are "the most important", but given a way to cast your vote with essentially a volume dial is a powerful mechanism to elect people and enact policy that matters the most to the most amount of people.
+
+While this book explicitly introduces *radical* concepts, I think some of the implementation plans were overly academic and wouldn't work in the real world. For example, the authors, after explaining how net beneficial their first solution (COST) would be on only property, their implementation plan includes *all asset ownership*. While they addressed some concerns, having to place a value on and sell (nearly) everything, including your phone, photos, chips and shoes would be very disruptive, eroding the adoption of such a system. 
+
+While I wholly agree that improved migration systems would be a net-positive (I'm biased here, being an immigrant to China previously and now to Switzerland), their solution would be prone to exploitation and power dynamics. While they make a compelling argument in their 4th point, many people have benefited from ETFs and the wealth they've generated. The fifth point is likely moot given the era of AI that we're in.
+
+All in all, it was a good book for introducing the core problems that our society currently suffers from, and proposes some quite interesting solutions. It was definitely worth reading. I was hoping for a more compelling implementation strategy, but that might not have been the goal of this book.
