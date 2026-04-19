@@ -4,5 +4,4 @@ title: The Second Estate
 author: Ray Madoff
 status: to-read
 date: 2026-04-19
-end-date: 2026-05-19
 ---
