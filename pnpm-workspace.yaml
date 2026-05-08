@@ -1,4 +1,0 @@
-allowBuilds:
-  '@fortawesome/fontawesome-common-types': true
-  '@fortawesome/free-regular-svg-icons': true
-  sharp: true
