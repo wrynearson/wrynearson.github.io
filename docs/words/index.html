@@ -37,7 +37,9 @@
 </div>
 
 <div class="content">
-  <p>Writing a novel seems like a daunting task. <a href="https://prowritingaid.com/average-book-length">90,000 words</a> is <em>a lot</em>.</p>
+  <p><em>February, 2026: While I still take notes as described below, I've removed this word count feature from this website because the website now builds from a GitHub Action, which doesn't have access to my notes. I'll leave this post as-is.</em></p>
+<hr>
+<p>Writing a novel seems like a daunting task. <a href="https://prowritingaid.com/average-book-length">90,000 words</a> is <em>a lot</em>.</p>
 <p>However, working in the knowledge economy, I do write a lot. Chances are that you do as well. Slack messages, Github tickets, emails (luckily, not very often) and of course, notes. This got me thinking – how much do I write?</p>
 <p>I decided to start with counting the number of words in my notes, as it's the content that I have the most control over. Since August 2023, I've been using <a href="https://logseq.com/">Logseq</a> exclusively to write down (mostly) work notes, including a daily log of what I am doing, to-do lists, meeting notes, and other things that need to be jotted down. Logseq is great for many reasons, including the fact that notes are stored as Markdown files. Because that effectively means they're just text files, my notes will be accessible and compatible forever.</p>
 <p>It also means that I can use Python to calculate the number of words I've written.</p>
@@ -61,9 +63,6 @@
         <span class="token comment"># Calculate and adding the length of the lines in our number_of_words variable</span>
         number_of_words <span class="token operator">+=</span> <span class="token builtin">len</span><span class="token punctuation">(</span>lines<span class="token punctuation">)</span></code></pre>
 <p>In roughly 5 months in 2023 (from August 11th), I wrote 33,881 words. That's roughly 6,700 words per month, or roughly 80,000 words per year – almost the length of an average book!</p>
-<blockquote>
-<p>I've written 11369 words worth of notes in 2025, as of 2025/03/28.</p>
-</blockquote>
 <h2>Caveats</h2>
 <p>80,000 words per year only accounts for most of my notes. This method doesn't account for all of the Slack messages, emails, Google/Word docs, WhatsApp/Signal messages, or any other keystrokes or screen taps, so it's most certainly an undercount. I'm only indexing &quot;daily&quot; notes, and not dedicated pages of notes that Logseq stores in a different folder, further under counting the total.</p>
 <p>Regardless, it's nice to know that I'm writing a lot more than I thought.</p>
@@ -74,27 +73,20 @@
 </div>
 
 <footer class="footer">
-<div class="name_link">
-  —
-  <a href="/">
-    Will
-  </a>
-</div>
-<div class="stats">
-  
-  <div class="words">
-    <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="edit" class="svg-inline--fa fa-edit " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M402.3 344.9l32-32c5-5 13.7-1.5 13.7 5.7V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V112c0-26.5 21.5-48 48-48h273.5c7.1 0 10.7 8.6 5.7 13.7l-32 32c-1.5 1.5-3.5 2.3-5.7 2.3H48v352h352V350.5c0-2.1.8-4.1 2.3-5.6zm156.6-201.8L296.3 405.7l-90.4 10c-26.2 2.9-48.5-19.2-45.6-45.6l10-90.4L432.9 17.1c22.9-22.9 59.9-22.9 82.7 0l43.2 43.2c22.9 22.9 22.9 60 .1 82.8zM460.1 174L402 115.9 216.2 301.8l-7.3 65.3 65.3-7.3L460.1 174zm64.8-79.7l-43.2-43.2c-4.1-4.1-10.8-4.1-14.8 0L436 82l58.1 58.1 30.9-30.9c4-4.2 4-10.8-.1-14.9z"></path></svg>
-    <a href="/words">
-      <p title="I've written 11369 words worth of notes in 2025, as of 2025/03/28">
-        11369 words
-      </p>
-    </a>
+  <div class="name_link">
+    —
+    <a href="/">Will</a>
   </div>
-  <div class="coffee">
-    <a href="/coffee">☕️ 615</a>
+  <div class="stats">
+    <div class="books">
+      <a href="/books">📚 3 this year</a>
+    </div>
+    <div class="coffee">
+      <a href="/coffee">☕️ 615</a>
+    </div>
   </div>
-</div>
 </footer>
+
     </main>
   </body>
 </html>
