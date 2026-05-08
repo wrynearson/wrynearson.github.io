@@ -22,7 +22,6 @@
     "@11ty/eleventy-img": "^6.0.4",
     "@vidhill/fortawesome-free-regular-11ty-shortcode": "^1.0.3",
     "async": "^3.2.6",
-    "gray-matter": "^4.0.3",
     "moment": "^2.30.1",
     "node-fetch": "^3.3.2",
     "npm": "^11.7.0",
