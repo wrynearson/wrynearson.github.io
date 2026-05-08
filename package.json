@@ -14,7 +14,8 @@
     "@11ty/eleventy": "^3.1.2",
     "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.2",
     "arktype": "^2.1.29",
-    "gray-matter": "^4.0.3"
+    "gray-matter": "^4.0.3",
+    "markdown-it": "^14.1.1"
   },
   "dependencies": {
     "@11ty/eleventy-fetch": "^5.1.1",

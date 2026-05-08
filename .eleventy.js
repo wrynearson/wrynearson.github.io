@@ -2,6 +2,9 @@ import { eleventyImageTransformPlugin } from "@11ty/eleventy-img";
 import { fortawesomeFreeRegularPlugin } from "@vidhill/fortawesome-free-regular-11ty-shortcode";
 import moment from "moment";
 import syntaxHighlight from "@11ty/eleventy-plugin-syntaxhighlight";
+import markdownIt from "markdown-it";
+
+const md = markdownIt({ html: true });
 
 export default function (eleventyConfig) {
   eleventyConfig.setTemplateFormats(["md", "liquid"]);
@@ -40,6 +43,10 @@ export default function (eleventyConfig) {
 
   eleventyConfig.addFilter("jsonify", function (value) {
     return JSON.stringify(value, null, 2);
+  });
+
+  eleventyConfig.addFilter("markdownify", function (content) {
+    return md.render(content || "");
   });
 
   eleventyConfig.addPassthroughCopy({

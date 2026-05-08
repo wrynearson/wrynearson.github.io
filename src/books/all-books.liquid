@@ -1,0 +1,60 @@
+---
+permalink: 'books/index.html'
+layout: base
+---
+
+<h1>Books</h1>
+<p class="description">
+  I've read {{ books.books_read.length }} books.
+</p>
+
+<br>
+
+<table class="table table-stack">
+  <thead class="table-head">
+    <tr class="table-head">
+      <th class="table-head">Title</th>
+      <th class="table-head">Author</th>
+      <th class="table-head narrow">Rating</th>
+      <th class="table-head narrow">Date Finished</th>
+    </tr>
+  </thead>
+  <tbody class="table-body">
+    {% for book in books.books_all %}
+      <tr class="table-row">
+        <td class="cell" data-label="Title">
+          <a href="/books/{{book.isbn_clean}}">{{ book.title }}</a>
+        </td>
+        <td class="cell" data-label="Author">
+          {% if book.authors and book.authors.size > 0 %}
+            {{ book.authors | join: ", " }}
+          {% else %}
+            —
+          {% endif %}
+        </td>
+        <td class="cell" data-label="Rating">
+          {% if book.rating %}
+            {% assign capped_rating = book.rating | at_most: 5 %}
+            {% assign empty_stars = 5 | minus: capped_rating %}
+            {% for i in (1..capped_rating) %}★{% endfor %}{% for i in (1..empty_stars) %}☆{% endfor %}
+          {% else %}
+            —
+          {% endif %}
+        </td>
+        <td class="cell" data-label="Date Finished">
+          {% if book.end_date %}
+            <time>{{ book.end_date | dateFormat }}</time>
+          {% elsif book.date %}
+            <time>{{ book.date | dateFormat }}</time>
+          {% else %}
+            —
+          {% endif %}
+        </td>
+      </tr>
+    {% endfor %}
+  </tbody>
+</table>
+
+<br>
+
+{% include 'footer.liquid' %}

@@ -1,0 +1,105 @@
+---
+pagination:
+  data: books.books_all
+  size: 1
+  alias: book
+permalink: 'books/{{ book.isbn_clean }}/index.html'
+layout: base
+---
+
+<h1>{{ book.title }}</h1>
+
+{% if book.api_error %}
+<div class="error-message" style="background: #fff3cd; padding: 10px; border-radius: 5px; margin: 20px 0;">
+  <strong>Note:</strong> {{ book.api_error_message }}
+</div>
+{% endif %}
+
+{% if book.cover_url %}
+<img src="{{ book.cover_url }}" alt="Cover of {{ book.title }}" style="max-width: 200px; display: block; margin: 20px auto;">
+{% endif %}
+
+<table class="table overview">
+  <tbody class="table-body">
+    {% if book.authors and book.authors.size > 0 %}
+    <tr class="table-row">
+      <th class="table-head labels">
+        {% if book.authors.size > 1 %}Authors{% else %}Author{% endif %}
+      </th>
+      <td class="cell">{{ book.authors | join: ", " }}</td>
+    </tr>
+    {% endif %}
+
+    <tr class="table-row">
+      <th class="table-head labels">ISBN</th>
+      <td class="cell">{{ book.isbn }}</td>
+    </tr>
+
+    {% if book.publication_year %}
+    <tr class="table-row">
+      <th class="table-head labels">Publication Date</th>
+      <td class="cell">{{ book.publication_year }}</td>
+    </tr>
+    {% endif %}
+
+    {% if book.pages %}
+    <tr class="table-row">
+      <th class="table-head labels">Pages</th>
+      <td class="cell">{{ book.pages }}</td>
+    </tr>
+    {% endif %}
+
+    {% if book.genres and book.genres.size > 0 %}
+    <tr class="table-row">
+      <th class="table-head labels">Genres</th>
+      <td class="cell">
+        {% assign limited_genres = book.genres | slice: 0, 5 %}
+        {{ limited_genres | join: ", " }}
+      </td>
+    </tr>
+    {% endif %}
+
+    {% if book.date %}
+    <tr class="table-row">
+      <th class="table-head labels">Started</th>
+      <td class="cell">{{ book.date | dateFormat }}</td>
+    </tr>
+    {% endif %}
+
+    {% if book.end_date %}
+    <tr class="table-row">
+      <th class="table-head labels">Finished</th>
+      <td class="cell">{{ book.end_date | dateFormat }}</td>
+    </tr>
+    {% endif %}
+
+    {% if book.rating %}
+    <tr class="table-row">
+      <th class="table-head labels">Rating</th>
+      <td class="cell">
+        {% assign capped_rating = book.rating | at_most: 5 %}
+        {% assign empty_stars = 5 | minus: capped_rating %}
+        {% for i in (1..capped_rating) %}★{% endfor %}{% for i in (1..empty_stars) %}☆{% endfor %}
+      </td>
+    </tr>
+    {% endif %}
+  </tbody>
+</table>
+
+{% if book.description %}
+<details>
+  <summary>Description</summary>
+  <div>{{ book.description }}</div>
+</details>
+{% endif %}
+
+{% if book.notes and book.notes != "" %}
+<div class="book-notes" style="margin: 30px 0;">
+  <h2>My Notes</h2>
+  <div>{{ book.notes | markdownify }}</div>
+</div>
+{% endif %}
+
+<br>
+
+{% include 'footer.liquid' %}

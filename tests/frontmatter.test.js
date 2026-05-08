@@ -96,6 +96,7 @@ const BookSchema = type({
   "date?": "Date",
   "end-date?": "Date",
   "rating?": "1 <= number.integer <= 10",
+  "draft?": "boolean",
 });
 
 // Recently updates

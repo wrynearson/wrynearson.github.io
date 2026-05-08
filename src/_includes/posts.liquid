@@ -15,25 +15,4 @@ layout: base.liquid
   {{ content }}
 </div>
 
-<footer class="footer">
-<div class="name_link">
-  —
-  <a href="{{ '/' | url }}">
-    Will
-  </a>
-</div>
-<div class="stats">
-  {% comment %} reference: https://www.npmjs.com/package/@vidhill/fortawesome-free-regular-11ty-shortcode {% endcomment %}
-  <div class="words">
-    {% fortawesomeRegular 'edit' %}
-    <a href="{{ '/words' | url }}">
-      <p title="I've written {{words.words}} words worth of notes in {{words.year}}, as of {{words.calculated}}">
-        {{ words.words }} words
-      </p>
-    </a>
-  </div>
-  <div class="coffee">
-    <a href="{{ '/coffee'}}">☕️ {{ coffee.brews_combined.length }}</a>
-  </div>
-</div></div>
-</footer>
+{% include 'footer.liquid' %}
