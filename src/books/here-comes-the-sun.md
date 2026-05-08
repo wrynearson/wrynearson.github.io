@@ -5,6 +5,7 @@ author: Bill McKibben
 status: read
 date: 2026-03-20
 end-date: 2026-04-10
+rating: 5
 ---
 I liked this book a lot. It's an approachable, comprehensive book about why we need to fully electrify and transition to renewables (solar, wind and batteries) immediately. It paints a beautiful picture of what that electrified world will look like (simple, clean, cheap, reliable), and exposes the insanity of our current system (complex, dirty, expensive, volatile).
 
