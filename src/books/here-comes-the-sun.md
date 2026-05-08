@@ -1,5 +1,5 @@
 ---
-isbn: "9781324106234"
+isbn: 978-1324106234
 title: Here Comes the Sun
 author: Bill McKibben
 status: read
