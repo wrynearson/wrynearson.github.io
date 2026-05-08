@@ -127,7 +127,7 @@ export default async function () {
 async function fetchBookFromOpenLibrary(isbn) {
   try {
     // Clean ISBN (remove hyphens)
-    const cleanIsbn = isbn.replace(/-/g, "");
+    const cleanIsbn = String(isbn).replace(/-/g, "");
 
     console.log(`Fetching Open Library data for ISBN: ${cleanIsbn}`);
 
