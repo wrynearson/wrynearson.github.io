@@ -2,6 +2,7 @@ import { eleventyImageTransformPlugin } from "@11ty/eleventy-img";
 import { fortawesomeFreeRegularPlugin } from "@vidhill/fortawesome-free-regular-11ty-shortcode";
 import moment from "moment";
 import syntaxHighlight from "@11ty/eleventy-plugin-syntaxhighlight";
+import pluginRss from "@11ty/eleventy-plugin-rss";
 import markdownIt from "markdown-it";
 
 const md = markdownIt({ html: true });
@@ -32,6 +33,7 @@ export default function (eleventyConfig) {
   eleventyConfig.addPlugin(fortawesomeFreeRegularPlugin);
 
   eleventyConfig.addPlugin(syntaxHighlight);
+  eleventyConfig.addPlugin(pluginRss);
 
   eleventyConfig.addFilter("dateFormat", async function (date) {
     return moment(date).format("MMMM Do, YYYY");
@@ -65,6 +67,18 @@ export default function (eleventyConfig) {
     }, null);
 
     return mostRecent;
+  });
+
+  eleventyConfig.addCollection("rss", function (collectionApi) {
+    return [
+      ...collectionApi.getFilteredByGlob("./src/posts/*.md"),
+      ...collectionApi.getFilteredByGlob("./src/recently/*.md"),
+    ]
+      .filter(
+        (item) =>
+          !(item.data.draft && process.env.ELEVENTY_RUN_MODE === "build")
+      )
+      .sort((a, b) => b.date - a.date);
   });
 
   eleventyConfig.setServerOptions({
