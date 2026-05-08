@@ -35,6 +35,16 @@ export default function (eleventyConfig) {
   eleventyConfig.addPlugin(syntaxHighlight);
   eleventyConfig.addPlugin(pluginRss);
 
+  eleventyConfig.addFilter("absoluteUrl", (url, base) => new URL(url, base).toString());
+  eleventyConfig.addFilter("dateToRfc822", (date) => new Date(date).toUTCString());
+  eleventyConfig.addFilter(
+    "getNewestCollectionItemDate",
+    (collection) =>
+      collection?.length
+        ? new Date(Math.max(...collection.map((i) => i.date)))
+        : new Date()
+  );
+
   eleventyConfig.addFilter("dateFormat", async function (date) {
     return moment(date).format("MMMM Do, YYYY");
   });
