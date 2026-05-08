@@ -61,6 +61,10 @@ export default async function () {
         if (apiData && !apiData.api_error) {
           // Merge API data (source of truth for metadata) with user data
           Object.assign(bookData, apiData);
+          // Fall back to frontmatter author if API returned none
+          if (!bookData.authors?.length && bookData.frontmatter_author) {
+            bookData.authors = [bookData.frontmatter_author];
+          }
         } else {
           // API failed, use frontmatter as fallback
           bookData.title = bookData.frontmatter_title;
