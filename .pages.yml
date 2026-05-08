@@ -122,13 +122,13 @@ content:
       - name: date
         label: Start date
         type: date
-        default: 
+        default: ~
         required: false
         description: "Optional: When you started reading this book"
       - name: end-date
         label: Date Finished
         type: date
-        default: 
+        default: ~
         required: false
       - name: rating
         label: Rating
