@@ -186,9 +186,6 @@ describe("RSS collection", () => {
         if (globPattern === "./src/posts/*.md") {
           return [{ date: new Date("2026-01-01"), data: { draft: false } }];
         }
-        if (globPattern === "./src/pages/*.md") {
-          return [{ date: new Date("2025-01-01"), data: { draft: false } }];
-        }
         if (globPattern === "./src/recently/*.md") {
           return [{ date: new Date("2026-02-01"), data: { draft: true } }];
         }
@@ -199,7 +196,7 @@ describe("RSS collection", () => {
     try {
       assert.deepEqual(
         rssItems.map((item) => item.date.toISOString().slice(0, 10)),
-        ["2026-01-01", "2025-01-01"]
+        ["2026-01-01"]
       );
     } finally {
       process.env.ELEVENTY_RUN_MODE = previousRunMode;
