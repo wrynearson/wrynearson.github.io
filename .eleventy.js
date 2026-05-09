@@ -112,7 +112,7 @@ export default function (eleventyConfig) {
     return md.render(content || "");
   });
 
-  eleventyConfig.addAsyncFilter("rssHtmlToAbsoluteUrls", async function (content) {
+  eleventyConfig.addFilter("rssHtmlToAbsoluteUrls", function (content) {
     return convertHtmlToAbsoluteUrls(content || "", siteUrl);
   });
 

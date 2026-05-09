@@ -206,8 +206,7 @@ describe("RSS collection", () => {
 
   it("registers feed compatibility helpers for original assets and absolute URLs", async () => {
     const passthroughCopies = [];
-    const asyncFilters = {};
-    const faviconDir = path.join(SRC_DIR, "assets", "favicon");
+    const filters = {};
 
     eleventyConfig({
       setTemplateFormats() {},
@@ -216,10 +215,10 @@ describe("RSS collection", () => {
       addPassthroughCopy(copy) {
         passthroughCopies.push(copy);
       },
-      addFilter() {},
-      addAsyncFilter(name, callback) {
-        asyncFilters[name] = callback;
+      addFilter(name, callback) {
+        filters[name] = callback;
       },
+      addAsyncFilter() {},
       addCollection() {},
       setServerOptions() {},
       addPreprocessor() {},
@@ -235,9 +234,11 @@ describe("RSS collection", () => {
         (copy) => copy?.["./src/assets/img"] === "/assets/img"
       )
     );
-    assert.ok(fs.existsSync(path.join(faviconDir, "favicon-32x32.png")));
+    assert.ok(
+      fs.existsSync(path.join(SRC_DIR, "assets", "favicon", "favicon-32x32.png"))
+    );
 
-    const html = await asyncFilters.rssHtmlToAbsoluteUrls(
+    const html = filters.rssHtmlToAbsoluteUrls(
       '<img src="../assets/img/example.jpg"><a href="/feed.xml">Feed</a>'
     );
 
