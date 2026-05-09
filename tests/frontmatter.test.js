@@ -174,6 +174,7 @@ describe("RSS collection", () => {
       addWatchTarget() {},
       addPassthroughCopy() {},
       addFilter() {},
+      addAsyncFilter() {},
       addCollection(name, callback) {
         collectionCallbacks[name] = callback;
       },
@@ -201,5 +202,44 @@ describe("RSS collection", () => {
     } finally {
       process.env.ELEVENTY_RUN_MODE = previousRunMode;
     }
+  });
+
+  it("registers feed compatibility helpers for original assets and absolute URLs", async () => {
+    const passthroughCopies = [];
+    const asyncFilters = {};
+
+    eleventyConfig({
+      setTemplateFormats() {},
+      addPlugin() {},
+      addWatchTarget() {},
+      addPassthroughCopy(copy) {
+        passthroughCopies.push(copy);
+      },
+      addFilter() {},
+      addAsyncFilter(name, callback) {
+        asyncFilters[name] = callback;
+      },
+      addCollection() {},
+      setServerOptions() {},
+      addPreprocessor() {},
+    });
+
+    assert.ok(
+      passthroughCopies.some(
+        (copy) => copy?.["./src/assets/favicon"] === "/"
+      )
+    );
+    assert.ok(
+      passthroughCopies.some(
+        (copy) => copy?.["./src/assets/img"] === "/assets/img"
+      )
+    );
+
+    const html = await asyncFilters.rssHtmlToAbsoluteUrls(
+      '<img src="../assets/img/example.jpg"><a href="/feed.xml">Feed</a>'
+    );
+
+    assert.match(html, /https:\/\/willwill\.blog\/assets\/img\/example\.jpg/);
+    assert.match(html, /https:\/\/willwill\.blog\/feed\.xml/);
   });
 });

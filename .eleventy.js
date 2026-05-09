@@ -1,10 +1,14 @@
 import { eleventyImageTransformPlugin } from "@11ty/eleventy-img";
 import { fortawesomeFreeRegularPlugin } from "@vidhill/fortawesome-free-regular-11ty-shortcode";
+import { createRequire } from "module";
 import moment from "moment";
 import syntaxHighlight from "@11ty/eleventy-plugin-syntaxhighlight";
 import pluginRss from "@11ty/eleventy-plugin-rss";
 import markdownIt from "markdown-it";
 
+const require = createRequire(import.meta.url);
+const convertHtmlToAbsoluteUrls = require("@11ty/eleventy-plugin-rss/src/htmlToAbsoluteUrls.js");
+const siteUrl = "https://willwill.blog";
 const md = markdownIt({ html: true });
 
 export default function (eleventyConfig) {
@@ -28,7 +32,8 @@ export default function (eleventyConfig) {
   eleventyConfig.addWatchTarget("./src/css/");
 
   eleventyConfig.addPassthroughCopy("./src/css/");
-  eleventyConfig.addPassthroughCopy({ "./src/favicon": "/" });
+  eleventyConfig.addPassthroughCopy({ "./src/assets/favicon": "/" });
+  eleventyConfig.addPassthroughCopy({ "./src/assets/img": "/assets/img" });
 
   eleventyConfig.addPlugin(fortawesomeFreeRegularPlugin);
 
@@ -59,6 +64,10 @@ export default function (eleventyConfig) {
 
   eleventyConfig.addFilter("markdownify", function (content) {
     return md.render(content || "");
+  });
+
+  eleventyConfig.addAsyncFilter("rssHtmlToAbsoluteUrls", async function (content) {
+    return convertHtmlToAbsoluteUrls(content || "", siteUrl);
   });
 
   eleventyConfig.addPassthroughCopy({
