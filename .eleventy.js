@@ -5,7 +5,57 @@ import syntaxHighlight from "@11ty/eleventy-plugin-syntaxhighlight";
 import pluginRss from "@11ty/eleventy-plugin-rss";
 import markdownIt from "markdown-it";
 
+const siteUrl = "https://willwill.blog";
 const md = markdownIt({ html: true });
+
+function convertHtmlToAbsoluteUrls(content, base) {
+  return (content || "").replace(
+    /\s(href|src|srcset)=("([^"]*)"|'([^']*)')/gi,
+    (fullMatch, attribute, quotedValue, doubleQuotedValue, singleQuotedValue) => {
+      const quote = quotedValue[0];
+      const value = doubleQuotedValue ?? singleQuotedValue ?? "";
+      const nextValue =
+        attribute === "srcset"
+          ? value
+              .split(",")
+              .map((source) => convertSrcsetSourceToAbsoluteUrl(source, base))
+              .join(", ")
+          : convertUrlToAbsolute(value, base);
+
+      return ` ${attribute}=${quote}${nextValue}${quote}`;
+    }
+  );
+}
+
+function convertSrcsetSourceToAbsoluteUrl(source, base) {
+  const [url, ...descriptors] = source.trim().split(/\s+/);
+
+  if (!url) {
+    return source.trim();
+  }
+
+  return [convertUrlToAbsolute(url, base), ...descriptors].join(" ");
+}
+
+function convertUrlToAbsolute(url, base) {
+  const trimmedUrl = url.trim();
+
+  if (
+    !trimmedUrl ||
+    /^(?:[a-z]+:|#)/i.test(trimmedUrl) ||
+    trimmedUrl.startsWith("//")
+  ) {
+    return trimmedUrl.startsWith("//")
+      ? new URL(trimmedUrl, base).toString()
+      : trimmedUrl;
+  }
+
+  try {
+    return new URL(trimmedUrl, base).toString();
+  } catch {
+    return trimmedUrl;
+  }
+}
 
 export default function (eleventyConfig) {
   eleventyConfig.setTemplateFormats(["md", "liquid"]);
@@ -28,7 +78,8 @@ export default function (eleventyConfig) {
   eleventyConfig.addWatchTarget("./src/css/");
 
   eleventyConfig.addPassthroughCopy("./src/css/");
-  eleventyConfig.addPassthroughCopy({ "./src/favicon": "/" });
+  eleventyConfig.addPassthroughCopy({ "./src/assets/favicon": "/" });
+  eleventyConfig.addPassthroughCopy({ "./src/assets/img": "/assets/img" });
 
   eleventyConfig.addPlugin(fortawesomeFreeRegularPlugin);
 
@@ -59,6 +110,10 @@ export default function (eleventyConfig) {
 
   eleventyConfig.addFilter("markdownify", function (content) {
     return md.render(content || "");
+  });
+
+  eleventyConfig.addFilter("rssHtmlToAbsoluteUrls", function (content) {
+    return convertHtmlToAbsoluteUrls(content || "", siteUrl);
   });
 
   eleventyConfig.addPassthroughCopy({

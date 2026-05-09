@@ -3,12 +3,20 @@ permalink: /feed.xml
 eleventyExcludeFromCollections: true
 ---
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Will Rynearson</title>
     <link>{{ "/" | absoluteUrl: "https://willwill.blog" }}</link>
     <description>New posts, projects, and recently updates from Will Rynearson</description>
     <language>en</language>
+    <atom:link href="{{ "/feed.xml" | absoluteUrl: "https://willwill.blog" }}" rel="self" type="application/rss+xml" />
+    <image>
+      <url>{{ "/favicon-32x32.png" | absoluteUrl: "https://willwill.blog" }}</url>
+      <title>Will Rynearson</title>
+      <link>{{ "/" | absoluteUrl: "https://willwill.blog" }}</link>
+      <width>32</width>
+      <height>32</height>
+    </image>
     <lastBuildDate>{{ collections.rss | getNewestCollectionItemDate | dateToRfc822 }}</lastBuildDate>
     {% for item in collections.rss %}
       <item>
@@ -17,7 +25,7 @@ eleventyExcludeFromCollections: true
         <pubDate>{{ item.date | dateToRfc822 }}</pubDate>
         <guid>{{ item.url | absoluteUrl: "https://willwill.blog" }}</guid>
         <description>{{ item.data.description | default: item.data.title | escape }}</description>
-        <content:encoded><![CDATA[{{ item.templateContent }}]]></content:encoded>
+        <content:encoded><![CDATA[{{ item.templateContent | rssHtmlToAbsoluteUrls }}]]></content:encoded>
       </item>
     {% endfor %}
   </channel>
