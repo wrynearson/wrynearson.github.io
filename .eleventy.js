@@ -1,15 +1,61 @@
 import { eleventyImageTransformPlugin } from "@11ty/eleventy-img";
 import { fortawesomeFreeRegularPlugin } from "@vidhill/fortawesome-free-regular-11ty-shortcode";
-import { createRequire } from "module";
 import moment from "moment";
 import syntaxHighlight from "@11ty/eleventy-plugin-syntaxhighlight";
 import pluginRss from "@11ty/eleventy-plugin-rss";
 import markdownIt from "markdown-it";
 
-const require = createRequire(import.meta.url);
-const convertHtmlToAbsoluteUrls = require("@11ty/eleventy-plugin-rss/src/htmlToAbsoluteUrls.js");
 const siteUrl = "https://willwill.blog";
 const md = markdownIt({ html: true });
+
+function convertHtmlToAbsoluteUrls(content, base) {
+  return (content || "").replace(
+    /\s(href|src|srcset)=("([^"]*)"|'([^']*)')/gi,
+    (fullMatch, attribute, quotedValue, doubleQuotedValue, singleQuotedValue) => {
+      const quote = quotedValue[0];
+      const value = doubleQuotedValue ?? singleQuotedValue ?? "";
+      const nextValue =
+        attribute === "srcset"
+          ? value
+              .split(",")
+              .map((source) => convertSrcsetSourceToAbsoluteUrl(source, base))
+              .join(", ")
+          : convertUrlToAbsolute(value, base);
+
+      return ` ${attribute}=${quote}${nextValue}${quote}`;
+    }
+  );
+}
+
+function convertSrcsetSourceToAbsoluteUrl(source, base) {
+  const [url, ...descriptors] = source.trim().split(/\s+/);
+
+  if (!url) {
+    return source.trim();
+  }
+
+  return [convertUrlToAbsolute(url, base), ...descriptors].join(" ");
+}
+
+function convertUrlToAbsolute(url, base) {
+  const trimmedUrl = url.trim();
+
+  if (
+    !trimmedUrl ||
+    /^(?:[a-z]+:|#)/i.test(trimmedUrl) ||
+    trimmedUrl.startsWith("//")
+  ) {
+    return trimmedUrl.startsWith("//")
+      ? new URL(trimmedUrl, base).toString()
+      : trimmedUrl;
+  }
+
+  try {
+    return new URL(trimmedUrl, base).toString();
+  } catch {
+    return trimmedUrl;
+  }
+}
 
 export default function (eleventyConfig) {
   eleventyConfig.setTemplateFormats(["md", "liquid"]);
