@@ -1,10 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Will Rynearson</title>
     <link>https://willwill.blog/</link>
     <description>New posts, projects, and recently updates from Will Rynearson</description>
     <language>en</language>
+    <atom:link href="https://willwill.blog/feed.xml" rel="self" type="application/rss+xml" />
+    <image>
+      <url>https://willwill.blog/favicon-32x32.png</url>
+      <title>Will Rynearson</title>
+      <link>https://willwill.blog/</link>
+      <width>32</width>
+      <height>32</height>
+    </image>
     <lastBuildDate>Sun, 15 Feb 2026 00:00:00 GMT</lastBuildDate>
     
       <item>
@@ -14,7 +22,7 @@
         <guid>https://willwill.blog/recently/2026-02-15/</guid>
         <description>Recently</description>
         <content:encoded><![CDATA[<p>We settled into Switzerland after our 3+ month trip to Asia — see the previous <code>Recently</code> post for more details. While it was (depressingly?) easy to get back into routines and work, the cold and fog of Luzern zapped our adventurous spirit, yet alone the desire to go outside. However, I did get one ski-touring trip in, and visited friends in the region.</p>
-<p><img src="/assets/img/recently/2026-02-15_1.jpg" alt="ski-touring"></p>
+<p><img src="https://willwill.blog/assets/img/recently/2026-02-15_1.jpg" alt="ski-touring"></p>
 <p>I just finished <em>Wool</em>, a sci-fi book that is the basis of the Apple TV series <em>Silo</em>. It was an enjoyable read! I won't spoil anything here, but let's just say it made the thought of the US (and Western world) potentially succumbing to violence even more dystopian. The book, amongst other societal parallels, makes you value peace and its fragility. A <code>/books</code> page is in the works for this website.</p>
 <p>Speaking of the US, our yearly company meeting is happening later this month in DC. It might be the last, at least in DC, which is bittersweet. For the past few years, I've left this week of in-person collaboration (I work fully remotely) energized and inspired, no matter how negative the state of the world feels. However, I'm looking forward to entirely <em>regional</em> holidays this year after this trip after this trip and our last big one.</p>
 <p>Returning to work has been good. In January, we launched the first product that I (mostly) coded — [EO Predictor](<a href="https://www.developmentseed.org/eo-predictor">https://www.developmentseed.org/eo-predictor</a>). You can read more about it [here](/eo-predictor). It was fun to &quot;launch&quot; something that I was confident in the purpose of, but not in the code (I'm still a beginner).</p>
@@ -31,13 +39,13 @@
         <guid>https://willwill.blog/recently/2026-01-09/</guid>
         <description>Recently</description>
         <content:encoded><![CDATA[<p>My wife and I recently finished a 3+ month trip to Asia, where we visited (greater) China, Nepal and Thailand. We were incredibly fortunate to have employers that let us take (unpaid) time off work for so long.</p>
-<p><img src="/assets/img/recently/2026-01-09/1.jpg" alt=""></p>
+<p><img src="https://willwill.blog/assets/img/recently/2026-01-09/1.jpg" alt=""></p>
 <p>This post could be a novel, but in summary, we saw so many things, ate so much good food, and generally had a rejuvenating time away from work and our daily routines.</p>
 <p>We spent about half of the trip in China, visiting megacities, remote villages and everything in between, zipping around primarily by train. While aiming to include down time, much of this part of the trip was focused on experiences — visiting rice terraces, climbing the Great Wall, etc.</p>
-<p><img src="/assets/img/recently/2026-01-09/2.png" alt=""></p>
-<p><img src="/assets/img/recently/2026-01-09/3.png" alt=""></p>
+<p><img src="https://willwill.blog/assets/img/recently/2026-01-09/2.png" alt=""></p>
+<p><img src="https://willwill.blog/assets/img/recently/2026-01-09/3.png" alt=""></p>
 <p>Before continuing to Nepal, we visited Tibet, where we took an overland tour from Lhasa to Kathmandu. We then spent almost two weeks hiking around the majestic Manaslu peak on the Manaslu Circuit, bringing us from massive gorges up over a 5,100m pass. We spent the rest of the time off relaxing in Thailand, visiting three islands in the south and fully enjoying the tropical weather.</p>
-<p><img src="/assets/img/recently/2026-01-09/4.png" alt=""></p>
+<p><img src="https://willwill.blog/assets/img/recently/2026-01-09/4.png" alt=""></p>
 <p>Some takeaways:</p>
 <ol>
 <li>
@@ -65,8 +73,8 @@
 <p>I only read two books while on the trip, which I'll take to mean that I was more fully in-the-moment.</p>
 </li>
 </ol>
-<p><img src="/assets/img/recently/2026-01-09/5.png" alt=""></p>
-<p><img src="/assets/img/recently/2026-01-09/6.png" alt=""></p>
+<p><img src="https://willwill.blog/assets/img/recently/2026-01-09/5.png" alt=""></p>
+<p><img src="https://willwill.blog/assets/img/recently/2026-01-09/6.png" alt=""></p>
 ]]></content:encoded>
       </item>
     
@@ -309,13 +317,13 @@
         <description>Recently</description>
         <content:encoded><![CDATA[<p>It's been quite the start to the year. Most of February was spent in North America, with a mix of <a href="https://developmentseed.org/blog/2025-04-01-coral-reef-visit/">site visits for a project at work</a>, a company on-site (we're remote) and family/friend visits in between.</p>
 <p>The site visits were for a project about coral reef restoration in the Florida Keys and the Dominican Republic. In addition to figuratively deep diving into a conservation-focused project, we also got to literally dive into the ocean and see coral reefs. It was an incredible, moving experience, both professionally and personally.</p>
-<p><img src="/assets/img/recently/2025-04-15_2.avif" alt="snorkeling"></p>
+<p><img src="https://willwill.blog/assets/img/recently/2025-04-15_2.avif" alt="snorkeling"></p>
 <p>Coral reefs support such a beautiful, rich, diverse ecosystem, yet are so fragile. Coral reef restoration is much more about adaptation — helping reefs survive as long as possible — versus &quot;mitigation&quot; (reducing our CO₂ emissions). In summary, scientists take a bit of coral from the wild, cut it up into small pieces, and help it grow in a controlled environment (usually a series of indoor or outdoor tanks). Once the coral fragments are healthy and large enough, they're re-planted out on coral reefs. The process is both incredibly heartwarming (we can save the reefs and their vast diversity!) and depressing (one longer heat spell can kill a whole reef, and we can't stop burning fossil fuels).</p>
-<p><img src="/assets/img/recently/2025-04-15_1.avif" alt="coral fragments"></p>
+<p><img src="https://willwill.blog/assets/img/recently/2025-04-15_1.avif" alt="coral fragments"></p>
 <p>On the topic of burning fossil fuels, I then continued to visit some friends and family in the western part of the continent, and then a company on-site at our office in Washington, D.C. I've been thinking quite a bit about flight shaming and personal responsibility when it comes to CO₂ emissions, and the dichotomy of personal action not meaning anything in the times of drill baby drill, while also meaning everything for collective action, morality and having a sense of control over our impact on the planet. I'd like to write a post about it sometime.</p>
 <p>It was also strange visiting the US, and especially D.C. during the start of the Doge era. Maybe it was only strange because I've been living away from my homeland for so long now (almost 10 years now). During a time of so much change and uncertainty, it was nice to see that some things in my friend's and family's lives were still recognizable, or even the same as they were before.</p>
 <p>March was relatively quiet, with a few trips and an conference within Switzerland. April started off well with a holiday to Italy. We took the night train to Calabria and spent a few days there, then had a few days in Rome. It's so nice to eat gelato whenever you want.</p>
-<p><img src="/assets/img/recently/2025-04-15_3.avif" alt="Italy"></p>
+<p><img src="https://willwill.blog/assets/img/recently/2025-04-15_3.avif" alt="Italy"></p>
 <p>I took a break from reading, but just started <a href="https://www.recodingamerica.us/">Recoding America</a> by Jennifer Pahlka. With all the talk of government inefficiency and the left's (sometimes perceived) inability to turn policy accomplishments into impact, the idea of government's service offering seems important and timely. As the book came out in 2023, I'm looking forward to reading this without the author's written context of what's currently happening.</p>
 <p>We watched recent Netflix series <a href="https://www.imdb.com/title/tt9018736/">Avatar: The Last Airbender</a>, which was fun. I've also started watching a few documentaries / shows in German. If they speak slowly, simply and clearly, I'm able to somewhat follow along, which is nice.</p>
 ]]></content:encoded>
@@ -328,8 +336,8 @@
         <guid>https://willwill.blog/recently/2025-01-22/</guid>
         <description>Recently</description>
         <content:encoded><![CDATA[<p>The two week break around Christmas and New Years was wonderful. It was very refreshing to spend less time in the daily routine, and more time away from screens and work tasks. We spent a lot of time with family and friends, enjoying nature, and being in the moment. Quality social time is so important, and we were fortunate enough to have a lot of it, if not borderline too much of it. We came away with calm, rested minds.</p>
-<p><img src="/assets/img/recently/2025-01-22_1.jpg" alt="snow"></p>
-<p><img src="/assets/img/recently/2025-01-22_2.jpg" alt="more snow"></p>
+<p><img src="https://willwill.blog/assets/img/recently/2025-01-22_1.jpg" alt="snow"></p>
+<p><img src="https://willwill.blog/assets/img/recently/2025-01-22_2.jpg" alt="more snow"></p>
 <p>The final weeks of 2024 contained a flood to emails from my cloud storage providers telling me that I have no more storage space left. Instead of succumbing to their wishes, I spent the first week or two of the new year in the rabbit hole that is building a <code>homelab</code>. Basically, have another computer that's on 24/7 run a service or services that you can connect to, primarily over your local network. The options are limitless.</p>
 <p>It started with an an external 4TB HDD. Instead of having to plug it in every time I want to access files, it's instead plugged into an old laptop, which shares the HDD to any computer on our local network as a network drive. That then led to virtual machines, Docker containers, more refined network drive access, and a self-hosted Google Photos alternative called Immich to back up and host my photos.</p>
 <p>The home lab / NAS community seems very <em>particular</em> with setup requirements and suggestions, but my janky setup works as the primary goal of having more storage space accessible to my main laptop. I still have all of my data in other locations, and will continue to get storage warning emails from cloud providers until I build a robust backup strategy and migrate data to the homelab.</p>
@@ -348,15 +356,15 @@
         <description>Recently</description>
         <content:encoded><![CDATA[<p>This is my first recently post! I plan on writing roughly monthly about what I've been up to, what I hope to be doing, and occasionally other things on my mind.</p>
 <p>We've been living in Luzern, Switzerland for one year. It's a beautiful town and has great access to nature, which we've been trying to take advantage of as much as possible. It's been extremely foggy for most of the past two months, making it all-the-more tempting to get above the clouds.</p>
-<p><img src="../assets/img/recently/above_clouds.jpg" alt="above-clouds"></p>
+<p><img src="https://willwill.blog/assets/img/recently/above_clouds.jpg" alt="above-clouds"></p>
 <p>It has been difficult to meet people, but I have a good network of friends around the country to rely on. This has been nice for planned visits, but spontaneous meet-ups or encounters have definitely been lacking.</p>
 <p>To help with this, and for other reasons, I've been taking German classes twice per week with <a href="https://learn.lingoda.com/en/referral/prxumk">Lingoda</a>, an online language course platform. Progress is slow, but I've recently been able to understand simple questions and can sometimes slowly reply. Twice per week should have me progressing at one <a href="https://www.coe.int/en/web/common-european-framework-reference-languages/level-descriptions">CEFR level per year</a>. I previously tried in-person classes, and might return to them in the future, but I currently like the flexibility of online classes.</p>
 <p>Coding has been very fun and enjoyable recently. Hacking away in a Jupyter Notebook or building a simple web map has become easier, which has allowed me to (slowly) turn the infinite list of project ideas I have into reality. For example, <a href="https://wrynearson.github.io/watermap/">here's a map</a> of all water fountains and toilets (on OSM) in Europe <a href="https://github.com/wrynearson/watermap">GitHub repo</a>. I do still rely on ChatGPT to make these, especially to start projects. However, I can now iterate with ChatGPT much more effectively because I know what to ask for, and can usually tell if its response is the most appropriate or not.</p>
 <p>I was lucky enough to go to India recently for a work trip. We stuck around for an additional week to take advantage of the opportunity. It was an eye-opening experience. I was particularly impacted by the stark, visible divide between the rich and poor. Unimaginable wealth would be right next to unimaginable poverty. Life was on full display in all regards (good and bad).</p>
-<p><img src="../assets/img/recently/india_1.JPG" alt="An outdoor window frame"></p>
-<p><img src="../assets/img/recently/india_2.JPG" alt="Preparing flower wreaths"></p>
+<p><img src="https://willwill.blog/assets/img/recently/india_1.JPG" alt="An outdoor window frame"></p>
+<p><img src="https://willwill.blog/assets/img/recently/india_2.JPG" alt="Preparing flower wreaths"></p>
 <p>Of course, the food was phenomenal. I was particularly impressed by the quality of the food scene in the regions we visited, whether it was local, national, or international cuisine.</p>
-<p><img src="../assets/img/recently/india_3.JPG" alt="Thali"></p>
+<p><img src="https://willwill.blog/assets/img/recently/india_3.JPG" alt="Thali"></p>
 <p>Travel and weather have taken a toll on my exercise routine. I've been running much less often these days. I hope to do more indoor workouts and do more yoga.</p>
 <p>Looking forward, I'm excited for the holidays, snow(sports), projects at work, and coding opportunities, and enjoy the routine I have for learning German.</p>
 ]]></content:encoded>
@@ -409,24 +417,24 @@
         <pubDate>Fri, 10 Mar 2023 00:00:00 GMT</pubDate>
         <guid>https://willwill.blog/ski-tour-benevolo/</guid>
         <description>A three-day adventure to a remote refuge in Aosta Valley.</description>
-        <content:encoded><![CDATA[<p><img src="../assets/img/2023-03-10-benevolo/3.jpg" alt="25"></p>
+        <content:encoded><![CDATA[<p><img src="https://willwill.blog/assets/img/2023-03-10-benevolo/3.jpg" alt="25"></p>
 <p>The 2022-2023 winter in Europe was historically bad for nature and snow sport enthusiasts. Aching for some ski-based adventures, a few friends and I went to <a href="https://rifugiobenevolo.com/">Rifugio Benevolo</a> in early February.</p>
 <p>I was still recovering from a back injury, so I was both restless to get on skis, but also cautious of relapses. Something about going somewhere that's difficult to get to seemed therapeutic (but definitely not logical).</p>
 <p>Loading up our gear into a perfectly-sized Fiat Punto, we traversed the Swiss Alps to get to Italian Alps.</p>
 <p>Rifugio Benevolo is located at 2,285m. Only a small shelter is open during the winter instead of the full hut.</p>
-<p><img src="../assets/img/2023-03-10-benevolo/1.jpg" alt="25"></p>
+<p><img src="https://willwill.blog/assets/img/2023-03-10-benevolo/1.jpg" alt="25"></p>
 <p>The way up was beautiful but more difficult than we imagined, mostly because we took a less-frequented path. We arrived with headlamps blazing well past sunset.</p>
 <p>We had the whole hut to ourselves for the whole weekend. Perhaps it wasn't surprising as the hut was not heated. The valley recorded temperatures of around -25°C the week before, and was forecast to be the same just after we would leave, but luckily we had a balmy 0°C (both inside and out).</p>
-<p><img src="../assets/img/2023-03-10-benevolo/2.jpg" alt="25"></p>
+<p><img src="https://willwill.blog/assets/img/2023-03-10-benevolo/2.jpg" alt="25"></p>
 <p>While the snow quality wasn't the stuff of dreams, the landscape was. Multiple 3km peaks, pristine skies, and endless terrain to explore.</p>
-<p><img src="../assets/img/2023-03-10-benevolo/5.jpg" alt="25"></p>
-<p><img src="../assets/img/2023-03-10-benevolo/4.jpg" alt="25"></p>
+<p><img src="https://willwill.blog/assets/img/2023-03-10-benevolo/5.jpg" alt="25"></p>
+<p><img src="https://willwill.blog/assets/img/2023-03-10-benevolo/4.jpg" alt="25"></p>
 <p>Our only visitor over the whole weekend was a fox!</p>
-<p><img src="../assets/img/2023-03-10-benevolo/8.png" alt="25"></p>
+<p><img src="https://willwill.blog/assets/img/2023-03-10-benevolo/8.png" alt="25"></p>
 <p>It was magical to get out into nature again, especially with great friends. Ski touring is a great way to get your mind off of other worries as well (and to get into flow state).</p>
-<p><img src="../assets/img/2023-03-10-benevolo/6.jpg" alt="25"></p>
+<p><img src="https://willwill.blog/assets/img/2023-03-10-benevolo/6.jpg" alt="25"></p>
 <p>As great as this escape was, we needed to get back to civilization and indoor heating.</p>
-<p><img src="../assets/img/2023-03-10-benevolo/7.jpg" alt="25"></p>
+<p><img src="https://willwill.blog/assets/img/2023-03-10-benevolo/7.jpg" alt="25"></p>
 ]]></content:encoded>
       </item>
     
@@ -436,35 +444,35 @@
         <pubDate>Sat, 23 Apr 2022 00:00:00 GMT</pubDate>
         <guid>https://willwill.blog/lago-maggiore-bike/</guid>
         <description>A relaxed biking holiday in Northern Italy over the long Easter Weekend full of food, landscapes and culture.</description>
-        <content:encoded><![CDATA[<p><img src="../assets/img/2022-04-23-lago-maggiore-bike/4.jpg" alt="4"></p>
+        <content:encoded><![CDATA[<p><img src="https://willwill.blog/assets/img/2022-04-23-lago-maggiore-bike/4.jpg" alt="4"></p>
 <p>Just across the Swiss border, and less than three hours by train from Geneva, sits the beautiful Lago Maggiore region of Northern Italy. Split between Piedmont and Lombardy, the region boasts mountains, lakes, villas, bustling ancient towns, and quite remote villages. I had visited a few times previously for the <a href="https://lagomaggioremarathon.it/">Lago Maggiore Marathon</a>, but I had wanted to visit by bike for some time.</p>
 <p>We vaguely planned five days in the region, with two campgrounds in mind to base ourselves out of for daily adventures.</p>
 <iframe title="Komoot Full Bike Tour Path" src="https://www.komoot.com/tour/743826504/embed?share_token=aBUtO4bOSbY7THaGXXiTaySjmwsMMlfmMLuEytvtInsNWyA5Tk&profile=1" width="100%" height="680" frameborder="0" scrolling="no"></iframe>
 <p>We took an early train to Domodossola, arriving around 10:30am. We then rode on a dedicated, leasurly bike pack south through the valley. There were great, paved sections, as well as some areas where my road bike felt out of place.</p>
-<p><img src="../assets/img/2022-04-23-lago-maggiore-bike/1.jpg" alt="1"></p>
-<p><img src="../assets/img/2022-04-23-lago-maggiore-bike/2.jpg" alt="2"></p>
-<p><img src="../assets/img/2022-04-23-lago-maggiore-bike/3.jpg" alt="3"></p>
+<p><img src="https://willwill.blog/assets/img/2022-04-23-lago-maggiore-bike/1.jpg" alt="1"></p>
+<p><img src="https://willwill.blog/assets/img/2022-04-23-lago-maggiore-bike/2.jpg" alt="2"></p>
+<p><img src="https://willwill.blog/assets/img/2022-04-23-lago-maggiore-bike/3.jpg" alt="3"></p>
 <p>After two flats due to a tiny piece of scrap metal, and great pizza and gelato, we made it to out campground for the evening, on the shores of Lago d'Orta.</p>
-<p><img src="../assets/img/2022-04-23-lago-maggiore-bike/4.jpg" alt="4"></p>
+<p><img src="https://willwill.blog/assets/img/2022-04-23-lago-maggiore-bike/4.jpg" alt="4"></p>
 <p>The next morning, we woke to serenity.</p>
-<p><img src="../assets/img/2022-04-23-lago-maggiore-bike/5.jpg" alt="5"></p>
+<p><img src="https://willwill.blog/assets/img/2022-04-23-lago-maggiore-bike/5.jpg" alt="5"></p>
 <p>We then peddled on around the south end of Lago Maggiore and back up the East side to a campground on the shores of Lago di Monate.</p>
-<p><img src="../assets/img/2022-04-23-lago-maggiore-bike/6.jpg" alt="6"></p>
-<p><img src="../assets/img/2022-04-23-lago-maggiore-bike/7.jpg" alt="7"></p>
+<p><img src="https://willwill.blog/assets/img/2022-04-23-lago-maggiore-bike/6.jpg" alt="6"></p>
+<p><img src="https://willwill.blog/assets/img/2022-04-23-lago-maggiore-bike/7.jpg" alt="7"></p>
 <p>One of the best things about cycling in Italy are the breakfasts.</p>
-<p><img src="../assets/img/2022-04-23-lago-maggiore-bike/8.jpg" alt="8"></p>
+<p><img src="https://willwill.blog/assets/img/2022-04-23-lago-maggiore-bike/8.jpg" alt="8"></p>
 <p>We explored two towns nearby – Ispra and Angera.</p>
-<p><img src="../assets/img/2022-04-23-lago-maggiore-bike/9.jpg" alt="9"></p>
-<p><img src="../assets/img/2022-04-23-lago-maggiore-bike/10.jpg" alt="10"></p>
+<p><img src="https://willwill.blog/assets/img/2022-04-23-lago-maggiore-bike/9.jpg" alt="9"></p>
+<p><img src="https://willwill.blog/assets/img/2022-04-23-lago-maggiore-bike/10.jpg" alt="10"></p>
 <p>During our second day, we saw a town on a mountain top far away, which became the goal of our fourth day – the <a href="https://goo.gl/maps/81T6WAbL2gbYAJuv8">Santuario di Santa Maria del Monte</a>.</p>
 <p>A lovely lakeside path guided us part of the way there, complete with a &quot;bar&quot; (<em>read: cafe</em>). We fully appreciated the gorgeous spring weather.</p>
-<p><img src="../assets/img/2022-04-23-lago-maggiore-bike/11.jpg" alt="11"></p>
-<p><img src="../assets/img/2022-04-23-lago-maggiore-bike/12.jpg" alt="12"></p>
+<p><img src="https://willwill.blog/assets/img/2022-04-23-lago-maggiore-bike/11.jpg" alt="11"></p>
+<p><img src="https://willwill.blog/assets/img/2022-04-23-lago-maggiore-bike/12.jpg" alt="12"></p>
 <p>A few hours and some sweat drops later, we were fully appreciating the view from the top.</p>
-<p><img src="../assets/img/2022-04-23-lago-maggiore-bike/13.jpg" alt="13"></p>
-<p><img src="../assets/img/2022-04-23-lago-maggiore-bike/14.jpg" alt="14"></p>
+<p><img src="https://willwill.blog/assets/img/2022-04-23-lago-maggiore-bike/13.jpg" alt="13"></p>
+<p><img src="https://willwill.blog/assets/img/2022-04-23-lago-maggiore-bike/14.jpg" alt="14"></p>
 <p>Our final day had us retrace our tracks around the south of the lake, then up the West bank through Arona to Stresa.</p>
-<p><img src="../assets/img/2022-04-23-lago-maggiore-bike/15.jpg" alt="15"></p>
+<p><img src="https://willwill.blog/assets/img/2022-04-23-lago-maggiore-bike/15.jpg" alt="15"></p>
 <p>After more food and relaxing, we caught a train back to Domodossola, then back to Geneva. What a privilege to be so close and so well connected to the beautiful Lago Maggiore region!</p>
 ]]></content:encoded>
       </item>
@@ -477,7 +485,7 @@
         <description>My thesis examined the relationship between perceived and actual (poor) water quality. I wrote my thesis in the Markdown editor Zettlr, defended (submitted) it in May 2021, and published it with Jupyter Book early in 2022. This post shares some of the process.</description>
         <content:encoded><![CDATA[<h2>TL;DR</h2>
 <p>Writing in <a href="https://en.wikipedia.org/wiki/Markdown">Markdown</a> is great. <a href="https://www.zettlr.com/">Zettlr</a> is a great Markdown editor, which pairs well with <a href="https://www.zotero.org/">Zotero</a> to manage citations. Publishing with <a href="https://jupyterbook.org/">Jupyter Book</a> allows for good design and makes academic writing more accessible.</p>
-<p>You can read my thesis <a href="/china-water">here</a>.</p>
+<p>You can read my thesis <a href="https://willwill.blog/china-water">here</a>.</p>
 <h2>Background</h2>
 <p>I attended Tsinghua University 清华大学 between 2018 and 2021 and received a Master in Public Administration for the Sustainable Development Goals. Since the SDGs are (by definition) broad and all encompassing, so too was the program. While both a blessing and a curse, it did allow students to pursue courses, research and careers in the areas they were most passionate about.</p>
 <p>Issues related to water have interested me since work I did with Engineers without Borders, where my classmates and I implemented several Water, Sanitation and Hygiene (WASH) projects at primary schools in western Kenya. Having experienced China's environmental degradation first-hand for the two years, tying these two together seemed logical.</p>
@@ -489,12 +497,12 @@
 <h2>Data</h2>
 <p>Two datasets seemed to best cover the issue. One is a dataset of water quality scores at the sub-province level (similar to counties in the US or <em>communes</em> in Switzerland). The other is a large time series social survey, which includes questions related to environmental degradation and water quality.</p>
 <p>At the time, and in addition to the thesis, I had wanted to learn Python. Luckily for me, the social survey data set was massive, and I didn't have SPSS on my computer. Trying to open the data set in Excel quickly crashed it, so Python was the best option!</p>
-<p>The data analysis aspects of the thesis are documented in this <a href="https://github.com/wrynearson/china-water">Github repository</a>, and hopefully soon in the <a href="/china-water">Jupyter Book Thesis</a>.</p>
+<p>The data analysis aspects of the thesis are documented in this <a href="https://github.com/wrynearson/china-water">Github repository</a>, and hopefully soon in the <a href="https://willwill.blog/china-water">Jupyter Book Thesis</a>.</p>
 <h2>Writing</h2>
 <p>The literature review and writing portion mostly took place in <a href="https://www.zettlr.com/">Zettlr</a> and <a href="https://www.zotero.org/">Zotero</a>. Once Zotero and Zettlr were linked, referencing was a breeze – just typing the @ symbol, followed by either the title or author. The setup process took a bit of time, but I found it to be worth it. There is extensive documentation and guidance on Zettlr's website.</p>
 <p>Tsinghua University was very strict about the Word document template that the thesis needed to be submitted as. I think it would have been possible to find a LaTeX template and export from Zettlr, but I couldn't figure it out, so I unfortunately had to copy and paste into the Word doc.</p>
 <h2>Sharing</h2>
-<p>After defending the thesis and moving on to <a href="/NEAT+">other projects</a>, I thought less and less frequently of it. Months later, I found it a bit sad that so many pieces of academic writing, if not published in journals, accumulate digital dust in methaphorical filing cabinates. I wanted a way to show my work, but not through a static PDF.</p>
+<p>After defending the thesis and moving on to <a href="https://willwill.blog/NEAT+">other projects</a>, I thought less and less frequently of it. Months later, I found it a bit sad that so many pieces of academic writing, if not published in journals, accumulate digital dust in methaphorical filing cabinates. I wanted a way to show my work, but not through a static PDF.</p>
 <p>Jupyter Book attempts to solve this problem. In their words:</p>
 <blockquote>
 <p>Jupyter Book is an open source project for building beautiful, publication-quality books and documents from computational material.</p>
@@ -544,52 +552,52 @@
         <pubDate>Sun, 12 Sep 2021 00:00:00 GMT</pubDate>
         <guid>https://willwill.blog/cabane-de-susanfe/</guid>
         <description>A weekend hike in SW Switzerland</description>
-        <content:encoded><![CDATA[<p><img src="../assets/img/2021-09-12-cabane-de-susanfe/12.jpg" alt="12"></p>
+        <content:encoded><![CDATA[<p><img src="https://willwill.blog/assets/img/2021-09-12-cabane-de-susanfe/12.jpg" alt="12"></p>
 <p>With Autumn (and alpine inacessability) quickly approaching, a rugged hike at altitue was needed. Somehow after more than two years in Switzerland, I hadn't stayed in a Swiss Alpine Club (SAC) hut, so we looked for a weekend excursion which could combine these two. The SAC was founded in 1863, and operates a network of over 150 cabins, huts and refuges across Switzerland. More information can be found <a href="https://www.sac-cas.ch/en/the-sac/about-us/">here</a>.</p>
 <h2>Day 1: Van d'en Haut – Cabane de Susanfe</h2>
 <iframe class='strava' height='410px' width='565px' frameborder='0' allowtransparency='true' scrolling='no' src='https://www.strava.com/activities/5949581275/embed/f9e0a447683995d6a47dfa4fed23fec92cb50590'></iframe>
 <p>We decided to do the majority of the distance and all of the ascent on the first day by starting from Van d'en Haut. Getting there from Geneva was relatively easy, taking the train from Geneva to Martigny, then getting on the scenic (and touristic) <a href="https://www.myswitzerland.com/en-ch/experiences/mont-blanc-express/">Mont Blanc Express</a> to <em>Les Marécottes</em>, followed by the bus to <em>Van-d'en-Haut, camping</em>. In total, it takes 2:37. While the first two trains run frequently, the bus does not.</p>
 <p>The hike starts with a low to medium gradient gravel road and path. We had strong autumn vibes due to low clouds and the onset of autumn foliage.</p>
-<p><img src="../assets/img/2021-09-12-cabane-de-susanfe/1.jpg" alt="1"></p>
-<p><img src="../assets/img/2021-09-12-cabane-de-susanfe/2.jpg" alt="2"></p>
+<p><img src="https://willwill.blog/assets/img/2021-09-12-cabane-de-susanfe/1.jpg" alt="1"></p>
+<p><img src="https://willwill.blog/assets/img/2021-09-12-cabane-de-susanfe/2.jpg" alt="2"></p>
 <p>After 60-90 minutes, the expansive <em>lac de salanfe</em> appears behind the dam. While we had low-lying clouds which reminded me of the Pacific Northwest of the United States, the Dents du Midi and other 3000m peaks are visible.</p>
-<p><img src="../assets/img/2021-09-12-cabane-de-susanfe/3.jpg" alt="3"></p>
-<p><img src="../assets/img/2021-09-12-cabane-de-susanfe/4.jpg" alt="4"></p>
+<p><img src="https://willwill.blog/assets/img/2021-09-12-cabane-de-susanfe/3.jpg" alt="3"></p>
+<p><img src="https://willwill.blog/assets/img/2021-09-12-cabane-de-susanfe/4.jpg" alt="4"></p>
 <p>The trail is fairly flat for the next hour with panoramic views.</p>
-<p><img src="../assets/img/2021-09-12-cabane-de-susanfe/5.jpg" alt="5"></p>
-<p><img src="../assets/img/2021-09-12-cabane-de-susanfe/6.jpg" alt="6"></p>
-<p><img src="../assets/img/2021-09-12-cabane-de-susanfe/7.jpg" alt="7"></p>
+<p><img src="https://willwill.blog/assets/img/2021-09-12-cabane-de-susanfe/5.jpg" alt="5"></p>
+<p><img src="https://willwill.blog/assets/img/2021-09-12-cabane-de-susanfe/6.jpg" alt="6"></p>
+<p><img src="https://willwill.blog/assets/img/2021-09-12-cabane-de-susanfe/7.jpg" alt="7"></p>
 <p>From here, the path gets narrower and steeper, but stays accessible. There are impressive glaciers on the left, and the Dents du Midi towering on the right. This continues for almost an hour.</p>
-<p><img src="../assets/img/2021-09-12-cabane-de-susanfe/8.jpg" alt="8"></p>
-<p><img src="../assets/img/2021-09-12-cabane-de-susanfe/9.jpg" alt="9"></p>
-<p><img src="../assets/img/2021-09-12-cabane-de-susanfe/10.jpg" alt="10"></p>
-<p><img src="../assets/img/2021-09-12-cabane-de-susanfe/11.jpg" alt="11"></p>
+<p><img src="https://willwill.blog/assets/img/2021-09-12-cabane-de-susanfe/8.jpg" alt="8"></p>
+<p><img src="https://willwill.blog/assets/img/2021-09-12-cabane-de-susanfe/9.jpg" alt="9"></p>
+<p><img src="https://willwill.blog/assets/img/2021-09-12-cabane-de-susanfe/10.jpg" alt="10"></p>
+<p><img src="https://willwill.blog/assets/img/2021-09-12-cabane-de-susanfe/11.jpg" alt="11"></p>
 <p>For the final 10-15 minutes before the summit, the terrain changes to dramatic black shale rock. It was my first time to see such desolate, almost extraterrestrial landscapes in Switzerland. The low clouds probably added to this feeling, but I imagine it would be the same even on a sunny day.</p>
-<p><img src="../assets/img/2021-09-12-cabane-de-susanfe/12.jpg" alt="12"></p>
+<p><img src="https://willwill.blog/assets/img/2021-09-12-cabane-de-susanfe/12.jpg" alt="12"></p>
 <p>A pleasant sign stated that it was only another 30 minutes to the Cabane de Susanfe. The slow decent into this very remote valley was peaceful and beautiful. Recently fixating some of my frustration on noise pollution from engines in Geneva, we relished in the calm that only a valley with no roads can provide.</p>
-<p><img src="../assets/img/2021-09-12-cabane-de-susanfe/13.jpg" alt="13"></p>
-<p><img src="../assets/img/2021-09-12-cabane-de-susanfe/14.jpg" alt="14"></p>
-<p><img src="../assets/img/2021-09-12-cabane-de-susanfe/15.jpg" alt="15"></p>
+<p><img src="https://willwill.blog/assets/img/2021-09-12-cabane-de-susanfe/13.jpg" alt="13"></p>
+<p><img src="https://willwill.blog/assets/img/2021-09-12-cabane-de-susanfe/14.jpg" alt="14"></p>
+<p><img src="https://willwill.blog/assets/img/2021-09-12-cabane-de-susanfe/15.jpg" alt="15"></p>
 <p>However, calm doesn't mean quite, as the sheep soon made us realize.</p>
-<p><img src="../assets/img/2021-09-12-cabane-de-susanfe/16.jpg" alt="16"></p>
-<p><img src="../assets/img/2021-09-12-cabane-de-susanfe/17.jpg" alt="17"></p>
+<p><img src="https://willwill.blog/assets/img/2021-09-12-cabane-de-susanfe/16.jpg" alt="16"></p>
+<p><img src="https://willwill.blog/assets/img/2021-09-12-cabane-de-susanfe/17.jpg" alt="17"></p>
 <p>After enjoying the remoteness and the changing weather, we descended onto the cabin. I was especially excited since it was the first time I had stayed in an SAC cabin. The experience was great – a vast improvement in comfort over the wild camping that I am used to. Coming from North America, where publicly-accessible mountain cabins are exceedingly rare and barebones, this was a treat, and is something that should be maintained.</p>
-<p><img src="../assets/img/2021-09-12-cabane-de-susanfe/18.jpg" alt="18"></p>
-<p><img src="../assets/img/2021-09-12-cabane-de-susanfe/19.jpg" alt="19"></p>
+<p><img src="https://willwill.blog/assets/img/2021-09-12-cabane-de-susanfe/18.jpg" alt="18"></p>
+<p><img src="https://willwill.blog/assets/img/2021-09-12-cabane-de-susanfe/19.jpg" alt="19"></p>
 <h2>Day 2: Cabane de Susanfe – Champéry</h2>
 <iframe class='strava' height='410' width='565px' frameborder='0' allowtransparency='true' scrolling='no' src='https://www.strava.com/activities/5949935799/embed/3934ac5b4505878aa15c14a13cf92504c367c7f8'></iframe>
 <p>The autumn vibes parted for gorgeous clear skies. With schedules running early in these mountain huts, we were able to enjoy the prolongued sunrise before and after breakfast, as well as during the first part of our hike.</p>
-<p><img src="../assets/img/2021-09-12-cabane-de-susanfe/20.jpg" alt="20"></p>
-<p><img src="../assets/img/2021-09-12-cabane-de-susanfe/21.jpg" alt="21"></p>
+<p><img src="https://willwill.blog/assets/img/2021-09-12-cabane-de-susanfe/20.jpg" alt="20"></p>
+<p><img src="https://willwill.blog/assets/img/2021-09-12-cabane-de-susanfe/21.jpg" alt="21"></p>
 <p>We took the descent slow as the stunning landscapes made me stop for a photo ever few minutes. Towards the exit of the haning <em>Susanfe</em> valley, I was truly awestruck by the grand beauty of this place. It really has it all – towering peaks, glaciers, waterfalls, idilic lone trees, and grassy patches. I could have spent all day here.</p>
-<p><img src="../assets/img/2021-09-12-cabane-de-susanfe/22.jpg" alt="22"></p>
-<p><img src="../assets/img/2021-09-12-cabane-de-susanfe/23.jpg" alt="23"></p>
-<p><img src="../assets/img/2021-09-12-cabane-de-susanfe/24.jpg" alt="24"></p>
-<p><img src="../assets/img/2021-09-12-cabane-de-susanfe/25.jpg" alt="25"></p>
-<p><img src="../assets/img/2021-09-12-cabane-de-susanfe/26.jpg" alt="26"></p>
+<p><img src="https://willwill.blog/assets/img/2021-09-12-cabane-de-susanfe/22.jpg" alt="22"></p>
+<p><img src="https://willwill.blog/assets/img/2021-09-12-cabane-de-susanfe/23.jpg" alt="23"></p>
+<p><img src="https://willwill.blog/assets/img/2021-09-12-cabane-de-susanfe/24.jpg" alt="24"></p>
+<p><img src="https://willwill.blog/assets/img/2021-09-12-cabane-de-susanfe/25.jpg" alt="25"></p>
+<p><img src="https://willwill.blog/assets/img/2021-09-12-cabane-de-susanfe/26.jpg" alt="26"></p>
 <p>Finally prying ourselves from the high valley, we were pleased with the descent. The path follows a river-turned-waterfall, but wasn't too difficult to traverse. Chains were mounted near especially steep sections.</p>
-<p><img src="../assets/img/2021-09-12-cabane-de-susanfe/27.jpg" alt="27"></p>
-<p><img src="../assets/img/2021-09-12-cabane-de-susanfe/28.jpg" alt="28"></p>
+<p><img src="https://willwill.blog/assets/img/2021-09-12-cabane-de-susanfe/27.jpg" alt="27"></p>
+<p><img src="https://willwill.blog/assets/img/2021-09-12-cabane-de-susanfe/28.jpg" alt="28"></p>
 <p>The descent was longer than we anticipated – roughly 5 hours with all of our stops, but only about 3 hours of moving time. The trail stayed beautiful all the way into Champéry, where we easily caught a train back to Geneva via Aigle (these connections run at least hourly, so it's more flexible than departing from Van d'en Haut.</p>
 <h2>Summary</h2>
 <p>Overall, this is a fulfilling, diverse, wild, yet accessible hike. While we met some people who did the whole hike in one day, it seems more enjoyable to take your time to take in all that this area has to offer.</p>
@@ -602,16 +610,16 @@
         <pubDate>Thu, 30 Jul 2020 00:00:00 GMT</pubDate>
         <guid>https://willwill.blog/geneva-genova/</guid>
         <description>In July 2020, a friend and I biked 524km from Geneva to Genova through France. We pushed ourselves to our limits, and had an unforgettable and incredible adventure as a result.</description>
-        <content:encoded><![CDATA[<p><img src="../assets/img/2020-07-14-geneva-genova/25.jpg" alt="25"></p>
+        <content:encoded><![CDATA[<p><img src="https://willwill.blog/assets/img/2020-07-14-geneva-genova/25.jpg" alt="25"></p>
 <h2>Preface</h2>
 <p>Any story written in 2020 must be prefaced with COVID-19. Our story is no exception.</p>
 <p>Francesco and I had met through our shared masters program in Geneva in the autumn of 2019, and instantly began thinking of outdoor excursions to do in our vicinity. While we both enjoy hiking and skiing, Francesco's main outdoor calling is cycling. I've always been comfortable on a bike, and had completed an ill-prepared but thoroughly enjoyable month-long trip across the North Island of New Zealand in 2014, but had never considered myself a cyclist. Heck, the closest thing I had ever owned to a road bike was a single speed / fixie Schwinn with drop handlebars during my undergraduate studies.</p>
 <p>Francesco, on the other hand, was more at home on the saddle. Having grown up in Genova, he had gone on several trips with his cycling uncle during his formative years, and had some time riding on carbon fiber under his belt. Being in Switzerland after all, famously home to not only beautiful mountain passes and lush landscapes, but also perfectly paved roads, cycling was definitely on his list of things to do there.</p>
 <p>In March, after COVID-19 restrictions came into effect essentially freeing the roads of cars, plus a few fun but excruciating rides on my piece of crap city bike, I upgraded to a house-brand aluminum bike, and our training began. Or so we realized in hindsight, since really we just started riding frequently around the <em>Grand Genève</em> region. Our weekly rides of several dozen kilometers quickly turned into longer and thrice-weekly rides which ventured into neighboring <em>canton Vaud</em>. Little did I know that Francesco was going almost daily.</p>
-<p><img src="../assets/img/2020-07-14-geneva-genova/mont-tendre.jpg" alt="Mont Tendre"></p>
+<p><img src="https://willwill.blog/assets/img/2020-07-14-geneva-genova/mont-tendre.jpg" alt="Mont Tendre"></p>
 <p>Later that Spring, we starting dreaming of bigger, further, and more adventurous rides. We did an overnight 'bike to hike' camping trip, and then a full circuit of lake Geneva, <em>tour du lac</em> <code>219km</code> . At this point we planned a 2 day (really, 2.5 day) Rhône Route <code>310km</code> trip <em>(trip report in the future)</em> with another willing accomplice, Johan, and then our first truly daring adventure, a trip home for him to Genova.</p>
-<p><img src="../assets/img/2020-07-14-geneva-genova/tour-du-lac.jpg" alt="Tour du Lac"></p>
-<p><img src="../assets/img/2020-07-14-geneva-genova/rhone.jpg" alt="Rhône"></p>
+<p><img src="https://willwill.blog/assets/img/2020-07-14-geneva-genova/tour-du-lac.jpg" alt="Tour du Lac"></p>
+<p><img src="https://willwill.blog/assets/img/2020-07-14-geneva-genova/rhone.jpg" alt="Rhône"></p>
 <p>At <code>524km</code> and <code>8007m</code> of elevation gain, this trip headed SSE from Switzerland through France and into Italy before ending on the Mediterranean. This trip passed through 12 cols (mountain passes), including the famous <em>Col Du Galibier</em> in France and <em>Col d'Agnel</em> on the French/Italian border. We took a break in a tiny village in which Francesco's family has accommodation to meet his family and our friends before continuing to his home town.</p>
 <p>Let the trip begin!</p>
 <h2>Geneva to Genova</h2>
@@ -619,101 +627,101 @@
 <h2>Day 1: Geneva - Col de Tamiè</h2>
 <iframe src="https://ridewithgps.com/embeds?type=trip&id=60752974&title=Day%201%3A%20Geneva%20-%20Col%20de%20Tami%C3%A8&metricUnits=true&sampleGraph=true&privacyCode=jhdM6pm8guZgonT1" style="width: 1px; min-width: 100%; height: 700px; border: none;" scrolling="no"></iframe>
 <p>Excitement was in the air when we set off in the early afternoon. It was Francesco's last day in Geneva, so on top of the normally complex logistics of packing for a bike trip was the fact that he had to move out at the same time. With the house cleaned and adventure calling, we set off.</p>
-<p><img src="../assets/img/2020-07-14-geneva-genova/01.jpg" alt="Departure"></p>
+<p><img src="https://willwill.blog/assets/img/2020-07-14-geneva-genova/01.jpg" alt="Departure"></p>
 <p>We almost immediately crossed into France. With our sights set on Annecy for dinner and our bikes being in good shape (so far), we pushed through with barely any stops. The landscape was nice, but the constant traffic and mediocre bike lane detracted from the experience. Spirits were high, however, since we knew cycling nirvana was ahead.</p>
-<p><img src="../assets/img/2020-07-14-geneva-genova/02.jpg" alt="Annecy"></p>
+<p><img src="https://willwill.blog/assets/img/2020-07-14-geneva-genova/02.jpg" alt="Annecy"></p>
 <p>Beautiful Annecy at sunset further improved our mood. Beautiful cheese and beers did so even more.</p>
-<p><img src="../assets/img/2020-07-14-geneva-genova/03.jpg" alt="Dinner"></p>
+<p><img src="https://willwill.blog/assets/img/2020-07-14-geneva-genova/03.jpg" alt="Dinner"></p>
 <p>We felt far too accomplished for only cycling for a few hours, and thus spent too much time in the city. Once the beers and food wore off (which took a while), we enjoyed the wonderful landscape and separated cycling path along <em>lac d'Annecy</em> during dusk.</p>
-<p><img src="../assets/img/2020-07-14-geneva-genova/04.jpg" alt="Departure"></p>
-<p><img src="../assets/img/2020-07-14-geneva-genova/05.jpg" alt="Departure"></p>
+<p><img src="https://willwill.blog/assets/img/2020-07-14-geneva-genova/04.jpg" alt="Departure"></p>
+<p><img src="https://willwill.blog/assets/img/2020-07-14-geneva-genova/05.jpg" alt="Departure"></p>
 <p>The calm, speedy route continued into mellow climbs with minimal traffic. Dusk turned to twilight, which turned into the black of night. We only arrived to the unknown <em>col de tamiè</em> at around 23:00.</p>
-<p><img src="../assets/img/2020-07-14-geneva-genova/06.jpg" alt="Col du Tamie"></p>
+<p><img src="https://willwill.blog/assets/img/2020-07-14-geneva-genova/06.jpg" alt="Col du Tamie"></p>
 <p>We pitched our tent in a grass field and promptly went to bed, dreaming on the days to come.</p>
 <h2>Day 2: Col de Tamiè - Col du Télégraphie</h2>
 <iframe src="https://ridewithgps.com/embeds?type=trip&id=60752997&title=Day%202%3A%20Col%20de%20Tami%C3%A8%20-%20Col%20du%20T%C3%A9l%C3%A9graphie&metricUnits=true&sampleGraph=true&privacyCode=Sg3dGh2Jtt7j7YO6" style="width: 1px; min-width: 100%; height: 700px; border: none;" scrolling="no"></iframe>
-<p><img src="../assets/img/2020-07-14-geneva-genova/07.jpg" alt="Campground"></p>
+<p><img src="https://willwill.blog/assets/img/2020-07-14-geneva-genova/07.jpg" alt="Campground"></p>
 <p>The wonderful thing about sleeping at the top of a <em>col</em> is that a chill descent is always the first part of your ride the next day. We enjoyed one though a forest with chirping birds, followed by a <em>café au lait</em> in a sketchy bar.</p>
 <p>The following morning ride was lovely but not memorable - not because of a lack of scenery, but because Francesco and I had some important decisions to make for our master's program. COVID-19 was making our planned move to Beijing in September uncertain, so we had some decisions to make. Our cyclist-friendly solution: utilize the remote working skills from the spring to call into a zoom meeting while cycling.</p>
 <p>Afterwards, and with thoughts of future life plans in the front of our heads, we climbed through forested roads and took breaks at opportunistic viewpoints. We continued into the quaint town of <em>La Chambre</em> and ate more good food and drank more good beer.</p>
 <p>Johan, our crazy athletic friend, kept our pace despite having a slower bike and fewer bike trips under his belt (albeit only one less than me). However, he decided shortly before leaving Geneva that he would only join us for the first two days. He, along with several of our friends, had planned a long-distance hike in the Dolomites just a few days after our planned arrival, so he didn't want to risk time or injury by competing the full bike trip with us. Thus, we dropped him off at <em>Saint-Jean-de-Maurienne</em> where he rode the train back to Geneva.</p>
 <p>Sad but determined, Francesco and I pushed on into the heart of this part of the alps, and the heart of our adventure. Before our first big <em>col</em> of the trip, <em>Col du Télégraphie</em> <code>1566m</code>, we filled up on sweets from a wonderful bakery and owner (see the notes below).</p>
-<p><img src="../assets/img/2020-07-14-geneva-genova/08.jpg" alt="Telegraphie"></p>
+<p><img src="https://willwill.blog/assets/img/2020-07-14-geneva-genova/08.jpg" alt="Telegraphie"></p>
 <p>The climb was steep and tough, being our first main one. The thought of unknown landscapes drove us up this <em>col</em>, and many others - we reached the top around 21:00. Since we couldn't find a descent place to wild camp, we splurged on a campground with a shower at the bottom of our final descent of the day, and the start of the most famous climb of our trip.</p>
 <h2>Day 3: Col du Télégraphie - Col Du Galibier - Col d'Izoard</h2>
 <iframe src="https://ridewithgps.com/embeds?type=trip&id=60752996&title=Day%203%3A%20Col%20du%20T%C3%A9l%C3%A9graphie%20-%20Col%20Du%20Galibier%20-%20Col%20d%E2%80%99Izoard&metricUnits=true&sampleGraph=true&privacyCode=dIdWZHUxS7TR0swm" style="width: 1px; min-width: 100%; height: 700px; border: none;" scrolling="no"></iframe>
 <p>We took our time getting up, showering and packing. This was a huge mistake. The beautiful sunny morning turned into a scorching mid-morning. By then, we pushed onwards up the famed <em>Col Du Galibier</em> <code>2642m</code>, an unbelievably beautiful but brutal climb, made worse by our slow-moving decision.</p>
 <p>Our start at roughly 12:00 lead to us dripping with sweat, and filling our brains with doubt, almost instantly. The main problem is that there is essentially zero shade on the entire climb. We took short breaks on the shady side of immovable objects, but this too was limited due to the angle of the sun directly above us.</p>
-<p><img src="../assets/img/2020-07-14-geneva-genova/09.jpg" alt="Galibier"></p>
+<p><img src="https://willwill.blog/assets/img/2020-07-14-geneva-genova/09.jpg" alt="Galibier"></p>
 <p>The scenery, once again, propelled us upwards.</p>
-<p><img src="../assets/img/2020-07-14-geneva-genova/10.jpg" alt="10"></p>
+<p><img src="https://willwill.blog/assets/img/2020-07-14-geneva-genova/10.jpg" alt="10"></p>
 <p>We stopped quickly roughly two thirds of the way up to refill our bottles and our inspiration from the scenery which surrounded us.</p>
 <p>The closer we got to the top, the more it pulled us uphill. With perfect conditions, several cameramen, and friendly competition, we reached the <em>col</em>.</p>
-<p><img src="../assets/img/2020-07-14-geneva-genova/11.jpg" alt="Galibier"></p>
-<p><img src="../assets/img/2020-07-14-geneva-genova/12.jpg" alt="Galibier"></p>
+<p><img src="https://willwill.blog/assets/img/2020-07-14-geneva-genova/11.jpg" alt="Galibier"></p>
+<p><img src="https://willwill.blog/assets/img/2020-07-14-geneva-genova/12.jpg" alt="Galibier"></p>
 <p>This was the first point in the trip where we felt truly accomplished. We stayed for a while to just take it all in. Then, satisfied, we got what we had earned - an amazing descent.</p>
-<p><img src="../assets/img/2020-07-14-geneva-genova/13.jpg" alt="Galibier descent"></p>
+<p><img src="https://willwill.blog/assets/img/2020-07-14-geneva-genova/13.jpg" alt="Galibier descent"></p>
 <p>Most people would stop after such a <em>col</em> and such an achievement. However, we did not. While I'm very proud of my previous adventures, Francesco deserves all of the credit for planning such crazy, but achievable ones. Thus, we marched on for our second major climb of the day - <em>Col d'Izoard</em> <code>2360m</code>, almost as high as where we were when we realized we'd have to summit twice on the same day.</p>
 <p>After an incredible and long descent on smooth asphalt, we rested in a park in <em>Briançon</em> and had a late lunch there, gear, clothes and food spread out on the grass. The feeling was fantastic, just laying there with good French ingredients on a warm summer afternoon. But as with life, and especially with bike adventures, no emotion lasts forever. Around 19:00, we set off for our second climb of the day.</p>
-<p><img src="../assets/img/2020-07-14-geneva-genova/14.jpg" alt="Break"></p>
+<p><img src="https://willwill.blog/assets/img/2020-07-14-geneva-genova/14.jpg" alt="Break"></p>
 <p>This trip, in all its splendidness, was also painful at times. I sometimes have neck pain, from what I assume was an injury playing American Football in high school. The long, locked posture of clutching handlebars and supporting body weight with shoulders proved to be a disaster for my neck, which was really painful on the descents and later into the day. The climb was excruciating at first, but some stretches and breaks proved a respite from the pain, at least long enough to make some progress upwards.</p>
 <p>The pain slowly morphed into pleasure as the sun began to set behind the mountains. While <em>Galibier</em> was epic, it was also busy. The climb up to <em>Izoard</em> was almost deserted. The pine trees, painted sky and perfect asphalt made it an unexpected gem of our trip, and reminded me of the Rockies in North America, where I did my undergraduate studies.</p>
-<p><img src="../assets/img/2020-07-14-geneva-genova/15.jpg" alt="d'Izoard"></p>
-<p><img src="../assets/img/2020-07-14-geneva-genova/16.jpg" alt="d'Izoard"></p>
+<p><img src="https://willwill.blog/assets/img/2020-07-14-geneva-genova/15.jpg" alt="d'Izoard"></p>
+<p><img src="https://willwill.blog/assets/img/2020-07-14-geneva-genova/16.jpg" alt="d'Izoard"></p>
 <p>I'm sure we had some fatigue climbing up, and probably stressed about something at the time, but all of these negative emotions fade with time. What matters is the climb was beautiful, and that we were on an adventure of a lifetime. Oh, and that we made it to the top and camped nearby.</p>
-<p><img src="../assets/img/2020-07-14-geneva-genova/17.jpg" alt="d'Izoard"></p>
+<p><img src="https://willwill.blog/assets/img/2020-07-14-geneva-genova/17.jpg" alt="d'Izoard"></p>
 <h2>Day 4: Col d'Izoard - Col d'Agnel</h2>
 <iframe src="https://ridewithgps.com/embeds?type=trip&id=60752994&title=Day%204%3A%20Col%20d%E2%80%99Izoard%20-%20Col%20d%E2%80%99Agnel&metricUnits=true&sampleGraph=true&privacyCode=ILoKgTjwORgvqHEG" style="width: 1px; min-width: 100%; height: 700px; border: none;" scrolling="no"></iframe>
-<p><img src="../assets/img/2020-07-14-geneva-genova/18.jpg" alt="d'Izoard"></p>
+<p><img src="https://willwill.blog/assets/img/2020-07-14-geneva-genova/18.jpg" alt="d'Izoard"></p>
 <p>The gorgeously calm morning gave us no sense of the excruciating climb in store for us later. We were up early, and left early, since our campground was exactly in the middle of a touristic viewpoint. The early sun, followed by the nearly <code>1000m</code> of frigid descent into <em>Parc naturel régional du Queyras</em>, woke us up.</p>
 <p>At the bottom of this descent was a metaphor in real life - a T intersection, where we had to choose to turn left or right. We decided to pause for a few minutes to check our maps. Like in life, sometimes the most influential decisions barely register on in our consciousness. We casually contemplated either turning right, as originally planned, and climbing two sizable cols before crossing into Italy. As we were seeing where turning left would take us, an older man came from the right and towards the left. He told us about the beauty and terror that was to our left and is <em>Col d'Agnel</em> <code>2744m</code>, a full <code>1400m</code> the fork. We pretended to discuss our options, but we both already knew that we'd be turning left.</p>
 <p>After lunch in a quaint village at the base of the climb, we spent the next 3 hours grinding our chains and pedals to get to what felt like the top of the world. This was an absolute beast of a col, but one of rugged, almost otherworldly beauty. Two <code>700m</code> climbs of 7-13% gradient were split almost equally with a reprieve of a few kilometers at a 0-2% incline. Quaint villages and grasslands below gave way to rugged peaks and narrow roads up above. What stayed constant was the unrelenting sun turning us into lobsters, as any sunscreen quickly sweat away.</p>
-<p><img src="../assets/img/2020-07-14-geneva-genova/19.jpg" alt="d'Agnel"></p>
-<p><img src="../assets/img/2020-07-14-geneva-genova/20.jpg" alt="d'Agnel"></p>
-<p><img src="../assets/img/2020-07-14-geneva-genova/21.jpg" alt="d'Agnel"></p>
-<p><img src="../assets/img/2020-07-14-geneva-genova/22.jpg" alt="d'Agnel"></p>
+<p><img src="https://willwill.blog/assets/img/2020-07-14-geneva-genova/19.jpg" alt="d'Agnel"></p>
+<p><img src="https://willwill.blog/assets/img/2020-07-14-geneva-genova/20.jpg" alt="d'Agnel"></p>
+<p><img src="https://willwill.blog/assets/img/2020-07-14-geneva-genova/21.jpg" alt="d'Agnel"></p>
+<p><img src="https://willwill.blog/assets/img/2020-07-14-geneva-genova/22.jpg" alt="d'Agnel"></p>
 <p>The final push to the top was a true test of mental grit and determination. Several times, I thought that the unending road was insurmountable. There's a reason this section of the report is short - my brain didn't think about anything more verbose than getting to the top.</p>
 <p>Somehow, we made it.</p>
-<p><img src="../assets/img/2020-07-14-geneva-genova/24.jpg" alt="d'Agnel"></p>
+<p><img src="https://willwill.blog/assets/img/2020-07-14-geneva-genova/24.jpg" alt="d'Agnel"></p>
 <p>The emotions we felt, combined with the views, were simply indescribable. Such jagged mountains and vibrant vegetation shouldn't be possible to coexist!</p>
-<p><img src="../assets/img/2020-07-14-geneva-genova/25.jpg" alt="d'Agnel"></p>
+<p><img src="https://willwill.blog/assets/img/2020-07-14-geneva-genova/25.jpg" alt="d'Agnel"></p>
 <p>We savored the moment, the look back across our traversed terrain in France, and peered into our upcoming adventures in Italy. I have seen quite a few beautiful landscapes and vistas, but this was one special.</p>
 <p>The final 15km descent of the day was beautiful and wonderful, but also intense since the road was filled with potholes and the descent angle was well over 10%. That, and the long straight descents made racing so tantalizing but so risky.</p>
 <p>We stopped early in <em>Pontechianale</em> to enjoy the perfect weather, emotions and gelato.</p>
-<p><img src="../assets/img/2020-07-14-geneva-genova/26.jpg" alt="Gelato"></p>
+<p><img src="https://willwill.blog/assets/img/2020-07-14-geneva-genova/26.jpg" alt="Gelato"></p>
 <h2>Day 5: Col d'Agnel - Castelvecchio di Rocca Barbena</h2>
 <iframe src="https://ridewithgps.com/embeds?type=trip&id=60752995&title=Day%205%3A%20Col%20d%E2%80%99Agnel%20-%20Castelvecchio%20di%20Rocca%20Barbena&metricUnits=true&sampleGraph=true&privacyCode=M5A539q86ZX73LKE" style="width: 1px; min-width: 100%; height: 700px; border: none;" scrolling="no"></iframe>
 <p>If the word motivation described our ride yesterday, the word of the day today was grit.</p>
 <p>An early start and incredibly long descent (50km!) was already not easy due to the heat, the condition of my neck, and the terrible road conditions. We only afforded ourselves a 10 minute coffee break next to a petrol station before turning our minds off and our leg muscles on, as for the next several hours, we averaged 30 km/h through hot, flat, unforgiving terrain.</p>
-<p><img src="../assets/img/2020-07-14-geneva-genova/27.jpg" alt="Italian roads"></p>
+<p><img src="https://willwill.blog/assets/img/2020-07-14-geneva-genova/27.jpg" alt="Italian roads"></p>
 <p>Our fuel stop for lunch in <em>Mondovi</em> lead to several baby cols. The amount we were sweating seemed like we climbed <em>col d'Agnel</em> all over again, as the 32°C heat, humidity and sunshine felt like we were in an oven.</p>
 <p>Later it got worse, as we climbed several 15-20% roads and passed through <em>località Fornaci</em> - the furnace.</p>
-<p><img src="../assets/img/2020-07-14-geneva-genova/28.jpg" alt="Fornaci"></p>
+<p><img src="https://willwill.blog/assets/img/2020-07-14-geneva-genova/28.jpg" alt="Fornaci"></p>
 <p>Today was short on photos and memories, as we had only one thing on our mind - meeting our friends, and Francesco's family, in <em>Castelvecchio di Rocca Barbena</em>. Since a mutual friend had claimed it was home to the best bar in the world, we were determined to get there and celebrate, and rest.</p>
 <p>One final ice cream break in <em>Bagnasco</em> in a dive bar, and then one final col on our own before we would be guided to victory by Francesco's uncle Michele (another cycling enthusiast).</p>
 <p>I really don't remember that climb, but I remember when we made it to the top and saw Michele waiting for us. We were so drained, but so close that our spirits then rose after seeing him. We had one more &quot;false flat&quot; to push through. It's crazy how much control the mind has over the body. We flew through the final col of the trip, and saw our majestic descent into <em>Castelvecchio</em>.</p>
-<p><img src="../assets/img/2020-07-14-geneva-genova/29.jpg" alt="Victory"></p>
-<p><img src="../assets/img/2020-07-14-geneva-genova/30.jpg" alt="Castelvecchio"></p>
-<p><img src="../assets/img/2020-07-14-geneva-genova/31.jpg" alt="Castelvecchio"></p>
+<p><img src="https://willwill.blog/assets/img/2020-07-14-geneva-genova/29.jpg" alt="Victory"></p>
+<p><img src="https://willwill.blog/assets/img/2020-07-14-geneva-genova/30.jpg" alt="Castelvecchio"></p>
+<p><img src="https://willwill.blog/assets/img/2020-07-14-geneva-genova/31.jpg" alt="Castelvecchio"></p>
 <p>With family and friends waiting, and 470km behind us, we knew we made it to the main destination (even if it wasn't the final one).</p>
 <h2>Break in Castelvecchio</h2>
 <p>Friends, family, food, adventure, hikes, chilling, my birthday, and everything else that's good in life.</p>
-<p><img src="../assets/img/2020-07-14-geneva-genova/32.jpg" alt="Castelvecchio"></p>
-<p><img src="../assets/img/2020-07-14-geneva-genova/33.jpg" alt="Castelvecchio"></p>
+<p><img src="https://willwill.blog/assets/img/2020-07-14-geneva-genova/32.jpg" alt="Castelvecchio"></p>
+<p><img src="https://willwill.blog/assets/img/2020-07-14-geneva-genova/33.jpg" alt="Castelvecchio"></p>
 <p>Our 3 day break turned into 7. It could have easily turned into a lifetime.</p>
-<p><img src="../assets/img/2020-07-14-geneva-genova/34.jpg" alt="Castelvecchio"></p>
+<p><img src="https://willwill.blog/assets/img/2020-07-14-geneva-genova/34.jpg" alt="Castelvecchio"></p>
 <p>I celebrated my birthday in the only way we knew how to - a birthday ride.</p>
 <iframe src="https://ridewithgps.com/embeds?type=trip&id=60753069&title=Colle%20di%20Caprauna%20Birthday%20Ride&metricUnits=true&sampleGraph=true&privacyCode=e0whdQI9TBrzr9lQ" style="width: 1px; min-width: 100%; height: 700px; border: none;" scrolling="no"></iframe>
-<p><img src="../assets/img/2020-07-14-geneva-genova/35.jpg" alt="Castelvecchio"></p>
+<p><img src="https://willwill.blog/assets/img/2020-07-14-geneva-genova/35.jpg" alt="Castelvecchio"></p>
 <h2>Day 6: Castelvecchio di Rocca Barbena - Celle</h2>
 <iframe src="https://ridewithgps.com/embeds?type=trip&id=60752993&title=%20Day%206%3A%20Castelvecchio%20di%20Rocca%20Barbena%20-%20Celle&metricUnits=true&sampleGraph=true&privacyCode=XqPoen1fbg2cArTp" style="width: 1px; min-width: 100%; height: 700px; border: none;" scrolling="no"></iframe>
 <p>All things in life must end. Thankfully, and hopefully, the bad things. But unfortunately, also the good things. Our friend was right, it was the best bar in the world.</p>
 <p>The end of a good thing can be the start of another. In this case, Francesco's grandma lives just down the hill (ok, almost 70km away) on the coast. Our descent and flat was filled with more beauty.</p>
-<p><img src="../assets/img/2020-07-14-geneva-genova/36.jpg" alt="Sea"></p>
+<p><img src="https://willwill.blog/assets/img/2020-07-14-geneva-genova/36.jpg" alt="Sea"></p>
 <p>And food. And coffee.</p>
-<p><img src="../assets/img/2020-07-14-geneva-genova/37.jpg" alt="Cafe"></p>
+<p><img src="https://willwill.blog/assets/img/2020-07-14-geneva-genova/37.jpg" alt="Cafe"></p>
 <p>Who knew the sea could be so blue?</p>
-<p><img src="../assets/img/2020-07-14-geneva-genova/38.jpg" alt="Castelvecchio"></p>
+<p><img src="https://willwill.blog/assets/img/2020-07-14-geneva-genova/38.jpg" alt="Castelvecchio"></p>
 <h2>Day 7: Celle - Genova</h2>
 <iframe src="https://ridewithgps.com/embeds?type=trip&id=60752992&title=Day%207%3A%20Celle%20-%20Genova&metricUnits=true&sampleGraph=true&privacyCode=5tyziRvNuXyK3FVa" style="width: 1px; min-width: 100%; height: 700px; border: none;" scrolling="no"></iframe>
 <p>The last day was our shortest day as well, as only 36km separated us from the end of an amazing adventure. There is no triumphant <em>defy all odds and succeed</em> end story here. We knew we would make it, but just weren't sure if we would make it in time for lunch.</p>
@@ -732,97 +740,97 @@
         <pubDate>Thu, 30 Jul 2020 00:00:00 GMT</pubDate>
         <guid>https://willwill.blog/apennines/</guid>
         <description>Five days of adventure and exhaustion.</description>
-        <content:encoded><![CDATA[<p><em>This is the 2nd half of a bike trip in Summer 2020 with a friend. Read about our trip from <a href="/geneva-genova">Geneva to Genova</a>.</em></p>
+        <content:encoded><![CDATA[<p><em>This is the 2nd half of a bike trip in Summer 2020 with a friend. Read about our trip from <a href="https://willwill.blog/geneva-genova">Geneva to Genova</a>.</em></p>
 <iframe src="https://ridewithgps.com/embeds?type=trip&id=92525555&title=Across%20the%20Central%20Apennines&metricUnits=true&sampleGraph=true" style="width: 1px; min-width: 100%; height: 700px; border: none;" scrolling="no"></iframe>
 <h2>Day 0: Genova to Lago Trasimeno</h2>
 <p>We got lucky – a family friend of Francesco was driving from Genova to Rome, and was able to take us, along with two bikes and bike bags, in his sedan. We stopped for dinner in Firenze (Florence) and slept soundly at a campground north of Perugia.</p>
 <h2>Day 1: Lago Trasimeno to Spoleto</h2>
 <iframe class='strava' height='410px' width='565px' frameborder='0' allowtransparency='true' scrolling='no' src='https://www.strava.com/activities/3772767077/embed/fb6f62fdd03f81d4827023a17cfbcbc5720a3d39'></iframe>
-<p><img src="../assets/img/2022-06-07-apennines/1.jpg" alt="1"></p>
-<p>Having fully recovered, we were eager to get cycling again. In continuation with our trip from <a href="/geneva-genova">Geneva to Genova</a>, the weather was just perfect, as was starting nearly every morning with great coffee and croissants.</p>
-<p><img src="../assets/img/2022-06-07-apennines/2.jpg" alt="2"></p>
+<p><img src="https://willwill.blog/assets/img/2022-06-07-apennines/1.jpg" alt="1"></p>
+<p>Having fully recovered, we were eager to get cycling again. In continuation with our trip from <a href="https://willwill.blog/geneva-genova">Geneva to Genova</a>, the weather was just perfect, as was starting nearly every morning with great coffee and croissants.</p>
+<p><img src="https://willwill.blog/assets/img/2022-06-07-apennines/2.jpg" alt="2"></p>
 <p>A mix of good pavement, compact gravel, and good views kept us going until the sight of our next destination lured us in – the magnificent town of Assisi.</p>
-<p><img src="../assets/img/2022-06-07-apennines/3.jpg" alt="3"></p>
+<p><img src="https://willwill.blog/assets/img/2022-06-07-apennines/3.jpg" alt="3"></p>
 <p>We spent most of the afternoon exploring this amazing town.</p>
-<p><img src="../assets/img/2022-06-07-apennines/4.jpg" alt="4"></p>
-<p><img src="../assets/img/2022-06-07-apennines/5.jpg" alt="5"></p>
-<p><img src="../assets/img/2022-06-07-apennines/6.jpg" alt="6"></p>
-<p><img src="../assets/img/2022-06-07-apennines/7.jpg" alt="7"></p>
+<p><img src="https://willwill.blog/assets/img/2022-06-07-apennines/4.jpg" alt="4"></p>
+<p><img src="https://willwill.blog/assets/img/2022-06-07-apennines/5.jpg" alt="5"></p>
+<p><img src="https://willwill.blog/assets/img/2022-06-07-apennines/6.jpg" alt="6"></p>
+<p><img src="https://willwill.blog/assets/img/2022-06-07-apennines/7.jpg" alt="7"></p>
 <p>We cycled along a bike path until we could pitch our tent under the cover of darkenss.</p>
 <h2>Day 2: Spoleto – Piano Grande di Norcia</h2>
 <p>What was I saying about the Italian breakfasts being one of the best things about biking here?</p>
-<p><img src="../assets/img/2022-06-07-apennines/8.jpg" alt="8"></p>
-<p><img src="../assets/img/2022-06-07-apennines/9.jpg" alt="9"></p>
+<p><img src="https://willwill.blog/assets/img/2022-06-07-apennines/8.jpg" alt="8"></p>
+<p><img src="https://willwill.blog/assets/img/2022-06-07-apennines/9.jpg" alt="9"></p>
 <p>We spent most of the morning exploring Spoleto. Its architecture, churches, and food were worth taking time to appreciate.</p>
-<p><img src="../assets/img/2022-06-07-apennines/10.jpg" alt="10"></p>
-<p><img src="../assets/img/2022-06-07-apennines/11.jpg" alt="11"></p>
-<p><img src="../assets/img/2022-06-07-apennines/12.jpg" alt="12"></p>
+<p><img src="https://willwill.blog/assets/img/2022-06-07-apennines/10.jpg" alt="10"></p>
+<p><img src="https://willwill.blog/assets/img/2022-06-07-apennines/11.jpg" alt="11"></p>
+<p><img src="https://willwill.blog/assets/img/2022-06-07-apennines/12.jpg" alt="12"></p>
 <p>We may have gone a bit overboard with our lunch, including a truffle-infused egg scramble, smokey parmigiana, seafood pasta and prosecco.</p>
 <p>Only around 3pm did we depart, and after making a wrong turn and getting caught in a storm, we were finally really cycling after 4pm.</p>
 <p>The path followed an old railway for roughly 10km, including a 2km long pitch black tunnel, and terrain that was barely rideable on a road bike. Little did we know some of the terrain we'd encounter later on the trip...</p>
-<p><img src="../assets/img/2022-06-07-apennines/13.jpg" alt="13"></p>
-<p><img src="../assets/img/2022-06-07-apennines/14.jpg" alt="14"></p>
-<p><img src="../assets/img/2022-06-07-apennines/15.jpg" alt="15"></p>
-<p><img src="../assets/img/2022-06-07-apennines/16.jpg" alt="16"></p>
+<p><img src="https://willwill.blog/assets/img/2022-06-07-apennines/13.jpg" alt="13"></p>
+<p><img src="https://willwill.blog/assets/img/2022-06-07-apennines/14.jpg" alt="14"></p>
+<p><img src="https://willwill.blog/assets/img/2022-06-07-apennines/15.jpg" alt="15"></p>
+<p><img src="https://willwill.blog/assets/img/2022-06-07-apennines/16.jpg" alt="16"></p>
 <p>We had a nice, smooth and fast ride to Norcia, where we had a nice dinner with monk-brewed local beer.</p>
 <p>Departing after 9pm, we started on what we thought was a minor uphill to a plateau. Unfortunately, or trusty app guided us up a 25% gradient road, followed by equally steep hiking trails. Well after 10pm we were dragging and pushing our bikes for over an hour.</p>
-<p><img src="../assets/img/2022-06-07-apennines/17.jpg" alt="17"></p>
+<p><img src="https://willwill.blog/assets/img/2022-06-07-apennines/17.jpg" alt="17"></p>
 <p>With our energy and moral drained, we nearly camped on the hiking path, but we decided to press on, eventually finding the main road. Nearly 1000m of elevation gain later, we arrived in the plateau after midnight. We pitched our tent under the painting that was the Milky Way and passed out.</p>
 <h2>Day 3: Piano Grande – Lago di Campotosto</h2>
 <p>Little did we comprehend the beauty and uniqueness of this place until we awoke the next morning. Despite cloudy skies, the area was vast, desolate, and hauntingly beautiful.</p>
-<p><img src="../assets/img/2022-06-07-apennines/18.jpg" alt="18"></p>
+<p><img src="https://willwill.blog/assets/img/2022-06-07-apennines/18.jpg" alt="18"></p>
 <p>We could have been mistaken if we had somehow transported to Mongolia overnight.</p>
-<p><img src="../assets/img/2022-06-07-apennines/19.jpg" alt="19"></p>
+<p><img src="https://willwill.blog/assets/img/2022-06-07-apennines/19.jpg" alt="19"></p>
 <p>We climbed a little further above the floor of the plateau, reaching Castelluccio, where we had breakfast and met a bike tourer.</p>
-<p><img src="../assets/img/2022-06-07-apennines/20.jpg" alt="20"></p>
+<p><img src="https://willwill.blog/assets/img/2022-06-07-apennines/20.jpg" alt="20"></p>
 <p>We left around 12pm, right as the sun was peeking through the clouds. From our perch, we finally realized that we were surrounded by lentil fields as as far as the eye could see, and luckily they were in bloom.</p>
-<p><img src="../assets/img/2022-06-07-apennines/21.jpg" alt="21"></p>
-<p><img src="../assets/img/2022-06-07-apennines/22.jpg" alt="22"></p>
-<p><img src="../assets/img/2022-06-07-apennines/23.jpg" alt="23"></p>
-<p><img src="../assets/img/2022-06-07-apennines/24.jpg" alt="24"></p>
+<p><img src="https://willwill.blog/assets/img/2022-06-07-apennines/21.jpg" alt="21"></p>
+<p><img src="https://willwill.blog/assets/img/2022-06-07-apennines/22.jpg" alt="22"></p>
+<p><img src="https://willwill.blog/assets/img/2022-06-07-apennines/23.jpg" alt="23"></p>
+<p><img src="https://willwill.blog/assets/img/2022-06-07-apennines/24.jpg" alt="24"></p>
 <p>Our landscape of pristine natural beauty suddenly changed into a reminder of the carnage and power of nature as we passed through a region devastated by an <a href="https://edition.cnn.com/2016/08/23/europe/italy-earthquake/index.html">earthquake in 2016</a>. Amatrice, one of the hardest hit areas, still had a large miliary presence.</p>
-<p><img src="../assets/img/2022-06-07-apennines/25.jpg" alt="25"></p>
+<p><img src="https://willwill.blog/assets/img/2022-06-07-apennines/25.jpg" alt="25"></p>
 <p>Nature once again turned beautiful on our way out of Amatrice towards Lago di Campotosto. The area felt pristine.</p>
-<p><img src="../assets/img/2022-06-07-apennines/26.jpg" alt="26"></p>
-<p><img src="../assets/img/2022-06-07-apennines/27.jpg" alt="27"></p>
+<p><img src="https://willwill.blog/assets/img/2022-06-07-apennines/26.jpg" alt="26"></p>
+<p><img src="https://willwill.blog/assets/img/2022-06-07-apennines/27.jpg" alt="27"></p>
 <p>After a magical 15km along the lakeside, we reached our destination for the night – <a href="https://goo.gl/maps/MLFqBkadtq6S3zmdA">Agricampeggio Cardito</a>. The concept of agricampeggios is wonderful – mix the basics of camping with the luxury of decadent local cuisine. We were welcomed with an aperol spritz and and the serenity of nature.</p>
-<p><img src="../assets/img/2022-06-07-apennines/28.jpg" alt="28"></p>
-<p><img src="../assets/img/2022-06-07-apennines/29.jpg" alt="29"></p>
+<p><img src="https://willwill.blog/assets/img/2022-06-07-apennines/28.jpg" alt="28"></p>
+<p><img src="https://willwill.blog/assets/img/2022-06-07-apennines/29.jpg" alt="29"></p>
 <p>Dinner was at a fixed time and with a fixed, undisclosed menu. Even by Italian standards, it was sublime, and never ending. The owners took sympathy on us (as we were the only ones who didn't drive there) and gave us seconds on each of the many courses.</p>
-<p><img src="../assets/img/2022-06-07-apennines/30.jpg" alt="30"></p>
+<p><img src="https://willwill.blog/assets/img/2022-06-07-apennines/30.jpg" alt="30"></p>
 <h2>Day 4: Lago di Camptosto – Campo Imperatore</h2>
 <p>We headed off further into beautiful desolation. The landscape constantly changed from lush to shrub to desert to high alpine.</p>
-<p><img src="../assets/img/2022-06-07-apennines/31.jpg" alt="31"></p>
-<p><img src="../assets/img/2022-06-07-apennines/32.jpg" alt="32"></p>
+<p><img src="https://willwill.blog/assets/img/2022-06-07-apennines/31.jpg" alt="31"></p>
+<p><img src="https://willwill.blog/assets/img/2022-06-07-apennines/32.jpg" alt="32"></p>
 <p>After a fantastically long descent, we pushed nearly 1000m upwards towards Campo Imperatore at just over 2000m. The landscape was truly breathtaking – especially when the monumental Corno Grande came into view. We stopped for quite some time to try to comprehend its scale.</p>
-<p><img src="../assets/img/2022-06-07-apennines/33.jpg" alt="33"></p>
+<p><img src="https://willwill.blog/assets/img/2022-06-07-apennines/33.jpg" alt="33"></p>
 <p>On my way up, and after 3000km of bragging at how durable my bike was, I finally got my first flat tire. If only it were the last of the trip...</p>
 <p>After reaching the top, we celebrated with ice cream and beers in the large touristic complex that most visitors simply drove or rode in a cable car up to.</p>
 <p>To go even higher, we hiked up to <a href="https://g.page/rifugio-duca-degli-abruzzi">Rifugio Duca degli Abruzzi</a> for dinner, which we luckily had all to ourselves, and an incredible sunset made even better with good food and digestivi.</p>
-<p><img src="../assets/img/2022-06-07-apennines/34.jpg" alt="34"></p>
-<p><img src="../assets/img/2022-06-07-apennines/35.jpg" alt="35"></p>
-<p><img src="../assets/img/2022-06-07-apennines/36.jpg" alt="36"></p>
+<p><img src="https://willwill.blog/assets/img/2022-06-07-apennines/34.jpg" alt="34"></p>
+<p><img src="https://willwill.blog/assets/img/2022-06-07-apennines/35.jpg" alt="35"></p>
+<p><img src="https://willwill.blog/assets/img/2022-06-07-apennines/36.jpg" alt="36"></p>
 <p>We hiked down in the dark and cycled a few kilometers back down to find a place to camp.</p>
 <h2>Day 5: Campo Imperatore – Pescara</h2>
 <p>We awoke to a gorgeously frigid view across landscapes seemingly devoid of humans – something quite rare in Western Europe. Today, we were on a mission – to make the train in Pescara by noon, on the coast and over 80km away. Luckily, we had 2000m of descending to do, and we were up early. That's where our luck fully stopped.</p>
-<p><img src="../assets/img/2022-06-07-apennines/37.jpg" alt="37"></p>
-<p><img src="../assets/img/2022-06-07-apennines/38.jpg" alt="38"></p>
+<p><img src="https://willwill.blog/assets/img/2022-06-07-apennines/37.jpg" alt="37"></p>
+<p><img src="https://willwill.blog/assets/img/2022-06-07-apennines/38.jpg" alt="38"></p>
 <p>I filmed Francesco race by for the start of a glorious descent, then took my time to get going to fully appreciate the place (mentally and physically) we were at. Roughly 30 seconds or so after starting, by back tube blew out. Luckily (ok, this was the last bit of luck), I was able to stop without crashing.</p>
 <p>Unluckily, a popped tube was the least of my worries, as I quickly noticed the massive tear in the tire itself. While this isn't usually the biggest of problems in cycling, for us it was catestrophic. With a hole in the tire, there is no way to protect the delicate tube that would, in ideal circumstances, keep me rolling over 60km to the nearest outpost of humanity. We had a few more tubes, and plenty of patch kits, but no extra tires.</p>
 <p>We did, however, have tape. Well, Francesco did, so with no cell phone coverage, I had to wait for him to realize something was wrong and hope that he wouldn't have to reverse too much of the 2000m descent.</p>
 <p>20 minutes later, we rigged up a solution. My Mechanical Engineering degree lead to us just wrapping the tire and wheel, where the hole was, in lots of tape – enough to act as a shield from the unforgiving Italian roads, but not too much to hit the brake pads or frame of the bike.</p>
 <p>The following few hours were probably some of most tense and stressful times someone has had in such beautiful landscapes.</p>
-<p><img src="../assets/img/2022-06-07-apennines/39.jpg" alt="39"></p>
-<p><img src="../assets/img/2022-06-07-apennines/40.jpg" alt="40"></p>
+<p><img src="https://willwill.blog/assets/img/2022-06-07-apennines/39.jpg" alt="39"></p>
+<p><img src="https://willwill.blog/assets/img/2022-06-07-apennines/40.jpg" alt="40"></p>
 <p>Luckily in a unlucky situation, the tube lasted for hours of biking of eggshell moments. Despite the glorious descent, I didn't dare go faster than 20km/h.</p>
 <p>We made it remarkably far, until the tape gave way to a pebble, which ended the slow descent. Pulling over just on the precipice of civilization, we were out of supplies to continue rehabilitating the bike. With a train to catch, we tried our luck at hitchiking, but as mentioned, this luck had ran out.</p>
-<p><img src="../assets/img/2022-06-07-apennines/41.jpg" alt="41"></p>
+<p><img src="https://willwill.blog/assets/img/2022-06-07-apennines/41.jpg" alt="41"></p>
 <p>We found one last scrap of luck when a passing cyclist saw us hitchiking and, after hearing about our situation, told us that there was a nearby bike store with tires.</p>
 <p>10 minutes later, Francesco was back, and less than a minute after that, we were on our way with the final challenge – getting to the train station, almost 40km away, in exactly one hour.</p>
 <p>Evidently, I didn't take photos of this last section of insanity, as we had to maintain speeds bending the rules of physics. Racing between cars, around turns, and on flat stretches, we did the equivelant of an all out sprint non-stop for almost an hour. My brain melted, only being held in a solid state by the rhythm of swapping lead and drafting positions every two minutes.</p>
 <p>About 40 minutes in, we paused to check the route, and realized that we would miss the train. Sadness turned into content, which turned into joy as we calmly pedaled into Pescara, reveling the amazing summer of cycling adventures we had had in three countries, and to our Italian sendoff.</p>
-<p><img src="../assets/img/2022-06-07-apennines/42.jpg" alt="42"></p>
-<p><img src="../assets/img/2022-06-07-apennines/43.jpg" alt="43"></p>
+<p><img src="https://willwill.blog/assets/img/2022-06-07-apennines/42.jpg" alt="42"></p>
+<p><img src="https://willwill.blog/assets/img/2022-06-07-apennines/43.jpg" alt="43"></p>
 ]]></content:encoded>
       </item>
     
@@ -837,40 +845,40 @@
 <p>Switzerland has great public transportation, but being the cheap and crazy master's students that we are, we decided to get there by less-conventional methods - a mixture of biking, driving (for the friends, public transportation for me), and of course, hiking.</p>
 <p>With far too much coffee and caffeine coursing through our veins, we set off from Geneva by bike to Lausanne, roughly 60 km away.</p>
 <iframe src="https://www.komoot.com/tour/201173295/embed?profile=1" width="100%" height="580" frameborder="0" scrolling="no"></iframe>
-<p><img src="../assets/img/2020-05-31-le-grammont/clear_water.jpg" alt="Clear Water"></p>
+<p><img src="https://willwill.blog/assets/img/2020-05-31-le-grammont/clear_water.jpg" alt="Clear Water"></p>
 <p>We met our friends in Lausanne. A nice, hearty portion rice salad in the garden fueled the five of us for the next leg of the trip - sitting on the train and bus (for me), and driving (for them) to the trailhead in Miex, Le Flon, where our hike would begin.</p>
 <h1>The Hike</h1>
 <h2>Day 1: Le Flon - Taney Lake - Le Grammont</h2>
 <iframe src="https://www.komoot.com/tour/201274418/embed?profile=1" width="100%" height="580" frameborder="0" scrolling="no"></iframe>
 <h3>Le Flon to Taney Lake</h3>
 <p>A quick 35 minutes of moving time and 350m up through a nice wooded trail brought us to the beautiful alpine Taney Lake. This is a very accessible (and very popular) day hike, and for good reason. The short hike up leads hikers to a clear, deep blue lake surrounded by towering peaks and alpine vegetation, with cute and rustic Swiss lodges offering food, drink and a few beds to spend the night. We didn't let these comforts distract us, so we kept on climbing.</p>
-<p><img src="../assets/img/2020-05-31-le-grammont/taney_lake.jpg" alt="Taney Lake"></p>
+<p><img src="https://willwill.blog/assets/img/2020-05-31-le-grammont/taney_lake.jpg" alt="Taney Lake"></p>
 <h3>Taney Lake to Le Grammont</h3>
 <p>The hike up to Le Grammont is relatively straightforward, involving 700m of gradual to moderately-steep elevation gain, which took us about 1 hour and 20 minutes to complete. While relatively straightforward, this segment is incredibly beautiful. It might be the closest place to Geneva where at times, you really feel like your in the center of the alps. The valleys were grand, and we saw several ibex along the way. There were also several fountains in which we could fill up our water bottles.</p>
-<p><img src="../assets/img/2020-05-31-le-grammont/hike_up_valley.jpg" alt="Hike Up"></p>
+<p><img src="https://willwill.blog/assets/img/2020-05-31-le-grammont/hike_up_valley.jpg" alt="Hike Up"></p>
 <p>Once we reached the ridge, it was just 10 more minutes or so before we saw one of the top five views of my life - an indescribably vast and beautiful panoramic view of lac Léman (Lake Geneva). We were truly at a loss of words.</p>
-<p><img src="../assets/img/2020-05-31-le-grammont/lake_geneva_pano.jpg" alt="Lac Léman"></p>
-<p><img src="../assets/img/2020-05-31-le-grammont/saint-gingolph.jpg" alt="Saint Gingolph"></p>
+<p><img src="https://willwill.blog/assets/img/2020-05-31-le-grammont/lake_geneva_pano.jpg" alt="Lac Léman"></p>
+<p><img src="https://willwill.blog/assets/img/2020-05-31-le-grammont/saint-gingolph.jpg" alt="Saint Gingolph"></p>
 <p>Not imagining the view could get any better, we then pushed on to the summit, Le Grammont. While quite exposed and cold, we decided to spend the night - the view was just too nice to retreat back into the valley. We set up camp, cooked some pasta, and enjoyed one of the best sunset views of my life.</p>
-<p><img src="../assets/img/2020-05-31-le-grammont/alpenglow.jpg" alt="Alpenglow"></p>
-<p><img src="../assets/img/2020-05-31-le-grammont/sunset_friends.jpg" alt="Sunset with Friends"></p>
-<p><img src="../assets/img/2020-05-31-le-grammont/dinner.jpg" alt="Dinner"></p>
-<p><img src="../assets/img/2020-05-31-le-grammont/ibex.jpg" alt="Ibex"></p>
+<p><img src="https://willwill.blog/assets/img/2020-05-31-le-grammont/alpenglow.jpg" alt="Alpenglow"></p>
+<p><img src="https://willwill.blog/assets/img/2020-05-31-le-grammont/sunset_friends.jpg" alt="Sunset with Friends"></p>
+<p><img src="https://willwill.blog/assets/img/2020-05-31-le-grammont/dinner.jpg" alt="Dinner"></p>
+<p><img src="https://willwill.blog/assets/img/2020-05-31-le-grammont/ibex.jpg" alt="Ibex"></p>
 <h2>Day 2: Le Grammont - Taney Lake - Le Flon</h2>
 <p>We woke up just seconds before the sun peaked out from behind the mountains, so we groggily dashed out of our tents to capture it. Once again, the views from the top of Le Grammont didn't disappoint.</p>
-<p><img src="../assets/img/2020-05-31-le-grammont/alpenglow_tents.jpg" alt="Camp"></p>
-<p><img src="../assets/img/2020-05-31-le-grammont/alpenglow_sunrise.jpg" alt="Alpenglow"></p>
+<p><img src="https://willwill.blog/assets/img/2020-05-31-le-grammont/alpenglow_tents.jpg" alt="Camp"></p>
+<p><img src="https://willwill.blog/assets/img/2020-05-31-le-grammont/alpenglow_sunrise.jpg" alt="Alpenglow"></p>
 <p>A nice, freezing morning of reflection, coffee and running around chasing birds was followed by our departure from the best campsite back down towards civilization.</p>
 <iframe src="https://www.komoot.com/tour/201527349/embed?profile=1" width="100%" height="580" frameborder="0" scrolling="no"></iframe>
-<p><img src="../assets/img/2020-05-31-le-grammont/ridge.jpg" alt="Ridge"></p>
-<p><img src="../assets/img/2020-05-31-le-grammont/mountains_and_lake_pano.jpg" alt="Panoramic vista"></p>
+<p><img src="https://willwill.blog/assets/img/2020-05-31-le-grammont/ridge.jpg" alt="Ridge"></p>
+<p><img src="https://willwill.blog/assets/img/2020-05-31-le-grammont/mountains_and_lake_pano.jpg" alt="Panoramic vista"></p>
 <p>Our path down was slightly different than the way up. This way had less of a developed trail, and at times had us walking across a grassy field.</p>
-<p><img src="../assets/img/2020-05-31-le-grammont/trail.jpg" alt="Trail"></p>
+<p><img src="https://willwill.blog/assets/img/2020-05-31-le-grammont/trail.jpg" alt="Trail"></p>
 <p>We were quickly back at Taney Lake, where we spent half an hour relaxing by the water's edge. While we had all been tempted to swim, clouds rolled in lowering the air temperature, so we decided to pass. The area around the lake was extremely busy - I guess people have discovered this secret spot long ago.</p>
 <p>Another quick segment later and we were back at the car. A quick shuttle down the hill and a longer commute back to Lausanne brought us to a lovely homemade lunch and a nice afternoon by the beach. However relaxing it was, we still had a long bike ride back.</p>
 <iframe src="https://www.komoot.com/tour/201550894/embed?profile=1" width="100%" height="580" frameborder="0" scrolling="no"></iframe>
 <p>We chose to go the slightly longer but more scenic route. It didn't disappoint!</p>
-<p><img src="../assets/img/2020-05-31-le-grammont/lake_geneva_bike_pano.jpg" alt="Lac Léman"></p>
+<p><img src="https://willwill.blog/assets/img/2020-05-31-le-grammont/lake_geneva_bike_pano.jpg" alt="Lac Léman"></p>
 <h1>Conclusion</h1>
 <p>Le Grammont, at 2172m, is one of the highest points overlooking Lake Geneva, and definitely one of the most beautiful. It was a great overnight trip, and can be extended into a longer trip by incorporating it into <a href="https://www.schweizmobil.ch/en/hiking-in-switzerland/routes/route/etappe-01331.html">stage 34</a> of the <a href="https://www.schweizmobil.ch/en/hiking-in-switzerland/route-06.html">Alpine Passes Trail</a> (National Route 6), or beyond.</p>
 <p><em>Written on 12-13 June 2020</em></p>
@@ -883,7 +891,7 @@
         <pubDate>Tue, 28 Apr 2020 00:00:00 GMT</pubDate>
         <guid>https://willwill.blog/building-map-bainbridge/</guid>
         <description>Using Microsoft&#39;s Building Dataset to Create an Artistic Map of my Hometown</description>
-        <content:encoded><![CDATA[<p><img src="../assets/img/2020-04-28-building-map-bainbridge/bainbridge-1.png" alt="Bainbridge Island Building Map"></p>
+        <content:encoded><![CDATA[<p><img src="https://willwill.blog/assets/img/2020-04-28-building-map-bainbridge/bainbridge-1.png" alt="Bainbridge Island Building Map"></p>
 <p>I've always loved maps. The differet ways we represent the physical world on a small screenor piece of paper is fascinating. I could spend hours looking at subway maps, old world maps,or beautiful topo maps. They're such a powerful mix of technical prowess and art (maybe that's why I love photography).</p>
 <p>Maps, and other visualizations, are a great way to turn complicated or abstract information intosomething understandable. Early on my journey to learn how to visualize data, I've been inspired by recent works of data journalism, especially from the New York Times.</p>
 <h2>Inspiration</h2>
@@ -891,14 +899,14 @@
 <h2>Process</h2>
 <p>I'm from Bainbridge Island (near Seattle), so I thought I'd start there. I found <a href="https://usbuildingdata.blob.core.windows.net/usbuildings-v1-1/Washington.zip"><code>Washington.zip</code></a> file (98 MB zipped, 691 MB unzipped) conveniently listed, downloaded it, and loaded it into QGIS. I turned on a background map (OSM) to help navigate.</p>
 <p>There are quite a few features to be rendered (2,993,361 to be exact).</p>
-<p><img src="../assets/img/2020-04-28-building-map-bainbridge/loading.gif" alt="Loading"></p>
+<p><img src="https://willwill.blog/assets/img/2020-04-28-building-map-bainbridge/loading.gif" alt="Loading"></p>
 <p>Very new to QGIS (I'm sure there's a better way of doing this), I zoomed into Puget Sound and used the <code>Select Features by Freehand</code> tool to select just the polygons (buildings) on Bainbridge Island. Being an island surrounded by water, as all islands tend to be, it was easy to define what was a building on Bainbridge and what wasn't. You can also turn on a background map to help you navigate. Sadly the buildings aren't labeled, unlike how they are in OpenStreetMap.</p>
-<p><img src="../assets/img/2020-04-28-building-map-bainbridge/select.gif" alt="Select"></p>
+<p><img src="https://willwill.blog/assets/img/2020-04-28-building-map-bainbridge/select.gif" alt="Select"></p>
 <p>I then copied these polygons into a new virtual layer and went to artistic &quot;work&quot; simply changing the background color, fill color and border color. I used the same emerald green <code>#50C878</code> for both the building fill and border, but put the fill at 75% opacity. Then, in the print layout area, I set the background to transparent and exported it as a <code>.png</code>.</p>
 <p>Et voilà, it turned out pretty well!</p>
-<p><img src="../assets/img/2020-04-28-building-map-bainbridge/bainbridge-2.png" alt="Downtown"></p>
+<p><img src="https://willwill.blog/assets/img/2020-04-28-building-map-bainbridge/bainbridge-2.png" alt="Downtown"></p>
 <p>It's interesting to see where the island has been developed, versus where it hasn't. The downtown area is just north of Eagle Harbor, while the void in the middle is Gazzam Lake Nature Preserve.</p>
-<p><img src="../assets/img/2020-04-28-building-map-bainbridge/bainbridge-3.png" alt="Nature Reserve"></p>
+<p><img src="https://willwill.blog/assets/img/2020-04-28-building-map-bainbridge/bainbridge-3.png" alt="Nature Reserve"></p>
 ]]></content:encoded>
       </item>
     
@@ -908,10 +916,10 @@
         <pubDate>Fri, 28 Dec 2018 00:00:00 GMT</pubDate>
         <guid>https://willwill.blog/stilt-fishermen-sri-lanka/</guid>
         <description>Sri Lanka&#39;s Historic Tradition of Stilt Fishing</description>
-        <content:encoded><![CDATA[<p><img src="../assets/img/2018-03-01-stilt-fishermen-sri-lanka/1.jpg" alt="1"></p>
-<p><img src="../assets/img/2018-03-01-stilt-fishermen-sri-lanka/2.jpg" alt="2"></p>
+        <content:encoded><![CDATA[<p><img src="https://willwill.blog/assets/img/2018-03-01-stilt-fishermen-sri-lanka/1.jpg" alt="1"></p>
+<p><img src="https://willwill.blog/assets/img/2018-03-01-stilt-fishermen-sri-lanka/2.jpg" alt="2"></p>
 <h2>The Back Story</h2>
-<p><em>More about traveling Sri Lanka by tuktuk <a href="/sri-lanka-tuktuk/">here</a>.</em></p>
+<p><em>More about traveling Sri Lanka by tuktuk <a href="https://willwill.blog/sri-lanka-tuktuk/">here</a>.</em></p>
 <p>A friend and I had traveled in Vietnam in 2017 by motorbike and loved the exposure and
 flexibility it provided. We joked that our next trip should be via a vehicle with one more
 wheel than a motorbike. That left us with several options:</p>
@@ -922,7 +930,7 @@ wheel than a motorbike. That left us with several options:</p>
 <li>Tuktuk</li>
 </ol>
 <p>After reading a bit about traveling by tuktuk in Sri Lanka, we knew it was the way to go.</p>
-<p><img src="../assets/img/2018-03-01-stilt-fishermen-sri-lanka/3.jpg" alt="3"></p>
+<p><img src="https://willwill.blog/assets/img/2018-03-01-stilt-fishermen-sri-lanka/3.jpg" alt="3"></p>
 <p>We spent several days in the area, hoping to find the now-elusive <em>authentic</em> stilt fishermen.
 After the world saw Steve McCurry's iconic shots of the wonderful traditional practice,
 and several other reasons, locals posing as fisherman who charge tourists to capture their
@@ -930,11 +938,11 @@ smiles make much more than the ones who still practice the craft.</p>
 <p>We kept hearing rumors that a group was working their way down the coast. On our last night
 in the area, about two hours before sunset, we finally saw them. As enthusiastic photographers,
 and culturally-insensitive tourists, we snapped away until it got dark.</p>
-<p><img src="../assets/img/2018-03-01-stilt-fishermen-sri-lanka/4.jpg" alt="1"></p>
+<p><img src="https://willwill.blog/assets/img/2018-03-01-stilt-fishermen-sri-lanka/4.jpg" alt="1"></p>
 <p><em>Some seemed to be experts, while others were just getting started.</em></p>
-<p><img src="../assets/img/2018-03-01-stilt-fishermen-sri-lanka/5.jpg" alt="5"></p>
-<p><img src="../assets/img/2018-03-01-stilt-fishermen-sri-lanka/6.jpg" alt="6"></p>
-<p><img src="../assets/img/2018-03-01-stilt-fishermen-sri-lanka/7.jpg" alt="7"></p>
+<p><img src="https://willwill.blog/assets/img/2018-03-01-stilt-fishermen-sri-lanka/5.jpg" alt="5"></p>
+<p><img src="https://willwill.blog/assets/img/2018-03-01-stilt-fishermen-sri-lanka/6.jpg" alt="6"></p>
+<p><img src="https://willwill.blog/assets/img/2018-03-01-stilt-fishermen-sri-lanka/7.jpg" alt="7"></p>
 <p><em>Written on April 27th, 2020</em></p>
 ]]></content:encoded>
       </item>
@@ -945,22 +953,22 @@ and culturally-insensitive tourists, we snapped away until it got dark.</p>
         <pubDate>Wed, 28 Feb 2018 00:00:00 GMT</pubDate>
         <guid>https://willwill.blog/sri-lanka-tuktuk/</guid>
         <description>Traveling around Sri Lanka by tuk-tuk proved to be an unforgettable experience.</description>
-        <content:encoded><![CDATA[<p><img src="../assets/img/2020-12-08-sri-lanka-tuk-tuk/12.jpg" alt="12"></p>
+        <content:encoded><![CDATA[<p><img src="https://willwill.blog/assets/img/2020-12-08-sri-lanka-tuk-tuk/12.jpg" alt="12"></p>
 <p>Once we arrived, a friend and I did what any sensible travelers would do – give a man we met on the internet several hundred dollars in return for renting his three-wheeled tuk-tuk and drive away, having only learned how to operate the motorized vehicle half an hour prior. In reality, it turned out to be one of the best decisions I have ever made while traveling; the incredible scenes that Sri Lanka has to offer flowed into our doorless tuk-tuk, and the inquisitive locals, upon seeing two foreigners driving their preferred mode of transportation, instantly opened up to us.</p>
-<p><img src="../assets/img/2020-12-08-sri-lanka-tuk-tuk/1.jpg" alt="1"></p>
-<p><img src="../assets/img/2020-12-08-sri-lanka-tuk-tuk/6.jpg" alt="6"></p>
-<p><img src="../assets/img/2020-12-08-sri-lanka-tuk-tuk/9.jpg" alt="9"></p>
+<p><img src="https://willwill.blog/assets/img/2020-12-08-sri-lanka-tuk-tuk/1.jpg" alt="1"></p>
+<p><img src="https://willwill.blog/assets/img/2020-12-08-sri-lanka-tuk-tuk/6.jpg" alt="6"></p>
+<p><img src="https://willwill.blog/assets/img/2020-12-08-sri-lanka-tuk-tuk/9.jpg" alt="9"></p>
 <p>Sri Lanka had long been on my list of countries to visit, yet we purposefully kept our research to a minimum, with the hopes of being pleasantly surprised at every new destination. We had known that Sri Lanka’s landscapes were diverse, but I couldn’t, and still can’t for that matter, wrap my head around how a small island in the Indian Ocean can offer so much. Beautiful, pristine beaches, rugged mountains, dense jungles, and even wildlife refuges reminiscent of Kenya’s Masai Mara. These sights, and more, were all within a few hours of each other by car, or within a day or two by tuk-tuk.</p>
-<p><img src="../assets/img/2020-12-08-sri-lanka-tuk-tuk/4.jpg" alt="4"></p>
-<p><img src="../assets/img/2020-12-08-sri-lanka-tuk-tuk/5.jpg" alt="5"></p>
-<p><img src="../assets/img/2020-12-08-sri-lanka-tuk-tuk/7.jpg" alt="7"></p>
+<p><img src="https://willwill.blog/assets/img/2020-12-08-sri-lanka-tuk-tuk/4.jpg" alt="4"></p>
+<p><img src="https://willwill.blog/assets/img/2020-12-08-sri-lanka-tuk-tuk/5.jpg" alt="5"></p>
+<p><img src="https://willwill.blog/assets/img/2020-12-08-sri-lanka-tuk-tuk/7.jpg" alt="7"></p>
 <p>Upon returning home, most travelers don’t start their stories with the mode of transport that they used, but tuk-tuks are another story. Our tuk-tuk was bright, racing red. The name Big Red was quickly bestowed on her. She was an absolute tank, gliding over the most decrepit roads with ease, which made us realize why the locals held tuk-tuks in such high regard. In addition, they are very gas efficient, reliable, and are relatively easy to drive.</p>
-<p><img src="../assets/img/2020-12-08-sri-lanka-tuk-tuk/8.jpg" alt="8"></p>
-<p><img src="../assets/img/2020-12-08-sri-lanka-tuk-tuk/10.jpg" alt="10"></p>
-<p><img src="../assets/img/2020-12-08-sri-lanka-tuk-tuk/11.jpg" alt="11"></p>
+<p><img src="https://willwill.blog/assets/img/2020-12-08-sri-lanka-tuk-tuk/8.jpg" alt="8"></p>
+<p><img src="https://willwill.blog/assets/img/2020-12-08-sri-lanka-tuk-tuk/10.jpg" alt="10"></p>
+<p><img src="https://willwill.blog/assets/img/2020-12-08-sri-lanka-tuk-tuk/11.jpg" alt="11"></p>
 <p>The experiences – unexplored tea fields, an unsolicited and unforgettable conversation with a Buddhist monk in a mountaintop temple, night fishing in dangerous waters, secluded beaches, pre-dawn hikes, and traditional stilt fishing (just to name a few) – were all thanks to Big Red. Unique travel logistics lead to unique travel experiences.</p>
-<p><img src="../assets/img/2020-12-08-sri-lanka-tuk-tuk/2.jpg" alt="2"></p>
-<p><img src="../assets/img/2020-12-08-sri-lanka-tuk-tuk/3.jpg" alt="3"></p>
+<p><img src="https://willwill.blog/assets/img/2020-12-08-sri-lanka-tuk-tuk/2.jpg" alt="2"></p>
+<p><img src="https://willwill.blog/assets/img/2020-12-08-sri-lanka-tuk-tuk/3.jpg" alt="3"></p>
 <p><em>Written on July 6th, 2018 for Clamp Magazine from a trip in early 2018. Published here on December 8th, 2020.</em></p>
 ]]></content:encoded>
       </item>
@@ -971,24 +979,24 @@ and culturally-insensitive tourists, we snapped away until it got dark.</p>
         <pubDate>Tue, 14 Nov 2017 00:00:00 GMT</pubDate>
         <guid>https://willwill.blog/houtouwan/</guid>
         <description>The abandoned fishing village of Hòutouwān 后头湾 and the surrounding Shèngshān 嵊山岛 and Goǔqǐ 枸杞岛 islands.</description>
-        <content:encoded><![CDATA[<p><img src="../assets/img/2020-12-08-houtouwan/9.jpg" alt="9"></p>
+        <content:encoded><![CDATA[<p><img src="https://willwill.blog/assets/img/2020-12-08-houtouwan/9.jpg" alt="9"></p>
 <p>“Autumn isn’t bad, but you should be here in the summer. The water is bluer, the vegetation is greener, and the air is cleaner,” said the taxi driver after our boat had arrived on a cold winter’s afternoon.</p>
 <p>The taxi drivers of Goǔqǐ Island <code>枸杞岛</code> hadn’t seen much trade of late but, after our surprisingly long journey, our personal chauffeur of the island was more than happy to sing the praises of his faraway home. Coming from the persistent grey haze of the Shanghai ‘Big Smoke’, we immediately saw the benefits of the pure island air.</p>
-<p><img src="../assets/img/2020-12-08-houtouwan/1.jpg" alt="1"></p>
+<p><img src="https://willwill.blog/assets/img/2020-12-08-houtouwan/1.jpg" alt="1"></p>
 <p>Goǔqǐ island, together with neighboring Shèngshān Island <code>嵊山岛</code>, are best known for Houtouwan, an abandoned fishing village on the northern coast of Shèngshān Island. During it’s prime in the 1980’s, over 3,000 residents called this place their home. However, the attractiveness of a faster life on the other side of the island, and nearby Shanghai, pulled most of the residence away, leaving fewer and fewer as time passed by. Today, only rumor of an old lady and one lonely fisherman remain.</p>
-<p><img src="../assets/img/2020-12-08-houtouwan/2.jpg" alt="2"></p>
-<p><img src="../assets/img/2020-12-08-houtouwan/3.jpg" alt="3"></p>
+<p><img src="https://willwill.blog/assets/img/2020-12-08-houtouwan/2.jpg" alt="2"></p>
+<p><img src="https://willwill.blog/assets/img/2020-12-08-houtouwan/3.jpg" alt="3"></p>
 <p>As we descended into the village, we caught a glimpse of an orange coated figure with a fishing rod in his hand and a bucket by his feet. Curiosity lead us to dash over to the man. While his catch wasn’t impressive, he proudly told us to follow him to his house and see his previous luck.</p>
-<p><img src="../assets/img/2020-12-08-houtouwan/4.jpg" alt="4"></p>
-<p><img src="../assets/img/2020-12-08-houtouwan/5.jpg" alt="5"></p>
+<p><img src="https://willwill.blog/assets/img/2020-12-08-houtouwan/4.jpg" alt="4"></p>
+<p><img src="https://willwill.blog/assets/img/2020-12-08-houtouwan/5.jpg" alt="5"></p>
 <p>His house looked the same on the outside as all the others – abandoned, decrepit, diminishing, yet full of life. Usually this village is overrun with vibrant green moss and vines, however, winter gave this place a different appearance, and a feeling of warmth from the interaction between the few amongst us – our group of five, one other party of four nurses, and the fisherman and his friend.</p>
-<p><img src="../assets/img/2020-12-08-houtouwan/6.jpg" alt="6"></p>
+<p><img src="https://willwill.blog/assets/img/2020-12-08-houtouwan/6.jpg" alt="6"></p>
 <p>His face lit up as he proudly held his trophy catch from the early morning.</p>
-<p><img src="../assets/img/2020-12-08-houtouwan/7.jpg" alt="7"></p>
+<p><img src="https://willwill.blog/assets/img/2020-12-08-houtouwan/7.jpg" alt="7"></p>
 <p>This time of the year is much more relaxed. Much of the island’s income comes from the busy summer months of tourism – once the tourists return to the mainland, the locals who aren’t fishing are free to relax and enjoy their views in peace.</p>
-<p><img src="../assets/img/2020-12-08-houtouwan/8.jpg" alt="8"></p>
+<p><img src="https://willwill.blog/assets/img/2020-12-08-houtouwan/8.jpg" alt="8"></p>
 <p>We met a large group of elderly residents doing just this shortly after we arrived. As our lives appeared so different, conversation naturally ensued. One man was especially proud of his island. “This is the easternmost point in mainland China. We’re first to see the sunrise,” he proclaimed. While technically wrong (North-eastern China holds that title), his enthusiasm was more than enough to have us nodding in agreement.</p>
-<p><img src="../assets/img/2020-12-08-houtouwan/10.jpg" alt="10"></p>
+<p><img src="https://willwill.blog/assets/img/2020-12-08-houtouwan/10.jpg" alt="10"></p>
 <p><em>Originally written with Hibshy Samsadin on January 14th, 2018 for Clamp Magazine from a trip in late 2017. Published here on December 8th, 2020.</em></p>
 ]]></content:encoded>
       </item>
