@@ -5,3 +5,7 @@ node_modules/
 _drafts/
 
 .cache
+
+eleventy.log
+.playwright-mcp/
+pnpm-workspace.yaml

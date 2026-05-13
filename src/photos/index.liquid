@@ -1,0 +1,67 @@
+---
+layout: base.liquid
+title: Photos
+description: Photo albums.
+---
+
+<h1>Photos</h1>
+
+<div class="albums-grid">
+  {% for album in albums %}
+    <a href="/photos/{{ album.slug }}/" class="album-card">
+      <div class="album-cover">
+        <img src="{{ album.cover }}" alt="Cover for {{ album.title }}">
+      </div>
+      <div class="album-meta">
+        <h2>{{ album.title }}</h2>
+        <time datetime="{{ album.date }}">{{ album.date | dateFormat }}</time>
+        {% if album.description %}<p>{{ album.description }}</p>{% endif %}
+      </div>
+    </a>
+  {% endfor %}
+</div>
+
+<style>
+.albums-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+.album-card {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+}
+.album-cover {
+  aspect-ratio: 4/3;
+  overflow: hidden;
+  border-radius: 4px;
+}
+.album-cover img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+.album-card:hover .album-cover img {
+  transform: scale(1.05);
+}
+.album-meta {
+  margin-top: 1rem;
+}
+.album-meta h2 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.25rem;
+}
+.album-meta time {
+  color: var(--color-text-muted);
+  font-size: 0.9rem;
+}
+.album-meta p {
+  margin: 0.5rem 0 0 0;
+  font-size: 1rem;
+  color: var(--color-text);
+}
+</style>

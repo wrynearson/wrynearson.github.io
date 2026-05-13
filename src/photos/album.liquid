@@ -1,0 +1,308 @@
+---
+layout: base.liquid
+pagination:
+  data: albums
+  size: 1
+  alias: album
+permalink: "photos/{{ album.slug }}/"
+eleventyComputed:
+  title: "{{ album.title }}"
+  description: "{{ album.description }}"
+---
+
+<div class="album-header">
+  <a href="/photos/" class="back-link">&larr; Back to Photos</a>
+  <h1>{{ album.title }}</h1>
+  <time datetime="{{ album.date }}">{{ album.date | dateFormat }}</time>
+  {% if album.description %}<p>{{ album.description }}</p>{% endif %}
+</div>
+
+<div class="photo-grid" id="photo-grid">
+  {% for photo in album.photos %}
+    <div class="photo-item">
+      <img src="{{ photo.url }}" 
+           alt="{{ photo.caption | default: 'Photo' }}" 
+           class="lightbox-trigger"
+           data-index="{{ forloop.index0 }}"
+           data-caption="{{ photo.caption | escape }}"
+           data-exif='{{ photo.exif | jsonify | escape }}'
+           data-full="{{ photo.url }}">
+    </div>
+  {% endfor %}
+</div>
+
+<!-- Lightbox -->
+<div id="lightbox" class="lightbox" aria-hidden="true">
+  <div class="lightbox-overlay" tabindex="-1"></div>
+  <button class="lightbox-close" aria-label="Close lightbox">&times;</button>
+  <button class="lightbox-prev" aria-label="Previous photo">&larr;</button>
+  <div class="lightbox-content">
+    <img id="lightbox-img" src="" alt="">
+    <div class="lightbox-info">
+      <div id="lightbox-caption" class="lightbox-caption"></div>
+      <button id="lightbox-exif-toggle" class="lightbox-exif-toggle" aria-expanded="false" style="display: none;">Info</button>
+      <div id="lightbox-exif" class="lightbox-exif"></div>
+    </div>
+  </div>
+  <button class="lightbox-next" aria-label="Next photo">&rarr;</button>
+</div>
+
+<style>
+.album-header {
+  margin-bottom: 2rem;
+}
+.back-link {
+  display: inline-block;
+  margin-bottom: 1rem;
+  color: var(--color-text-muted);
+  text-decoration: none;
+}
+.back-link:hover {
+  color: var(--color-text);
+}
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1rem;
+}
+.photo-item {
+  aspect-ratio: 1;
+  overflow: hidden;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.photo-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+.photo-item:hover img {
+  transform: scale(1.05);
+}
+
+/* Lightbox Styles */
+.lightbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease;
+}
+.lightbox[aria-hidden="false"] {
+  opacity: 1;
+  pointer-events: auto;
+}
+.lightbox-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--color-bg);
+  opacity: 0.95;
+}
+.lightbox-content {
+  position: relative;
+  z-index: 1001;
+  max-width: 90vw;
+  max-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#lightbox-img {
+  max-width: 100%;
+  max-height: 80vh;
+  object-fit: contain;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+.lightbox-info {
+  margin-top: 1rem;
+  text-align: center;
+  color: var(--color-text);
+  width: 100%;
+}
+.lightbox-caption {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+.lightbox-exif-toggle {
+  background: none;
+  border: 1px solid var(--color-ui-2);
+  color: var(--color-text-muted);
+  border-radius: 4px;
+  padding: 0.2rem 0.5rem;
+  cursor: pointer;
+  font-size: 0.8rem;
+}
+.lightbox-exif {
+  display: none;
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+  margin-top: 0.5rem;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.lightbox-exif.show {
+  display: flex;
+}
+.lightbox-exif span {
+  background: var(--color-bg-2);
+  padding: 0.2rem 0.4rem;
+  border-radius: 3px;
+}
+.lightbox-close, .lightbox-prev, .lightbox-next {
+  position: absolute;
+  z-index: 1002;
+  background: none;
+  border: none;
+  color: var(--color-text);
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 1rem;
+}
+.lightbox-close {
+  top: 1rem;
+  right: 1rem;
+}
+.lightbox-prev {
+  left: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.lightbox-next {
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+@media (max-width: 768px) {
+  .lightbox-prev, .lightbox-next {
+    display: none; /* Swipe could be implemented, but simple clicks for mobile for now or just tap edges */
+  }
+}
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const triggers = document.querySelectorAll('.lightbox-trigger');
+  const lightbox = document.getElementById('lightbox');
+  const overlay = document.querySelector('.lightbox-overlay');
+  const img = document.getElementById('lightbox-img');
+  const caption = document.getElementById('lightbox-caption');
+  const exifContainer = document.getElementById('lightbox-exif');
+  const exifToggle = document.getElementById('lightbox-exif-toggle');
+  const closeBtn = document.querySelector('.lightbox-close');
+  const prevBtn = document.querySelector('.lightbox-prev');
+  const nextBtn = document.querySelector('.lightbox-next');
+  
+  let currentIndex = 0;
+  let photosData = [];
+
+  // Gather data
+  triggers.forEach((trigger, index) => {
+    let exifData = null;
+    try {
+      if (trigger.dataset.exif) exifData = JSON.parse(trigger.dataset.exif);
+    } catch(e) {}
+    
+    photosData.push({
+      url: trigger.dataset.full,
+      caption: trigger.dataset.caption,
+      exif: exifData
+    });
+    
+    trigger.addEventListener('click', () => openLightbox(index));
+  });
+
+  function openLightbox(index) {
+    currentIndex = index;
+    updateLightbox();
+    lightbox.setAttribute('aria-hidden', 'false');
+    document.body.style.overflow = 'hidden'; // prevent scrolling
+    document.addEventListener('keydown', handleKeydown);
+  }
+
+  function closeLightbox() {
+    lightbox.setAttribute('aria-hidden', 'true');
+    document.body.style.overflow = '';
+    document.removeEventListener('keydown', handleKeydown);
+  }
+
+  function updateLightbox() {
+    const data = photosData[currentIndex];
+    img.src = data.url;
+    caption.textContent = data.caption || '';
+    
+    if (data.exif && Object.keys(data.exif).length > 0) {
+      exifToggle.style.display = 'inline-block';
+      exifContainer.innerHTML = '';
+      for (const [key, value] of Object.entries(data.exif)) {
+        if(value) {
+          const span = document.createElement('span');
+          span.textContent = `${key}: ${value}`;
+          exifContainer.appendChild(span);
+        }
+      }
+    } else {
+      exifToggle.style.display = 'none';
+      exifContainer.innerHTML = '';
+      exifContainer.classList.remove('show');
+      exifToggle.setAttribute('aria-expanded', 'false');
+    }
+  }
+
+  function nextPhoto() {
+    currentIndex = (currentIndex + 1) % photosData.length;
+    updateLightbox();
+  }
+
+  function prevPhoto() {
+    currentIndex = (currentIndex - 1 + photosData.length) % photosData.length;
+    updateLightbox();
+  }
+
+  function handleKeydown(e) {
+    if (e.key === 'Escape') closeLightbox();
+    if (e.key === 'ArrowRight') nextPhoto();
+    if (e.key === 'ArrowLeft') prevPhoto();
+  }
+
+  closeBtn.addEventListener('click', closeLightbox);
+  overlay.addEventListener('click', closeLightbox);
+  nextBtn.addEventListener('click', nextPhoto);
+  prevBtn.addEventListener('click', prevPhoto);
+  
+  exifToggle.addEventListener('click', () => {
+    const isExpanded = exifToggle.getAttribute('aria-expanded') === 'true';
+    exifToggle.setAttribute('aria-expanded', !isExpanded);
+    exifContainer.classList.toggle('show');
+  });
+
+  // Simple swipe for mobile
+  let touchstartX = 0;
+  let touchendX = 0;
+  
+  lightbox.addEventListener('touchstart', e => {
+    touchstartX = e.changedTouches[0].screenX;
+  }, {passive: true});
+
+  lightbox.addEventListener('touchend', e => {
+    touchendX = e.changedTouches[0].screenX;
+    handleSwipe();
+  }, {passive: true});
+
+  function handleSwipe() {
+    if (touchendX < touchstartX - 50) nextPhoto();
+    if (touchendX > touchstartX + 50) prevPhoto();
+  }
+});
+</script>
