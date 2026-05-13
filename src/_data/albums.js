@@ -6,6 +6,7 @@ const DEFAULT_ALBUMS = [
     title: "Japan 2024",
     date: "2024-11-15",
     description: "A trip through Tokyo and Kyoto.",
+    tags: ["travel", "japan", "photography"],
     cover: "https://dummyimage.com/1200x800/ccc/000.jpg",
     photos: [
       {
@@ -30,6 +31,7 @@ const DEFAULT_ALBUMS = [
     title: "Seattle Summer",
     date: "2023-08-20",
     description: "Summer time in the PNW.",
+    tags: ["travel", "seattle", "summer"],
     cover: "https://dummyimage.com/1200x800/bbb/333.jpg",
     photos: [
       {
