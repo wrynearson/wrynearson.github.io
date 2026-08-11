@@ -13,7 +13,31 @@
       <width>32</width>
       <height>32</height>
     </image>
-    <lastBuildDate>Tue, 21 Jul 2026 00:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 10 Aug 2026 00:00:00 GMT</lastBuildDate>
+    
+      <item>
+        <title>Agency</title>
+        <link>https://willwill.blog/effort/</link>
+        <pubDate>Mon, 10 Aug 2026 00:00:00 GMT</pubDate>
+        <guid>https://willwill.blog/effort/</guid>
+        <description>When technology makes us more efficient, several paths exist for how to use our newfound time and effort</description>
+        <content:encoded><![CDATA[<p>Technology often promises to make our lives easier by maintaining or increasing output while decreasing input. Washing machines decrease the time and effort needed to wash clothes compared to a washboard. A train lets us go further in an hour than our legs.</p>
+<p>Computers can do math faster than human computers. The internet has more information than our local library.</p>
+<p>These promises mostly panned out. But they didn't (dramatically) make us less busy – they raised expectations. Clothes are clean, we can travel, and calculations are instant. But we no longer have wash days (well, Switzerland <a href="https://myswissstory.com/2022/06/22/doing-laundry-in-switzerland-all-you-need-to-know/#:~:text=You%20are%20usually%20allocated%20your,this%20could%20be%20a%20problem.">does</a>), I'm writing this from a train, and our modern lives depend on more calculations, not to mention all of the other things we now have time to do.</p>
+<p>The world became more <code>efficient</code> – requiring less time and/or effort to produce the same outcome/output, but also more <code>productive</code> – requiring more outcome/output with the same amount of time/effort.</p>
+<p>LLMs are the next big promise. They answer our questions without judgement, can code a full app with a single prompt, and can find and synthesize vast amounts of information.</p>
+<p>Based on history, this technology should, and already is, fulfilling the same promise. It takes less effort to maintain or increase output. Ignoring code quality and technical debt, they are more efficient than writing code by hand. But employers are already expecting employees to be more productive.</p>
+<h2>Possible Paths</h2>
+<ol>
+<li><code>Efficient</code>: Some will likely prosper, and get paid the same for less effort by being more <code>efficient</code>. Hopefully they can spend more time on the &quot;life&quot; side of work-life balance.</li>
+<li><code>Productive</code> (busy): Others will likely be expected to output more, but the value of the output is not guaranteed. Ship more code, synthesize more information, attend more meetings, be more scattered. This meets the definition of <code>productive</code>, but is probably using the wrong measurement of output.</li>
+<li><code>Productive</code> (valuable): Some will, freed from the monotony of busywork, use the newfound time and effort by solving harder problems to be more <code>productive</code>, and more <code>valuable</code> to both their company and society.</li>
+</ol>
+<p>My personal preference would be a blend of being <code>efficient</code> and <code>valuable</code>. The first camp likely won't exist for long in capitalist societies without strong social protections. The third runs the risk of solving the wrong problems.</p>
+<p>The second exacerbates societal issues. <a href="https://www.forbes.com/sites/bryanrobinson/2025/02/08/job-burnout-at-66-in-2025-new-study-shows/">Burnout</a> wasn't likely as common 50 years ago as it is today.</p>
+<p>With any new technology, the best outcome is increased <code>agency</code> – getting to choose how to use (or not) the newfound effort or time.</p>
+]]></content:encoded>
+      </item>
     
       <item>
         <title>Recently</title>
