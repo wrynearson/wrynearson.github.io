@@ -29,8 +29,8 @@ This product exposes the *degree* of abnormality of upcoming weather globally, s
 
 The data prep is grouped into three steps, which are described in more detail in the [GitHub repository](https://github.com/developmentseed/weather-anomaly).
 
-1. Historical weather data (ERA5 reanalysis data from 1990 to 2020) is used to compute daily climatological stats for temperature (mean, min, max, variance) for each calendar day. I.e., all August 21sts are compared to compute the mean mean, mean min, mean max and variance of the three across the three decades.
-2. Forecast data (ECMWF IFS ensemble) is resampled to compute daily temperature aggregates (mean, min, max)
+1. Historical weather data ([ERA5 reanalysis data](https://cds.climate.copernicus.eu/datasets/reanalysis-era5-single-levels?tab=overview) from 1990 to 2020) is used to compute daily climatological stats for temperature (mean, min, max, variance) for each calendar day. I.e., all August 21sts are compared to compute the mean mean, mean min, mean max and variance of the three across the three decades.
+2. Forecast data ([ECMWF IFS ensemble](https://dynamical.org/catalog/ecmwf-ifs-ens-forecast-15-day-0-25-degree/)) is resampled to compute daily temperature aggregates (mean, min, max)
 3. The two are compared, calculating the difference in temperature (e.g., forecasted max minus historical mean max) and standard deviation.
 
 Steps two and three are run daily via GitHub actions, updating the website to have a forward-looking 8-day window.
@@ -40,4 +40,6 @@ The data is stored as [zarr](https://zarr.dev/), a way to store chunked, multi-d
 ## Future Work
 
 The product was [launched](https://www.linkedin.com/feed/update/urn:li:activity:7465125048157388800/) in June 2026. Europe (and other parts of the world) experienced multiple record-breaking heat waves later in the summer. 2027 is [predicted to be the hottest year on record](https://www.bbc.com/weather/articles/c3ekg93vjz9o).
+
+I hope that this product is insightful for people, and can help them prepare for anomalous weather. Currently, only temperature is included, but the historical and forecast data include a rich variety of variables that could be insightful for people.
 
