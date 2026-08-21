@@ -33,3 +33,5 @@ The data prep is grouped into three steps, which are described in more detail in
 2. Forecast data (ECMWF IFS ensemble) is resampled to compute daily temperature aggregates (mean, min, max)
 3. The two are compared, calculating the difference in temperature (e.g., forecasted max minus historical mean max) and standard deviation.
 
+Steps two and three are run daily via GitHub actions, updating the website to have a forward-looking 8-day window.
+
