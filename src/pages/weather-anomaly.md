@@ -43,3 +43,6 @@ The product was [launched](https://www.linkedin.com/feed/update/urn:li:activity:
 
 I hope that this product is insightful for people, and can help them prepare for anomalous weather. Currently, only temperature is included, but the historical and forecast data include a rich variety of variables that could be insightful for people.
 
+## Takeaways
+
+This was a great project to learn about weather forecast data, ERA5 historical data, Zarr and [Icechunk](https://icechunk.io/en/stable/) formats, cloud storage, and automating data processing pipelines. It was also good to learn how to work with [deck.gl-raster](https://github.com/developmentseed/deck.gl-raster), especially the zarr support – thanks to my colleague [Kyle](https://github.com/kylebarron) for his work developing cutting-edge, open-source data visualization libraries.
