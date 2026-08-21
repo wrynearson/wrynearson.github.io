@@ -23,3 +23,5 @@ This project exposes the *degree* of abnormality of upcoming weather globally, s
 1. How much warmer or colder will it be (±°C).
 2. How "outside of the norm" (standard deviation σ) will it be.
 
+![CleanShot 2026-08-21 at 12.00.16@2x.webp](</assets/img/CleanShot 2026-08-21 at 12.00.16@2x.webp>)
+
