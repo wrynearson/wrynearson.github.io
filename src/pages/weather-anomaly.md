@@ -12,4 +12,9 @@ type: professional
 client: development seed
 role: builder
 ---
-Summer 2026 in Europe has been hot. We've heard about it in the local and [global](https://www.nytimes.com/2026/08/14/climate/europe-heat-waves-jet-stream.html?eafs_enabled=false) news.
+Summer 2026 in Europe has been hot. We've heard about it in the local and [global](https://www.nytimes.com/2026/08/14/climate/europe-heat-waves-jet-stream.html?eafs_enabled=false) news. People either:
+
+1. Read about abnormal weather, which depends on someone determining that it's worth writing about;
+2. Are warned about it by their meteo service, which is based on thresholds and not the degree of abnormality;
+3. Experience it, potentially without adequate warning.
+
