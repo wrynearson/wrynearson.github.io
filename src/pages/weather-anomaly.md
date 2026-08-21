@@ -18,3 +18,4 @@ Summer 2026 in Europe has been hot. We've heard about it in the local and [globa
 2. Are warned about it by their meteo service, which is based on thresholds and not the degree of abnormality;
 3. Experience it, potentially without adequate warning.
 
+This project exposes the *degree* of abnormality of upcoming weather globally, starting with temperature. 
