@@ -1,6 +1,6 @@
 ---
 title: Weather Anomaly
-draft: true
+draft: false
 date: 2026-03-16
 end-date: 2026-05-24
 url: https://developmentseed.org/weather-anomaly/
