@@ -12,3 +12,4 @@ type: professional
 client: development seed
 role: builder
 ---
+Summer 2026 in Europe has been hot. We've heard about it in the local and [global](https://www.nytimes.com/2026/08/14/climate/europe-heat-waves-jet-stream.html?eafs_enabled=false) news.
