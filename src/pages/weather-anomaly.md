@@ -18,10 +18,8 @@ Summer 2026 in Europe has been hot. We've heard about it in the local and [globa
 2. Are warned about it by their meteo service, which is based on thresholds and not the degree of abnormality;
 3. Experience it, potentially without adequate warning.
 
-This project exposes the *degree* of abnormality of upcoming weather globally, starting with temperature.
+This project exposes the *degree* of abnormality of upcoming weather globally, starting with temperature. It compares global daily temperature forecasts of the next week to global 1990-2020 norms, answering:
 
-## How it works
+1. How much warmer or colder will it be (±°C).
+2. How "outside of the norm" (standard deviation σ) will it be.
 
-
-
-&nbsp;
