@@ -35,3 +35,4 @@ The data prep is grouped into three steps, which are described in more detail in
 
 Steps two and three are run daily via GitHub actions, updating the website to have a forward-looking 8-day window.
 
+The data is stored as [zarr](https://zarr.dev/), a way to store chunked, multi-dimensional data. For the data, latitude, longitude, date, and variable (e.g., max temperature anomaly °C) are all dimensions, and is chunked based similarly to how map tiling works. That way, when someone is zoomed into a specific country or region, only data in their viewport is loaded for all dates and variables, making data transfer more efficient. It could be made more efficient by only sending the requested date or variable.
